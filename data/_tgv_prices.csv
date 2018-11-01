@@ -1,0 +1,4125 @@
+Origin,Destination,Price
+Dax,Douai,144.0
+Irun,Lille-Flandres,144.0
+Bayonne,Douai,144.0
+Hendaye,Douai,144.0
+Irun,Lille-Europe,144.0
+Lille-Europe,Montpellier (CNM),144.0
+Lille-Europe,Marseille-St-Charles,144.0
+Nîmes,Lille-Europe,144.0
+Modane,Quimper,147.0
+Moûtiers-Salins-Brides-les-Bains,Quimper,147.0
+Quimper,Sallanches-Combloux-Megève,147.0
+Landry,Quimper,147.0
+Quimper,Aix-les-Bains-Le Revard,147.0
+Carcassonne,TGV Haute-Picardie,150.0
+Lille-Flandres,Agde,150.0
+Arras,Sète,150.0
+Carcassonne,Arras,150.0
+Arras,Toulouse-Matabiau,150.0
+TGV Haute-Picardie,Agde,150.0
+Perpignan,TGV Haute-Picardie,150.0
+TGV Haute-Picardie,Sète,150.0
+Avignon-TGV,Perpignan,48.0
+Le Havre,Lyon-St-Exupéry-TGV,97.0
+Lyon-St-Exupéry-TGV,St-Nazaire,109.0
+Paris-Gare-de-Lyon,Toulon,121.0
+Chambéry-Challes-les-Eaux,Paris-Gare-de-Lyon,103.0
+Paris-Gare-de-Lyon,Montbéliard,88.0
+Limoges-Bénédictins,Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),88.0
+Les Aubrais-Orléans,Marne-la-Vallée-Chessy,44.0
+Massy-TGV,TGV Haute-Picardie,45.0
+Châteauroux,Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),69.0
+La Souterraine,Marne-la-Vallée-Chessy,80.0
+Chambéry-Challes-les-Eaux,Massy-TGV,103.0
+Dole-Ville,Paris-Montparnasse,76.0
+Massy-TGV,Aix-les-Bains-Le Revard,103.0
+Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),Aix-les-Bains-Le Revard,103.0
+Paris-Nord,Aix-les-Bains-Le Revard,103.0
+Besançon-Viotte,Montbard,43.0
+Montbard,Besançon-Franche-Comté-TGV,43.0
+Paris-Gare-de-Lyon,Beaune,77.0
+Dijon-Ville,Lille-Europe,111.0
+Lille-Europe,Belfort-Montbéliard-TGV,129.0
+Colmar,Mâcon-Ville,72.0
+Colmar,Bourg-en-Bresse,70.0
+Colmar,Valence-TGV,98.0
+Belfort-Montbéliard-TGV,Chalon-sur-Saône,51.0
+Chalon-sur-Saône,Narbonne,84.0
+Dijon-Ville,Agde,101.0
+Dijon-Ville,Aix-en-Provence-TGV,91.0
+Dijon-Ville,Antibes,124.0
+Mâcon-Ville,Antibes,107.0
+Nice-Ville,Chalon-sur-Saône,116.0
+Mâcon-Ville,Toulon,81.0
+Dijon-Ville,Valence-TGV,63.0
+Besançon-Viotte,Belfort-Montbéliard-TGV,25.5
+Belfort-Montbéliard-TGV,Lons-le-Saunier,42.0
+Marseille-St-Charles,Lons-le-Saunier,89.0
+Belfort-Montbéliard-TGV,Bourg-en-Bresse,51.0
+Belfort-Montbéliard-TGV,Valence-TGV,83.0
+Besançon-Viotte,Valence-TGV,73.0
+Besançon-Viotte,Lyon-Part-Dieu,51.0
+Nancy-Ville,Montpellier (CNM),117.0
+Avignon-TGV,Nancy-Ville,107.0
+Toul,Antibes,135.0
+Metz-Ville,Nice-Ville,143.0
+Besançon-Viotte,Lille-Europe,120.0
+Nancy-Ville,Lille-Europe,102.0
+Nancy-Ville,Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),77.0
+Laval,Annemasse,120.0
+Mulhouse-Ville,Lorraine-TGV,54.0
+Angoulême,Nancy-Ville,119.0
+Angers-St-Laud,Nancy-Ville,112.0
+Le Mans,Paris-Montparnasse,60.0
+Le Mans,Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),60.0
+Le Mans,Massy-TGV,60.0
+La Rochelle-Ville,Marne-la-Vallée-Chessy,89.0
+Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),St-Brieuc,84.0
+Agen,Marne-la-Vallée-Chessy,108.0
+Agen,Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),108.0
+Biarritz,Marne-la-Vallée-Chessy,112.0
+Biarritz,Paris-Austerlitz,112.0
+Paris-Austerlitz,Bayonne,112.0
+Hendaye,Paris-Austerlitz,112.0
+Paris-Gare-de-Lyon,Valence-TGV,107.0
+Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),Valence-TGV,107.0
+Marne-la-Vallée-Chessy,Valence-TGV,107.0
+Massy-TGV,Valence-TGV,107.0
+Béziers,Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),116.0
+Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),Agde,116.0
+Castelnaudary,Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),116.0
+Marne-la-Vallée-Chessy,Perpignan,124.0
+Cannes,Paris-Gare-de-Lyon,132.0
+Paris-Gare-de-Lyon,Antibes,132.0
+Cannes,Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),132.0
+Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),Antibes,132.0
+Paris-Nord,Antibes,132.0
+Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),Albertville,115.0
+Paris-Nord,Albertville,115.0
+Massy-TGV,Moûtiers-Salins-Brides-les-Bains,118.0
+Paris-Gare-de-Lyon,Aime-La Plagne,118.0
+Épinal,Remiremont,7.5
+Arras,Douai,7.8
+Hendaye,Biarritz,8.0
+Irun,Biarritz,8.3
+Bayeux,Lison,8.4
+Avignon-Centre,Orange,8.5
+Metz-Ville,Thionville,8.5
+Guingamp,St-Brieuc,9.1
+Morlaix,Plouaret,9.1
+Beaune,Chalon-sur-Saône,9.0
+Bayeux,Caen,9.1
+Nurieux,Bellegarde,9.3
+Boulogne-Ville,Calais-Fréthun,9.6
+Cagnes-sur-Mer,Menton,9.6
+Avignon-TGV,Arles,9.8
+Mâcon-Loché-TGV,Bourg-en-Bresse,10.2
+Irun,Bayonne,10.6
+Pau,Lourdes,10.6
+La Roche-sur-Foron,Annecy,10.6
+Bonneville,St-Gervais-les-Bains-Le Fayet,10.9
+St-Péray,Montélimar,11.3
+Quimperlé,Quimper,11.9
+Cannes,Monaco-Monte-Carlo,11.9
+Cambrai,Valenciennes,11.9
+Guingamp,Lamballe,12.6
+Lunéville,St-Dié,12.6
+Neufchâteau,Toul,12.5
+Quimperlé,Auray,12.9
+Blois,St-Pierre-des-Corps,12.9
+St-Maixent (Deux-Sèvres),Poitiers,13.2
+Metz-Ville,Nancy-Ville,12.9
+Bayeux,Lisieux,14.8
+Cherbourg,Carentan,13.6
+Plouaret,St-Brieuc,13.5
+Castelnaudary,Toulouse-Matabiau,13.7
+Bourg-en-Bresse,Lons-le-Saunier,13.5
+Dax,Biarritz,14.2
+Arles,Orange,14.3
+Marseille-Blancarde,Toulon,14.8
+Perpignan,Narbonne,14.8
+Groisy-Thorens-la-Caille,Sallanches-Combloux-Megève,15.5
+Quimperlé,Vannes,16.0
+Toulon,Les Arcs-Draguignan,16.0
+Landry,Albertville,16.5
+Dax,St-Jean-de-Luz-Ciboure,16.5
+Narbonne,Sète,16.5
+Nancy-Ville,Épinal,17.0
+Avignon-TGV,Montélimar,17.5
+Nantes,Redon,17.5
+Rosporden,Auray,17.5
+Villeneuve-lès-Avignon,Sète,18.0
+Facture-Biganos,Libourne,17.5
+Nîmes,Orange,17.5
+Dole-Ville,Frasne,17.5
+Nîmes,Sète,17.5
+Arles,Marseille-Blancarde,18.0
+Mantes-la-Jolie,Rouen-Rive-Droite,18.5
+Nancy-Ville,Sarrebourg,18.5
+Pau,Morcenx,19.0
+St-Jean-de-Maurienne-Arvan,Aix-les-Bains-Le Revard,19.0
+Dax,Pau,19.0
+Marseille-St-Charles,Hyères,19.0
+Nancy-Ville,St-Dié,19.0
+Lyon-Part-Dieu,Bourg-en-Bresse,17.5
+Tours,Vendôme-Villiers-sur-Loir,19.0
+Tourcoing,Arras,19.0
+Mulhouse-Ville,Saverne,19.5
+Nice-Ville,Les Arcs-Draguignan,19.5
+Angers-St-Laud,Nantes,19.5
+Béziers,Perpignan,19.5
+Brest,Plouaret,20.0
+Arras,St-Omer,20.5
+Lépin-le-Lac-La Bauche,Albertville,20.5
+St-Péray,Orange,20.5
+Valence,Orange,20.5
+Rosporden,Vannes,21.0
+Metz-Ville,Bar-le-Duc,21.0
+Caen,Bernay,20.5
+Aix-en-Provence-TGV,Hyères,21.5
+Quimper,Auray,21.5
+Bellegarde,St-Gervais-les-Bains-Le Fayet,21.5
+Les Sables-d'Olonne,Nantes,22.0
+Angers-St-Laud,St-Pierre-des-Corps,22.5
+Besançon-Viotte,Belfort,23.0
+Ancenis,La Roche-sur-Yon,23.0
+Laroche-Migennes,Melun,23.0
+Montbard,Beaune,22.5
+Lépin-le-Lac-La Bauche,St-Gervais-les-Bains-Le Fayet,24.0
+Lépin-le-Lac-La Bauche,Sallanches-Combloux-Megève,24.0
+Agen,Toulouse-Matabiau,24.0
+Lyon-Perrache-Voyageurs,Annecy,24.5
+Dijon-Ville,Frasne,24.5
+Cannes,Toulon,24.5
+Marmande,Montauban-Ville-Bourbon,24.5
+Carcassonne,Sète,25.0
+Avignon-TGV,Valence,25.0
+St-Péray,Villeneuve-lès-Avignon,25.0
+Moûtiers-Salins-Brides-les-Bains,Bourg-en-Bresse,25.5
+Montpellier (CNM),Orange,25.5
+Lille-Flandres,Calais-Ville,26.0
+Douai,St-Jean-de-Luz-Ciboure,144.0
+Arras,St-Jean-de-Luz-Ciboure,144.0
+Irun,Arras,144.0
+Agen,Douai,144.0
+Marseille-St-Charles,Douai,144.0
+Lille-Flandres,Aix-en-Provence-TGV,144.0
+Nîmes,Arras,144.0
+Montpellier (CNM),Douai,144.0
+Nîmes,Douai,144.0
+St-Jean-de-Maurienne-Arvan,Morlaix,147.0
+Morlaix,Aime-La Plagne,147.0
+Brest,Sallanches-Combloux-Megève,147.0
+Morlaix,St-Michel-Valloire,147.0
+Brest,St-Avre-la-Chambre,147.0
+Chambéry-Challes-les-Eaux,Quimper,147.0
+La Roche-sur-Foron,Morlaix,147.0
+Morlaix,Annemasse,147.0
+Lille-Europe,Perpignan,150.0
+Lille-Europe,Sète,150.0
+Lille-Flandres,Perpignan,150.0
+Perpignan,Arras,150.0
+Douai,Narbonne,150.0
+Castelnaudary,Lille-Europe,150.0
+Lille-Europe,St-Raphaël-Valescure,155.0
+Lille-Europe,Les Arcs-Draguignan,155.0
+TGV Haute-Picardie,Antibes,155.0
+Lille-Flandres,La Souterraine,114.0
+Avignon-TGV,Montpellier (CNM),25.5
+Avignon-TGV,Béziers,43.0
+Pornichet,Lyon-St-Exupéry-TGV,113.0
+Paris-Montparnasse,St-Pierre-des-Corps,65.0
+Avignon-TGV,Lyon-Part-Dieu,51.0
+Massy-TGV,St-Pierre-des-Corps,65.0
+Paris-Gare-de-Lyon,Hyères,121.0
+Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),TGV Haute-Picardie,45.0
+Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),Douai,52.0
+Avignon-TGV,Lyon-St-Exupéry-TGV,51.0
+Les Aubrais-Orléans,Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),48.0
+Brive-la-Gaillarde,Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),101.0
+La Souterraine,Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),80.0
+Étaples-Le Touquet,Paris-Nord,66.0
+Chambéry-Challes-les-Eaux,Marne-la-Vallée-Chessy,103.0
+Avignon-TGV,Lyon-St-Exupéry-TGV,51.0
+Avignon-TGV,Lyon-Perrache-Voyageurs,51.0
+Lille-Europe,Besançon-Franche-Comté-TGV,120.0
+Mulhouse-Ville,Belfort-Montbéliard-TGV,16.5
+Besançon-Viotte,Colmar,46.0
+Strasbourg-Ville,Lons-le-Saunier,70.0
+Mulhouse-Ville,Valence-TGV,93.0
+Carcassonne,Mâcon-Ville,84.0
+Mâcon-Ville,Sète,81.0
+Montpellier (CNM),Chalon-sur-Saône,81.0
+Aix-en-Provence-TGV,Mâcon-Ville,81.0
+Marseille-St-Charles,Chalon-sur-Saône,87.0
+Dijon-Ville,St-Raphaël-Valescure,124.0
+Cannes,Chalon-sur-Saône,116.0
+Mâcon-Ville,St-Raphaël-Valescure,107.0
+Avignon-TGV,Culmont-Chalindrey,87.0
+Nîmes,Belfort-Montbéliard-TGV,119.0
+Montpellier (CNM),Besançon-Franche-Comté-TGV,111.0
+Marseille-St-Charles,Besançon-Franche-Comté-TGV,111.0
+Avignon-TGV,Belfort-Montbéliard-TGV,108.0
+Lyon-Part-Dieu,Belfort-Montbéliard-TGV,67.0
+Lyon-Part-Dieu,Besançon-Franche-Comté-TGV,51.0
+Nancy-Ville,Toulon,123.0
+Toul,St-Raphaël-Valescure,135.0
+Nancy-Ville,Valence-TGV,100.0
+Besançon-Viotte,Chalon-sur-Saône,30.0
+Mouchard,Marne-la-Vallée-Chessy,82.0
+Colmar,Lyon-Perrache-Voyageurs,85.0
+Colmar,Lyon-St-Exupéry-TGV,85.0
+Lille-Flandres,Belfort-Montbéliard-TGV,129.0
+Aix-en-Provence-TGV,Neufchâteau,98.0
+Massy-TGV,Arras,50.0
+Ancenis,Paris-Montparnasse,77.0
+La Rochelle-Ville,Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),89.0
+Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),Niort,84.0
+Marne-la-Vallée-Chessy,Niort,84.0
+St-Maixent (Deux-Sèvres),Marne-la-Vallée-Chessy,84.0
+St-Maixent (Deux-Sèvres),Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),84.0
+Massy-TGV,Vendôme-Villiers-sur-Loir,55.0
+Laval,Massy-Palaiseau-Grande-Ceinture,72.0
+Massy-Palaiseau-Grande-Ceinture,Rennes,80.0
+Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),Marmande,108.0
+Irun,Marne-la-Vallée-Chessy,112.0
+Dax,Marne-la-Vallée-Chessy,110.0
+Dax,Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),110.0
+Dax,Paris-Austerlitz,110.0
+Paris-Austerlitz,Montauban-Ville-Bourbon,109.0
+Mantes-la-Jolie,Valence-TGV,107.0
+Paris-Gare-de-Lyon,Agde,116.0
+Paris-Gare-de-Lyon,Sète,116.0
+Carcassonne,Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),116.0
+Paris-Nord,Narbonne,116.0
+Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),Perpignan,124.0
+Paris-Gare-de-Lyon,Les Arcs-Draguignan,132.0
+Marne-la-Vallée-Chessy,St-Raphaël-Valescure,132.0
+Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),Nice-Ville,132.0
+Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),St-Raphaël-Valescure,132.0
+Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),Les Arcs-Draguignan,132.0
+St-Maixent (Deux-Sèvres),Niort,7.6
+St-Nazaire,Savenay,7.8
+Bréauté-Beuzeville,Yvetot,7.9
+Béziers,Narbonne,8.2
+Le Croisic,St-Nazaire,8.7
+Landry,Moûtiers-Salins-Brides-les-Bains,9.2
+Groisy-Thorens-la-Caille,Bonneville,9.3
+Bonneville,Sallanches-Combloux-Megève,9.5
+Ancenis,Nantes,9.6
+Surgères,Niort,9.6
+Hazebrouck,Béthune,9.6
+Lorient,Auray,9.6
+Colmar,Mulhouse-Ville,9.8
+Annemasse,Bellegarde,10.5
+Rennes,Vitré,10.5
+Dijon-Ville,Beaune,10.3
+Arras,Béthune,10.6
+Pau,Orthez,10.7
+Bourg-St-Maurice,Moûtiers-Salins-Brides-les-Bains,11.0
+Arras,TGV Haute-Picardie,11.5
+Rethel,Charleville-Mézières,11.9
+Angers-St-Laud,Sablé,12.1
+Antibes,St-Raphaël-Valescure,12.1
+Hazebrouck,Lens,12.6
+Cannes,Menton,12.9
+Vannes,Redon,13.2
+Metz-Ville,Toul,12.9
+Guingamp,Morlaix,13.5
+Dol,Rennes,13.6
+Brest,Morlaix,13.7
+Bordeaux-St-Jean,Arcachon,13.7
+Arras,Valenciennes,14.2
+Chambéry-Challes-les-Eaux,Albertville,14.3
+Cluses,Annecy,14.6
+Saumur-Rive-Droite,Tours,14.7
+Limoges-Bénédictins,La Souterraine,14.7
+Annemasse,St-Gervais-les-Bains-Le Fayet,14.7
+Lorient,Quimper,14.8
+Avignon-TGV,Miramas,15.5
+Mouchard,Montbéliard,16.0
+Chambéry-Challes-les-Eaux,St-Jean-de-Maurienne-Arvan,15.5
+Lannion,St-Brieuc,16.0
+Mâcon-Ville,Lyon-Part-Dieu,16.5
+Dijon-Ville,Culmont-Chalindrey,16.5
+Lamballe,Rennes,17.5
+Niort,Poitiers,17.5
+Monaco-Monte-Carlo,St-Raphaël-Valescure,17.5
+Nantes,La Roche-sur-Yon,18.0
+Cluses,Bellegarde,17.5
+Bellegarde,Évian-les-Bains,17.5
+Lunéville,Saverne,17.5
+Culoz,Lyon-Part-Dieu,18.0
+Aix-en-Provence-TGV,Toulon,18.0
+Annecy,St-Gervais-les-Bains-Le Fayet,18.0
+Chambéry-Challes-les-Eaux,St-Michel-Valloire,18.5
+Culoz,Bourg-en-Bresse,18.5
+Évreux-Embranchement,Lisieux,18.5
+Bourg-St-Maurice,Albertville,18.5
+Biarritz,Morcenx,19.0
+Morcenx,St-Jean-de-Luz-Ciboure,19.0
+Marseille-Blancarde,Hyères,19.0
+Rives,Lyon-Part-Dieu,18.5
+Vendôme-Villiers-sur-Loir,St-Pierre-des-Corps,18.5
+Roubaix,Arras,18.0
+Montbard,Mouchard,20.0
+Menton,St-Raphaël-Valescure,19.5
+St-Maixent (Deux-Sèvres),Châtellerault,19.5
+Reims,Charleville-Mézières,19.5
+Carcassonne,Toulouse-Matabiau,19.5
+Niort,Futuroscope,20.0
+Dunkerque,Lens,20.5
+Ruffec,Châtellerault,21.0
+Lépin-le-Lac-La Bauche,Aime-La Plagne,21.0
+Lépin-le-Lac-La Bauche,Moûtiers-Salins-Brides-les-Bains,21.0
+Albertville,Bourg-en-Bresse,22.0
+Rennes,St-Brieuc,21.5
+Dunkerque,Lille-Flandres,21.5
+Monaco-Monte-Carlo,Les Arcs-Draguignan,22.0
+Strasbourg-Ville,Mulhouse-Ville,21.5
+Lille-Europe,TGV Haute-Picardie,22.5
+Lorient,Redon,22.5
+Dax,Facture-Biganos,22.5
+Reims,Sedan,22.5
+Redon,Vitré,23.0
+Chambéry-Challes-les-Eaux,Lyon-St-Exupéry-TGV,22.5
+Dunkerque,Arras,23.5
+Modane,Aix-les-Bains-Le Revard,23.5
+Bellegarde,Bourg-en-Bresse,24.0
+Chambéry-Challes-les-Eaux,Cluses,24.0
+Béziers,Castelnaudary,24.0
+Lamballe,Vitré,24.0
+Montbard,Pontarlier,24.5
+Culoz,Mâcon-Loché-TGV,24.5
+Lyon-Part-Dieu,Aix-les-Bains-Le Revard,24.5
+Avignon-TGV,St-Péray,25.0
+Avignon-Centre,Valence,25.0
+Calais-Ville,Lille-Europe,25.5
+Dijon-Ville,Mâcon-Loché-TGV,26.0
+Bayeux,Évreux-Embranchement,31.0
+Avignon-TGV,Nîmes,15.5
+Metz-Ville,Meuse-TGV,33.0
+Marne-la-Vallée-Chessy,Mantes-la-Jolie,35.0
+Conflans-Fin-d'Oise,Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),35.0
+Juvisy,Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),35.0
+Lyon-Part-Dieu,Montélimar,35.0
+Le Teil,Lyon-St-Exupéry-TGV,35.0
+Mantes-la-Jolie,Lisieux,37.0
+Mâcon-Loché-TGV,Valence-TGV,41.0
+Caen,Mantes-la-Jolie,42.0
+Nîmes,Valence-TGV,41.0
+Lyon-St-Exupéry-TGV,Orange,41.0
+Massy-TGV,Champagne-Ardenne-TGV,44.0
+Aix-en-Provence-TGV,Béziers,46.0
+Valence,Bellegarde,46.0
+Marne-la-Vallée-Chessy,Lisieux,51.0
+Marseille-St-Charles,Valence-TGV,48.0
+Marseille-St-Charles,Narbonne,49.0
+Champagne-Ardenne-TGV,Thionville,52.0
+Nîmes,Lyon-Part-Dieu,60.0
+Nîmes,Lyon-Perrache-Voyageurs,60.0
+Béziers,Valence-TGV,54.0
+Dunkerque,Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),66.0
+Toulon,Valence-TGV,57.0
+Avignon-TGV,Antibes,61.0
+Avignon-TGV,Chalon-sur-Saône,72.0
+Nîmes,Mâcon-Loché-TGV,62.0
+Lille-Flandres,Juvisy,63.0
+Lyon-Part-Dieu,Marseille-St-Charles,67.0
+Cherbourg,Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),70.0
+Cherbourg,Marne-la-Vallée-Chessy,70.0
+Paris-Austerlitz,Poitiers,75.0
+Lyon-Part-Dieu,Sète,70.0
+Lyon-St-Exupéry-TGV,Sète,70.0
+Lyon-St-Exupéry-TGV,Agde,70.0
+Lyon-Part-Dieu,Toulon,72.0
+Lyon-Part-Dieu,Narbonne,74.0
+Lyon-St-Exupéry-TGV,Narbonne,74.0
+Laroche-Migennes,Lyon-Part-Dieu,73.0
+Nancy-Ville,Paris-Est,77.0
+Metz-Ville,Paris-Est,77.0
+Lorraine-TGV,Marne-la-Vallée-Chessy,77.0
+Cannes,Valence-TGV,72.0
+Lyon-Part-Dieu,Perpignan,77.0
+Lyon-Perrache-Voyageurs,Perpignan,77.0
+Nîmes,Beaune,81.0
+Valence,St-Raphaël-Valescure,73.0
+Carcassonne,Lyon-Part-Dieu,79.0
+Mâcon-Ville,Les Arcs-Draguignan,81.0
+Dijon-Ville,Caen,86.0
+Valence-TGV,Sens,83.0
+TGV Haute-Picardie,St-Pierre-des-Corps,89.0
+Besançon-Viotte,Évreux-Embranchement,92.0
+Lyon-Part-Dieu,Nice-Ville,86.0
+Cannes,Lyon-Part-Dieu,86.0
+Lyon-Perrache-Voyageurs,Nice-Ville,86.0
+Cannes,Lyon-Perrache-Voyageurs,86.0
+Lyon-St-Exupéry-TGV,Nice-Ville,86.0
+Lyon-St-Exupéry-TGV,Antibes,86.0
+Rives,Marne-la-Vallée-Chessy,96.0
+Avignon-TGV,Neufchâteau,87.0
+Le Havre,Lyon-Perrache-Voyageurs,97.0
+Besançon-Viotte,Cherbourg,97.0
+Angers-St-Laud,Champagne-Ardenne-TGV,92.0
+Culoz,Paris-Nord,89.0
+Angers-St-Laud,Le Creusot-Montceau-Montchanin,95.0
+Agde,Beaune,84.0
+Le Mans,Arras,92.0
+Toulon,Beaune,87.0
+Lorraine-TGV,Douai,102.0
+Beaune,Narbonne,84.0
+Fontainebleau-Avon,Valence-TGV,93.0
+Mâcon-Loché-TGV,Nice-Ville,95.0
+Mâcon-Loché-TGV,Antibes,95.0
+Le Pouliguen,TGV Haute-Picardie,98.0
+Laval,Le Creusot-Montceau-Montchanin,100.0
+Angers-St-Laud,Lille-Europe,101.0
+Arras,St-Pierre-des-Corps,101.0
+Futuroscope,TGV Haute-Picardie,102.0
+Nîmes,Montbéliard,91.0
+Montpellier (CNM),Montbéliard,96.0
+Aix-en-Provence-TGV,Laroche-Migennes,95.0
+Marseille-St-Charles,Neufchâteau,98.0
+Lyon-Part-Dieu,TGV Haute-Picardie,106.0
+Nantes,Le Creusot-Montceau-Montchanin,107.0
+Avignon-TGV,Melun,103.0
+Lorraine-TGV,St-Pierre-des-Corps,106.0
+Lille-Europe,St-Nazaire,108.0
+Pornichet,Lille-Europe,108.0
+Tours,Valence-TGV,113.0
+Cannes,Beaune,116.0
+La Rochelle-Ville,TGV Haute-Picardie,112.0
+Angers-St-Laud,Lorraine-TGV,112.0
+Chambéry-Challes-les-Eaux,St-Pierre-des-Corps,114.0
+Lille-Flandres,Lyon-Part-Dieu,116.0
+Lille-Europe,Lyon-Perrache-Voyageurs,116.0
+Lyon-Perrache-Voyageurs,Douai,116.0
+Saumur-Rive-Droite,Valence-TGV,116.0
+Angers-St-Laud,Valence,116.0
+Marne-la-Vallée-Chessy,Bourg-St-Maurice,118.0
+Massy-TGV,Aime-La Plagne,118.0
+Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),Aime-La Plagne,118.0
+Massy-TGV,St-Avre-la-Chambre,109.0
+St-Avre-la-Chambre,Marne-la-Vallée-Chessy,109.0
+St-Avre-la-Chambre,Paris-Nord,109.0
+St-Jean-de-Maurienne-Arvan,Marne-la-Vallée-Chessy,111.0
+Modane,Paris-Gare-de-Lyon,113.0
+Marne-la-Vallée-Chessy,St-Michel-Valloire,113.0
+Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),St-Michel-Valloire,113.0
+Marne-la-Vallée-Chessy,Annecy,104.0
+Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),Bellegarde,91.0
+Paris-Gare-de-Lyon,Bourg-en-Bresse,84.0
+Paris-Gare-de-Lyon,Thonon-les-Bains,108.0
+Massy-TGV,Annemasse,108.0
+Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),Sallanches-Combloux-Megève,119.0
+Paris-Nord,St-Gervais-les-Bains-Le Fayet,119.0
+Massy-TGV,Le Creusot-Montceau-Montchanin,82.0
+Montbard,Paris-Gare-de-Lyon,57.0
+Paris-Gare-de-Lyon,Belfort-Montbéliard-TGV,97.0
+Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),Belfort-Montbéliard-TGV,97.0
+Paris-Gare-de-Lyon,Valence,103.0
+Marne-la-Vallée-Chessy,Valence,103.0
+Versailles-Chantiers,Valence,103.0
+Massy-Palaiseau-Grande-Ceinture,Valence,103.0
+Le Teil,Paris-Gare-de-Lyon,105.0
+Massy-TGV,Meuse-TGV,44.0
+Paris-Est,St-Dié,86.0
+Paris-Est,Thionville,83.0
+Paris-Est,Sedan,49.0
+Paris-Nord,Douai,52.0
+Meuse-TGV,Lunéville,33.0
+Lyon-St-Exupéry-TGV,Nantes,108.0
+Lyon-Part-Dieu,Châtellerault,96.0
+Lyon-St-Exupéry-TGV,Poitiers,96.0
+Lyon-St-Exupéry-TGV,St-Pierre-des-Corps,95.0
+Avignon-TGV,Marseille-St-Charles,30.0
+Avignon-TGV,Hyères,43.0
+Avignon-TGV,Les Arcs-Draguignan,50.0
+Avignon-TGV,St-Raphaël-Valescure,53.0
+Mâcon-Loché-TGV,Orange,51.0
+Meuse-TGV,Remiremont,46.0
+Meuse-TGV,Épinal,37.0
+Saverne,St-Pierre-des-Corps,127.0
+Poitiers,Saverne,137.0
+Angoulême,Saverne,146.0
+Mulhouse-Ville,École-Valentin,38.0
+Valence-TGV,École-Valentin,73.0
+Vendôme-Villiers-sur-Loir,Le Creusot-Montceau-Montchanin,89.0
+Vendôme-Villiers-sur-Loir,Lyon-St-Exupéry-TGV,95.0
+Chambéry-Challes-les-Eaux,Vendôme-Villiers-sur-Loir,114.0
+Vendôme-Villiers-sur-Loir,Marseille-St-Charles,125.0
+Vendôme-Villiers-sur-Loir,Douai,101.0
+Vendôme-Villiers-sur-Loir,Marne-la-Vallée-Chessy,65.0
+Vendôme-Villiers-sur-Loir,Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),65.0
+Nancy-Ville,Vendôme-Villiers-sur-Loir,106.0
+Lyon-St-Exupéry-TGV,Belfort-Montbéliard-TGV,67.0
+Champagne-Ardenne-TGV,Saverne,66.0
+Lille-Europe,École-Valentin,120.0
+Strasbourg-Ville,Moûtiers-Salins-Brides-les-Bains,117.0
+Strasbourg-Ville,Bourg-St-Maurice,117.0
+Colmar,Chambéry-Challes-les-Eaux,92.0
+Colmar,Bourg-St-Maurice,109.0
+Mulhouse-Ville,Aime-La Plagne,102.0
+Mulhouse-Ville,Landry,102.0
+Moûtiers-Salins-Brides-les-Bains,Belfort-Montbéliard-TGV,92.0
+Bourg-St-Maurice,Besançon-Franche-Comté-TGV,78.0
+Avignon-TGV,Rennes,142.0
+Lille-Flandres,Avignon-TGV,144.0
+Metz-Ville,Avignon-TGV,114.0
+Avignon-TGV,Belfort-Montbéliard-TGV,108.0
+Besançon-Viotte,Avignon-TGV,91.0
+Avignon-TGV,Lons-le-Saunier,75.0
+Avignon-TGV,Menton,62.0
+Landry,Massy-Palaiseau-Grande-Ceinture,118.0
+Massy-Palaiseau-Grande-Ceinture,Aime-La Plagne,118.0
+Versailles-Chantiers,Albertville,115.0
+Laval,St-Jean-de-Maurienne-Arvan,127.0
+Laval,St-Michel-Valloire,127.0
+Grenoble,Valence-TGV,24.5
+Aix-en-Provence-TGV,Chambéry-Challes-les-Eaux,89.0
+Besançon-Viotte,Moûtiers-Salins-Brides-les-Bains,78.0
+Besançon-Viotte,Bourg-St-Maurice,78.0
+Aime-La Plagne,École-Valentin,78.0
+Valence,Montauban-Ville-Bourbon,83.0
+Albertville,Laval,120.0
+Roubaix,Croix-Wasquehal,1.6
+Le Pouliguen,La Baule-Escoublac,1.6
+Cagnes-sur-Mer,Nice-Ville,3.9
+St-Jean-de-Maurienne-Arvan,St-Michel-Valloire,4.1
+Pornichet,St-Nazaire,4.7
+Cluses,Sallanches-Combloux-Megève,5.3
+Brest,Landerneau,5.5
+Quimperlé,Lorient,6.3
+Groisy-Thorens-la-Caille,La Roche-sur-Foron,7.3
+Le Havre,Bréauté-Beuzeville,7.9
+Grenoble,Lyon-Part-Dieu,26.0
+Grenoble,Lyon-Perrache-Voyageurs,26.0
+Nîmes,Montélimar,26.0
+Caen,Évreux-Embranchement,31.0
+Metz-Ville,Neufchâteau,25.5
+Saumur-Rive-Droite,Vendôme-Villiers-sur-Loir,27.0
+Nîmes,Narbonne,27.0
+Mâcon-Loché-TGV,Aix-les-Bains-Le Revard,27.5
+Annecy,Bourg-en-Bresse,28.5
+Dax,Tarbes,28.5
+Ruffec,Libourne,28.5
+Ancenis,Les Sables-d'Olonne,28.5
+Dax,Bordeaux-St-Jean,29.0
+Nantes,Rennes,30.0
+Nice-Ville,Toulon,29.0
+Nantes,Auray,30.0
+Aix-en-Provence-TGV,Les Arcs-Draguignan,30.0
+Groisy-Thorens-la-Caille,Bourg-en-Bresse,31.0
+Arles,St-Péray,31.0
+Angers-St-Laud,Pornichet,32.0
+Brest,Lamballe,32.0
+Lyon-St-Exupéry-TGV,Le Creusot-Montceau-Montchanin,33.0
+Quimper,Redon,33.0
+Le Teil,Montpellier (CNM),34.0
+Cherbourg,Lisieux,34.0
+Aix-en-Provence-TGV,St-Raphaël-Valescure,34.0
+Le Mans,Nantes,34.0
+Castelnaudary,Montpellier (CNM),34.0
+Massy-Palaiseau-Grande-Ceinture,Yvetot,35.0
+Bonneville,Bourg-en-Bresse,35.0
+Miramas,Valence,35.0
+Versailles-Chantiers,Yvetot,35.0
+Chalon-sur-Saône,Montbéliard,37.0
+Limoges-Bénédictins,Vierzon-Ville,36.0
+Bordeaux-St-Jean,Montauban-Ville-Bourbon,36.0
+Nîmes,Perpignan,37.0
+Dijon-Ville,Lyon-Perrache-Voyageurs,37.0
+Dijon-Ville,Lyon-Part-Dieu,37.0
+Bourg-en-Bresse,St-Gervais-les-Bains-Le Fayet,38.0
+Bordeaux-St-Jean,St-Jean-de-Luz-Ciboure,39.0
+Lyon-Perrache-Voyageurs,Thonon-les-Bains,39.0
+Angers-St-Laud,Vannes,39.0
+Morlaix,Vitré,39.0
+Pau,Bordeaux-St-Jean,40.0
+Mâcon-Loché-TGV,Bourg-St-Maurice,50.0
+Aix-en-Provence-TGV,Menton,43.0
+Lyon-Part-Dieu,Aime-La Plagne,44.0
+Agen,Narbonne,44.0
+Rives,Le Creusot-Montceau-Montchanin,44.0
+Hendaye,Libourne,45.0
+Modane,Lyon-Perrache-Voyageurs,45.0
+Angers-St-Laud,Lorient,45.0
+Le Mans,Le Croisic,45.0
+Mâcon-Loché-TGV,Neufchâteau,45.0
+Lyon-Part-Dieu,Bourg-St-Maurice,46.0
+Lyon-Part-Dieu,Montbéliard,46.0
+Quimper,Vitré,46.0
+Brive-la-Gaillarde,Vierzon-Ville,48.0
+Libourne,Tarbes,52.0
+Juvisy,La Souterraine,52.0
+Bordeaux-St-Jean,Carcassonne,53.0
+Metz-Ville,Chalon-sur-Saône,54.0
+Agen,Poitiers,58.0
+Limoges-Bénédictins,Juvisy,62.0
+Nancy-Ville,Lyon-Perrache-Voyageurs,63.0
+Nancy-Ville,Lyon-St-Exupéry-TGV,63.0
+Orthez,Poitiers,65.0
+Poitiers,Bayonne,65.0
+Poitiers,Montauban-Ville-Bourbon,66.0
+Futuroscope,Montauban-Ville-Bourbon,67.0
+Futuroscope,St-Jean-de-Luz-Ciboure,69.0
+Hendaye,Poitiers,69.0
+Biarritz,Châtellerault,69.0
+Morcenx,St-Pierre-des-Corps,70.0
+Brive-la-Gaillarde,Juvisy,72.0
+Hendaye,Châtellerault,73.0
+Châtellerault,Tarbes,73.0
+St-Pierre-des-Corps,Toulouse-Matabiau,80.0
+Aix-les-Bains-Le Revard,Antibes,105.0
+Lépin-le-Lac-La Bauche,Douai,125.0
+Montpellier (CNM),Montauban-Ville-Bourbon,47.0
+Chambéry-Challes-les-Eaux,Bourg-en-Bresse,24.5
+Carentan,Massy-Palaiseau-Grande-Ceinture,52.0
+Bayeux,Versailles-Chantiers,44.0
+Versailles-Chantiers,Évreux-Embranchement,17.0
+Mâcon-Loché-TGV,St-Michel-Valloire,40.0
+St-Jean-de-Maurienne-Arvan,Bourg-en-Bresse,38.0
+Poitiers,Futuroscope,2.9
+Vendôme,Massy-TGV,39.0
+Culoz,Valence-TGV,39.0
+Toulon,Montélimar,42.0
+Genève-Voyageurs,Avignon-TGV,66.0
+Vendôme,Libourne,66.0
+Culoz,Toulon,98.0
+Culoz,St-Raphaël-Valescure,98.0
+Forbach,Paris-Est,74.0
+Marseille-St-Charles,Aix-les-Bains-Le Revard,89.0
+Massy-TGV,Albertville,115.0
+Paris-Nord,Moûtiers-Salins-Brides-les-Bains,118.0
+Landry,Paris-Gare-de-Lyon,118.0
+Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),Bourg-St-Maurice,118.0
+Landry,Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),118.0
+Paris-Nord,Bourg-St-Maurice,118.0
+Massy-TGV,St-Jean-de-Maurienne-Arvan,111.0
+St-Jean-de-Maurienne-Arvan,Paris-Nord,111.0
+Annecy,Paris-Nord,104.0
+Paris-Gare-de-Lyon,Bellegarde,91.0
+Paris-Gare-de-Lyon,Évian-les-Bains,108.0
+Marne-la-Vallée-Chessy,Annemasse,108.0
+Cluses,Paris-Gare-de-Lyon,119.0
+Marne-la-Vallée-Chessy,St-Gervais-les-Bains-Le Fayet,119.0
+Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),St-Gervais-les-Bains-Le Fayet,119.0
+St-Étienne-Châteaucreux,Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),100.0
+Montbard,Mantes-la-Jolie,57.0
+Dole-Ville,Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),79.0
+Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),Valence,103.0
+Paris-Nord,Valence,103.0
+Paris-Gare-de-Lyon,Montélimar,105.0
+Le Teil,Paris-Nord,105.0
+Arles,Paris-Gare-de-Lyon,105.0
+Lunéville,Paris-Est,82.0
+Paris-Est,Bar-le-Duc,44.0
+Paris-Est,Remiremont,87.0
+Épinal,Paris-Est,85.0
+Rethel,Paris-Est,44.0
+Paris-Nord,Valenciennes,57.0
+Mâcon-Ville,Montauban-Ville-Bourbon,97.0
+Mâcon-Loché-TGV,Montauban-Ville-Bourbon,97.0
+Meuse-TGV,St-Dié,33.0
+Lyon-Part-Dieu,Nantes,108.0
+Lyon-Part-Dieu,Poitiers,96.0
+Lyon-Perrache-Voyageurs,Poitiers,96.0
+Lyon-Perrache-Voyageurs,Châtellerault,96.0
+Saumur-Rive-Droite,Lyon-St-Exupéry-TGV,96.0
+Lyon-St-Exupéry-TGV,Châtellerault,96.0
+Villeneuve-lès-Avignon,Marseille-Blancarde,30.0
+Avignon-TGV,Narbonne,46.0
+Avignon-TGV,Antibes,61.0
+Avignon-TGV,Nice-Ville,62.0
+Bordeaux-St-Jean,Marseille-St-Charles,107.0
+Massy-TGV,Saverne,85.0
+Saverne,Futuroscope,137.0
+Le Mans,Saverne,127.0
+Aix-en-Provence-TGV,École-Valentin,111.0
+Lyon-Part-Dieu,École-Valentin,51.0
+Vendôme-Villiers-sur-Loir,Lyon-Part-Dieu,95.0
+Vendôme-Villiers-sur-Loir,Lyon-Perrache-Voyageurs,95.0
+Vendôme-Villiers-sur-Loir,Valence,113.0
+Aix-en-Provence-TGV,Vendôme-Villiers-sur-Loir,125.0
+Avignon-TGV,Vendôme-Villiers-sur-Loir,125.0
+Vendôme-Villiers-sur-Loir,Nîmes,125.0
+Meuse-TGV,Vendôme-Villiers-sur-Loir,87.0
+Avignon-TGV,Perpignan,48.0
+Culmont-Chalindrey,Valence-TGV,77.0
+Colmar,Albertville,106.0
+Mulhouse-Ville,Albertville,98.0
+Aime-La Plagne,Belfort-Montbéliard-TGV,92.0
+Landry,Belfort-Montbéliard-TGV,92.0
+Landry,Besançon-Franche-Comté-TGV,78.0
+Avignon-TGV,École-Valentin,91.0
+Versailles-Chantiers,Moûtiers-Salins-Brides-les-Bains,118.0
+Versailles-Chantiers,Bourg-St-Maurice,118.0
+Versailles-Chantiers,Landry,118.0
+Massy-Palaiseau-Grande-Ceinture,Albertville,115.0
+Grenoble,Marseille-St-Charles,65.0
+Aix-en-Provence-TGV,Toul,117.0
+Landry,École-Valentin,78.0
+Bourg-St-Maurice,École-Valentin,78.0
+Bourg-St-Maurice,Laval,120.0
+Tourcoing,Roubaix,1.6
+La Teste,Arcachon,1.6
+Pornichet,La Baule-Escoublac,2.2
+Tourcoing,Croix-Wasquehal,2.7
+Pornichet,Le Pouliguen,3.0
+Monaco-Monte-Carlo,Menton,3.0
+Calais-Ville,Calais-Fréthun,3.1
+Cagnes-sur-Mer,Antibes,3.5
+Biarritz,St-Jean-de-Luz-Ciboure,4.3
+Hendaye,St-Jean-de-Luz-Ciboure,4.3
+Chambéry-Challes-les-Eaux,Aix-les-Bains-Le Revard,4.6
+Pornichet,Le Croisic,4.6
+Bonneville,Cluses,4.7
+Facture-Biganos,La Teste,5.1
+Modane,St-Michel-Valloire,5.3
+Béthune,Lens,5.8
+La Baule-Escoublac,St-Nazaire,6.0
+Charleville-Mézières,Sedan,6.3
+Lamballe,St-Brieuc,6.6
+Béziers,Agde,6.7
+Culoz,Aix-les-Bains-Le Revard,6.7
+St-Avre-la-Chambre,St-Michel-Valloire,6.7
+Bayonne,St-Jean-de-Luz-Ciboure,7.2
+Agde,Sète,7.5
+Guingamp,Plouaret,7.9
+Cluses,La Roche-sur-Foron,7.9
+Guingamp,Rennes,26.0
+Bar-le-Duc,Thionville,26.0
+Marseille-Blancarde,Les Arcs-Draguignan,27.0
+St-Brieuc,Vitré,27.0
+Aime-La Plagne,Bourg-en-Bresse,27.5
+Lyon-St-Exupéry-TGV,Annecy,28.5
+Bréauté-Beuzeville,Mantes-la-Jolie,28.5
+Rennes,Auray,28.5
+La Rochelle-Ville,Poitiers,28.5
+Lyon-Part-Dieu,Chalon-sur-Saône,27.5
+Villeneuve-lès-Avignon,Agde,29.0
+Valognes,Lisieux,30.0
+Rosporden,Redon,30.0
+La Rochelle-Ville,Futuroscope,30.0
+Montpellier (CNM),Perpignan,31.0
+St-Jean-de-Maurienne-Arvan,Mâcon-Loché-TGV,40.0
+Lyon-St-Exupéry-TGV,Beaune,31.0
+Ruffec,St-Pierre-des-Corps,31.0
+Guingamp,Vitré,32.0
+Le Havre,Mantes-la-Jolie,32.0
+Angers-St-Laud,La Baule-Escoublac,32.0
+Lille-Flandres,Boulogne-Ville,32.0
+Lyon-Perrache-Voyageurs,Annemasse,33.0
+Tours,Niort,34.0
+Bourg-en-Bresse,Thonon-les-Bains,34.0
+Évreux-Embranchement,Lison,35.0
+Cannes,Marseille-St-Charles,35.0
+Massy-TGV,Yvetot,35.0
+Cluses,Bourg-en-Bresse,36.0
+Plouaret,Vitré,36.0
+Chambéry-Challes-les-Eaux,Valence-TGV,36.0
+Le Teil,Marseille-Blancarde,36.0
+Marseille-St-Charles,Antibes,36.0
+Montélimar,Sète,37.0
+Villeneuve-lès-Avignon,Hyères,37.0
+Agen,Carcassonne,37.0
+St-Jean-de-Maurienne-Arvan,Lyon-Part-Dieu,37.0
+Tours,La Rochelle-Ville,38.0
+Aix-en-Provence-TGV,Cannes,38.0
+Bréauté-Beuzeville,Versailles-Chantiers,38.0
+Marseille-St-Charles,Nice-Ville,38.0
+Mâcon-Loché-TGV,Thonon-les-Bains,39.0
+Le Mans,Savenay,39.0
+Rennes,Rosporden,39.0
+Nancy-Ville,Is-sur-Tille,40.0
+Orthez,Libourne,40.0
+Mâcon-Loché-TGV,Évian-les-Bains,40.0
+Lyon-Perrache-Voyageurs,Évian-les-Bains,40.0
+Valognes,Évreux-Embranchement,41.0
+Cluses,Mâcon-Loché-TGV,40.0
+Bayonne,Libourne,41.0
+Irun,Bordeaux-St-Jean,41.0
+Landry,Mâcon-Loché-TGV,46.0
+Le Havre,Massy-Palaiseau-Grande-Ceinture,41.0
+Lyon-Part-Dieu,Moûtiers-Salins-Brides-les-Bains,41.0
+Montpellier (CNM),Toulouse-Matabiau,41.0
+Rennes,Quimper,42.0
+Brest,Rennes,42.0
+Laval,Lannion,42.0
+Bordeaux-St-Jean,Toulouse-Matabiau,41.0
+Carcassonne,Villeneuve-lès-Avignon,43.0
+Nantes,Quimper,43.0
+Mâcon-Loché-TGV,St-Gervais-les-Bains-Le Fayet,43.0
+Carentan,Mantes-la-Jolie,43.0
+Villeneuve-lès-Avignon,Perpignan,43.0
+St-Jean-de-Luz-Ciboure,Libourne,43.0
+Modane,Lyon-St-Exupéry-TGV,42.0
+Châteauroux,Juvisy,43.0
+Landerneau,Vitré,44.0
+Angoulême,Marmande,45.0
+Landry,Lyon-Part-Dieu,45.0
+Mâcon-Ville,Neufchâteau,45.0
+Le Pouliguen,St-Pierre-des-Corps,46.0
+Villeneuve-lès-Avignon,St-Raphaël-Valescure,46.0
+Guingamp,Nantes,46.0
+Lyon-St-Exupéry-TGV,Montbéliard,46.0
+Brest,Vitré,46.0
+Libourne,Toulouse-Matabiau,47.0
+Limoges-Bénédictins,Les Aubrais-Orléans,46.0
+Agen,Béziers,47.0
+Toul,Chalon-sur-Saône,47.0
+Laval,Rosporden,48.0
+Montbard,Montbéliard,48.0
+Facture-Biganos,Châtellerault,51.0
+Angoulême,Orthez,51.0
+Angoulême,Bayonne,52.0
+Mâcon-Ville,Toul,54.0
+Lyon-St-Exupéry-TGV,Neufchâteau,54.0
+Biarritz,Ruffec,55.0
+Ruffec,Bayonne,55.0
+Hendaye,Angoulême,57.0
+Angers-St-Laud,Massy-Palaiseau-Grande-Ceinture,57.0
+Futuroscope,Marmande,58.0
+Agen,Futuroscope,60.0
+Dax,Poitiers,60.0
+Avignon-TGV,Chambéry-Challes-les-Eaux,69.0
+Angoulême,Lourdes,61.0
+Dax,Futuroscope,61.0
+Metz-Ville,Mâcon-Loché-TGV,62.0
+Angoulême,Tarbes,63.0
+Avignon-TGV,Le Mans,125.0
+Grenoble,TGV Haute-Picardie,119.0
+Moûtiers-Salins-Brides-les-Bains,TGV Haute-Picardie,119.0
+Bourg-St-Maurice,TGV Haute-Picardie,119.0
+TGV Haute-Picardie,Albertville,119.0
+St-Jean-de-Maurienne-Arvan,TGV Haute-Picardie,119.0
+La Roche-sur-Foron,TGV Haute-Picardie,119.0
+Chambéry-Challes-les-Eaux,Rouen-Rive-Droite,121.0
+Le Mans,Bourg-St-Maurice,120.0
+Le Mans,Albertville,120.0
+Le Mans,Modane,120.0
+Le Mans,St-Michel-Valloire,120.0
+Le Mans,St-Avre-la-Chambre,120.0
+Angers-St-Laud,Chambéry-Challes-les-Eaux,120.0
+Angers-St-Laud,Cluses,120.0
+Angers-St-Laud,Albertville,120.0
+Angers-St-Laud,St-Avre-la-Chambre,120.0
+Le Mans,Annemasse,120.0
+Lille-Flandres,Lamballe,119.0
+Dijon-Ville,Agen,122.0
+Cannes,Neufchâteau,124.0
+Neufchâteau,St-Raphaël-Valescure,124.0
+Guingamp,TGV Haute-Picardie,120.0
+Morlaix,TGV Haute-Picardie,120.0
+Bayeux,Chambéry-Challes-les-Eaux,125.0
+Lison,Moûtiers-Salins-Brides-les-Bains,125.0
+Bayeux,Moûtiers-Salins-Brides-les-Bains,125.0
+Cherbourg,Aime-La Plagne,125.0
+Carentan,Aime-La Plagne,125.0
+Valognes,Landry,125.0
+Valognes,Aime-La Plagne,125.0
+Carentan,Albertville,125.0
+Évreux-Embranchement,Aime-La Plagne,125.0
+Évreux-Embranchement,Bourg-St-Maurice,125.0
+Avignon-TGV,Tours,125.0
+Annecy,Rennes,124.0
+Lille-Flandres,Bellegarde,127.0
+Arras,Bellegarde,127.0
+Lille-Flandres,Valence-TGV,127.0
+Arras,Rosporden,125.0
+Grenoble,Nantes,125.0
+Grenoble,Lille-Europe,127.0
+Lille-Europe,Sallanches-Combloux-Megève,127.0
+Arras,Albertville,127.0
+Lille-Flandres,Albertville,127.0
+Moûtiers-Salins-Brides-les-Bains,Douai,127.0
+Cluses,Arras,127.0
+Arras,St-Michel-Valloire,127.0
+Lille-Flandres,St-Gervais-les-Bains-Le Fayet,127.0
+St-Jean-de-Maurienne-Arvan,Douai,127.0
+Douai,Sallanches-Combloux-Megève,127.0
+Dunkerque,St-Avre-la-Chambre,127.0
+Dunkerque,Aix-les-Bains-Le Revard,127.0
+Lille-Flandres,Aix-les-Bains-Le Revard,127.0
+La Roche-sur-Foron,Arras,127.0
+Cluses,Nantes,127.0
+Grenoble,Rennes,127.0
+Marseille-St-Charles,Rouen-Rive-Droite,129.0
+Cluses,Rennes,132.0
+Rennes,St-Gervais-les-Bains-Le Fayet,132.0
+Annemasse,Rennes,132.0
+Angers-St-Laud,Aix-en-Provence-TGV,133.0
+St-Avre-la-Chambre,Rennes,132.0
+Brest,Lyon-Part-Dieu,133.0
+Brest,Lyon-Perrache-Voyageurs,133.0
+Lyon-Part-Dieu,Morlaix,133.0
+Lyon-Perrache-Voyageurs,Morlaix,133.0
+Aix-en-Provence-TGV,TGV Haute-Picardie,136.0
+St-Brieuc,St-Gervais-les-Bains-Le Fayet,137.0
+St-Brieuc,Sallanches-Combloux-Megève,137.0
+Guingamp,Annecy,137.0
+Guingamp,St-Jean-de-Maurienne-Arvan,137.0
+Lorient,Moûtiers-Salins-Brides-les-Bains,137.0
+Modane,Guingamp,137.0
+Modane,Vannes,137.0
+Bourg-St-Maurice,Vannes,137.0
+Landry,Vannes,137.0
+Modane,Lorient,137.0
+Vannes,St-Gervais-les-Bains-Le Fayet,137.0
+Lorient,Albertville,137.0
+St-Avre-la-Chambre,Lorient,137.0
+Bourg-St-Maurice,Auray,137.0
+Albertville,Auray,137.0
+St-Avre-la-Chambre,Auray,137.0
+Vannes,Sallanches-Combloux-Megève,137.0
+Guingamp,Aime-La Plagne,137.0
+Cluses,Auray,137.0
+Aime-La Plagne,Auray,137.0
+St-Jean-de-Maurienne-Arvan,Lorient,137.0
+Vannes,St-Michel-Valloire,137.0
+Chambéry-Challes-les-Eaux,Redon,137.0
+Lorient,Annemasse,137.0
+Redon,Sallanches-Combloux-Megève,137.0
+St-Avre-la-Chambre,Redon,137.0
+Lorient,Aix-les-Bains-Le Revard,137.0
+Auray,St-Michel-Valloire,137.0
+Avignon-TGV,Arras,144.0
+Nîmes,Nantes,142.0
+Dax,Lille-Europe,144.0
+Lille-Europe,Montauban-Ville-Bourbon,144.0
+Quimperlé,Rosporden,7.9
+Boulogne-Ville,Étaples-Le Touquet,8.0
+Montpellier (CNM),Sète,8.4
+Modane,St-Jean-de-Maurienne-Arvan,8.5
+Annemasse,Thonon-les-Bains,8.9
+Dole-Ville,Mouchard,9.2
+Arles,Miramas,9.6
+Arles,Villeneuve-lès-Avignon,9.8
+Douai,Valenciennes,10.0
+Bordeaux-St-Jean,Libourne,10.2
+Cannes,St-Raphaël-Valescure,10.2
+Modane,St-Avre-la-Chambre,10.5
+Lille-Europe,Lens,10.6
+Annecy,Aix-les-Bains-Le Revard,10.6
+Annemasse,Évian-les-Bains,10.6
+Strasbourg-Ville,Sélestat,10.7
+La Roche-sur-Foron,Sallanches-Combloux-Megève,10.8
+Cluses,Annemasse,11.0
+Moûtiers-Salins-Brides-les-Bains,Albertville,11.0
+Strasbourg-Ville,Saverne,10.9
+Frasne,Mouchard,10.8
+St-Péray,Le Teil,11.3
+Valence,Montélimar,11.3
+Lunéville,Sarrebourg,11.4
+Caen,Lisieux,11.9
+Groisy-Thorens-la-Caille,Cluses,11.9
+La Roche-sur-Foron,St-Gervais-les-Bains-Le Fayet,11.9
+Le Mans,Sablé,12.1
+Cambrai,Arras,12.9
+Groisy-Thorens-la-Caille,Aix-les-Bains-Le Revard,13.2
+Bordeaux-St-Jean,La Teste,13.2
+Hazebrouck,Lille-Europe,13.2
+Tours,Blois,13.5
+Caen,Lison,13.5
+Lille-Flandres,Arras,13.7
+St-Étienne-Châteaucreux,Lyon-Part-Dieu,13.7
+St-Étienne-Châteaucreux,Lyon-Perrache-Voyageurs,13.7
+Annemasse,Sallanches-Combloux-Megève,13.7
+Pau,Tarbes,13.7
+Chambéry-Challes-les-Eaux,St-Avre-la-Chambre,13.7
+Mouchard,Pontarlier,14.2
+Bellegarde,Thonon-les-Bains,15.0
+Nice-Ville,St-Raphaël-Valescure,15.0
+Étaples-Le Touquet,Calais-Fréthun,15.5
+Rennes,Redon,16.0
+Marseille-St-Charles,Toulon,16.0
+Agen,Montauban-Ville-Bourbon,16.5
+Caen,Carentan,16.5
+Redon,Auray,16.5
+Béziers,Montpellier (CNM),17.0
+Mâcon-Ville,Lyon-Perrache-Voyageurs,16.5
+Avignon-TGV,Le Teil,17.5
+Avignon-TGV,Sète,18.0
+Besançon-Viotte,Lons-le-Saunier,17.5
+Lyon-Perrache-Voyageurs,Mâcon-Loché-TGV,18.5
+Morcenx,Bayonne,19.0
+Arles,Marseille-St-Charles,19.0
+Lyon-St-Exupéry-TGV,Mâcon-Loché-TGV,19.0
+Le Havre,Rouen-Rive-Droite,19.5
+Morlaix,St-Brieuc,19.5
+St-Maixent (Deux-Sèvres),La Rochelle-Ville,20.0
+Nîmes,Agde,20.5
+Guingamp,Landerneau,21.0
+Villeneuve-lès-Avignon,Montpellier (CNM),21.0
+Nancy-Ville,Remiremont,21.0
+Cluses,Aix-les-Bains-Le Revard,21.5
+Caen,Valognes,22.0
+Chambéry-Challes-les-Eaux,Moûtiers-Salins-Brides-les-Bains,22.0
+Nancy-Ville,Saverne,21.5
+Lille-Flandres,TGV Haute-Picardie,22.5
+Lamballe,Morlaix,22.5
+Niort,Châtellerault,23.5
+Surgères,Poitiers,24.0
+Arles,Le Teil,24.0
+Arles,Montélimar,24.0
+Tours,Les Aubrais-Orléans,24.0
+Moûtiers-Salins-Brides-les-Bains,Aix-les-Bains-Le Revard,24.0
+Juvisy,Les Aubrais-Orléans,24.0
+Juvisy,Les Aubrais-Orléans,24.0
+Avignon-TGV,Marseille-Blancarde,24.5
+Lourdes,Morcenx,25.0
+Dax,Lourdes,25.0
+Chambéry-Challes-les-Eaux,Aime-La Plagne,25.0
+Rennes,Vannes,25.5
+Quimperlé,Redon,26.0
+St-Brieuc,Landerneau,26.0
+Bayeux,Bernay,26.0
+Lyon-St-Exupéry-TGV,Aix-les-Bains-Le Revard,25.5
+Saumur-Rive-Droite,Nantes,26.5
+Nantes,Vannes,27.0
+Nantes,Sablé,27.0
+Dijon-Ville,Pontarlier,26.5
+Châteauroux,Les Aubrais-Orléans,27.0
+Besançon-Viotte,Bourg-en-Bresse,26.5
+Landry,Bourg-en-Bresse,28.5
+Massy-TGV,Rouen-Rive-Droite,27.5
+Massy-Palaiseau-Grande-Ceinture,Rouen-Rive-Droite,27.5
+Bréauté-Beuzeville,Mantes-la-Jolie,28.5
+Lyon-Perrache-Voyageurs,Chalon-sur-Saône,27.5
+Strasbourg-Ville,Nancy-Ville,27.5
+Lille-Europe,Mouchard,113.0
+Annecy,St-Raphaël-Valescure,101.0
+Cannes,Annecy,105.0
+Annecy,Nice-Ville,108.0
+Avignon-TGV,Annecy,77.0
+Marne-la-Vallée-Chessy,Montpellier (CNM),114.0
+Aix-en-Provence-TGV,Marne-la-Vallée-Chessy,116.0
+Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),Marseille-St-Charles,116.0
+Massy-TGV,Marseille-St-Charles,116.0
+Aix-en-Provence-TGV,Massy-TGV,116.0
+Versailles-Chantiers,Marseille-St-Charles,116.0
+Aix-en-Provence-TGV,Paris-Nord,116.0
+Avignon-TGV,Marne-la-Vallée-Chessy,116.0
+Avignon-TGV,Mantes-la-Jolie,116.0
+Lyon-Part-Dieu,Paris-Gare-de-Lyon,97.0
+Lyon-Perrache-Voyageurs,Paris-Gare-de-Lyon,97.0
+Lyon-St-Exupéry-TGV,Paris-Gare-de-Lyon,97.0
+Lyon-St-Exupéry-TGV,Mantes-la-Jolie,97.0
+Lyon-Perrache-Voyageurs,Paris-Nord,97.0
+Grenoble,Paris-Gare-de-Lyon,108.0
+Massy-TGV,Grenoble,108.0
+Besançon-Viotte,Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),83.0
+Besançon-Viotte,Mantes-la-Jolie,83.0
+Mulhouse-Ville,Paris-Gare-de-Lyon,114.0
+Évreux-Embranchement,Montbard,75.0
+Rouen-Rive-Droite,Yvetot,10.5
+Le Teil,Narbonne,45.0
+Le Havre,Meuse-TGV,60.0
+Champagne-Ardenne-TGV,Rouen-Rive-Droite,53.0
+Strasbourg-Ville,Rouen-Rive-Droite,106.0
+Conflans-Fin-d'Oise,Meuse-TGV,44.0
+Strasbourg-Ville,Meuse-TGV,60.0
+Strasbourg-Ville,Arras,132.0
+Strasbourg-Ville,Montpellier (CNM),123.0
+Mulhouse-Ville,Marseille-St-Charles,124.0
+Colmar,Avignon-TGV,114.0
+Mulhouse-Ville,Avignon-TGV,114.0
+Strasbourg-Ville,Lyon-Part-Dieu,87.0
+Marseille-St-Charles,Belfort-Montbéliard-TGV,124.0
+Nîmes,Neufchâteau,85.0
+Metz-Ville,Montpellier (CNM),124.0
+Strasbourg-Ville,Lyon-St-Exupéry-TGV,87.0
+Paris-Est,Sarrebourg,85.0
+Montpellier (CNM),Toul,93.0
+Metz-Ville,Lyon-Part-Dieu,88.0
+Thionville,Colmar,47.0
+Thionville,Lyon-St-Exupéry-TGV,94.0
+Beaune,Les Arcs-Draguignan,91.0
+Toul,Culmont-Chalindrey,30.0
+Nancy-Ville,Toulouse-Matabiau,127.0
+Culmont-Chalindrey,Antibes,124.0
+Thionville,Chalon-sur-Saône,83.0
+Toul,Sète,103.0
+Toul,Béziers,103.0
+Toul,Carcassonne,110.0
+Neufchâteau,Agde,99.0
+Neufchâteau,Narbonne,103.0
+Neufchâteau,Carcassonne,106.0
+Culmont-Chalindrey,Sète,94.0
+Bourg-en-Bresse,Versailles-Chantiers,84.0
+St-Avre-la-Chambre,Versailles-Chantiers,109.0
+St-Jean-de-Maurienne-Arvan,Versailles-Chantiers,111.0
+Nîmes,Paris-Montparnasse,114.0
+St-Michel-Valloire,Massy-Palaiseau-Grande-Ceinture,113.0
+Sète,Massy-TGV,116.0
+Aix-les-Bains-Le Revard,Massy-Palaiseau-Grande-Ceinture,103.0
+Massy-TGV,Vitré,72.0
+Paris-Austerlitz,Laval,72.0
+Paris-Austerlitz,Brest,92.0
+Paris-Austerlitz,Rosporden,95.0
+Paris-Austerlitz,St-Malo,85.0
+Paris-Austerlitz,Nantes,85.0
+Paris-Austerlitz,La Roche-sur-Yon,83.0
+Paris-Austerlitz,Niort,84.0
+Paris-Austerlitz,St-Maixent (Deux-Sèvres),84.0
+Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),Poitiers,75.0
+Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),Futuroscope,75.0
+Laval,TGV Haute-Picardie,88.0
+Laval,Lille-Europe,97.0
+Poitiers,TGV Haute-Picardie,102.0
+TGV Haute-Picardie,Quimper,106.0
+Lille-Europe,Rennes,108.0
+Arras,Rennes,108.0
+Rennes,Douai,108.0
+Douai,Redon,108.0
+Douai,St-Malo,110.0
+Lille-Europe,Lorient,114.0
+TGV Haute-Picardie,Libourne,119.0
+Lorraine-TGV,Nantes,121.0
+Marseille-St-Charles,St-Pierre-des-Corps,125.0
+Le Mans,Aix-en-Provence-TGV,125.0
+Le Mans,Nîmes,125.0
+Quimperlé,Lille-Europe,125.0
+Poitiers,Paris-Montparnasse,75.0
+Angoulême,Paris-Montparnasse,87.0
+Paris-Montparnasse,Libourne,96.0
+Bordeaux-St-Jean,Massy-TGV,96.0
+Angoulême,Massy-TGV,87.0
+Massy-TGV,Futuroscope,75.0
+La Rochelle-Ville,Paris-Montparnasse,89.0
+Les Arcs-Draguignan,St-Raphaël-Valescure,8.2
+Cagnes-sur-Mer,Monaco-Monte-Carlo,8.4
+Avignon-TGV,Orange,8.5
+Carentan,Valognes,8.5
+Cambrai,Douai,8.7
+Poitiers,Châtellerault,9.2
+Culoz,Bellegarde,9.3
+Lille-Flandres,Douai,9.6
+Cannes,Nice-Ville,9.8
+Nancy-Ville,Toul,10.1
+Bordeaux-St-Jean,Facture-Biganos,10.6
+Dunkerque,Hazebrouck,10.7
+Morlaix,Landerneau,10.8
+Angers-St-Laud,Saumur-Rive-Droite,11.3
+Le Teil,Valence,11.3
+Besançon-Viotte,Mouchard,11.4
+Dijon-Ville,Dole-Ville,11.9
+Béziers,Sète,12.1
+Le Teil,Orange,12.6
+Agde,Narbonne,12.6
+Chambéry-Challes-les-Eaux,Annecy,12.6
+Lorient,Vannes,12.6
+Nîmes,Montpellier (CNM),13.2
+Montpellier (CNM),Agde,13.2
+Béthune,St-Omer,13.2
+Montauban-Ville-Bourbon,Toulouse-Matabiau,13.2
+Mâcon-Ville,Chalon-sur-Saône,12.9
+Valognes,Lison,13.2
+Les Aubrais-Orléans,Blois,13.7
+Lille-Europe,Arras,13.7
+Culoz,Annecy,14.2
+Nantes,St-Nazaire,14.6
+Aime-La Plagne,Albertville,14.6
+Cannes,Les Arcs-Draguignan,14.6
+Fontainebleau-Avon,Sens,14.8
+Ruffec,Poitiers,14.8
+Colmar,Saverne,15.5
+Dijon-Ville,Chalon-sur-Saône,15.0
+Nancy-Ville,Neufchâteau,15.0
+Plouaret,Landerneau,16.0
+Hazebrouck,Arras,16.0
+Dunkerque,Béthune,16.0
+Lens,St-Omer,16.0
+Groisy-Thorens-la-Caille,St-Gervais-les-Bains-Le Fayet,16.5
+Antibes,Les Arcs-Draguignan,16.5
+Pornichet,Nantes,17.0
+Dijon-Ville,Montbard,16.5
+Mâcon-Ville,Lyon-St-Exupéry-TGV,16.5
+Annecy,Sallanches-Combloux-Megève,17.5
+TGV Haute-Picardie,Douai,17.5
+Lamballe,Plouaret,18.0
+La Roche-sur-Foron,Aix-les-Bains-Le Revard,18.0
+Croix-Wasquehal,Arras,17.5
+Lyon-Part-Dieu,Mâcon-Loché-TGV,18.5
+Mantes-la-Jolie,Rouen-Rive-Droite,18.5
+La Baule-Escoublac,Nantes,18.5
+Béziers,Carcassonne,18.5
+Facture-Biganos,Morcenx,18.0
+Dax,Hendaye,19.5
+Dole-Ville,Pontarlier,19.5
+Le Croisic,Nantes,20.5
+Lannion,Lamballe,20.5
+Arcachon,Libourne,20.5
+Miramas,Orange,20.5
+Modane,Chambéry-Challes-les-Eaux,21.0
+Lépin-le-Lac-La Bauche,Bourg-St-Maurice,21.0
+Limoges-Bénédictins,Brive-la-Gaillarde,21.0
+Ancenis,Sablé,21.5
+Aix-les-Bains-Le Revard,Bourg-en-Bresse,22.0
+Dunkerque,Lille-Europe,21.5
+Mâcon-Loché-TGV,Le Creusot-Montceau-Montchanin,23.0
+Fontainebleau-Avon,Laroche-Migennes,23.0
+Menton,Les Arcs-Draguignan,23.5
+Dole-Ville,Montbard,23.5
+Toulon,Monaco-Monte-Carlo,35.0
+Toulon,Menton,35.0
+Lyon-Part-Dieu,Mouchard,24.5
+Lyon-Part-Dieu,Annecy,24.5
+Aix-les-Bains-Le Revard,Sallanches-Combloux-Megève,24.5
+Quimper,Vannes,24.5
+Mantes-la-Jolie,Yvetot,24.5
+Mantes-la-Jolie,Yvetot,24.5
+Lyon-Perrache-Voyageurs,Aix-les-Bains-Le Revard,25.0
+Avignon-TGV,Valence,25.0
+Cherbourg,Bayeux,25.0
+Lille-Europe,Calais-Fréthun,26.0
+Nîmes,Le Teil,26.0
+Marseille-St-Charles,Les Arcs-Draguignan,26.0
+Agen,Bordeaux-St-Jean,26.0
+Chambéry-Challes-les-Eaux,Lyon-Part-Dieu,26.0
+Perpignan,Sète,26.5
+Chambéry-Challes-les-Eaux,Landry,27.0
+Dunkerque,Douai,27.0
+Lyon-Part-Dieu,Bellegarde,27.0
+Lyon-Perrache-Voyageurs,Bellegarde,27.0
+Lyon-St-Exupéry-TGV,Bellegarde,27.0
+Chambéry-Challes-les-Eaux,Bourg-St-Maurice,28.5
+Surgères,Châtellerault,28.5
+Dax,Châtellerault,63.0
+Biarritz,Poitiers,66.0
+Poitiers,St-Jean-de-Luz-Ciboure,67.0
+Bayonne,Châtellerault,68.0
+Marmande,St-Pierre-des-Corps,69.0
+Poitiers,Toulouse-Matabiau,72.0
+Lourdes,Châtellerault,73.0
+Pau,St-Pierre-des-Corps,78.0
+Lépin-le-Lac-La Bauche,Rouen-Rive-Droite,121.0
+Agen,Beaune,105.0
+Lépin-le-Lac-La Bauche,Lille-Europe,125.0
+Carcassonne,Montauban-Ville-Bourbon,28.5
+Carcassonne,Perpignan,25.0
+Modane,Bourg-en-Bresse,38.0
+Mâcon-Ville,Albertville,37.0
+Mâcon-Ville,Landry,46.0
+Avignon-TGV,Miramas,15.5
+Avignon-TGV,Chambéry-Challes-les-Eaux,69.0
+Lison,Massy-Palaiseau-Grande-Ceinture,52.0
+Cherbourg,Massy-Palaiseau-Grande-Ceinture,52.0
+Versailles-Chantiers,Bernay,24.0
+Lyon-St-Exupéry-TGV,Toul,63.0
+Vendôme,St-Pierre-des-Corps,18.5
+Dunkerque,TGV Haute-Picardie,29.0
+Lyon-St-Exupéry-TGV,Albertville,35.0
+Le Creusot-Montceau-Montchanin,Montélimar,49.0
+Genève-Voyageurs,Valence,49.0
+Vendôme-Villiers-sur-Loir,Libourne,66.0
+Culoz,Cannes,98.0
+Annecy,Toulon,88.0
+Cannes,Aix-les-Bains-Le Revard,100.0
+Montpellier (CNM),Paris-Gare-de-Lyon,114.0
+Nîmes,Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),114.0
+Nîmes,Paris-Nord,114.0
+Montpellier (CNM),Paris-Montparnasse,114.0
+Marseille-St-Charles,Mantes-la-Jolie,116.0
+Massy-Palaiseau-Grande-Ceinture,Marseille-St-Charles,116.0
+Aix-en-Provence-TGV,Massy-Palaiseau-Grande-Ceinture,116.0
+Aix-en-Provence-TGV,Mantes-la-Jolie,116.0
+Mantes-la-Jolie,Marseille-St-Charles,116.0
+Marseille-St-Charles,Paris-Nord,116.0
+Avignon-TGV,Versailles-Chantiers,116.0
+Avignon-TGV,Massy-Palaiseau-Grande-Ceinture,116.0
+Avignon-TGV,Marne-la-Vallée-Chessy,116.0
+Avignon-TGV,Massy-TGV,116.0
+Avignon-TGV,Versailles-Chantiers,116.0
+Avignon-TGV,Mantes-la-Jolie,116.0
+Massy-TGV,Lyon-Part-Dieu,97.0
+Versailles-Chantiers,Lyon-Part-Dieu,97.0
+Lyon-Part-Dieu,Massy-Palaiseau-Grande-Ceinture,97.0
+Lyon-Perrache-Voyageurs,Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),97.0
+Lyon-Perrache-Voyageurs,Massy-Palaiseau-Grande-Ceinture,97.0
+Lyon-Perrache-Voyageurs,Mantes-la-Jolie,97.0
+Lyon-St-Exupéry-TGV,Mantes-la-Jolie,97.0
+Lyon-St-Exupéry-TGV,Massy-Palaiseau-Grande-Ceinture,97.0
+Dijon-Ville,Marne-la-Vallée-Chessy,67.0
+Marne-la-Vallée-Chessy,Besançon-Franche-Comté-TGV,83.0
+Mulhouse-Ville,Marne-la-Vallée-Chessy,114.0
+Mulhouse-Ville,Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),114.0
+Vendôme-Villiers-sur-Loir,Niort,42.0
+Caen,Mantes-la-Jolie,42.0
+Marseille-St-Charles,Toulouse-Matabiau,69.0
+Mâcon-Loché-TGV,Chalon-sur-Saône,15.5
+Dole-Ville,Belfort,30.0
+Strasbourg-Ville,Montbéliard,31.0
+Béziers,Le Teil,42.0
+Le Teil,Perpignan,52.0
+Avignon-TGV,Toulouse-Matabiau,53.0
+Nancy-Ville,Mâcon-Loché-TGV,54.0
+Lorraine-TGV,Rouen-Rive-Droite,85.0
+Strasbourg-Ville,Massy-TGV,107.0
+Strasbourg-Ville,Laval,141.0
+Strasbourg-Ville,Nantes,146.0
+Dijon-Ville,Colmar,57.0
+Strasbourg-Ville,Mâcon-Ville,78.0
+Strasbourg-Ville,Besançon-Franche-Comté-TGV,57.0
+Strasbourg-Ville,Nîmes,119.0
+Strasbourg-Ville,Marseille-St-Charles,124.0
+Strasbourg-Ville,Avignon-TGV,114.0
+Metz-Ville,Nîmes,120.0
+Paris-Est,Sélestat,112.0
+Paris-Est,Saverne,85.0
+Metz-Ville,Colmar,46.0
+Metz-Ville,Besançon-Franche-Comté-TGV,62.0
+Thionville,Besançon-Franche-Comté-TGV,68.0
+Thionville,Valence-TGV,115.0
+Thionville,Marseille-St-Charles,131.0
+Thionville,Montpellier (CNM),131.0
+Nancy-Ville,Béziers,118.0
+Culmont-Chalindrey,St-Raphaël-Valescure,124.0
+Neufchâteau,Sète,99.0
+Culmont-Chalindrey,Carcassonne,101.0
+Nancy-Ville,Sète,118.0
+Culmont-Chalindrey,Montpellier (CNM),84.0
+Agde,Carcassonne,20.5
+Massy-Palaiseau-Grande-Ceinture,St-Malo,85.0
+Mâcon-Loché-TGV,Versailles-Chantiers,83.0
+Annecy,Versailles-Chantiers,104.0
+Aix-les-Bains-Le Revard,Versailles-Chantiers,103.0
+Hendaye,Lille-Europe,144.0
+Lille-Flandres,Hendaye,144.0
+Biarritz,TGV Haute-Picardie,144.0
+Douai,Montauban-Ville-Bourbon,144.0
+Aix-en-Provence-TGV,Arras,144.0
+Lille-Flandres,Montpellier (CNM),144.0
+Aix-en-Provence-TGV,Douai,144.0
+Brest,St-Jean-de-Maurienne-Arvan,147.0
+Brest,Cluses,147.0
+Brest,St-Gervais-les-Bains-Le Fayet,147.0
+Brest,St-Michel-Valloire,147.0
+Brest,Aime-La Plagne,147.0
+Brest,Albertville,147.0
+Morlaix,Sallanches-Combloux-Megève,147.0
+Morlaix,Albertville,147.0
+Brest,Annemasse,147.0
+Brest,Annecy,147.0
+St-Avre-la-Chambre,Morlaix,147.0
+Landry,Morlaix,147.0
+Morlaix,Aix-les-Bains-Le Revard,147.0
+Annemasse,Quimper,147.0
+Lille-Europe,Narbonne,150.0
+Béziers,Lille-Europe,150.0
+Lille-Europe,Toulouse-Matabiau,150.0
+TGV Haute-Picardie,Toulouse-Matabiau,150.0
+Béziers,TGV Haute-Picardie,150.0
+Lille-Flandres,Carcassonne,150.0
+Perpignan,Douai,150.0
+Béziers,Arras,150.0
+Béziers,Douai,150.0
+Lille-Flandres,Sète,150.0
+Agde,Douai,150.0
+Lille-Europe,Toulon,155.0
+Lille-Flandres,St-Raphaël-Valescure,155.0
+Lille-Flandres,Nice-Ville,155.0
+Lille-Flandres,Cannes,155.0
+Toulon,Douai,155.0
+Lille-Flandres,Brive-la-Gaillarde,130.0
+Fontainebleau-Avon,Lyon-St-Exupéry-TGV,81.0
+Agen,Lyon-St-Exupéry-TGV,103.0
+Lyon-St-Exupéry-TGV,Melun,81.0
+Lyon-Part-Dieu,Valence-TGV,30.0
+Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),Toulon,121.0
+Marne-la-Vallée-Chessy,TGV Haute-Picardie,45.0
+Limoges-Bénédictins,Marne-la-Vallée-Chessy,88.0
+Juvisy,Lille-Europe,63.0
+Rang-du-Fliers-Verton,Paris-Nord,66.0
+Chambéry-Challes-les-Eaux,Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),103.0
+Avignon-TGV,Lyon-Perrache-Voyageurs,51.0
+Dijon-Ville,Paris-Bercy,65.0
+Chambéry-Challes-les-Eaux,Paris-Nord,103.0
+Marne-la-Vallée-Chessy,Aix-les-Bains-Le Revard,103.0
+Paris-Gare-de-Lyon,Chalon-sur-Saône,77.0
+Mulhouse-Ville,Besançon-Franche-Comté-TGV,38.0
+Dijon-Ville,Besançon-Franche-Comté-TGV,24.5
+Belfort-Montbéliard-TGV,Besançon-Franche-Comté-TGV,25.5
+Mulhouse-Ville,Mâcon-Ville,65.0
+Strasbourg-Ville,Belfort-Montbéliard-TGV,41.0
+Colmar,Belfort-Montbéliard-TGV,27.5
+Colmar,Besançon-Franche-Comté-TGV,46.0
+Colmar,Lyon-Part-Dieu,85.0
+Mulhouse-Ville,Lyon-Part-Dieu,78.0
+Besançon-Franche-Comté-TGV,Chalon-sur-Saône,30.0
+Mâcon-Ville,Belfort-Montbéliard-TGV,55.0
+Dijon-Ville,Béziers,101.0
+Dijon-Ville,Montpellier (CNM),91.0
+Dijon-Ville,Perpignan,107.0
+Nîmes,Chalon-sur-Saône,81.0
+Chalon-sur-Saône,Sète,81.0
+Dijon-Ville,Avignon-TGV,81.0
+Mâcon-Ville,Cannes,107.0
+Mâcon-Ville,Nice-Ville,107.0
+Chalon-sur-Saône,St-Raphaël-Valescure,116.0
+Toulon,Chalon-sur-Saône,87.0
+Avignon-TGV,Chalon-sur-Saône,72.0
+Avignon-TGV,Mâcon-Ville,65.0
+Mâcon-Ville,Valence-TGV,44.0
+Nîmes,Besançon-Franche-Comté-TGV,105.0
+Besançon-Viotte,Marseille-St-Charles,111.0
+Aix-en-Provence-TGV,Nancy-Ville,117.0
+Marseille-St-Charles,Toul,117.0
+Toulon,Toul,123.0
+Cannes,Toul,135.0
+Nice-Ville,Toul,135.0
+Besançon-Viotte,Lille-Flandres,120.0
+Besançon-Viotte,Mâcon-Ville,41.0
+Mouchard,Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),82.0
+Mulhouse-Ville,Lyon-Perrache-Voyageurs,78.0
+Lille-Flandres,Besançon-Franche-Comté-TGV,120.0
+Mâcon-Ville,Agde,81.0
+Nancy-Ville,Marne-la-Vallée-Chessy,77.0
+Champagne-Ardenne-TGV,Nancy-Ville,42.0
+Mulhouse-Ville,Champagne-Ardenne-TGV,86.0
+Mâcon-Loché-TGV,Montélimar,48.0
+Bordeaux-St-Jean,Nancy-Ville,141.0
+Dijon-Ville,Montauban-Ville-Bourbon,122.0
+Le Mans,Massy-Palaiseau-Grande-Ceinture,60.0
+Le Mans,Marne-la-Vallée-Chessy,60.0
+Lamballe,Marne-la-Vallée-Chessy,84.0
+Marne-la-Vallée-Chessy,St-Brieuc,84.0
+Marseille-Blancarde,Orange,29.0
+Marseille-St-Charles,Orange,29.0
+Le Teil,Miramas,30.0
+Landry,Aix-les-Bains-Le Revard,30.0
+Angers-St-Laud,St-Nazaire,30.0
+Belfort,Mouchard,30.0
+Chambéry-Challes-les-Eaux,Mâcon-Loché-TGV,30.0
+St-Maixent (Deux-Sèvres),St-Pierre-des-Corps,30.0
+Modane,Mâcon-Loché-TGV,40.0
+Plouaret,Rennes,31.0
+Facture-Biganos,Bayonne,31.0
+Marseille-Blancarde,St-Raphaël-Valescure,31.0
+Lyon-Perrache-Voyageurs,Beaune,31.0
+Culmont-Chalindrey,Chalon-sur-Saône,31.0
+Biarritz,Facture-Biganos,32.0
+Boulogne-Ville,Lille-Europe,32.0
+Béziers,Toulouse-Matabiau,32.0
+Lyon-St-Exupéry-TGV,Annemasse,33.0
+La Rochelle-Ville,Châtellerault,34.0
+Mâcon-Loché-TGV,Annecy,34.0
+Bordeaux-St-Jean,Ruffec,34.0
+Villeneuve-lès-Avignon,Toulon,35.0
+Morlaix,Rennes,35.0
+Dijon-Ville,Montbéliard,34.0
+Mâcon-Loché-TGV,Annemasse,35.0
+Bordeaux-St-Jean,Orthez,35.0
+Bourg-en-Bresse,Évian-les-Bains,35.0
+Villeneuve-lès-Avignon,Narbonne,36.0
+Juvisy,Vierzon-Ville,35.0
+Culmont-Chalindrey,Mâcon-Ville,35.0
+Marseille-Blancarde,Antibes,37.0
+Carentan,Évreux-Embranchement,37.0
+Carcassonne,Nîmes,36.0
+Dijon-Ville,Belfort,37.0
+St-Jean-de-Maurienne-Arvan,Lyon-Perrache-Voyageurs,37.0
+Mâcon-Loché-TGV,Moûtiers-Salins-Brides-les-Bains,40.0
+Sablé,La Roche-sur-Yon,38.0
+Bourg-en-Bresse,Sallanches-Combloux-Megève,38.0
+Surgères,St-Pierre-des-Corps,38.0
+Pornichet,Sablé,38.0
+Toulon,Orange,38.0
+Bréauté-Beuzeville,Massy-Palaiseau-Grande-Ceinture,38.0
+Étaples-Le Touquet,Lille-Europe,38.0
+La Baule-Escoublac,Sablé,38.0
+Le Pouliguen,Sablé,39.0
+Lyon-Part-Dieu,Thonon-les-Bains,39.0
+Metz-Ville,Culmont-Chalindrey,38.0
+Mâcon-Loché-TGV,Aime-La Plagne,42.0
+Rang-du-Fliers-Verton,Lille-Europe,39.0
+Brive-la-Gaillarde,Châteauroux,40.0
+Angers-St-Laud,Rennes,41.0
+Angers-St-Laud,Auray,41.0
+Le Mans,La Roche-sur-Yon,41.0
+Béziers,Montauban-Ville-Bourbon,41.0
+Le Mans,St-Nazaire,42.0
+Valognes,Bernay,41.0
+Mâcon-Ville,Montbéliard,43.0
+Cherbourg,Bernay,44.0
+Le Mans,Pornichet,44.0
+Colmar,Mouchard,44.0
+Agen,Angoulême,45.0
+Bordeaux-St-Jean,Lourdes,45.0
+St-Péray,Agde,45.0
+Angoulême,Morcenx,46.0
+Valognes,Mantes-la-Jolie,46.0
+Culmont-Chalindrey,Lyon-Part-Dieu,48.0
+Nancy-Ville,Chalon-sur-Saône,48.0
+Grenoble,Le Creusot-Montceau-Montchanin,51.0
+Morlaix,Nantes,52.0
+Angoulême,Biarritz,53.0
+Villeneuve-lès-Avignon,Toulouse-Matabiau,53.0
+Angoulême,St-Jean-de-Luz-Ciboure,54.0
+Nancy-Ville,Mâcon-Ville,54.0
+Lyon-Part-Dieu,Neufchâteau,54.0
+Poitiers,Marmande,58.0
+Brive-la-Gaillarde,Les Aubrais-Orléans,57.0
+Angoulême,Toulouse-Matabiau,60.0
+Morcenx,Poitiers,60.0
+Brest,Nantes,60.0
+Bordeaux-St-Jean,Narbonne,61.0
+Pau,Poitiers,69.0
+Irun,Poitiers,69.0
+Hendaye,Futuroscope,70.0
+Châtellerault,St-Jean-de-Luz-Ciboure,70.0
+Mouchard,Marseille-St-Charles,70.0
+Bordeaux-St-Jean,Montpellier (CNM),72.0
+Futuroscope,Toulouse-Matabiau,73.0
+Bordeaux-St-Jean,Nîmes,76.0
+Orthez,St-Pierre-des-Corps,78.0
+St-Pierre-des-Corps,Tarbes,84.0
+Montauban-Ville-Bourbon,Narbonne,36.0
+La Teste,Libourne,20.5
+Mâcon-Ville,Aime-La Plagne,42.0
+Avignon-TGV,Montélimar,17.5
+Avignon-TGV,Arles,9.8
+Valognes,Massy-Palaiseau-Grande-Ceinture,52.0
+Angers-St-Laud,Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),73.0
+Massy-TGV,Nantes,85.0
+Marne-la-Vallée-Chessy,Nantes,85.0
+Marne-la-Vallée-Chessy,St-Nazaire,86.0
+Pornichet,Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),87.0
+Massy-TGV,Le Croisic,87.0
+Le Pouliguen,Marne-la-Vallée-Chessy,87.0
+Le Pouliguen,Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),87.0
+Massy-TGV,La Rochelle-Ville,89.0
+Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),Rennes,80.0
+Massy-TGV,Guingamp,88.0
+Marne-la-Vallée-Chessy,Vannes,88.0
+Orthez,Paris-Montparnasse,112.0
+Dax,Massy-TGV,110.0
+Paris-Montparnasse,Tarbes,118.0
+Lyon-Perrache-Voyageurs,Rennes,108.0
+Saumur-Rive-Droite,Lyon-Perrache-Voyageurs,96.0
+Laval,Lyon-Part-Dieu,96.0
+Le Mans,Rennes,31.0
+Angoulême,Facture-Biganos,33.0
+Tours,Angoulême,38.0
+Bordeaux-St-Jean,Futuroscope,43.0
+Laval,Morlaix,44.0
+Facture-Biganos,Poitiers,47.0
+Libourne,St-Pierre-des-Corps,50.0
+Laval,Brest,51.0
+Bordeaux-St-Jean,St-Pierre-des-Corps,53.0
+Le Mans,Morlaix,54.0
+Châtellerault,Toulouse-Matabiau,72.0
+St-Jean-de-Luz-Ciboure,St-Pierre-des-Corps,80.0
+Agen,Ruffec,43.0
+Strasbourg-Ville,Rennes,146.0
+Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),St-Malo,85.0
+Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),Morlaix,91.0
+Brest,Massy-TGV,92.0
+Brest,Marne-la-Vallée-Chessy,92.0
+Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),Rosporden,95.0
+Massy-TGV,Quimper,95.0
+Massy-TGV,Quimperlé,95.0
+Marne-la-Vallée-Chessy,Futuroscope,79.0
+Massy-TGV,Ruffec,93.0
+Champagne-Ardenne-TGV,Futuroscope,97.0
+Poitiers,TGV Haute-Picardie,104.0
+Angoulême,Champagne-Ardenne-TGV,106.0
+TGV Haute-Picardie,St-Malo,106.0
+Quimperlé,TGV Haute-Picardie,106.0
+Rosporden,TGV Haute-Picardie,106.0
+Arras,Rennes,113.0
+Lille-Europe,St-Malo,116.0
+Lille-Flandres,St-Malo,116.0
+Lille-Europe,Auray,122.0
+Angoulême,Arras,120.0
+Marseille-St-Charles,St-Pierre-des-Corps,125.0
+Le Mans,Aix-en-Provence-TGV,125.0
+Lille-Flandres,Libourne,130.0
+Douai,Libourne,130.0
+Rennes,Valence-TGV,139.0
+Bordeaux-St-Jean,Lorraine-TGV,150.0
+Marseille-St-Charles,Rennes,148.0
+Nîmes,Rennes,148.0
+Bordeaux-St-Jean,Paris-Montparnasse,111.0
+Poitiers,Paris-Montparnasse,79.0
+Niort,Paris-Montparnasse,90.0
+Paris-Montparnasse,Bayonne,123.0
+Marne-la-Vallée-Chessy,St-Nazaire,88.0
+Le Croisic,Paris-Montparnasse,88.0
+La Baule-Escoublac,Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),88.0
+Le Pouliguen,Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),88.0
+Le Croisic,Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),88.0
+Surgères,Paris-Montparnasse,94.0
+Massy-TGV,Surgères,94.0
+Laval,Marne-la-Vallée-Chessy,78.0
+Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),Redon,94.0
+Lorient,Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),100.0
+Lorient,Marne-la-Vallée-Chessy,100.0
+Massy-TGV,Vannes,97.0
+Juvisy,Marne-la-Vallée-Chessy,35.0
+Champagne-Ardenne-TGV,Meuse-TGV,23.5
+Massy-TGV,Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),35.0
+Mantes-la-Jolie,Massy-Palaiseau-Grande-Ceinture,35.0
+Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),Massy-Palaiseau-Grande-Ceinture,35.0
+Mantes-la-Jolie,Lisieux,37.0
+Aix-en-Provence-TGV,Sète,37.0
+Mâcon-Loché-TGV,Valence,41.0
+Paris-Est,Reims,44.0
+Champagne-Ardenne-TGV,Marne-la-Vallée-Chessy,44.0
+Nîmes,Valence,41.0
+Lyon-Perrache-Voyageurs,Orange,41.0
+Avignon-TGV,Béziers,43.0
+Montpellier (CNM),Valence,45.0
+Béziers,Marseille-St-Charles,46.0
+Valence,Chalon-sur-Saône,48.0
+Avignon-TGV,St-Raphaël-Valescure,53.0
+Béziers,Valence,54.0
+Tours,Paris-Montparnasse,65.0
+Lyon-St-Exupéry-TGV,Miramas,58.0
+Toulon,Valence,57.0
+Aix-en-Provence-TGV,Carcassonne,58.0
+Lyon-Perrache-Voyageurs,Montpellier (CNM),65.0
+Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),St-Pierre-des-Corps,65.0
+Lyon-St-Exupéry-TGV,Chalon-sur-Saône,27.5
+Grenoble,Lyon-St-Exupéry-TGV,27.5
+Miramas,Montélimar,29.0
+Lamballe,Landerneau,30.0
+Annemasse,Bourg-en-Bresse,30.0
+Marseille-St-Charles,St-Raphaël-Valescure,30.0
+Dijon-Ville,Neufchâteau,29.0
+Bourg-St-Maurice,Aix-les-Bains-Le Revard,31.0
+Lyon-Part-Dieu,Beaune,31.0
+Vannes,Vitré,31.0
+Mâcon-Loché-TGV,Albertville,37.0
+Béziers,Villeneuve-lès-Avignon,32.0
+La Roche-sur-Foron,Bourg-en-Bresse,32.0
+Le Havre,Mantes-la-Jolie,32.0
+Angers-St-Laud,Le Pouliguen,33.0
+Lyon-Part-Dieu,Le Creusot-Montceau-Montchanin,33.0
+Lyon-Perrache-Voyageurs,Le Creusot-Montceau-Montchanin,33.0
+Lannion,Rennes,33.0
+Niort,St-Pierre-des-Corps,34.0
+Angers-St-Laud,Le Croisic,34.0
+Metz-Ville,Châlons-en-Champagne,33.0
+Facture-Biganos,St-Jean-de-Luz-Ciboure,34.0
+Dax,Libourne,35.0
+Lorient,Nantes,35.0
+Pau,Facture-Biganos,35.0
+Hendaye,Facture-Biganos,36.0
+Nantes,St-Pierre-des-Corps,36.0
+Bordeaux-St-Jean,Bayonne,36.0
+Lyon-Part-Dieu,Albertville,36.0
+Grenoble,Mâcon-Loché-TGV,36.0
+Marseille-Blancarde,Montélimar,36.0
+Le Teil,Sète,37.0
+Lyon-Perrache-Voyageurs,Montbéliard,37.0
+Carentan,Bernay,37.0
+Biarritz,Bordeaux-St-Jean,37.0
+St-Jean-de-Maurienne-Arvan,Lyon-St-Exupéry-TGV,37.0
+Tours,Surgères,38.0
+Lorient,Vitré,38.0
+Les Aubrais-Orléans,La Souterraine,38.0
+Bourg-en-Bresse,Montbéliard,39.0
+Le Croisic,Sablé,39.0
+Le Teil,Agde,39.0
+Agde,Montélimar,39.0
+Rennes,Landerneau,40.0
+Facture-Biganos,Lourdes,40.0
+Dijon-Ville,Toul,40.0
+Dijon-Ville,Nancy-Ville,40.0
+Biarritz,Libourne,42.0
+Mulhouse-Ville,Mouchard,42.0
+St-Péray,Sète,42.0
+Nantes,St-Brieuc,42.0
+Villeneuve-lès-Avignon,Les Arcs-Draguignan,43.0
+Carentan,Mantes-la-Jolie,43.0
+St-Nazaire,St-Pierre-des-Corps,43.0
+Châteauroux,Juvisy,43.0
+Cherbourg,Évreux-Embranchement,44.0
+Le Mans,La Baule-Escoublac,44.0
+Le Teil,Toulon,44.0
+Pau,Libourne,44.0
+Quimperlé,Vitré,45.0
+Landry,Lyon-St-Exupéry-TGV,45.0
+Aix-en-Provence-TGV,Monaco-Monte-Carlo,43.0
+La Baule-Escoublac,St-Pierre-des-Corps,45.0
+Dax,Angoulême,46.0
+Valognes,Mantes-la-Jolie,46.0
+Bellegarde,Le Creusot-Montceau-Montchanin,45.0
+Le Croisic,St-Pierre-des-Corps,47.0
+Bordeaux-St-Jean,Tarbes,47.0
+Belfort,Montbard,50.0
+Le Teil,Le Creusot-Montceau-Montchanin,51.0
+Arcachon,Châtellerault,52.0
+Angers-St-Laud,St-Brieuc,53.0
+Angoulême,Montauban-Ville-Bourbon,53.0
+Angers-St-Laud,Quimper,53.0
+Pau,Angoulême,55.0
+Angers-St-Laud,Guingamp,57.0
+Irun,Angoulême,57.0
+Angers-St-Laud,Morlaix,63.0
+Orthez,Futuroscope,66.0
+Agen,St-Pierre-des-Corps,69.0
+Aix-en-Provence-TGV,Aix-les-Bains-Le Revard,89.0
+Irun,Futuroscope,70.0
+Dax,St-Pierre-des-Corps,70.0
+Angers-St-Laud,Brest,74.0
+Poitiers,Tarbes,73.0
+Bayonne,St-Pierre-des-Corps,75.0
+Aix-en-Provence-TGV,Annecy,91.0
+Biarritz,St-Pierre-des-Corps,76.0
+Le Havre,Lépin-le-Lac-La Bauche,121.0
+Perpignan,Toulouse-Matabiau,37.0
+Mâcon-Ville,Moûtiers-Salins-Brides-les-Bains,40.0
+Chambéry-Challes-les-Eaux,Mâcon-Ville,30.0
+Versailles-Chantiers,Valognes,52.0
+Bayeux,Massy-Palaiseau-Grande-Ceinture,44.0
+Évreux-Embranchement,Bernay,13.2
+Massy-Palaiseau-Grande-Ceinture,Lisieux,27.0
+Versailles-Chantiers,Lisieux,27.0
+Modane,Versailles-Chantiers,113.0
+St-Avre-la-Chambre,Massy-Palaiseau-Grande-Ceinture,109.0
+St-Jean-de-Maurienne-Arvan,Massy-Palaiseau-Grande-Ceinture,111.0
+Béziers,Massy-TGV,116.0
+Valence-TGV,Hyères,58.0
+Massy-TGV,Les Sables-d'Olonne,85.0
+Paris-Austerlitz,Rennes,80.0
+Paris-Austerlitz,Lamballe,84.0
+Paris-Austerlitz,St-Brieuc,84.0
+Paris-Austerlitz,Morlaix,91.0
+Paris-Austerlitz,Auray,91.0
+Paris-Austerlitz,Lorient,91.0
+Paris-Austerlitz,Les Sables-d'Olonne,85.0
+Paris-Austerlitz,La Baule-Escoublac,87.0
+Paris-Austerlitz,Le Pouliguen,87.0
+Paris-Austerlitz,Arcachon,102.0
+Paris-Austerlitz,Châtellerault,75.0
+Paris-Austerlitz,Futuroscope,75.0
+Paris-Austerlitz,Irun,112.0
+Marne-la-Vallée-Chessy,Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),35.0
+Champagne-Ardenne-TGV,Poitiers,93.0
+Bordeaux-St-Jean,Marne-la-Vallée-Chessy,96.0
+Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),Libourne,96.0
+TGV Haute-Picardie,Vannes,106.0
+TGV Haute-Picardie,Auray,106.0
+Quimperlé,TGV Haute-Picardie,106.0
+Rosporden,TGV Haute-Picardie,106.0
+Lille-Flandres,Rennes,108.0
+Lille-Europe,Redon,108.0
+Arras,Redon,108.0
+Lille-Europe,St-Malo,110.0
+Lorraine-TGV,Poitiers,112.0
+Lorraine-TGV,Futuroscope,112.0
+Lorient,Arras,114.0
+Arras,Auray,114.0
+Angoulême,Arras,119.0
+Montpellier (CNM),St-Pierre-des-Corps,125.0
+Nîmes,St-Pierre-des-Corps,125.0
+Lille-Flandres,Bordeaux-St-Jean,130.0
+Bordeaux-St-Jean,Douai,130.0
+Douai,Libourne,130.0
+Rennes,Valence-TGV,132.0
+Massy-TGV,Libourne,96.0
+Paris-Montparnasse,Sablé,67.0
+Paris-Montparnasse,La Roche-sur-Yon,83.0
+Les Sables-d'Olonne,Paris-Montparnasse,85.0
+Paris-Montparnasse,Vannes,88.0
+Pau,Paris-Montparnasse,112.0
+Massy-TGV,Sablé,67.0
+Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),St-Nazaire,86.0
+Le Croisic,Paris-Montparnasse,87.0
+Pornichet,Paris-Montparnasse,87.0
+Massy-TGV,La Baule-Escoublac,87.0
+Massy-TGV,Pornichet,87.0
+Le Croisic,Marne-la-Vallée-Chessy,87.0
+Le Croisic,Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),87.0
+Laval,Marne-la-Vallée-Chessy,72.0
+Massy-TGV,St-Brieuc,84.0
+Massy-TGV,Lamballe,84.0
+Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),Vannes,88.0
+Biarritz,Paris-Montparnasse,112.0
+Hendaye,Paris-Montparnasse,112.0
+Paris-Montparnasse,St-Jean-de-Luz-Ciboure,112.0
+Massy-TGV,Bayonne,112.0
+Hendaye,Massy-TGV,112.0
+Massy-TGV,Toulouse-Matabiau,109.0
+Le Mans,Lyon-Part-Dieu,95.0
+Le Mans,Lyon-Perrache-Voyageurs,95.0
+Lyon-Part-Dieu,St-Pierre-des-Corps,95.0
+Poitiers,St-Pierre-des-Corps,21.0
+Angoulême,Poitiers,23.5
+Angoulême,Futuroscope,25.0
+Laval,Dol,26.5
+Angoulême,Bordeaux-St-Jean,27.0
+Laval,Lamballe,30.0
+Vendôme-Villiers-sur-Loir,Poitiers,32.0
+Laval,Plouaret,40.0
+Le Mans,St-Malo,41.0
+Rosporden,Vitré,44.0
+Le Mans,Guingamp,47.0
+Le Mans,Auray,49.0
+Hendaye,Ruffec,55.0
+Agen,Châtellerault,58.0
+Arcachon,St-Pierre-des-Corps,61.0
+Pau,Futuroscope,70.0
+Hendaye,St-Pierre-des-Corps,79.0
+Angoulême,La Teste,36.0
+La Teste,St-Pierre-des-Corps,61.0
+Ruffec,Montauban-Ville-Bourbon,52.0
+Paris-Montparnasse,Auray,91.0
+Lannion,Paris-Montparnasse,91.0
+Massy-TGV,Dol,85.0
+Massy-TGV,St-Malo,85.0
+Paris-Montparnasse,Landerneau,92.0
+Marne-la-Vallée-Chessy,Rosporden,95.0
+Rennes,TGV Haute-Picardie,106.0
+Marne-la-Vallée-Chessy,Libourne,99.0
+Lille-Flandres,Rennes,113.0
+Lille-Europe,Redon,113.0
+Arras,Redon,113.0
+Agen,Paris-Austerlitz,108.0
+Biarritz,Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),112.0
+Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),St-Jean-de-Luz-Ciboure,112.0
+Hendaye,Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),112.0
+Pau,Paris-Austerlitz,112.0
+Orthez,Paris-Austerlitz,112.0
+Morcenx,Paris-Montparnasse,110.0
+Paris-Austerlitz,Tarbes,118.0
+Marne-la-Vallée-Chessy,Agde,116.0
+Marne-la-Vallée-Chessy,Sète,116.0
+Béziers,Paris-Montparnasse,116.0
+Marne-la-Vallée-Chessy,Narbonne,116.0
+Carcassonne,Marne-la-Vallée-Chessy,116.0
+Paris-Gare-de-Lyon,St-Raphaël-Valescure,132.0
+Marne-la-Vallée-Chessy,Les Arcs-Draguignan,132.0
+Marne-la-Vallée-Chessy,Antibes,132.0
+Nice-Ville,Paris-Nord,132.0
+Paris-Gare-de-Lyon,Bourg-St-Maurice,118.0
+St-Avre-la-Chambre,Paris-Gare-de-Lyon,109.0
+St-Jean-de-Maurienne-Arvan,Paris-Gare-de-Lyon,111.0
+St-Jean-de-Maurienne-Arvan,Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),111.0
+Modane,Marne-la-Vallée-Chessy,113.0
+Modane,Paris-Nord,113.0
+Paris-Nord,St-Michel-Valloire,113.0
+Marne-la-Vallée-Chessy,Bellegarde,91.0
+Paris-Nord,Bellegarde,91.0
+Paris-Nord,Bourg-en-Bresse,84.0
+Paris-Gare-de-Lyon,St-Gervais-les-Bains-Le Fayet,119.0
+Cluses,Marne-la-Vallée-Chessy,119.0
+Cluses,Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),119.0
+Paris-Nord,Sallanches-Combloux-Megève,119.0
+Paris-Nord,Le Creusot-Montceau-Montchanin,82.0
+Mâcon-Loché-TGV,Paris-Gare-de-Lyon,83.0
+Mâcon-Ville,Paris-Gare-de-Lyon,83.0
+Mâcon-Loché-TGV,Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),83.0
+Mâcon-Loché-TGV,Paris-Nord,83.0
+St-Étienne-Châteaucreux,Paris-Gare-de-Lyon,100.0
+Montbard,Mantes-la-Jolie,57.0
+Montbard,Paris-Bercy,57.0
+Dole-Ville,Paris-Gare-de-Lyon,79.0
+Dole-Ville,Marne-la-Vallée-Chessy,79.0
+Mantes-la-Jolie,Valence,103.0
+Paris-Gare-de-Lyon,Orange,105.0
+Avignon-TGV,Paris-Gare-de-Lyon,105.0
+Meuse-TGV,Paris-Est,44.0
+Paris-Nord,Béthune,57.0
+Paris-Nord,Lens,52.0
+Paris-Nord,St-Omer,64.0
+Marne-la-Vallée-Chessy,Savenay,85.0
+Lyon-St-Exupéry-TGV,Rennes,108.0
+Lyon-Perrache-Voyageurs,Futuroscope,96.0
+Laval,Lyon-St-Exupéry-TGV,96.0
+Lyon-St-Exupéry-TGV,Futuroscope,96.0
+Tours,Lyon-Perrache-Voyageurs,95.0
+Nancy-Ville,Rennes,121.0
+Miramas,Mâcon-Loché-TGV,64.0
+Avignon-TGV,Bordeaux-St-Jean,96.0
+Aix-en-Provence-TGV,Bordeaux-St-Jean,107.0
+Marne-la-Vallée-Chessy,Saverne,85.0
+Nantes,Saverne,142.0
+Saverne,TGV Haute-Picardie,110.0
+Montbard,École-Valentin,43.0
+Colmar,École-Valentin,46.0
+Nîmes,École-Valentin,105.0
+Marseille-St-Charles,École-Valentin,111.0
+Lyon-Perrache-Voyageurs,École-Valentin,51.0
+Vendôme-Villiers-sur-Loir,Valence-TGV,113.0
+Champagne-Ardenne-TGV,Vendôme-Villiers-sur-Loir,83.0
+Lorraine-TGV,Saverne,31.0
+Colmar,Landry,109.0
+Mulhouse-Ville,Chambéry-Challes-les-Eaux,85.0
+Mulhouse-Ville,Moûtiers-Salins-Brides-les-Bains,102.0
+Strasbourg-Ville,Avignon-TGV,114.0
+Avignon-TGV,Bellegarde,64.0
+Avignon-TGV,Bourg-en-Bresse,65.0
+Avignon-TGV,Neufchâteau,87.0
+Avignon-TGV,Monaco-Monte-Carlo,62.0
+Massy-Palaiseau-Grande-Ceinture,Moûtiers-Salins-Brides-les-Bains,118.0
+Chambéry-Challes-les-Eaux,Massy-Palaiseau-Grande-Ceinture,103.0
+Laval,St-Avre-la-Chambre,127.0
+Valence-TGV,Montauban-Ville-Bourbon,83.0
+Avignon-TGV,Grenoble,47.0
+Besançon-Viotte,Chambéry-Challes-les-Eaux,63.0
+Meuse-TGV,Lille-Europe,84.0
+St-Gervais-les-Bains-Le Fayet,Sallanches-Combloux-Megève,2.8
+Landry,Bourg-St-Maurice,3.2
+Rang-du-Fliers-Verton,Étaples-Le Touquet,3.9
+Landry,Aime-La Plagne,3.9
+Besançon-Viotte,Besançon-Franche-Comté-TGV,4.4
+Lannion,Plouaret,5.3
+La Roche-sur-Foron,Annemasse,5.7
+Facture-Biganos,Arcachon,5.8
+Grenoble,Aix-les-Bains-Le Revard,17.5
+Chambéry-Challes-les-Eaux,Grenoble,14.3
+St-Avre-la-Chambre,Mâcon-Loché-TGV,40.0
+Valence,Valence-TGV,3.7
+Villeneuve-lès-Avignon,Valence,24.5
+Avignon-TGV,Agde,27.5
+Montpellier (CNM),Montélimar,31.0
+Lyon-St-Exupéry-TGV,Moûtiers-Salins-Brides-les-Bains,33.0
+Vendôme-Villiers-sur-Loir,Nantes,42.0
+Vendôme,Angoulême,45.0
+Culoz,Marseille-St-Charles,65.0
+Genève-Voyageurs,Villeneuve-lès-Avignon,66.0
+Montpellier (CNM),Le Creusot-Montceau-Montchanin,70.0
+Culoz,Les Arcs-Draguignan,98.0
+Culoz,Nice-Ville,98.0
+Chambéry-Challes-les-Eaux,St-Raphaël-Valescure,93.0
+Saumur-Rive-Droite,Grenoble,93.0
+Avignon-TGV,Aix-les-Bains-Le Revard,69.0
+Nîmes,Marne-la-Vallée-Chessy,114.0
+Aix-en-Provence-TGV,Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),116.0
+Aix-en-Provence-TGV,Versailles-Chantiers,116.0
+Avignon-TGV,Massy-TGV,116.0
+Avignon-TGV,Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),116.0
+Avignon-TGV,Mantes-la-Jolie,116.0
+Lyon-St-Exupéry-TGV,Marne-la-Vallée-Chessy,97.0
+Massy-TGV,Lyon-St-Exupéry-TGV,97.0
+Mantes-la-Jolie,Lyon-Part-Dieu,97.0
+Lyon-Part-Dieu,Paris-Nord,97.0
+Dijon-Ville,Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),67.0
+Besançon-Viotte,Paris-Gare-de-Lyon,83.0
+Paris-Gare-de-Lyon,Besançon-Franche-Comté-TGV,83.0
+Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),Besançon-Franche-Comté-TGV,83.0
+Besançon-Viotte,Marne-la-Vallée-Chessy,83.0
+Paris-Gare-de-Lyon,École-Valentin,83.0
+Mulhouse-Ville,Montbéliard,14.3
+Le Havre,Champagne-Ardenne-TGV,53.0
+Strasbourg-Ville,St-Pierre-des-Corps,132.0
+Dijon-Ville,Mulhouse-Ville,57.0
+Dijon-Ville,Strasbourg-Ville,57.0
+Mulhouse-Ville,Montpellier (CNM),123.0
+Colmar,Aix-en-Provence-TGV,124.0
+Mulhouse-Ville,Aix-en-Provence-TGV,124.0
+Metz-Ville,Marseille-St-Charles,124.0
+Colmar,Paris-Est,112.0
+Toul,Valence-TGV,83.0
+Dijon-Ville,Metz-Ville,64.0
+Metz-Ville,Lyon-St-Exupéry-TGV,88.0
+Metz-Ville,Lyon-Perrache-Voyageurs,88.0
+Metz-Ville,Strasbourg-Ville,41.0
+Metz-Ville,Belfort-Montbéliard-TGV,54.0
+Thionville,Lyon-Perrache-Voyageurs,94.0
+Thionville,Aix-en-Provence-TGV,131.0
+Thionville,Nîmes,127.0
+Bâle-St-Jean,Saône,65.0
+Neufchâteau,Les Arcs-Draguignan,110.0
+Culmont-Chalindrey,Cannes,124.0
+Toul,Toulouse-Matabiau,117.0
+Neufchâteau,Béziers,99.0
+Neufchâteau,Toulouse-Matabiau,113.0
+Nancy-Ville,Agde,118.0
+Beaune,Avignon-TGV,73.0
+Culmont-Chalindrey,Nîmes,80.0
+Modane,Le Creusot-Montceau-Montchanin,65.0
+Chambéry-Challes-les-Eaux,Le Creusot-Montceau-Montchanin,55.0
+Narbonne,Massy-TGV,116.0
+Agen,Sète,53.0
+Massy-TGV,La Roche-sur-Yon,83.0
+Paris-Austerlitz,Vitré,72.0
+Paris-Austerlitz,Plouaret,91.0
+Paris-Austerlitz,Dol,85.0
+Paris-Austerlitz,Libourne,96.0
+Paris-Austerlitz,Ruffec,87.0
+Paris-Austerlitz,Surgères,89.0
+Paris-Austerlitz,Vendôme,55.0
+Paris-Montparnasse,Futuroscope,75.0
+Marne-la-Vallée-Chessy,Poitiers,75.0
+Marne-la-Vallée-Chessy,Libourne,96.0
+Angoulême,Champagne-Ardenne-TGV,102.0
+Meuse-TGV,Poitiers,102.0
+Lille-Europe,Vannes,114.0
+Lorient,Douai,114.0
+Angoulême,Lille-Europe,119.0
+Lille-Flandres,Angoulême,119.0
+Angoulême,Douai,119.0
+Lorraine-TGV,Rennes,121.0
+Aix-en-Provence-TGV,St-Pierre-des-Corps,125.0
+Le Mans,Montpellier (CNM),125.0
+Lille-Europe,Quimper,125.0
+Lille-Europe,Libourne,130.0
+Nîmes,Rennes,142.0
+Bordeaux-St-Jean,Paris-Montparnasse,96.0
+Paris-Montparnasse,Châtellerault,75.0
+Angers-St-Laud,Paris-Montparnasse,73.0
+Nantes,Paris-Montparnasse,85.0
+Niort,Paris-Montparnasse,84.0
+Agen,Paris-Montparnasse,108.0
+Paris-Montparnasse,Bayonne,112.0
+Dax,Paris-Montparnasse,110.0
+Paris-Montparnasse,Montauban-Ville-Bourbon,109.0
+La Baule-Escoublac,Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),87.0
+Marne-la-Vallée-Chessy,St-Pierre-des-Corps,65.0
+Saumur-Rive-Droite,Paris-Montparnasse,70.0
+Lille-Europe,Massy-Palaiseau-Grande-Ceinture,63.0
+Aix-en-Provence-TGV,Lyon-St-Exupéry-TGV,67.0
+Melun,Le Creusot-Montceau-Montchanin,67.0
+Carcassonne,Valence,65.0
+Paris-Montparnasse,Futuroscope,75.0
+Paris-Montparnasse,Futuroscope,75.0
+Lyon-Perrache-Voyageurs,Sète,70.0
+Lyon-Part-Dieu,Agde,70.0
+Béziers,Lyon-St-Exupéry-TGV,70.0
+Lyon-Perrache-Voyageurs,Agde,70.0
+Lyon-Perrache-Voyageurs,Toulon,72.0
+Lyon-Perrache-Voyageurs,Narbonne,74.0
+Lorraine-TGV,Paris-Est,77.0
+Dijon-Ville,Avignon-TGV,81.0
+Aix-en-Provence-TGV,Toulouse-Matabiau,69.0
+Cherbourg,Montbard,78.0
+Montpellier (CNM),Bellegarde,74.0
+Valence-TGV,Toulouse-Matabiau,75.0
+Valence,Toulouse-Matabiau,75.0
+Lyon-Part-Dieu,Sens,78.0
+Nice-Ville,Valence,73.0
+Lyon-Perrache-Voyageurs,Les Arcs-Draguignan,80.0
+Aix-en-Provence-TGV,Bellegarde,77.0
+Angoulême,Paris-Austerlitz,87.0
+Le Mans,TGV Haute-Picardie,84.0
+Aix-en-Provence-TGV,Le Creusot-Montceau-Montchanin,82.0
+Avignon-TGV,Montbéliard,90.0
+Carcassonne,Chalon-sur-Saône,84.0
+Lyon-Part-Dieu,St-Raphaël-Valescure,86.0
+Lyon-Perrache-Voyageurs,Toulouse-Matabiau,86.0
+Le Havre,Lyon-Part-Dieu,97.0
+Laval,Champagne-Ardenne-TGV,92.0
+Béziers,Beaune,84.0
+Lille-Flandres,Le Mans,92.0
+Laval,Arras,97.0
+Lille-Europe,Vierzon-Ville,97.0
+Coutras,Paris-Montparnasse,96.0
+Melun,Valence-TGV,93.0
+La Baule-Escoublac,TGV Haute-Picardie,98.0
+Pornichet,TGV Haute-Picardie,98.0
+Lille-Europe,St-Pierre-des-Corps,101.0
+Lille-Flandres,Montbard,102.0
+Massy-TGV,La Roche-sur-Foron,109.0
+Lyon-Perrache-Voyageurs,TGV Haute-Picardie,106.0
+Cannes,Bellegarde,98.0
+Le Pouliguen,Le Creusot-Montceau-Montchanin,107.0
+La Baule-Escoublac,Le Creusot-Montceau-Montchanin,107.0
+St-Nazaire,Le Creusot-Montceau-Montchanin,107.0
+Futuroscope,Douai,109.0
+Le Pouliguen,Lille-Europe,108.0
+Arras,St-Nazaire,108.0
+St-Nazaire,Douai,108.0
+Lille-Flandres,Le Creusot-Montceau-Montchanin,111.0
+Arras,Le Creusot-Montceau-Montchanin,111.0
+Lyon-Part-Dieu,St-Nazaire,109.0
+Valence-TGV,St-Pierre-des-Corps,113.0
+Nice-Ville,Beaune,116.0
+Le Mans,Grenoble,111.0
+Le Havre,Valence-TGV,112.0
+Rouen-Rive-Droite,Valence,112.0
+Champagne-Ardenne-TGV,Libourne,112.0
+Pornichet,Lyon-Part-Dieu,113.0
+Pornichet,Lyon-Perrache-Voyageurs,113.0
+Le Pouliguen,Lyon-Perrache-Voyageurs,113.0
+Dole-Ville,Lille-Flandres,113.0
+Angoulême,Lyon-Part-Dieu,116.0
+Lille-Europe,Lyon-Part-Dieu,116.0
+Lyon-Part-Dieu,Arras,116.0
+Lyon-Perrache-Voyageurs,Arras,116.0
+Lyon-St-Exupéry-TGV,Arras,116.0
+Dunkerque,Lyon-St-Exupéry-TGV,116.0
+Lille-Europe,Niort,118.0
+Lille-Flandres,Limoges-Bénédictins,119.0
+Laval,Valence-TGV,116.0
+TGV Haute-Picardie,St-Gervais-les-Bains-Le Fayet,119.0
+Aime-La Plagne,TGV Haute-Picardie,119.0
+Landry,TGV Haute-Picardie,119.0
+St-Avre-la-Chambre,TGV Haute-Picardie,119.0
+Annecy,TGV Haute-Picardie,119.0
+Angers-St-Laud,Aime-La Plagne,120.0
+Angers-St-Laud,Aix-les-Bains-Le Revard,120.0
+Le Mans,Cluses,120.0
+Le Mans,Sallanches-Combloux-Megève,120.0
+Guingamp,Douai,119.0
+Lille-Flandres,St-Brieuc,119.0
+Lyon-Part-Dieu,St-Brieuc,122.0
+La Rochelle-Ville,Douai,122.0
+Surgères,Lille-Europe,122.0
+Surgères,Arras,122.0
+Metz-Ville,Les Arcs-Draguignan,132.0
+Lamballe,TGV Haute-Picardie,120.0
+Bourg-St-Maurice,Lisieux,125.0
+Bayeux,Bourg-St-Maurice,125.0
+Chambéry-Challes-les-Eaux,Lison,125.0
+Landry,Lison,125.0
+Landry,Lisieux,125.0
+Lison,Aime-La Plagne,125.0
+Nantes,Aix-les-Bains-Le Revard,125.0
+Chambéry-Challes-les-Eaux,Lépin-le-Lac-La Bauche,5.3
+Villeneuve-lès-Avignon,Orange,8.3
+Villeneuve-lès-Avignon,Montélimar,16.5
+Arles,Valence-TGV,29.0
+Vendôme,Poitiers,30.0
+Miramas,Valence-TGV,34.0
+Lyon-St-Exupéry-TGV,Aime-La Plagne,42.0
+Annecy,Valence-TGV,43.0
+Genève-Voyageurs,St-Péray,49.0
+Avignon-TGV,Culoz,53.0
+Castelnaudary,Valence-TGV,54.0
+Lyon-St-Exupéry-TGV,Hyères,63.0
+Chambéry-Challes-les-Eaux,Marseille-St-Charles,89.0
+Avignon-TGV,Aix-les-Bains-Le Revard,69.0
+Avignon-TGV,Annecy,77.0
+Nîmes,Le Creusot-Montceau-Montchanin,65.0
+Castelnaudary,Lyon-Part-Dieu,64.0
+Vendôme,Bordeaux-St-Jean,66.0
+Marseille-St-Charles,Annecy,91.0
+Perpignan,Le Creusot-Montceau-Montchanin,84.0
+Chambéry-Challes-les-Eaux,Cannes,98.0
+Nice-Ville,Aix-les-Bains-Le Revard,104.0
+Nîmes,Paris-Gare-de-Lyon,114.0
+Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),Montpellier (CNM),114.0
+Aix-en-Provence-TGV,Paris-Gare-de-Lyon,116.0
+Marne-la-Vallée-Chessy,Marseille-St-Charles,116.0
+Avignon-TGV,Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),116.0
+Avignon-Centre,Paris-Gare-de-Lyon,116.0
+Lyon-Part-Dieu,Marne-la-Vallée-Chessy,97.0
+Lyon-Perrache-Voyageurs,Marne-la-Vallée-Chessy,97.0
+Versailles-Chantiers,Lyon-St-Exupéry-TGV,97.0
+Grenoble,Marne-la-Vallée-Chessy,108.0
+Grenoble,Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),108.0
+Dijon-Ville,Paris-Gare-de-Lyon,67.0
+Besançon-Viotte,Mantes-la-Jolie,83.0
+Marne-la-Vallée-Chessy,École-Valentin,83.0
+Avignon-TGV,Carcassonne,54.0
+Belfort,Montbéliard,4.5
+Bréauté-Beuzeville,Rouen-Rive-Droite,14.3
+Le Havre,Lorraine-TGV,85.0
+Strasbourg-Ville,Le Havre,106.0
+Meuse-TGV,Rouen-Rive-Droite,60.0
+Meuse-TGV,Mantes-la-Jolie,44.0
+Strasbourg-Ville,Champagne-Ardenne-TGV,76.0
+Strasbourg-Ville,Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),107.0
+Dijon-Ville,Les Arcs-Draguignan,97.0
+Strasbourg-Ville,Chalon-sur-Saône,78.0
+Mulhouse-Ville,Nîmes,119.0
+Strasbourg-Ville,Bourg-en-Bresse,78.0
+Montpellier (CNM),Belfort-Montbéliard-TGV,123.0
+Montpellier (CNM),Neufchâteau,89.0
+Metz-Ville,Avignon-TGV,114.0
+Metz-Ville,Valence-TGV,109.0
+Strasbourg-Ville,Lyon-Perrache-Voyageurs,87.0
+Nîmes,Toul,89.0
+Thionville,Strasbourg-Ville,42.0
+Thionville,Mulhouse-Ville,54.0
+Thionville,Mâcon-Ville,85.0
+Thionville,Lyon-Part-Dieu,94.0
+Thionville,Avignon-TGV,121.0
+Beaune,Aix-en-Provence-TGV,87.0
+Nancy-Ville,Narbonne,123.0
+Nancy-Ville,Carcassonne,125.0
+Culmont-Chalindrey,Nice-Ville,124.0
+Toul,Agde,103.0
+Culmont-Chalindrey,Agde,94.0
+Culmont-Chalindrey,Béziers,94.0
+Culmont-Chalindrey,Narbonne,98.0
+Agde,Toulouse-Matabiau,36.0
+Champagne-Ardenne-TGV,Colmar,90.0
+Dijon-Ville,Toulon,95.0
+Perpignan,Paris-Montparnasse,124.0
+Agde,Paris-Montparnasse,116.0
+Mâcon-Loché-TGV,Massy-Palaiseau-Grande-Ceinture,83.0
+Grenoble,Massy-Palaiseau-Grande-Ceinture,108.0
+Modane,Massy-Palaiseau-Grande-Ceinture,113.0
+Bellegarde,Paris-Est,91.0
+Bourg-en-Bresse,Paris-Est,84.0
+Bordeaux-St-Jean,Sète,69.0
+Massy-TGV,Plouaret,91.0
+Paris-Austerlitz,Vannes,88.0
+Paris-Austerlitz,Angers-St-Laud,73.0
+Paris-Austerlitz,Pornichet,87.0
+Paris-Austerlitz,Facture-Biganos,102.0
+Paris-Austerlitz,La Teste,102.0
+Paris-Austerlitz,Tours,65.0
+Massy-TGV,Marne-la-Vallée-Chessy,35.0
+Massy-TGV,Ruffec,87.0
+Angoulême,Marne-la-Vallée-Chessy,87.0
+Champagne-Ardenne-TGV,Futuroscope,93.0
+Nantes,TGV Haute-Picardie,98.0
+Rennes,TGV Haute-Picardie,98.0
+TGV Haute-Picardie,Redon,98.0
+Bordeaux-St-Jean,Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),96.0
+Meuse-TGV,Futuroscope,102.0
+Lorient,TGV Haute-Picardie,106.0
+Lille-Flandres,St-Malo,110.0
+Arras,St-Malo,110.0
+Angoulême,Meuse-TGV,111.0
+Arras,Vannes,114.0
+Lille-Europe,Vannes,121.0
+Lorient,Douai,116.0
+Lille-Flandres,Angoulême,120.0
+Le Mans,Avignon-TGV,125.0
+Arras,Libourne,130.0
+Lille-Europe,Libourne,130.0
+Paris-Montparnasse,Châtellerault,78.0
+Massy-TGV,Poitiers,79.0
+Massy-TGV,Futuroscope,79.0
+Massy-TGV,Libourne,99.0
+Paris-Montparnasse,St-Nazaire,88.0
+Laval,Paris-Montparnasse,78.0
+Paris-Montparnasse,Vitré,78.0
+Lamballe,Paris-Montparnasse,94.0
+Paris-Montparnasse,Vannes,97.0
+Paris-Montparnasse,Montauban-Ville-Bourbon,120.0
+Massy-TGV,Sablé,72.0
+Angers-St-Laud,Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),75.0
+Angers-St-Laud,Marne-la-Vallée-Chessy,75.0
+Marne-la-Vallée-Chessy,Nantes,88.0
+La Baule-Escoublac,Marne-la-Vallée-Chessy,88.0
+Massy-TGV,Pornichet,88.0
+Massy-TGV,Le Pouliguen,88.0
+Le Croisic,Marne-la-Vallée-Chessy,88.0
+St-Maixent (Deux-Sèvres),Paris-Montparnasse,90.0
+Laval,Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),78.0
+Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),Rennes,93.0
+Marne-la-Vallée-Chessy,Rennes,93.0
+Massy-TGV,Lamballe,94.0
+Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),Vannes,97.0
+Agen,Massy-TGV,120.0
+Facture-Biganos,Paris-Montparnasse,118.0
+Massy-TGV,Arcachon,118.0
+Biarritz,Paris-Montparnasse,123.0
+Évreux-Embranchement,Mantes-la-Jolie,20.5
+Conflans-Fin-d'Oise,Mantes-la-Jolie,35.0
+Marne-la-Vallée-Chessy,Massy-Palaiseau-Grande-Ceinture,35.0
+Lyon-Part-Dieu,Valence,30.0
+Avignon-TGV,Sète,27.5
+Reims,Bar-le-Duc,31.0
+Nîmes,Marseille-St-Charles,30.0
+Avignon-TGV,Valence-TGV,33.0
+Le Havre,Conflans-Fin-d'Oise,40.0
+Champagne-Ardenne-TGV,Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),44.0
+Lyon-Part-Dieu,Orange,41.0
+Avignon-TGV,Narbonne,46.0
+Valence-TGV,Bellegarde,46.0
+Montpellier (CNM),Valence-TGV,47.0
+Aix-en-Provence-TGV,Valence-TGV,48.0
+Avignon-TGV,Les Arcs-Draguignan,50.0
+Caen,Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),57.0
+Roubaix,Paris-Nord,63.0
+Valence-TGV,Agde,54.0
+Valence-TGV,Beaune,57.0
+Paris-Austerlitz,St-Pierre-des-Corps,65.0
+Arles,Lyon-St-Exupéry-TGV,58.0
+Lyon-Perrache-Voyageurs,Miramas,58.0
+Avignon-TGV,Mâcon-Ville,65.0
+Avignon-TGV,Mâcon-Loché-TGV,61.0
+Avignon-TGV,Mâcon-Loché-TGV,61.0
+Valence-TGV,Narbonne,58.0
+Valence,Narbonne,58.0
+Avignon-TGV,Monaco-Monte-Carlo,62.0
+Tours,Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),65.0
+Juvisy,Lille-Europe,63.0
+Aix-en-Provence-TGV,Lyon-Part-Dieu,67.0
+Lyon-Perrache-Voyageurs,Marseille-St-Charles,67.0
+Aix-en-Provence-TGV,Lyon-Perrache-Voyageurs,67.0
+Carcassonne,Valence-TGV,65.0
+Béziers,Lyon-Part-Dieu,70.0
+Béziers,Lyon-Perrache-Voyageurs,70.0
+Nîmes,Bellegarde,68.0
+Mâcon-Loché-TGV,Marseille-St-Charles,75.0
+Champagne-Ardenne-TGV,Douai,80.0
+Nice-Ville,Valence-TGV,72.0
+Valence-TGV,St-Raphaël-Valescure,72.0
+Massy-TGV,Lorraine-TGV,77.0
+Valence,Antibes,73.0
+Carcassonne,Lyon-St-Exupéry-TGV,79.0
+Carcassonne,Lyon-Perrache-Voyageurs,79.0
+Lyon-Part-Dieu,Les Arcs-Draguignan,80.0
+Aix-en-Provence-TGV,Lons-le-Saunier,85.0
+Lyon-Perrache-Voyageurs,Melun,81.0
+Dijon-Ville,Lisieux,86.0
+Tours,Champagne-Ardenne-TGV,83.0
+Marseille-St-Charles,Le Creusot-Montceau-Montchanin,82.0
+Les Aubrais-Orléans,Lille-Europe,88.0
+Chalon-sur-Saône,Les Arcs-Draguignan,87.0
+Meuse-TGV,St-Pierre-des-Corps,87.0
+Tours,Meuse-TGV,87.0
+Le Creusot-Montceau-Montchanin,St-Pierre-des-Corps,89.0
+Lyon-Perrache-Voyageurs,Antibes,86.0
+Rives,Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),96.0
+Lyon-St-Exupéry-TGV,Toulouse-Matabiau,86.0
+Lyon-Part-Dieu,Rouen-Rive-Droite,97.0
+Lyon-Perrache-Voyageurs,Rouen-Rive-Droite,97.0
+Besançon-Viotte,Caen,97.0
+Nurieux,Paris-Gare-de-Lyon,89.0
+Saumur-Rive-Droite,Le Creusot-Montceau-Montchanin,95.0
+Le Mans,Douai,92.0
+Vannes,Auray,5.8
+Colmar,Sélestat,6.0
+Arras,Lens,6.3
+Nice-Ville,Antibes,6.4
+Hazebrouck,St-Omer,6.5
+Le Pouliguen,St-Nazaire,6.7
+Aime-La Plagne,Moûtiers-Salins-Brides-les-Bains,6.7
+Dol,St-Malo,7.2
+Sarrebourg,Saverne,7.6
+Aix-en-Provence-TGV,Marseille-Blancarde,7.7
+Nancy-Ville,Lunéville,8.4
+Cherbourg,Valognes,8.7
+Vitry-le-François,Châlons-en-Champagne,8.9
+Surgères,La Rochelle-Ville,9.3
+Nurieux,Bourg-en-Bresse,9.3
+Bernay,Lisieux,9.3
+Lille-Europe,Douai,9.6
+Laval,Vitré,10.0
+Hendaye,Bayonne,10.0
+Antibes,Monaco-Monte-Carlo,10.0
+Rethel,Reims,10.2
+Les Sables-d'Olonne,La Roche-sur-Yon,10.6
+Nantes,Savenay,10.6
+Boulogne-Ville,Rang-du-Fliers-Verton,10.6
+Guingamp,Lannion,11.0
+Laroche-Migennes,Sens,11.0
+Antibes,Menton,11.0
+Dax,Orthez,11.4
+Lorient,Rosporden,11.5
+Angoulême,Ruffec,11.9
+Orthez,Lourdes,12.0
+Bonneville,Annecy,12.0
+Nîmes,Villeneuve-lès-Avignon,12.1
+Besançon-Viotte,Dole-Ville,11.9
+Vitry-le-François,Bar-le-Duc,12.1
+Le Havre,Yvetot,12.5
+Dax,Bayonne,12.6
+Montélimar,Orange,12.6
+Onville,Thionville,12.6
+Bayeux,Carentan,12.6
+Angers-St-Laud,Ancenis,13.0
+Surgères,St-Maixent (Deux-Sèvres),13.6
+Lille-Europe,Béthune,13.6
+St-Étienne-Châteaucreux,Lyon-St-Exupéry-TGV,13.7
+La Roche-sur-Foron,Bellegarde,14.2
+Saumur-Rive-Droite,St-Pierre-des-Corps,14.7
+Carcassonne,Narbonne,14.6
+St-Maixent (Deux-Sèvres),Futuroscope,14.8
+La Rochelle-Ville,Niort,14.8
+Cagnes-sur-Mer,St-Raphaël-Valescure,14.8
+Melun,Sens,15.0
+Châteauroux,Vierzon-Ville,15.0
+Rethel,Sedan,15.5
+Strasbourg-Ville,Colmar,15.0
+Reims,Châlons-en-Champagne,15.5
+Vitry-le-François,Reims,16.0
+Cherbourg,Lison,17.0
+Ruffec,Futuroscope,17.0
+Le Teil,Villeneuve-lès-Avignon,17.5
+Avignon-Centre,Montélimar,17.5
+Rennes,St-Malo,17.5
+Dijon-Ville,Mouchard,17.5
+Strasbourg-Ville,Sarrebourg,17.5
+Bordeaux-St-Jean,Marmande,18.0
+Châteauroux,La Souterraine,18.0
+Rang-du-Fliers-Verton,Calais-Fréthun,18.0
+Forbach,Lorraine-TGV,17.5
+Bar-le-Duc,Châlons-en-Champagne,18.5
+Les Aubrais-Orléans,Vierzon-Ville,18.5
+Hendaye,Morcenx,19.0
+Orthez,Morcenx,19.0
+Lyon-St-Exupéry-TGV,Bourg-en-Bresse,17.5
+Bonneville,Aix-les-Bains-Le Revard,19.5
+Irun,Dax,19.5
+Besançon-Viotte,Montbéliard,20.0
+Toulon,St-Raphaël-Valescure,20.0
+Aix-les-Bains-Le Revard,Albertville,19.5
+Montpellier (CNM),Narbonne,20.0
+Bayeux,Valognes,19.0
+Rives,Lyon-St-Exupéry-TGV,20.0
+Mâcon-Ville,Beaune,20.5
+Bellegarde,Sallanches-Combloux-Megève,20.5
+Angers-St-Laud,Le Mans,21.0
+Ancenis,St-Nazaire,21.0
+Dol,Vitré,21.0
+Angoulême,Libourne,21.0
+Lépin-le-Lac-La Bauche,Landry,21.0
+Aime-La Plagne,Aix-les-Bains-Le Revard,21.0
+Tours,Poitiers,21.0
+Orthez,Tarbes,21.0
+Cagnes-sur-Mer,Les Arcs-Draguignan,20.5
+Lison,Lisieux,22.0
+Valence-TGV,Orange,22.0
+Perpignan,Agde,23.0
+Frasne,Montbard,23.5
+Les Aubrais-Orléans,St-Pierre-des-Corps,23.5
+Brest,Guingamp,24.0
+Lépin-le-Lac-La Bauche,Cluses,24.0
+Massy-TGV,Le Pouliguen,87.0
+Surgères,Paris-Montparnasse,89.0
+Massy-TGV,Surgères,89.0
+St-Maixent (Deux-Sèvres),Paris-Montparnasse,84.0
+Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),Redon,84.0
+Marne-la-Vallée-Chessy,Redon,84.0
+Massy-TGV,Redon,84.0
+Guingamp,Marne-la-Vallée-Chessy,88.0
+Massy-TGV,Facture-Biganos,102.0
+Biarritz,Massy-TGV,112.0
+Massy-TGV,St-Jean-de-Luz-Ciboure,112.0
+Pau,Massy-TGV,112.0
+Massy-TGV,Lourdes,118.0
+Massy-TGV,Montauban-Ville-Bourbon,109.0
+Massy-TGV,Savenay,85.0
+Lyon-Part-Dieu,Rennes,108.0
+Angers-St-Laud,Lyon-Part-Dieu,96.0
+Futuroscope,St-Pierre-des-Corps,20.0
+Laval,St-Brieuc,33.0
+Angoulême,Arcachon,36.0
+Laval,Vannes,36.0
+Laval,Guingamp,37.0
+Angoulême,St-Pierre-des-Corps,38.0
+Laval,Auray,38.0
+Le Mans,Redon,40.0
+Le Mans,Lamballe,41.0
+Le Mans,Les Sables-d'Olonne,41.0
+Bordeaux-St-Jean,Poitiers,42.0
+Poitiers,Arcachon,49.0
+Tours,Libourne,50.0
+Le Mans,Plouaret,51.0
+Le Mans,Lorient,53.0
+Tours,Bordeaux-St-Jean,53.0
+Le Mans,Quimperlé,55.0
+Le Mans,Quimper,62.0
+Châtellerault,Montauban-Ville-Bourbon,66.0
+Pau,Châtellerault,69.0
+Bordeaux-St-Jean,Vendôme-Villiers-sur-Loir,69.0
+La Teste,Poitiers,49.0
+Facture-Biganos,Futuroscope,47.0
+La Teste,Futuroscope,49.0
+Strasbourg-Ville,Bordeaux-St-Jean,165.0
+Brest,Paris-Montparnasse,92.0
+Lorient,Paris-Montparnasse,91.0
+Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),Auray,91.0
+Quimperlé,Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),95.0
+Quimperlé,Marne-la-Vallée-Chessy,95.0
+Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),Poitiers,79.0
+Marne-la-Vallée-Chessy,Poitiers,79.0
+Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),Futuroscope,79.0
+Ruffec,Paris-Montparnasse,93.0
+Angoulême,Marne-la-Vallée-Chessy,96.0
+Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),Libourne,99.0
+TGV Haute-Picardie,Vannes,106.0
+Lille-Europe,Rennes,113.0
+Lille-Europe,Lorient,122.0
+Lorient,Arras,116.0
+Vannes,Douai,116.0
+Douai,Auray,116.0
+TGV Haute-Picardie,Libourne,120.0
+Angoulême,Lille-Europe,120.0
+Angoulême,Douai,120.0
+Aix-en-Provence-TGV,St-Pierre-des-Corps,125.0
+Bordeaux-St-Jean,Lille-Europe,134.0
+Aix-en-Provence-TGV,Rennes,148.0
+Bordeaux-St-Jean,Massy-TGV,111.0
+Angoulême,Massy-TGV,96.0
+Paris-Montparnasse,Sablé,72.0
+Angers-St-Laud,Paris-Montparnasse,75.0
+La Rochelle-Ville,Paris-Montparnasse,94.0
+Paris-Montparnasse,St-Brieuc,94.0
+Agen,Paris-Montparnasse,120.0
+Paris-Montparnasse,Toulouse-Matabiau,121.0
+Angers-St-Laud,Massy-TGV,75.0
+Massy-TGV,Nantes,88.0
+Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),St-Nazaire,88.0
+Le Pouliguen,Paris-Montparnasse,88.0
+Massy-TGV,Le Croisic,88.0
+Le Pouliguen,Marne-la-Vallée-Chessy,88.0
+Massy-TGV,La Rochelle-Ville,94.0
+Massy-TGV,Redon,94.0
+Guingamp,Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),98.0
+Marne-la-Vallée-Chessy,Vannes,97.0
+Massy-TGV,Facture-Biganos,118.0
+Paris-Montparnasse,St-Jean-de-Luz-Ciboure,123.0
+Évreux-Embranchement,Mantes-la-Jolie,20.5
+Conflans-Fin-d'Oise,Rouen-Rive-Droite,35.0
+Juvisy,Marne-la-Vallée-Chessy,35.0
+Meuse-TGV,Lorraine-TGV,23.5
+Lyon-St-Exupéry-TGV,Valence,30.0
+Champagne-Ardenne-TGV,Bar-le-Duc,31.0
+Meuse-TGV,Thionville,33.0
+Aix-en-Provence-TGV,Nîmes,30.0
+Avignon-TGV,Marseille-St-Charles,30.0
+Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),Mantes-la-Jolie,35.0
+Conflans-Fin-d'Oise,Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),35.0
+Juvisy,Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),35.0
+Mantes-la-Jolie,Marne-la-Vallée-Chessy,35.0
+Mantes-la-Jolie,Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),35.0
+Le Teil,Lyon-Perrache-Voyageurs,35.0
+Cherbourg,Chambéry-Challes-les-Eaux,125.0
+Chambéry-Challes-les-Eaux,Carentan,125.0
+Carentan,Moûtiers-Salins-Brides-les-Bains,125.0
+Valognes,Albertville,125.0
+Moûtiers-Salins-Brides-les-Bains,Bernay,125.0
+Bellegarde,Douai,127.0
+Lille-Flandres,Annecy,127.0
+Dunkerque,Valence,127.0
+Chambéry-Challes-les-Eaux,Rennes,127.0
+Brest,Lille-Europe,125.0
+Lille-Flandres,Morlaix,125.0
+Quimperlé,Douai,125.0
+Arras,Quimper,125.0
+Rosporden,Douai,125.0
+Grenoble,St-Nazaire,125.0
+Brest,Le Creusot-Montceau-Montchanin,129.0
+Morlaix,Le Creusot-Montceau-Montchanin,129.0
+Chambéry-Challes-les-Eaux,Lille-Europe,127.0
+Lille-Flandres,Aime-La Plagne,127.0
+Lille-Europe,St-Michel-Valloire,127.0
+Chambéry-Challes-les-Eaux,Douai,127.0
+Lille-Flandres,Cluses,127.0
+Lille-Flandres,Landry,127.0
+Lille-Flandres,St-Michel-Valloire,127.0
+Douai,St-Gervais-les-Bains-Le Fayet,127.0
+Dunkerque,Landry,127.0
+Dunkerque,St-Jean-de-Maurienne-Arvan,127.0
+Dunkerque,St-Gervais-les-Bains-Le Fayet,127.0
+Dunkerque,Sallanches-Combloux-Megève,127.0
+Grenoble,Douai,127.0
+Aix-les-Bains-Le Revard,Douai,127.0
+Nantes,Aime-La Plagne,127.0
+Nantes,St-Gervais-les-Bains-Le Fayet,127.0
+St-Jean-de-Maurienne-Arvan,Nantes,127.0
+Annecy,Nantes,127.0
+Nantes,Annemasse,127.0
+Le Havre,Aix-en-Provence-TGV,129.0
+Aix-en-Provence-TGV,Rouen-Rive-Droite,129.0
+Angers-St-Laud,Marseille-St-Charles,133.0
+Angers-St-Laud,Nîmes,133.0
+Laval,Avignon-TGV,133.0
+Saumur-Rive-Droite,Montpellier (CNM),133.0
+Saumur-Rive-Droite,Nîmes,133.0
+Angers-St-Laud,Avignon-TGV,133.0
+St-Jean-de-Maurienne-Arvan,Rennes,132.0
+Dijon-Ville,Bordeaux-St-Jean,137.0
+Avignon-TGV,TGV Haute-Picardie,136.0
+Annemasse,St-Brieuc,137.0
+Cluses,Lorient,137.0
+Moûtiers-Salins-Brides-les-Bains,Vannes,137.0
+St-Jean-de-Maurienne-Arvan,Auray,137.0
+Modane,Auray,137.0
+St-Gervais-les-Bains-Le Fayet,Auray,137.0
+Chambéry-Challes-les-Eaux,Guingamp,137.0
+St-Gervais-les-Bains-Le Fayet,Redon,137.0
+Sallanches-Combloux-Megève,Auray,137.0
+Lorient,Sallanches-Combloux-Megève,137.0
+Redon,St-Michel-Valloire,137.0
+Annecy,Vannes,137.0
+Vannes,Aix-les-Bains-Le Revard,137.0
+Aix-les-Bains-Le Revard,Redon,137.0
+Avignon-TGV,Arras,144.0
+Avignon-TGV,Lille-Europe,144.0
+Hendaye,TGV Haute-Picardie,144.0
+Lille-Flandres,Bayonne,144.0
+Lille-Flandres,St-Jean-de-Luz-Ciboure,144.0
+Dax,Arras,144.0
+Arras,Bayonne,144.0
+TGV Haute-Picardie,St-Jean-de-Luz-Ciboure,144.0
+Biarritz,Arras,144.0
+Hendaye,Arras,144.0
+Irun,Douai,144.0
+Irun,TGV Haute-Picardie,144.0
+Lille-Flandres,Marseille-St-Charles,144.0
+Modane,Brest,147.0
+Modane,Morlaix,147.0
+St-Jean-de-Maurienne-Arvan,Quimper,147.0
+Brest,Bourg-St-Maurice,147.0
+Bourg-St-Maurice,Quimper,147.0
+Morlaix,St-Gervais-les-Bains-Le Fayet,147.0
+Aime-La Plagne,Quimper,147.0
+Chambéry-Challes-les-Eaux,Morlaix,147.0
+Brest,La Roche-sur-Foron,147.0
+St-Avre-la-Chambre,Quimper,147.0
+La Roche-sur-Foron,Quimper,147.0
+Annecy,Quimper,147.0
+Lille-Flandres,Toulouse-Matabiau,150.0
+Lille-Flandres,Narbonne,150.0
+Arras,Narbonne,150.0
+Douai,Sète,150.0
+Carcassonne,Douai,150.0
+Strasbourg-Ville,Libourne,160.0
+Lille-Europe,Nice-Ville,155.0
+Cannes,Lille-Europe,155.0
+Lille-Europe,Antibes,155.0
+Nice-Ville,TGV Haute-Picardie,155.0
+TGV Haute-Picardie,Les Arcs-Draguignan,155.0
+Lille-Flandres,Toulon,155.0
+Lille-Flandres,Antibes,155.0
+Arras,Toulon,155.0
+Vannes,Douai,114.0
+Douai,Auray,114.0
+Bordeaux-St-Jean,TGV Haute-Picardie,119.0
+Angoulême,Lorraine-TGV,119.0
+Le Mans,Marseille-St-Charles,125.0
+Le Mans,Avignon-TGV,125.0
+Bordeaux-St-Jean,Lille-Europe,130.0
+Lille-Flandres,Libourne,130.0
+Marseille-St-Charles,Rennes,142.0
+Aix-en-Provence-TGV,Rennes,142.0
+Montpellier (CNM),Rennes,142.0
+La Baule-Escoublac,Paris-Montparnasse,87.0
+Laval,Paris-Montparnasse,72.0
+Paris-Montparnasse,Vitré,72.0
+Guingamp,Paris-Montparnasse,88.0
+Paris-Montparnasse,Arcachon,102.0
+Lourdes,Paris-Montparnasse,118.0
+Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),Nantes,85.0
+Massy-TGV,St-Nazaire,86.0
+La Baule-Escoublac,Marne-la-Vallée-Chessy,87.0
+Massy-TGV,Niort,84.0
+Massy-TGV,St-Maixent (Deux-Sèvres),84.0
+Massy-TGV,Rennes,80.0
+Guingamp,Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),88.0
+Lorient,Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),88.0
+Lorient,Marne-la-Vallée-Chessy,88.0
+Massy-TGV,Vannes,88.0
+Agen,Massy-TGV,108.0
+Massy-TGV,Arcachon,102.0
+Irun,Massy-TGV,112.0
+Massy-TGV,Orthez,112.0
+Laval,Lyon-Perrache-Voyageurs,96.0
+Châtellerault,St-Pierre-des-Corps,15.0
+Laval,Rennes,16.0
+Tours,Futuroscope,20.0
+Vendôme-Villiers-sur-Loir,Châtellerault,27.0
+Angoulême,Châtellerault,28.5
+Laval,Redon,28.5
+Laval,Quimperlé,45.0
+Bordeaux-St-Jean,Châtellerault,45.0
+Le Mans,Vannes,47.0
+Laval,Quimper,51.0
+Le Mans,Lannion,52.0
+Facture-Biganos,St-Pierre-des-Corps,60.0
+Le Mans,Brest,62.0
+Montauban-Ville-Bourbon,St-Pierre-des-Corps,76.0
+Strasbourg-Ville,Poitiers,143.0
+Strasbourg-Ville,Futuroscope,143.0
+Strasbourg-Ville,Angoulême,151.0
+Paris-Montparnasse,St-Malo,85.0
+Morlaix,Paris-Montparnasse,91.0
+Paris-Montparnasse,Quimper,95.0
+Marne-la-Vallée-Chessy,Auray,91.0
+Massy-TGV,Morlaix,91.0
+Marne-la-Vallée-Chessy,Landerneau,92.0
+Quimperlé,Paris-Montparnasse,95.0
+Massy-TGV,Rosporden,95.0
+Marne-la-Vallée-Chessy,Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),35.0
+Laval,TGV Haute-Picardie,88.0
+Nantes,TGV Haute-Picardie,98.0
+Champagne-Ardenne-TGV,Rennes,108.0
+Meuse-TGV,Poitiers,106.0
+Lorient,TGV Haute-Picardie,106.0
+TGV Haute-Picardie,Auray,106.0
+TGV Haute-Picardie,Quimper,106.0
+Rennes,Douai,113.0
+Arras,St-Malo,116.0
+Bordeaux-St-Jean,Champagne-Ardenne-TGV,119.0
+Lorraine-TGV,Poitiers,116.0
+Lorraine-TGV,Futuroscope,116.0
+Arras,Auray,116.0
+Bordeaux-St-Jean,TGV Haute-Picardie,128.0
+Angoulême,Lorraine-TGV,124.0
+Bordeaux-St-Jean,Meuse-TGV,134.0
+Le Mans,Montpellier (CNM),125.0
+Le Mans,Nîmes,125.0
+Nîmes,St-Pierre-des-Corps,125.0
+Quimperlé,Lille-Europe,131.0
+Lille-Europe,Rosporden,131.0
+Lille-Flandres,Bordeaux-St-Jean,134.0
+Bordeaux-St-Jean,Douai,134.0
+Avignon-TGV,Rennes,148.0
+Montpellier (CNM),Rennes,148.0
+Paris-Montparnasse,Libourne,99.0
+Massy-TGV,Châtellerault,78.0
+Les Sables-d'Olonne,Paris-Montparnasse,88.0
+Paris-Montparnasse,Rennes,93.0
+Paris-Montparnasse,Redon,94.0
+Guingamp,Paris-Montparnasse,98.0
+Pau,Paris-Montparnasse,123.0
+Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),Nantes,88.0
+Pornichet,Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),88.0
+Marne-la-Vallée-Chessy,Redon,94.0
+Guingamp,Marne-la-Vallée-Chessy,98.0
+La Teste,Paris-Montparnasse,118.0
+Hendaye,Paris-Montparnasse,123.0
+Champagne-Ardenne-TGV,Châlons-en-Champagne,11.3
+Vitry-le-François,Champagne-Ardenne-TGV,19.0
+Mantes-la-Jolie,Conflans-Fin-d'Oise,35.0
+Conflans-Fin-d'Oise,Rouen-Rive-Droite,35.0
+Laval,Douai,97.0
+Lorraine-TGV,Lille-Europe,102.0
+Lorraine-TGV,Arras,102.0
+Angers-St-Laud,Lille-Flandres,101.0
+Angers-St-Laud,Arras,101.0
+Saumur-Rive-Droite,Lille-Europe,101.0
+Douai,St-Pierre-des-Corps,101.0
+Laroche-Migennes,Marseille-St-Charles,95.0
+La Roche-sur-Foron,Marne-la-Vallée-Chessy,109.0
+La Roche-sur-Foron,Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),109.0
+Châteauroux,Lille-Europe,105.0
+Nice-Ville,Bellegarde,98.0
+Antibes,Bellegarde,98.0
+Niort,TGV Haute-Picardie,106.0
+Le Croisic,Le Creusot-Montceau-Montchanin,107.0
+Avignon-TGV,Sens,103.0
+Fontainebleau-Avon,Avignon-TGV,103.0
+Tours,Lorraine-TGV,106.0
+Rives,TGV Haute-Picardie,107.0
+Rennes,Le Creusot-Montceau-Montchanin,107.0
+Lille-Europe,Poitiers,109.0
+Lille-Flandres,Poitiers,109.0
+Lille-Europe,Futuroscope,109.0
+Melun,Marseille-St-Charles,105.0
+Fontainebleau-Avon,Marseille-St-Charles,105.0
+Le Croisic,Lille-Europe,108.0
+Lille-Europe,Le Creusot-Montceau-Montchanin,111.0
+Lille-Europe,Nantes,108.0
+Nantes,Douai,108.0
+Bordeaux-St-Jean,Valence-TGV,107.0
+Lille-Europe,La Souterraine,114.0
+Le Havre,Valence,112.0
+TGV Haute-Picardie,Valence,116.0
+Le Mans,Annecy,113.0
+Le Mans,Aix-les-Bains-Le Revard,113.0
+Le Pouliguen,Lyon-Part-Dieu,113.0
+La Baule-Escoublac,Lyon-Perrache-Voyageurs,113.0
+Tours,Chambéry-Challes-les-Eaux,114.0
+Angers-St-Laud,Grenoble,115.0
+Nancy-Ville,Les Arcs-Draguignan,123.0
+Lyon-Part-Dieu,Douai,116.0
+Lille-Flandres,Lyon-Perrache-Voyageurs,116.0
+Lyon-St-Exupéry-TGV,Lille-Europe,116.0
+Dunkerque,Lyon-Part-Dieu,116.0
+Lille-Flandres,Lyon-St-Exupéry-TGV,116.0
+Lyon-St-Exupéry-TGV,Douai,116.0
+Guingamp,Le Creusot-Montceau-Montchanin,116.0
+St-Brieuc,Le Creusot-Montceau-Montchanin,116.0
+Laval,Valence,116.0
+TGV Haute-Picardie,Sallanches-Combloux-Megève,119.0
+TGV Haute-Picardie,St-Michel-Valloire,119.0
+Bourg-St-Maurice,Rouen-Rive-Droite,121.0
+Rouen-Rive-Droite,Albertville,121.0
+Le Havre,Bourg-St-Maurice,121.0
+Le Havre,Aime-La Plagne,121.0
+Le Havre,Landry,121.0
+Le Havre,Chambéry-Challes-les-Eaux,121.0
+Angers-St-Laud,St-Gervais-les-Bains-Le Fayet,120.0
+Angers-St-Laud,Landry,120.0
+Angers-St-Laud,Modane,120.0
+Angers-St-Laud,Sallanches-Combloux-Megève,120.0
+Le Mans,St-Gervais-les-Bains-Le Fayet,120.0
+Le Mans,La Roche-sur-Foron,120.0
+Guingamp,Lille-Europe,119.0
+Lamballe,Lille-Europe,119.0
+St-Brieuc,Douai,119.0
+Lille-Flandres,Guingamp,119.0
+La Rochelle-Ville,Arras,122.0
+Neufchâteau,Nice-Ville,124.0
+Caen,Chambéry-Challes-les-Eaux,125.0
+Caen,Albertville,125.0
+Caen,Landry,125.0
+Bayeux,Aime-La Plagne,125.0
+Albertville,Lisieux,125.0
+Bayeux,Landry,125.0
+Lison,Bourg-St-Maurice,125.0
+Chambéry-Challes-les-Eaux,Nantes,125.0
+Cherbourg,Moûtiers-Salins-Brides-les-Bains,125.0
+Cherbourg,Landry,125.0
+Cherbourg,Albertville,125.0
+Chambéry-Challes-les-Eaux,Évreux-Embranchement,125.0
+Évreux-Embranchement,Moûtiers-Salins-Brides-les-Bains,125.0
+Aime-La Plagne,Bernay,125.0
+Annecy,Douai,127.0
+Arras,Valence-TGV,127.0
+Arras,Valence,127.0
+Brest,Arras,125.0
+Morlaix,Douai,125.0
+Quimper,Douai,125.0
+Brive-la-Gaillarde,Lille-Europe,130.0
+Lille-Flandres,Moûtiers-Salins-Brides-les-Bains,127.0
+Bourg-St-Maurice,Arras,127.0
+Aime-La Plagne,Arras,127.0
+Dunkerque,Bourg-St-Maurice,127.0
+Cluses,Douai,127.0
+St-Avre-la-Chambre,Lille-Europe,127.0
+Annemasse,Arras,127.0
+Dunkerque,Cluses,127.0
+Dunkerque,Annemasse,127.0
+Dunkerque,St-Michel-Valloire,127.0
+Béziers,Nîmes,24.0
+Strasbourg-Ville,Lunéville,24.0
+Bourg-en-Bresse,Le Creusot-Montceau-Montchanin,24.0
+St-Malo,Vitré,24.5
+Carentan,Lisieux,25.0
+Surgères,Futuroscope,25.0
+Morcenx,Tarbes,25.0
+Aix-les-Bains-Le Revard,St-Gervais-les-Bains-Le Fayet,25.0
+Dijon-Ville,Mâcon-Ville,24.5
+Versailles-Chantiers,Rouen-Rive-Droite,25.5
+Angers-St-Laud,Savenay,26.0
+Lison,Bernay,26.0
+Toulon,Antibes,26.0
+Chambéry-Challes-les-Eaux,Lyon-Perrache-Voyageurs,26.0
+Bordeaux-St-Jean,Morcenx,26.0
+Cherbourg,Caen,26.5
+Chambéry-Challes-les-Eaux,Sallanches-Combloux-Megève,26.5
+Limoges-Bénédictins,Châteauroux,26.5
+La Souterraine,Vierzon-Ville,27.0
+Dole-Ville,Montbéliard,27.0
+Chambéry-Challes-les-Eaux,St-Gervais-les-Bains-Le Fayet,27.0
+Lyon-Part-Dieu,Lons-le-Saunier,26.5
+Lyon-St-Exupéry-TGV,Lons-le-Saunier,26.5
+Brest,St-Brieuc,28.5
+Montbard,Chalon-sur-Saône,27.5
+Narbonne,Toulouse-Matabiau,28.5
+Bourg-St-Maurice,Bourg-en-Bresse,30.0
+Le Mans,Ancenis,30.0
+Carcassonne,Montpellier (CNM),29.0
+Angers-St-Laud,La Roche-sur-Yon,29.0
+Brive-la-Gaillarde,La Souterraine,29.0
+Mâcon-Loché-TGV,Bellegarde,30.0
+Arles,Valence,31.0
+Culmont-Chalindrey,Nancy-Ville,30.0
+Angers-St-Laud,Les Sables-d'Olonne,32.0
+Angers-St-Laud,Redon,32.0
+Marmande,Toulouse-Matabiau,32.0
+Agen,Libourne,33.0
+Lyon-Part-Dieu,Annemasse,33.0
+Lorient,Rennes,34.0
+Auray,Vitré,34.0
+Cannes,Marseille-Blancarde,35.0
+Dijon-Ville,Lyon-St-Exupéry-TGV,36.0
+Juvisy,Vierzon-Ville,35.0
+Sablé,St-Nazaire,36.0
+Quimperlé,Rennes,36.0
+Grenoble,Mâcon-Ville,36.0
+Le Teil,Marseille-St-Charles,36.0
+Marseille-St-Charles,Montélimar,36.0
+Châlons-en-Champagne,Thionville,37.0
+Poitiers,Libourne,38.0
+Le Havre,Versailles-Chantiers,38.0
+Bréauté-Beuzeville,Massy-TGV,38.0
+Sète,Toulouse-Matabiau,38.0
+Futuroscope,Libourne,39.0
+Aix-en-Provence-TGV,Antibes,39.0
+Marseille-Blancarde,Nice-Ville,39.0
+Neufchâteau,Chalon-sur-Saône,38.0
+Lyon-Part-Dieu,Évian-les-Bains,40.0
+St-Étienne-Châteaucreux,Le Creusot-Montceau-Montchanin,40.0
+Hendaye,Bordeaux-St-Jean,40.0
+Le Havre,Massy-TGV,41.0
+Libourne,Montauban-Ville-Bourbon,41.0
+Castelnaudary,Nîmes,40.0
+Châtellerault,Libourne,41.0
+Aix-en-Provence-TGV,Nice-Ville,41.0
+La Rochelle-Ville,St-Pierre-des-Corps,42.0
+Mâcon-Loché-TGV,Sallanches-Combloux-Megève,42.0
+Les Sables-d'Olonne,Sablé,42.0
+Facture-Biganos,Tarbes,42.0
+Le Mans,Le Pouliguen,44.0
+Modane,Lyon-Part-Dieu,45.0
+Irun,Libourne,45.0
+Pornichet,St-Pierre-des-Corps,45.0
+St-Péray,Le Creusot-Montceau-Montchanin,45.0
+Dax,Ruffec,46.0
+Metz-Ville,Is-sur-Tille,46.0
+Le Teil,Hyères,47.0
+Hyères,Montélimar,47.0
+Nîmes,Toulouse-Matabiau,47.0
+Laval,Landerneau,49.0
+Lourdes,Libourne,49.0
+Villeneuve-lès-Avignon,Cannes,50.0
+Villeneuve-lès-Avignon,Antibes,51.0
+Onville,Paris-Est,50.0
+Strasbourg-Ville,Mouchard,52.0
+Juvisy,La Souterraine,52.0
+Villeneuve-lès-Avignon,Nice-Ville,53.0
+Agen,Montpellier (CNM),55.0
+Ruffec,St-Jean-de-Luz-Ciboure,55.0
+Limoges-Bénédictins,Juvisy,62.0
+Bordeaux-St-Jean,Béziers,64.0
+Lyon-Part-Dieu,Toul,63.0
+Nancy-Ville,Lyon-Part-Dieu,63.0
+Futuroscope,Bayonne,66.0
+Biarritz,Futuroscope,67.0
+Ruffec,Toulouse-Matabiau,72.0
+Brive-la-Gaillarde,Juvisy,72.0
+Lourdes,Poitiers,73.0
+Lourdes,Futuroscope,73.0
+Évreux-Embranchement,Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),38.0
+Marseille-St-Charles,Sète,37.0
+Le Havre,Conflans-Fin-d'Oise,40.0
+Champagne-Ardenne-TGV,Lorraine-TGV,42.0
+Champagne-Ardenne-TGV,Paris-Est,44.0
+Paris-Est,Châlons-en-Champagne,44.0
+Avignon-TGV,Hyères,43.0
+Metz-Ville,Champagne-Ardenne-TGV,46.0
+Valence-TGV,Le Creusot-Montceau-Montchanin,48.0
+Valence,Le Creusot-Montceau-Montchanin,48.0
+Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),Lisieux,51.0
+Marseille-St-Charles,Valence,48.0
+Aix-en-Provence-TGV,Narbonne,49.0
+Le Havre,Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),53.0
+Le Creusot-Montceau-Montchanin,Sens,53.0
+Lille-Europe,Paris-Nord,63.0
+Lille-Flandres,Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),63.0
+Tourcoing,Paris-Nord,63.0
+Croix-Wasquehal,Paris-Nord,63.0
+Nîmes,Lyon-St-Exupéry-TGV,60.0
+Cherbourg,Mantes-la-Jolie,60.0
+Dijon-Ville,Valence,57.0
+Dunkerque,Marne-la-Vallée-Chessy,66.0
+Avignon-TGV,Le Creusot-Montceau-Montchanin,61.0
+Lyon-Part-Dieu,Montpellier (CNM),65.0
+Avignon-TGV,Nice-Ville,62.0
+Fontainebleau-Avon,Le Creusot-Montceau-Montchanin,67.0
+Valence-TGV,Les Arcs-Draguignan,65.0
+Perpignan,Valence-TGV,65.0
+Lyon-St-Exupéry-TGV,Toulon,72.0
+Laroche-Migennes,Lyon-Perrache-Voyageurs,73.0
+Aix-en-Provence-TGV,Mâcon-Loché-TGV,75.0
+Aix-en-Provence-TGV,Bourg-en-Bresse,79.0
+Valence-TGV,Monaco-Monte-Carlo,72.0
+Cannes,Valence,73.0
+Mâcon-Loché-TGV,Les Arcs-Draguignan,81.0
+Lyon-Part-Dieu,Melun,81.0
+Dijon-Ville,Cherbourg,86.0
+Champagne-Ardenne-TGV,St-Pierre-des-Corps,83.0
+Marseille-St-Charles,Beaune,87.0
+Laroche-Migennes,Valence-TGV,83.0
+Le Mans,Le Creusot-Montceau-Montchanin,87.0
+Vendôme-Villiers-sur-Loir,Lille-Europe,101.0
+Lille-Flandres,Les Aubrais-Orléans,88.0
+Lyon-Perrache-Voyageurs,St-Raphaël-Valescure,86.0
+Lyon-St-Exupéry-TGV,St-Raphaël-Valescure,86.0
+Lorraine-TGV,TGV Haute-Picardie,95.0
+Rives,Paris-Gare-de-Lyon,96.0
+Besançon-Viotte,Lisieux,97.0
+Le Mans,Lille-Europe,92.0
+Avignon-TGV,Laroche-Migennes,92.0
+Bordeaux-St-Jean,Paris-Austerlitz,96.0
+Angers-St-Laud,Douai,101.0
+Lille-Flandres,St-Pierre-des-Corps,101.0
+Lille-Flandres,Tours,101.0
+Tours,Lille-Europe,101.0
+Marseille-St-Charles,Montbéliard,106.0
+Aix-en-Provence-TGV,Montbéliard,106.0
+Agen,Lyon-Part-Dieu,103.0
+La Roche-sur-Foron,Paris-Gare-de-Lyon,109.0
+Bellegarde,St-Raphaël-Valescure,98.0
+Strasbourg-Ville,TGV Haute-Picardie,110.0
+St-Maixent (Deux-Sèvres),TGV Haute-Picardie,106.0
+Le Mans,Lorraine-TGV,106.0
+Lille-Flandres,Futuroscope,109.0
+Arras,Futuroscope,109.0
+Fontainebleau-Avon,Aix-en-Provence-TGV,105.0
+Lille-Flandres,Nantes,108.0
+Nantes,Arras,108.0
+Neufchâteau,Toulon,105.0
+Beaune,Toulouse-Matabiau,97.0
+Le Mans,Valence-TGV,113.0
+Antibes,Beaune,116.0
+Surgères,TGV Haute-Picardie,112.0
+Grenoble,St-Pierre-des-Corps,112.0
+Le Mans,Chambéry-Challes-les-Eaux,113.0
+Le Croisic,Lyon-Part-Dieu,113.0
+Laval,Grenoble,114.0
+Bordeaux-St-Jean,Lyon-Part-Dieu,115.0
+Dunkerque,Lyon-Perrache-Voyageurs,116.0
+Niort,Arras,118.0
+St-Maixent (Deux-Sèvres),Arras,118.0
+Niort,Douai,118.0
+Lille-Flandres,Niort,118.0
+St-Maixent (Deux-Sèvres),Lille-Europe,118.0
+St-Maixent (Deux-Sèvres),Douai,118.0
+Rives,Lille-Europe,118.0
+Cluses,TGV Haute-Picardie,119.0
+TGV Haute-Picardie,Aix-les-Bains-Le Revard,119.0
+Moûtiers-Salins-Brides-les-Bains,Rouen-Rive-Droite,121.0
+Aime-La Plagne,Rouen-Rive-Droite,121.0
+Landry,Rouen-Rive-Droite,121.0
+Le Havre,Albertville,119.0
+Le Mans,St-Jean-de-Maurienne-Arvan,120.0
+Le Mans,Landry,120.0
+Angers-St-Laud,Bourg-St-Maurice,120.0
+Angers-St-Laud,Annecy,120.0
+Angers-St-Laud,St-Michel-Valloire,120.0
+Angers-St-Laud,Annemasse,120.0
+Angers-St-Laud,La Roche-sur-Foron,120.0
+Lille-Flandres,Vierzon-Ville,97.0
+Paris-Est,Charleville-Mézières,48.0
+Lille-Europe,Marmande,144.0
+Castelnaudary,TGV Haute-Picardie,150.0
+Le Pouliguen,Lyon-St-Exupéry-TGV,113.0
+Laroche-Migennes,Lyon-St-Exupéry-TGV,73.0
+Lyon-St-Exupéry-TGV,Rouen-Rive-Droite,97.0
+Lyon-St-Exupéry-TGV,Sens,78.0
+Paris-Gare-de-Lyon,Aix-les-Bains-Le Revard,103.0
+Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),Arras,50.0
+Marne-la-Vallée-Chessy,Toulon,121.0
+Marne-la-Vallée-Chessy,Douai,52.0
+Brive-la-Gaillarde,Marne-la-Vallée-Chessy,101.0
+Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),Vierzon-Ville,62.0
+Châteauroux,Marne-la-Vallée-Chessy,69.0
+Marne-la-Vallée-Chessy,Vierzon-Ville,62.0
+Massy-TGV,Douai,52.0
+Dijon-Ville,Mantes-la-Jolie,65.0
+Avignon-Centre,Lyon-St-Exupéry-TGV,51.0
+Dijon-Ville,Mantes-la-Jolie,65.0
+Montpellier (CNM),Beaune,81.0
+Montbard,Lille-Europe,102.0
+Mulhouse-Ville,Lille-Europe,136.0
+Montbard,Belfort-Montbéliard-TGV,53.0
+Mouchard,Paris-Gare-de-Lyon,82.0
+Colmar,Chalon-sur-Saône,72.0
+Mulhouse-Ville,Chalon-sur-Saône,65.0
+Colmar,Lons-le-Saunier,60.0
+Mulhouse-Ville,Lons-le-Saunier,52.0
+Mulhouse-Ville,Bourg-en-Bresse,64.0
+Dijon-Ville,Carcassonne,107.0
+Dijon-Ville,Nîmes,84.0
+Béziers,Chalon-sur-Saône,81.0
+Béziers,Mâcon-Ville,81.0
+Mâcon-Ville,Montpellier (CNM),81.0
+Perpignan,Chalon-sur-Saône,84.0
+Dijon-Ville,Toulouse-Matabiau,122.0
+Dijon-Ville,Cannes,124.0
+Dijon-Ville,Nice-Ville,124.0
+Aix-en-Provence-TGV,Culmont-Chalindrey,98.0
+Culmont-Chalindrey,Marseille-St-Charles,98.0
+Besançon-Viotte,Avignon-TGV,91.0
+Besançon-Franche-Comté-TGV,Valence-TGV,73.0
+Valence-TGV,Lons-le-Saunier,53.0
+Avignon-TGV,Bourg-en-Bresse,65.0
+Nancy-Ville,Marseille-St-Charles,117.0
+Avignon-TGV,Toul,107.0
+Metz-Ville,Toulon,132.0
+Nancy-Ville,Cannes,135.0
+Nancy-Ville,Nice-Ville,135.0
+Besançon-Viotte,Aix-en-Provence-TGV,111.0
+Besançon-Viotte,Montpellier (CNM),111.0
+Besançon-Viotte,Lyon-St-Exupéry-TGV,51.0
+Mulhouse-Ville,Lyon-St-Exupéry-TGV,78.0
+Lyon-Perrache-Voyageurs,Belfort-Montbéliard-TGV,67.0
+Lyon-Perrache-Voyageurs,Besançon-Franche-Comté-TGV,51.0
+Lille-Flandres,Champagne-Ardenne-TGV,80.0
+Nancy-Ville,Futuroscope,112.0
+Massy-TGV,Nancy-Ville,77.0
+Nancy-Ville,Nantes,121.0
+Surgères,Marne-la-Vallée-Chessy,89.0
+Lamballe,Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),84.0
+Marne-la-Vallée-Chessy,St-Jean-de-Luz-Ciboure,112.0
+Irun,Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),112.0
+Marne-la-Vallée-Chessy,Montauban-Ville-Bourbon,109.0
+Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),Montauban-Ville-Bourbon,109.0
+Paris-Austerlitz,Toulouse-Matabiau,109.0
+Béziers,Paris-Gare-de-Lyon,116.0
+Perpignan,Paris-Gare-de-Lyon,124.0
+Nice-Ville,Paris-Gare-de-Lyon,132.0
+Massy-Palaiseau-Grande-Ceinture,Valence-TGV,107.0
+Paris-Nord,Valence-TGV,107.0
+Béziers,Marne-la-Vallée-Chessy,116.0
+Béziers,Paris-Nord,116.0
+Paris-Montparnasse,Sète,116.0
+Castelnaudary,Marne-la-Vallée-Chessy,116.0
+Paris-Montparnasse,Narbonne,116.0
+Paris-Gare-de-Lyon,Menton,132.0
+Paris-Gare-de-Lyon,Monaco-Monte-Carlo,132.0
+Cannes,Marne-la-Vallée-Chessy,132.0
+Cannes,Paris-Nord,132.0
+Paris-Nord,Les Arcs-Draguignan,132.0
+Paris-Gare-de-Lyon,Moûtiers-Salins-Brides-les-Bains,118.0
+Marne-la-Vallée-Chessy,Moûtiers-Salins-Brides-les-Bains,118.0
+Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),Moûtiers-Salins-Brides-les-Bains,118.0
+Massy-TGV,Landry,118.0
+Landry,Paris-Nord,118.0
+Massy-TGV,St-Michel-Valloire,113.0
+Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),Annecy,104.0
+Paris-Gare-de-Lyon,Annemasse,108.0
+Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),Annemasse,108.0
+Marne-la-Vallée-Chessy,Évian-les-Bains,108.0
+Marne-la-Vallée-Chessy,Thonon-les-Bains,108.0
+Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),Thonon-les-Bains,108.0
+Paris-Nord,Évian-les-Bains,108.0
+Paris-Nord,Thonon-les-Bains,108.0
+Massy-TGV,St-Gervais-les-Bains-Le Fayet,119.0
+Paris-Gare-de-Lyon,Le Creusot-Montceau-Montchanin,82.0
+Marne-la-Vallée-Chessy,Le Creusot-Montceau-Montchanin,82.0
+Mâcon-Loché-TGV,Marne-la-Vallée-Chessy,83.0
+Meuse-TGV,Nancy-Ville,23.5
+Avignon-TGV,Montpellier (CNM),25.5
+Lyon-Perrache-Voyageurs,Valence,30.0
+Aix-en-Provence-TGV,Avignon-TGV,30.0
+Avignon-TGV,Valence-TGV,33.0
+Lyon-St-Exupéry-TGV,Montélimar,35.0
+Le Teil,Lyon-Part-Dieu,35.0
+Lyon-Perrache-Voyageurs,Montélimar,35.0
+Évreux-Embranchement,Marne-la-Vallée-Chessy,38.0
+Montpellier (CNM),Marseille-St-Charles,37.0
+Aix-en-Provence-TGV,Montpellier (CNM),37.0
+Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),Rouen-Rive-Droite,40.0
+Mâcon-Ville,Valence,41.0
+Avignon-TGV,Toulon,41.0
+Laroche-Migennes,Le Creusot-Montceau-Montchanin,46.0
+Aix-en-Provence-TGV,Valence,48.0
+Caen,Marne-la-Vallée-Chessy,57.0
+Lille-Flandres,Paris-Nord,63.0
+Valence-TGV,Sète,54.0
+Valence,Sète,54.0
+Tours,Massy-TGV,65.0
+Lyon-Part-Dieu,Miramas,58.0
+Avignon-TGV,Cannes,57.0
+Champagne-Ardenne-TGV,TGV Haute-Picardie,65.0
+Lyon-St-Exupéry-TGV,Montpellier (CNM),65.0
+Avignon-TGV,Menton,62.0
+Tours,Marne-la-Vallée-Chessy,65.0
+Lille-Flandres,Massy-TGV,63.0
+Lyon-St-Exupéry-TGV,Marseille-St-Charles,67.0
+Avignon-TGV,Bellegarde,64.0
+Valence,Les Arcs-Draguignan,65.0
+Perpignan,Valence,65.0
+Avignon-TGV,Le Creusot-Montceau-Montchanin,68.0
+Mâcon-Loché-TGV,Montpellier (CNM),69.0
+Lorraine-TGV,Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),77.0
+Montbard,Lisieux,78.0
+Champagne-Ardenne-TGV,Lille-Europe,80.0
+Valence-TGV,Antibes,72.0
+Valence-TGV,Menton,72.0
+Lyon-St-Exupéry-TGV,Perpignan,77.0
+Lyon-Perrache-Voyageurs,Sens,78.0
+Dijon-Ville,Évreux-Embranchement,82.0
+Champagne-Ardenne-TGV,Arras,82.0
+Marseille-St-Charles,Bellegarde,77.0
+Mâcon-Loché-TGV,Toulon,81.0
+Fontainebleau-Avon,Lyon-Part-Dieu,81.0
+Le Mans,Champagne-Ardenne-TGV,83.0
+Angers-St-Laud,TGV Haute-Picardie,89.0
+Toulon,Bellegarde,84.0
+Bellegarde,Les Arcs-Draguignan,84.0
+Lyon-Part-Dieu,Antibes,86.0
+Cannes,Lyon-St-Exupéry-TGV,86.0
+Lyon-Part-Dieu,Toulouse-Matabiau,86.0
+Culoz,Paris-Gare-de-Lyon,89.0
+Agen,Valence-TGV,89.0
+Beaune,Sète,84.0
+Bordeaux-St-Jean,Paris-Montparnasse,96.0
+Carcassonne,Beaune,84.0
+Cannes,Mâcon-Loché-TGV,95.0
+Mâcon-Loché-TGV,St-Raphaël-Valescure,95.0
+St-Nazaire,TGV Haute-Picardie,98.0
+Le Croisic,TGV Haute-Picardie,98.0
+Champagne-Ardenne-TGV,Nantes,98.0
+TGV Haute-Picardie,Le Creusot-Montceau-Montchanin,101.0
+La Roche-sur-Foron,Paris-Nord,109.0
+Lyon-St-Exupéry-TGV,TGV Haute-Picardie,106.0
+Lille-Flandres,Châteauroux,105.0
+Chalon-sur-Saône,Toulouse-Matabiau,97.0
+Pornichet,Le Creusot-Montceau-Montchanin,107.0
+Poitiers,Arras,109.0
+Poitiers,Douai,109.0
+Marseille-St-Charles,Sens,105.0
+Aix-en-Provence-TGV,Sens,105.0
+Aix-en-Provence-TGV,Melun,105.0
+La Baule-Escoublac,Lille-Europe,108.0
+Le Creusot-Montceau-Montchanin,Douai,111.0
+Agen,Mâcon-Ville,109.0
+Agen,Chalon-sur-Saône,109.0
+Lyon-Perrache-Voyageurs,St-Nazaire,109.0
+Le Mans,Valence,113.0
+Tours,Valence,113.0
+Valence,St-Pierre-des-Corps,113.0
+Beaune,St-Raphaël-Valescure,116.0
+Rouen-Rive-Droite,Valence-TGV,112.0
+Laval,Lorraine-TGV,112.0
+TGV Haute-Picardie,Valence-TGV,116.0
+La Baule-Escoublac,Lyon-Part-Dieu,113.0
+Le Croisic,Lyon-Perrache-Voyageurs,113.0
+Dole-Ville,Lille-Europe,113.0
+Angoulême,Lyon-Perrache-Voyageurs,116.0
+Limoges-Bénédictins,Lille-Europe,119.0
+Angers-St-Laud,Valence-TGV,116.0
+Saumur-Rive-Droite,Valence,116.0
+Chambéry-Challes-les-Eaux,TGV Haute-Picardie,119.0
+Modane,TGV Haute-Picardie,119.0
+Annemasse,TGV Haute-Picardie,119.0
+Le Havre,Moûtiers-Salins-Brides-les-Bains,121.0
+Le Mans,Moûtiers-Salins-Brides-les-Bains,120.0
+Le Mans,Aime-La Plagne,120.0
+La Roche-sur-Foron,Douai,127.0
+Arras,Aix-les-Bains-Le Revard,127.0
+Landry,Nantes,127.0
+Modane,Nantes,127.0
+St-Avre-la-Chambre,Nantes,127.0
+Avignon-TGV,Rouen-Rive-Droite,129.0
+Avignon-TGV,Bréauté-Beuzeville,129.0
+Nantes,Valence-TGV,132.0
+Moûtiers-Salins-Brides-les-Bains,Rennes,132.0
+Aime-La Plagne,Rennes,132.0
+La Roche-sur-Foron,Rennes,132.0
+Laval,Aix-en-Provence-TGV,133.0
+Saumur-Rive-Droite,Avignon-TGV,133.0
+Saumur-Rive-Droite,Avignon-TGV,133.0
+Saumur-Rive-Droite,Marseille-St-Charles,133.0
+Avignon-TGV,TGV Haute-Picardie,136.0
+Nîmes,TGV Haute-Picardie,136.0
+Cluses,St-Brieuc,137.0
+Guingamp,Annemasse,137.0
+Annecy,St-Brieuc,137.0
+St-Jean-de-Maurienne-Arvan,St-Brieuc,137.0
+Guingamp,Moûtiers-Salins-Brides-les-Bains,137.0
+Modane,St-Brieuc,137.0
+Aime-La Plagne,St-Brieuc,137.0
+Lorient,Bourg-St-Maurice,137.0
+St-Brieuc,St-Michel-Valloire,137.0
+Chambéry-Challes-les-Eaux,St-Brieuc,137.0
+Landry,Lorient,137.0
+St-Avre-la-Chambre,St-Brieuc,137.0
+Modane,Redon,137.0
+St-Jean-de-Maurienne-Arvan,Redon,137.0
+Guingamp,Landry,137.0
+Annemasse,Redon,137.0
+Annemasse,Auray,137.0
+Landry,Redon,137.0
+Guingamp,Aix-les-Bains-Le Revard,137.0
+St-Avre-la-Chambre,Vannes,137.0
+La Roche-sur-Foron,Auray,137.0
+Aime-La Plagne,Redon,137.0
+St-Brieuc,Aix-les-Bains-Le Revard,137.0
+Avignon-TGV,Lille-Europe,144.0
+Lille-Flandres,Avignon-TGV,144.0
+Avignon-TGV,Douai,144.0
+Avignon-TGV,Douai,144.0
+Montpellier (CNM),Nantes,142.0
+Avignon-TGV,Nantes,142.0
+Lille-Europe,Bayonne,144.0
+Biarritz,Lille-Europe,144.0
+Lille-Europe,St-Jean-de-Luz-Ciboure,144.0
+Lille-Flandres,Biarritz,144.0
+TGV Haute-Picardie,Bayonne,144.0
+Biarritz,Douai,144.0
+Agen,Arras,144.0
+Arras,Montauban-Ville-Bourbon,144.0
+Aix-en-Provence-TGV,Lille-Europe,144.0
+Marseille-St-Charles,Arras,144.0
+Lille-Flandres,Nîmes,144.0
+Montpellier (CNM),Arras,144.0
+Brest,Moûtiers-Salins-Brides-les-Bains,147.0
+Cluses,Morlaix,147.0
+Cluses,Quimper,147.0
+Brest,Chambéry-Challes-les-Eaux,147.0
+Brest,Landry,147.0
+Quimper,St-Michel-Valloire,147.0
+Quimper,St-Gervais-les-Bains-Le Fayet,147.0
+Morlaix,Bourg-St-Maurice,147.0
+Morlaix,Moûtiers-Salins-Brides-les-Bains,147.0
+Quimper,Albertville,147.0
+Brest,Aix-les-Bains-Le Revard,147.0
+Morlaix,Annecy,147.0
+Lille-Europe,Agde,150.0
+TGV Haute-Picardie,Narbonne,150.0
+Carcassonne,Lille-Europe,150.0
+Lille-Flandres,Béziers,150.0
+Arras,Agde,150.0
+Douai,Toulouse-Matabiau,150.0
+TGV Haute-Picardie,Toulon,155.0
+TGV Haute-Picardie,St-Raphaël-Valescure,155.0
+Cannes,TGV Haute-Picardie,155.0
+Lille-Flandres,Les Arcs-Draguignan,155.0
+Avignon-TGV,Carcassonne,54.0
+Bordeaux-St-Jean,Lyon-St-Exupéry-TGV,115.0
+Le Croisic,Lyon-St-Exupéry-TGV,113.0
+Lyon-St-Exupéry-TGV,Les Arcs-Draguignan,80.0
+Paris-Nord,Calais-Fréthun,66.0
+Massy-TGV,Lille-Europe,63.0
+Belfort,Paris-Gare-de-Lyon,88.0
+Lille-Flandres,Marne-la-Vallée-Chessy,63.0
+Boulogne-Ville,Paris-Nord,66.0
+Calais-Ville,Paris-Nord,66.0
+Marne-la-Vallée-Chessy,Arras,50.0
+Saumur-Rive-Droite,Massy-TGV,70.0
+Lyon-St-Exupéry-TGV,Valence-TGV,30.0
+Avignon-TGV,Lyon-Part-Dieu,51.0
+Lyon-Perrache-Voyageurs,Valence-TGV,30.0
+Dijon-Ville,Paris-Nord,65.0
+Paris-Nord,Toulon,121.0
+Lille-Europe,Marne-la-Vallée-Chessy,63.0
+Lille-Europe,Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),63.0
+Mulhouse-Ville,Montbard,72.0
+Futuroscope,Tarbes,73.0
+Lourdes,St-Pierre-des-Corps,82.0
+Aix-les-Bains-Le Revard,St-Raphaël-Valescure,100.0
+Nîmes,Montauban-Ville-Bourbon,53.0
+Mâcon-Ville,Bourg-St-Maurice,50.0
+Avignon-TGV,Orange,8.5
+Versailles-Chantiers,Lison,52.0
+Versailles-Chantiers,Carentan,52.0
+Cherbourg,Versailles-Chantiers,52.0
+Caen,Massy-Palaiseau-Grande-Ceinture,44.0
+Caen,Versailles-Chantiers,44.0
+Évreux-Embranchement,Massy-Palaiseau-Grande-Ceinture,17.0
+Massy-Palaiseau-Grande-Ceinture,Bernay,24.0
+Grenoble,Annecy,24.5
+Bourg-en-Bresse,St-Michel-Valloire,38.0
+St-Avre-la-Chambre,Bourg-en-Bresse,38.0
+Valence-TGV,Montélimar,11.3
+Vendôme,Châtellerault,30.0
+Angers-St-Laud,Vendôme-Villiers-sur-Loir,31.0
+Vendôme-Villiers-sur-Loir,Futuroscope,31.0
+Valence-TGV,Aix-les-Bains-Le Revard,37.0
+Vendôme,Paris-Montparnasse,39.0
+Valence,Agde,43.0
+Lyon-St-Exupéry-TGV,Bourg-St-Maurice,44.0
+Avignon-TGV,Mouchard,53.0
+Aix-en-Provence-TGV,Mouchard,67.0
+Agde,Le Creusot-Montceau-Montchanin,75.0
+Chambéry-Challes-les-Eaux,Toulon,83.0
+Toulon,Aix-les-Bains-Le Revard,85.0
+Culoz,Antibes,98.0
+Chambéry-Challes-les-Eaux,Antibes,100.0
+Chambéry-Challes-les-Eaux,Nice-Ville,102.0
+Annecy,Antibes,106.0
+Bordeaux-St-Jean,Beaune,105.0
+Massy-TGV,Montpellier (CNM),114.0
+Massy-TGV,Nîmes,114.0
+Montpellier (CNM),Paris-Nord,114.0
+Marseille-St-Charles,Paris-Gare-de-Lyon,116.0
+Aix-en-Provence-TGV,Mantes-la-Jolie,116.0
+Avignon-TGV,Mantes-la-Jolie,116.0
+Avignon-TGV,Paris-Gare-de-Lyon,116.0
+Avignon-TGV,Massy-Palaiseau-Grande-Ceinture,116.0
+Lyon-Part-Dieu,Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),97.0
+Lyon-Part-Dieu,Mantes-la-Jolie,97.0
+Massy-TGV,Lyon-Perrache-Voyageurs,97.0
+Versailles-Chantiers,Lyon-Perrache-Voyageurs,97.0
+Lyon-St-Exupéry-TGV,Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),97.0
+Mantes-la-Jolie,Lyon-Perrache-Voyageurs,97.0
+Grenoble,Paris-Nord,108.0
+Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),École-Valentin,83.0
+Vendôme-Villiers-sur-Loir,St-Maixent (Deux-Sèvres),39.0
+Cherbourg,Mantes-la-Jolie,60.0
+Carcassonne,Marseille-St-Charles,58.0
+Avignon-TGV,Toulouse-Matabiau,65.0
+Caen,Montbard,78.0
+Colmar,Montbéliard,21.0
+Lons-le-Saunier,Montbéliard,30.0
+Béziers,Montélimar,41.0
+Montélimar,Narbonne,43.0
+Perpignan,Montélimar,50.0
+Béziers,Le Creusot-Montceau-Montchanin,77.0
+Strasbourg-Ville,Lorraine-TGV,41.0
+Strasbourg-Ville,Paris-Est,107.0
+Strasbourg-Ville,Marne-la-Vallée-Chessy,107.0
+Colmar,Nîmes,107.0
+Colmar,Montpellier (CNM),112.0
+Strasbourg-Ville,Lille-Europe,132.0
+Strasbourg-Ville,Douai,132.0
+Strasbourg-Ville,Le Mans,132.0
+Strasbourg-Ville,Tours,132.0
+Angers-St-Laud,Strasbourg-Ville,141.0
+Strasbourg-Ville,Aix-en-Provence-TGV,124.0
+Colmar,Marseille-St-Charles,124.0
+Aix-en-Provence-TGV,Belfort-Montbéliard-TGV,124.0
+Metz-Ville,Aix-en-Provence-TGV,124.0
+Neufchâteau,Valence-TGV,79.0
+Lille-Flandres,Strasbourg-Ville,132.0
+Metz-Ville,Mâcon-Ville,79.0
+Metz-Ville,Mulhouse-Ville,50.0
+Thionville,Dijon-Ville,72.0
+Thionville,Belfort-Montbéliard-TGV,58.0
+Toul,Les Arcs-Draguignan,123.0
+Culmont-Chalindrey,Toulon,100.0
+Culmont-Chalindrey,Les Arcs-Draguignan,105.0
+Toul,Narbonne,107.0
+Culmont-Chalindrey,Neufchâteau,24.5
+Culmont-Chalindrey,Toulouse-Matabiau,108.0
+Grenoble,Versailles-Chantiers,108.0
+Bellegarde,Versailles-Chantiers,91.0
+St-Michel-Valloire,Versailles-Chantiers,113.0
+Valence-TGV,Paris-Montparnasse,107.0
+Annecy,Massy-Palaiseau-Grande-Ceinture,104.0
+Bourg-en-Bresse,Massy-Palaiseau-Grande-Ceinture,84.0
+Perpignan,Massy-TGV,124.0
+Agde,Massy-TGV,116.0
+Bellegarde,Massy-Palaiseau-Grande-Ceinture,91.0
+Mulhouse-Ville,Paris-Est,114.0
+Nurieux,Paris-Est,89.0
+Montauban-Ville-Bourbon,Sète,45.0
+Arras,St-Brieuc,119.0
+Lamballe,Arras,119.0
+Guingamp,Lyon-Perrache-Voyageurs,122.0
+Lille-Europe,La Rochelle-Ville,122.0
+St-Brieuc,TGV Haute-Picardie,120.0
+Caen,Bourg-St-Maurice,125.0
+Caen,Aime-La Plagne,125.0
+Lison,Albertville,125.0
+Moûtiers-Salins-Brides-les-Bains,Lisieux,125.0
+Chambéry-Challes-les-Eaux,Lisieux,125.0
+Bayeux,Albertville,125.0
+Chambéry-Challes-les-Eaux,Poitiers,124.0
+Chambéry-Challes-les-Eaux,Valognes,125.0
+Valognes,Bourg-St-Maurice,125.0
+Carentan,Bourg-St-Maurice,125.0
+Évreux-Embranchement,Landry,125.0
+Évreux-Embranchement,Albertville,125.0
+Bourg-St-Maurice,Bernay,125.0
+Tours,Aix-en-Provence-TGV,125.0
+Tours,Marseille-St-Charles,125.0
+Lille-Europe,Annecy,127.0
+Lille-Europe,Valence-TGV,127.0
+Rennes,Aix-les-Bains-Le Revard,127.0
+Lille-Flandres,Brest,125.0
+Grenoble,La Baule-Escoublac,125.0
+Pornichet,Grenoble,125.0
+Le Croisic,Grenoble,125.0
+Bordeaux-St-Jean,Mâcon-Ville,128.0
+Lille-Europe,Bourg-St-Maurice,127.0
+Lille-Flandres,Grenoble,127.0
+Lille-Europe,St-Gervais-les-Bains-Le Fayet,127.0
+Lille-Flandres,Bourg-St-Maurice,127.0
+Lille-Europe,Albertville,127.0
+Modane,Lille-Europe,127.0
+Moûtiers-Salins-Brides-les-Bains,Arras,127.0
+Bourg-St-Maurice,Douai,127.0
+Albertville,Douai,127.0
+Modane,Arras,127.0
+Aime-La Plagne,Douai,127.0
+Lille-Flandres,Sallanches-Combloux-Megève,127.0
+Modane,Douai,127.0
+Dunkerque,Aime-La Plagne,127.0
+Douai,St-Michel-Valloire,127.0
+Landry,Douai,127.0
+Dunkerque,Albertville,127.0
+Arras,Sallanches-Combloux-Megève,127.0
+Lille-Flandres,St-Avre-la-Chambre,127.0
+St-Avre-la-Chambre,Douai,127.0
+Lille-Flandres,Annemasse,127.0
+St-Avre-la-Chambre,Arras,127.0
+Dunkerque,Modane,127.0
+Dunkerque,La Roche-sur-Foron,127.0
+Dunkerque,Annecy,127.0
+Lille-Europe,La Roche-sur-Foron,127.0
+Lille-Europe,Aix-les-Bains-Le Revard,127.0
+Annecy,Arras,127.0
+Nantes,St-Michel-Valloire,127.0
+La Roche-sur-Foron,Nantes,127.0
+Le Havre,Marseille-St-Charles,129.0
+Nantes,Valence,132.0
+Rennes,Valence,132.0
+Bourg-St-Maurice,Rennes,132.0
+Landry,Rennes,132.0
+Saumur-Rive-Droite,Aix-en-Provence-TGV,133.0
+Marseille-St-Charles,TGV Haute-Picardie,136.0
+Montpellier (CNM),TGV Haute-Picardie,136.0
+Guingamp,La Roche-sur-Foron,137.0
+La Roche-sur-Foron,St-Brieuc,137.0
+Moûtiers-Salins-Brides-les-Bains,St-Brieuc,137.0
+Vannes,Albertville,137.0
+Lorient,St-Michel-Valloire,137.0
+Cluses,Redon,137.0
+Lorient,St-Gervais-les-Bains-Le Fayet,137.0
+Aime-La Plagne,Vannes,137.0
+Guingamp,Albertville,137.0
+Landry,Auray,137.0
+Bourg-St-Maurice,Redon,137.0
+Chambéry-Challes-les-Eaux,Lorient,137.0
+Moûtiers-Salins-Brides-les-Bains,Auray,137.0
+Moûtiers-Salins-Brides-les-Bains,Redon,137.0
+Albertville,Redon,137.0
+La Roche-sur-Foron,Vannes,137.0
+La Roche-sur-Foron,Redon,137.0
+Lorient,Annecy,137.0
+Annecy,Redon,137.0
+Marseille-St-Charles,Nantes,142.0
+Avignon-TGV,Nantes,142.0
+Aix-en-Provence-TGV,Nantes,142.0
+Agen,Lille-Europe,144.0
+Dax,TGV Haute-Picardie,144.0
+Dax,Massy-TGV,122.0
+Massy-TGV,Tarbes,128.0
+Massy-TGV,Savenay,88.0
+Saumur-Rive-Droite,Lyon-Part-Dieu,99.0
+Châtellerault,St-Pierre-des-Corps,16.0
+Laval,Rennes,18.5
+Tours,Futuroscope,20.5
+Le Mans,Vitré,27.5
+Le Mans,Rennes,37.0
+Le Mans,Guingamp,53.0
+St-Étienne-Châteaucreux,Marne-la-Vallée-Chessy,100.0
+Montbard,Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),57.0
+Marne-la-Vallée-Chessy,Belfort-Montbéliard-TGV,97.0
+Massy-TGV,Valence,103.0
+Mantes-la-Jolie,Valence,103.0
+Miramas,Paris-Gare-de-Lyon,105.0
+Meuse-TGV,Marne-la-Vallée-Chessy,44.0
+Meuse-TGV,Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),44.0
+Dunkerque,Paris-Nord,66.0
+Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),Savenay,85.0
+Lyon-Perrache-Voyageurs,Nantes,108.0
+Lyon-Part-Dieu,Futuroscope,96.0
+Villeneuve-lès-Avignon,Marseille-St-Charles,30.0
+Avignon-TGV,Toulon,41.0
+Arles,Mâcon-Loché-TGV,61.0
+Colmar,Paris-Gare-de-Lyon,112.0
+Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),Saverne,85.0
+Vendôme-Villiers-sur-Loir,Grenoble,112.0
+Avignon-TGV,Vendôme-Villiers-sur-Loir,125.0
+Vendôme-Villiers-sur-Loir,Montpellier (CNM),125.0
+Vendôme-Villiers-sur-Loir,Arras,101.0
+Lorraine-TGV,Vendôme-Villiers-sur-Loir,106.0
+Vendôme-Villiers-sur-Loir,Saverne,127.0
+Marseille-St-Charles,Perpignan,51.0
+Colmar,Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),96.0
+Meuse-TGV,Saverne,51.0
+Lille-Flandres,École-Valentin,120.0
+Strasbourg-Ville,Chambéry-Challes-les-Eaux,102.0
+Strasbourg-Ville,Albertville,114.0
+Strasbourg-Ville,Landry,117.0
+Colmar,Moûtiers-Salins-Brides-les-Bains,109.0
+Colmar,Aime-La Plagne,109.0
+Besançon-Franche-Comté-TGV,Albertville,75.0
+Moûtiers-Salins-Brides-les-Bains,Besançon-Franche-Comté-TGV,78.0
+Aime-La Plagne,Besançon-Franche-Comté-TGV,78.0
+Avignon-TGV,Rouen-Rive-Droite,129.0
+Mulhouse-Ville,Avignon-TGV,114.0
+Avignon-TGV,Besançon-Franche-Comté-TGV,91.0
+Avignon-TGV,Culmont-Chalindrey,87.0
+Chambéry-Challes-les-Eaux,Versailles-Chantiers,103.0
+Massy-Palaiseau-Grande-Ceinture,Bourg-St-Maurice,118.0
+Laval,Modane,127.0
+Besançon-Viotte,Albertville,75.0
+Chambéry-Challes-les-Eaux,École-Valentin,63.0
+Moûtiers-Salins-Brides-les-Bains,École-Valentin,78.0
+Lille-Europe,Bellegarde,127.0
+Bordeaux-St-Jean,Valence,107.0
+Agen,Valence,89.0
+Le Pouliguen,Le Croisic,2.9
+Lille-Flandres,Croix-Wasquehal,2.9
+Biarritz,Bayonne,3.6
+Évian-les-Bains,Thonon-les-Bains,3.6
+Lille-Flandres,Roubaix,3.7
+Lille-Flandres,Tourcoing,4.3
+Frasne,Pontarlier,4.9
+Groisy-Thorens-la-Caille,Annecy,5.3
+Aime-La Plagne,Bourg-St-Maurice,5.4
+Cagnes-sur-Mer,Cannes,6.4
+Aix-en-Provence-TGV,Marseille-St-Charles,6.4
+Cluses,St-Gervais-les-Bains-Le Fayet,6.8
+Nice-Ville,Menton,7.2
+Massy-TGV,Bayonne,123.0
+Irun,Massy-TGV,123.0
+Lyon-Part-Dieu,Rennes,113.0
+Le Mans,Lyon-Part-Dieu,99.0
+Le Pouliguen,Nantes,18.5
+Laval,Dol,28.5
+Angoulême,Bordeaux-St-Jean,32.0
+Laval,Guingamp,39.0
+Le Mans,Redon,46.0
+Le Mans,St-Malo,46.0
+Laval,Quimperlé,47.0
+Facture-Biganos,Poitiers,51.0
+Poitiers,Arcachon,51.0
+Le Mans,Plouaret,55.0
+Montauban-Ville-Bourbon,St-Pierre-des-Corps,79.0
+La Teste,Poitiers,51.0
+Strasbourg-Ville,Angoulême,157.0
+Morlaix,Paris-Montparnasse,99.0
+Massy-TGV,Auray,100.0
+Brest,Marne-la-Vallée-Chessy,100.0
+Brest,Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),100.0
+Angers-St-Laud,Moûtiers-Salins-Brides-les-Bains,120.0
+Angers-St-Laud,St-Jean-de-Maurienne-Arvan,120.0
+Lille-Europe,St-Brieuc,119.0
+Guingamp,Arras,119.0
+Lamballe,Douai,119.0
+Guingamp,Lyon-Part-Dieu,122.0
+Lyon-Perrache-Voyageurs,St-Brieuc,122.0
+Surgères,Douai,122.0
+Neufchâteau,Antibes,124.0
+Meuse-TGV,Libourne,124.0
+Brest,TGV Haute-Picardie,120.0
+Caen,Moûtiers-Salins-Brides-les-Bains,125.0
+Aime-La Plagne,Lisieux,125.0
+Chambéry-Challes-les-Eaux,Châtellerault,124.0
+Cherbourg,Bourg-St-Maurice,125.0
+Valognes,Moûtiers-Salins-Brides-les-Bains,125.0
+Chambéry-Challes-les-Eaux,Bernay,125.0
+Carentan,Landry,125.0
+Landry,Bernay,125.0
+Albertville,Bernay,125.0
+Avignon-TGV,St-Pierre-des-Corps,125.0
+Tours,Avignon-TGV,125.0
+Valence-TGV,Douai,127.0
+Lille-Europe,Valence,127.0
+Valence,Douai,127.0
+Dunkerque,Valence-TGV,127.0
+Lille-Flandres,Valence,127.0
+Lille-Europe,Morlaix,125.0
+Brest,Douai,125.0
+Morlaix,Arras,125.0
+Quimperlé,Arras,125.0
+Le Pouliguen,Grenoble,125.0
+Bordeaux-St-Jean,Chalon-sur-Saône,128.0
+Lille-Europe,Moûtiers-Salins-Brides-les-Bains,127.0
+Cluses,Lille-Europe,127.0
+Lille-Europe,Aime-La Plagne,127.0
+Landry,Lille-Europe,127.0
+Chambéry-Challes-les-Eaux,Arras,127.0
+St-Jean-de-Maurienne-Arvan,Lille-Europe,127.0
+Lille-Flandres,Chambéry-Challes-les-Eaux,127.0
+Lille-Europe,Annemasse,127.0
+Lille-Flandres,St-Jean-de-Maurienne-Arvan,127.0
+St-Jean-de-Maurienne-Arvan,Arras,127.0
+Arras,St-Gervais-les-Bains-Le Fayet,127.0
+Dunkerque,Moûtiers-Salins-Brides-les-Bains,127.0
+Lille-Flandres,Modane,127.0
+Landry,Arras,127.0
+Dunkerque,Chambéry-Challes-les-Eaux,127.0
+Annemasse,Douai,127.0
+Lille-Flandres,La Roche-sur-Foron,127.0
+Grenoble,Arras,127.0
+Nantes,Bourg-St-Maurice,127.0
+Nantes,Moûtiers-Salins-Brides-les-Bains,127.0
+Nantes,Albertville,127.0
+Nantes,Sallanches-Combloux-Megève,127.0
+Le Havre,Avignon-TGV,129.0
+Rennes,Albertville,132.0
+Rennes,Sallanches-Combloux-Megève,132.0
+Angers-St-Laud,Avignon-TGV,133.0
+Angers-St-Laud,Montpellier (CNM),133.0
+Laval,Marseille-St-Charles,133.0
+Modane,Rennes,132.0
+Rennes,St-Michel-Valloire,132.0
+Lorraine-TGV,Libourne,141.0
+Guingamp,St-Gervais-les-Bains-Le Fayet,137.0
+Guingamp,Cluses,137.0
+Guingamp,Sallanches-Combloux-Megève,137.0
+St-Jean-de-Maurienne-Arvan,Vannes,137.0
+Guingamp,St-Michel-Valloire,137.0
+Chambéry-Challes-les-Eaux,Vannes,137.0
+Cluses,Vannes,137.0
+Bourg-St-Maurice,St-Brieuc,137.0
+Lorient,Aime-La Plagne,137.0
+Guingamp,Bourg-St-Maurice,137.0
+Landry,St-Brieuc,137.0
+St-Brieuc,Albertville,137.0
+Annemasse,Vannes,137.0
+Guingamp,St-Avre-la-Chambre,137.0
+Chambéry-Challes-les-Eaux,Auray,137.0
+La Roche-sur-Foron,Lorient,137.0
+Annecy,Auray,137.0
+Aix-les-Bains-Le Revard,Auray,137.0
+Lille-Flandres,Agen,144.0
+Lille-Flandres,Montauban-Ville-Bourbon,144.0
+Dax,Lille-Flandres,144.0
+Orthez,Paris-Montparnasse,123.0
+Massy-TGV,Lourdes,128.0
+Paris-Montparnasse,Tarbes,128.0
+Massy-TGV,Montauban-Ville-Bourbon,120.0
+Massy-TGV,Toulouse-Matabiau,121.0
+Angers-St-Laud,Lyon-Perrache-Voyageurs,99.0
+Saumur-Rive-Droite,Lyon-Perrache-Voyageurs,99.0
+Laval,Lyon-Part-Dieu,99.0
+Lyon-Part-Dieu,St-Pierre-des-Corps,97.0
+Futuroscope,St-Pierre-des-Corps,20.5
+Laval,Le Mans,22.5
+Angoulême,Futuroscope,25.5
+Laval,St-Malo,34.0
+Laval,St-Brieuc,36.0
+Angoulême,Arcachon,39.0
+Dijon-Ville,Besançon-Viotte,24.5
+Frasne,Paris-Gare-de-Lyon,82.0
+Paris-Gare-de-Lyon,Pontarlier,82.0
+Dijon-Ville,Belfort-Montbéliard-TGV,49.0
+Besançon-Viotte,Strasbourg-Ville,58.0
+Besançon-Viotte,Mulhouse-Ville,38.0
+Strasbourg-Ville,Valence-TGV,107.0
+Mâcon-Ville,Besançon-Franche-Comté-TGV,41.0
+Dijon-Ville,Narbonne,107.0
+Mâcon-Ville,Narbonne,84.0
+Dijon-Ville,Sète,101.0
+Nîmes,Mâcon-Ville,74.0
+Agde,Chalon-sur-Saône,81.0
+Mâcon-Ville,Toulouse-Matabiau,97.0
+Dijon-Ville,Marseille-St-Charles,91.0
+Aix-en-Provence-TGV,Chalon-sur-Saône,87.0
+Mâcon-Ville,Marseille-St-Charles,81.0
+Antibes,Chalon-sur-Saône,116.0
+Valence-TGV,Chalon-sur-Saône,51.0
+Aix-en-Provence-TGV,Besançon-Franche-Comté-TGV,111.0
+Avignon-TGV,Besançon-Franche-Comté-TGV,91.0
+Avignon-TGV,Lons-le-Saunier,75.0
+Marseille-St-Charles,Bourg-en-Bresse,82.0
+Valence-TGV,Bourg-en-Bresse,43.0
+Nancy-Ville,Nîmes,112.0
+Nancy-Ville,St-Raphaël-Valescure,135.0
+Metz-Ville,St-Raphaël-Valescure,143.0
+Nancy-Ville,Antibes,135.0
+Metz-Ville,Antibes,143.0
+Metz-Ville,Cannes,143.0
+Dijon-Ville,Lille-Flandres,111.0
+Besançon-Viotte,Nîmes,105.0
+Besançon-Viotte,Lyon-Perrache-Voyageurs,51.0
+Lille-Flandres,Mulhouse-Ville,136.0
+Mâcon-Ville,Perpignan,84.0
+Lille-Flandres,Nancy-Ville,102.0
+Nancy-Ville,TGV Haute-Picardie,95.0
+Lyon-Part-Dieu,Montauban-Ville-Bourbon,103.0
+Lille-Flandres,Lorraine-TGV,102.0
+Nancy-Ville,Poitiers,112.0
+Nancy-Ville,St-Pierre-des-Corps,106.0
+Le Mans,Nancy-Ville,106.0
+Vendôme-Villiers-sur-Loir,Paris-Montparnasse,55.0
+Massy-TGV,Ancenis,77.0
+Massy-Palaiseau-Grande-Ceinture,Nantes,85.0
+Surgères,Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),89.0
+Massy-TGV,Marmande,108.0
+Marne-la-Vallée-Chessy,Marmande,108.0
+Hendaye,Marne-la-Vallée-Chessy,112.0
+Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),Bayonne,112.0
+Marne-la-Vallée-Chessy,Bayonne,112.0
+Paris-Austerlitz,St-Jean-de-Luz-Ciboure,112.0
+Lourdes,Paris-Austerlitz,118.0
+Versailles-Chantiers,Valence-TGV,107.0
+Mantes-la-Jolie,Valence-TGV,107.0
+Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),Sète,116.0
+Paris-Gare-de-Lyon,Narbonne,116.0
+Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),Narbonne,116.0
+Marne-la-Vallée-Chessy,Toulouse-Matabiau,116.0
+Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),Toulouse-Matabiau,116.0
+Perpignan,Paris-Nord,124.0
+Marne-la-Vallée-Chessy,Nice-Ville,132.0
+Paris-Nord,St-Raphaël-Valescure,132.0
+Paris-Gare-de-Lyon,Albertville,115.0
+Marne-la-Vallée-Chessy,Albertville,115.0
+Massy-TGV,Bourg-St-Maurice,118.0
+Marne-la-Vallée-Chessy,Aime-La Plagne,118.0
+Landry,Marne-la-Vallée-Chessy,118.0
+Paris-Nord,Aime-La Plagne,118.0
+St-Avre-la-Chambre,Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),109.0
+Paris-Gare-de-Lyon,St-Michel-Valloire,113.0
+Modane,Massy-TGV,113.0
+Modane,Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),113.0
+Annecy,Paris-Gare-de-Lyon,104.0
+Massy-TGV,Annecy,104.0
+Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),Évian-les-Bains,108.0
+Paris-Nord,Annemasse,108.0
+Paris-Gare-de-Lyon,Sallanches-Combloux-Megève,119.0
+Marne-la-Vallée-Chessy,Sallanches-Combloux-Megève,119.0
+Massy-TGV,Cluses,119.0
+Massy-TGV,Sallanches-Combloux-Megève,119.0
+Cluses,Paris-Nord,119.0
+Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),Le Creusot-Montceau-Montchanin,82.0
+Montbard,Paris-Nord,57.0
+Montbard,Marne-la-Vallée-Chessy,57.0
+Paris-Nord,Montélimar,105.0
+Vitry-le-François,Paris-Est,44.0
+Paris-Nord,Arras,50.0
+Hazebrouck,Paris-Nord,60.0
+Lille-Europe,Savenay,108.0
+Angers-St-Laud,Lyon-St-Exupéry-TGV,96.0
+Tours,Lyon-Part-Dieu,95.0
+Le Mans,Lyon-St-Exupéry-TGV,95.0
+Avignon-TGV,Nîmes,15.5
+Avignon-TGV,Cannes,57.0
+Laval,Nancy-Ville,112.0
+Strasbourg-Ville,Paris-Gare-de-Lyon,107.0
+St-Étienne-Châteaucreux,Mâcon-Loché-TGV,30.0
+Massy-TGV,La Teste,102.0
+Paris-Austerlitz,Guingamp,88.0
+Paris-Austerlitz,Redon,84.0
+Paris-Austerlitz,Quimperlé,95.0
+Paris-Austerlitz,Quimper,95.0
+Paris-Austerlitz,St-Nazaire,86.0
+Paris-Austerlitz,Le Croisic,87.0
+Paris-Austerlitz,La Rochelle-Ville,89.0
+Paris-Austerlitz,Le Mans,60.0
+Marne-la-Vallée-Chessy,Futuroscope,75.0
+Ruffec,Paris-Montparnasse,87.0
+Angoulême,Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),87.0
+Laval,Lille-Flandres,97.0
+Champagne-Ardenne-TGV,Rennes,98.0
+TGV Haute-Picardie,St-Malo,106.0
+Angoulême,TGV Haute-Picardie,109.0
+Bordeaux-St-Jean,Champagne-Ardenne-TGV,112.0
+Lille-Europe,Auray,114.0
+Bordeaux-St-Jean,Meuse-TGV,124.0
+Avignon-TGV,St-Pierre-des-Corps,125.0
+Lille-Europe,Rosporden,125.0
+Bordeaux-St-Jean,Arras,130.0
+Arras,Libourne,130.0
+Bordeaux-St-Jean,Lorraine-TGV,141.0
+Avignon-TGV,Rennes,142.0
+Massy-TGV,Poitiers,75.0
+Massy-TGV,Châtellerault,75.0
+Paris-Montparnasse,St-Nazaire,86.0
+Paris-Montparnasse,Rennes,80.0
+Lamballe,Paris-Montparnasse,84.0
+Paris-Montparnasse,St-Brieuc,84.0
+Paris-Montparnasse,Redon,84.0
+Paris-Montparnasse,Toulouse-Matabiau,109.0
+Angers-St-Laud,Massy-TGV,73.0
+Angers-St-Laud,Marne-la-Vallée-Chessy,73.0
+Paris-Montparnasse,Savenay,86.0
+Le Pouliguen,Paris-Montparnasse,87.0
+Pornichet,Marne-la-Vallée-Chessy,87.0
+Laval,Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),72.0
+Laval,Massy-TGV,72.0
+Marne-la-Vallée-Chessy,Rennes,80.0
+Facture-Biganos,Paris-Montparnasse,102.0
+La Teste,Paris-Montparnasse,102.0
+Irun,Paris-Montparnasse,112.0
+Massy-TGV,Tarbes,118.0
+Angers-St-Laud,Lyon-Perrache-Voyageurs,96.0
+Saumur-Rive-Droite,Lyon-Part-Dieu,96.0
+Lyon-Perrache-Voyageurs,St-Pierre-des-Corps,95.0
+Le Pouliguen,Nantes,18.0
+Laval,Le Mans,20.0
+Le Mans,Vitré,25.0
+Laval,St-Malo,31.0
+Le Mans,Dol,39.0
+Laval,Lorient,42.0
+Le Mans,St-Brieuc,44.0
+Angoulême,Vendôme-Villiers-sur-Loir,47.0
+Le Mans,Rosporden,60.0
+Le Mans,Landerneau,60.0
+Irun,St-Pierre-des-Corps,79.0
+Futuroscope,Arcachon,49.0
+Plouaret,Paris-Montparnasse,91.0
+Marne-la-Vallée-Chessy,St-Malo,85.0
+Dol,Paris-Montparnasse,85.0
+Massy-TGV,Auray,91.0
+Marne-la-Vallée-Chessy,Morlaix,91.0
+Brest,Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),92.0
+Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),Landerneau,92.0
+Massy-TGV,Lorient,91.0
+Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),Quimper,95.0
+Marne-la-Vallée-Chessy,Quimper,95.0
+Paris-Montparnasse,Rosporden,95.0
+Massy-TGV,Marne-la-Vallée-Chessy,35.0
+Paris-Montparnasse,Futuroscope,79.0
+Angoulême,Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),96.0
+Champagne-Ardenne-TGV,Poitiers,97.0
+Laval,Lille-Europe,102.0
+Laval,Lille-Flandres,102.0
+TGV Haute-Picardie,Redon,106.0
+Bordeaux-St-Jean,Marne-la-Vallée-Chessy,111.0
+Bordeaux-St-Jean,Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),111.0
+Meuse-TGV,Futuroscope,106.0
+Angoulême,TGV Haute-Picardie,120.0
+Douai,Redon,113.0
+Douai,St-Malo,116.0
+Angoulême,Meuse-TGV,117.0
+Arras,Vannes,116.0
+Lorraine-TGV,Nantes,121.0
+Lorraine-TGV,Rennes,132.0
+Le Mans,Marseille-St-Charles,125.0
+Avignon-TGV,St-Pierre-des-Corps,125.0
+Montpellier (CNM),St-Pierre-des-Corps,125.0
+Lille-Europe,Quimper,131.0
+Bordeaux-St-Jean,Arras,134.0
+Angoulême,Paris-Montparnasse,96.0
+Nantes,Paris-Montparnasse,88.0
+Paris-Montparnasse,La Roche-sur-Yon,88.0
+La Baule-Escoublac,Paris-Montparnasse,88.0
+Paris-Montparnasse,Arcachon,118.0
+Dax,Paris-Montparnasse,122.0
+Lourdes,Paris-Montparnasse,128.0
+Le Mans,Auray,55.0
+Le Mans,Quimperlé,61.0
+Arcachon,St-Pierre-des-Corps,69.0
+Le Mans,Quimper,67.0
+Châtellerault,Montauban-Ville-Bourbon,67.0
+Hendaye,St-Pierre-des-Corps,80.0
+Futuroscope,Arcachon,51.0
+Strasbourg-Ville,Bordeaux-St-Jean,172.0
+Paris-Montparnasse,Auray,100.0
+Brest,Paris-Montparnasse,100.0
+Lorient,Paris-Montparnasse,100.0
+Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),St-Malo,95.0
+Brest,Massy-TGV,100.0
+Marne-la-Vallée-Chessy,Landerneau,100.0
+Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),Landerneau,100.0
+Paris-Montparnasse,Landerneau,100.0
+Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),Rosporden,103.0
+Marne-la-Vallée-Chessy,Rosporden,103.0
+Paris-Montparnasse,Rosporden,103.0
+Massy-TGV,Quimperlé,103.0
+Tours,Châtellerault,16.0
+Lille-Flandres,Lorient,122.0
+Lille-Flandres,Quimperlé,131.0
+Lille-Flandres,Quimper,131.0
+Angers-St-Laud,Lyon-St-Exupéry-TGV,96.0
+Laval,Auray,39.0
+Le Mans,Les Sables-d'Olonne,42.0
+Bordeaux-St-Jean,Poitiers,50.0
+Bordeaux-St-Jean,Futuroscope,50.0
+Laval,Morlaix,46.0
+Le Mans,St-Brieuc,51.0
+Rosporden,Vitré,45.0
+Bordeaux-St-Jean,Châtellerault,50.0
+Le Mans,Vannes,53.0
+Laval,Quimper,52.0
+Le Mans,Lannion,56.0
+Tours,Bordeaux-St-Jean,60.0
+Bordeaux-St-Jean,St-Pierre-des-Corps,60.0
+Le Mans,Morlaix,61.0
+Le Mans,Landerneau,67.0
+Le Mans,Brest,69.0
+Pau,Futuroscope,70.0
+St-Jean-de-Luz-Ciboure,St-Pierre-des-Corps,80.0
+La Teste,St-Pierre-des-Corps,69.0
+Ruffec,Montauban-Ville-Bourbon,53.0
+Strasbourg-Ville,Rennes,156.0
+Marne-la-Vallée-Chessy,St-Malo,95.0
+Massy-TGV,St-Malo,95.0
+Marne-la-Vallée-Chessy,Auray,100.0
+Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),Morlaix,99.0
+Quimperlé,Paris-Montparnasse,103.0
+Massy-TGV,Rosporden,103.0
+Paris-Gare-de-Lyon,Sélestat,112.0
+Bordeaux-St-Jean,Saverne,160.0
+Angers-St-Laud,Saverne,136.0
+Lille-Europe,Saverne,123.0
+Dijon-Ville,École-Valentin,24.5
+Belfort-Montbéliard-TGV,École-Valentin,25.5
+Strasbourg-Ville,École-Valentin,58.0
+Chalon-sur-Saône,École-Valentin,30.0
+Montpellier (CNM),École-Valentin,111.0
+Avignon-TGV,École-Valentin,91.0
+Vendôme-Villiers-sur-Loir,TGV Haute-Picardie,89.0
+Lille-Flandres,Vendôme-Villiers-sur-Loir,101.0
+Strasbourg-Ville,Vendôme-Villiers-sur-Loir,127.0
+Aix-en-Provence-TGV,Perpignan,51.0
+Lyon-St-Exupéry-TGV,Besançon-Franche-Comté-TGV,51.0
+Colmar,Marne-la-Vallée-Chessy,96.0
+Mâcon-Ville,École-Valentin,41.0
+Strasbourg-Ville,Aime-La Plagne,117.0
+Mulhouse-Ville,Bourg-St-Maurice,102.0
+Chambéry-Challes-les-Eaux,Belfort-Montbéliard-TGV,77.0
+Belfort-Montbéliard-TGV,Albertville,89.0
+Bourg-St-Maurice,Belfort-Montbéliard-TGV,92.0
+Chambéry-Challes-les-Eaux,Besançon-Franche-Comté-TGV,63.0
+Avignon-TGV,Aix-en-Provence-TGV,30.0
+Avignon-TGV,Nancy-Ville,107.0
+Avignon-TGV,Le Havre,129.0
+Laval,Avignon-TGV,133.0
+Colmar,Avignon-TGV,114.0
+Avignon-TGV,Toul,107.0
+Versailles-Chantiers,Aime-La Plagne,118.0
+Aix-en-Provence-TGV,Grenoble,65.0
+Avignon-TGV,Grenoble,47.0
+Besançon-Viotte,Aime-La Plagne,78.0
+Besançon-Viotte,Landry,78.0
+Lyon-St-Exupéry-TGV,École-Valentin,51.0
+Albertville,École-Valentin,75.0
+Landry,Laval,120.0
+Laval,Laval,120.0
+Agen,Nîmes,56.0
+Le Croisic,La Baule-Escoublac,3.6
+St-Avre-la-Chambre,St-Jean-de-Maurienne-Arvan,3.6
+Bonneville,La Roche-sur-Foron,3.6
+Cannes,Antibes,4.1
+Irun,St-Jean-de-Luz-Ciboure,4.8
+Nice-Ville,Monaco-Monte-Carlo,5.1
+Carentan,Lison,5.7
+Toulon,Hyères,6.3
+Rosporden,Quimper,6.5
+Lourdes,Tarbes,6.6
+Futuroscope,Châtellerault,6.7
+Biarritz,Massy-TGV,123.0
+Massy-TGV,St-Jean-de-Luz-Ciboure,123.0
+Hendaye,Massy-TGV,123.0
+Pau,Massy-TGV,123.0
+Lyon-Perrache-Voyageurs,Rennes,113.0
+Angers-St-Laud,Lyon-Part-Dieu,99.0
+Lyon-Perrache-Voyageurs,St-Pierre-des-Corps,97.0
+Poitiers,St-Pierre-des-Corps,24.5
+Angoulême,Poitiers,25.5
+Vendôme-Villiers-sur-Loir,Poitiers,37.0
+Angoulême,Facture-Biganos,37.0
+Tours,Angoulême,45.0
+Angoulême,Vendôme-Villiers-sur-Loir,52.0
+Tours,Libourne,53.0
+Laval,Brest,54.0
+Hendaye,Ruffec,57.0
+Le Mans,Rosporden,64.0
+Pau,Châtellerault,70.0
+Bordeaux-St-Jean,Vendôme-Villiers-sur-Loir,79.0
+Irun,St-Pierre-des-Corps,80.0
+Angoulême,La Teste,39.0
+Agen,Ruffec,45.0
+Paris-Montparnasse,St-Malo,95.0
+Paris-Montparnasse,Quimper,103.0
+Massy-TGV,Dol,95.0
+Massy-TGV,Morlaix,99.0
+Massy-TGV,Lorient,100.0
+Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),Quimper,103.0
+Quimperlé,Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),103.0
+Lille-Flandres,Redon,113.0
+Paris-Montparnasse,Savenay,88.0
+Massy-TGV,St-Nazaire,88.0
+Pornichet,Paris-Montparnasse,88.0
+Massy-TGV,La Baule-Escoublac,88.0
+Pornichet,Marne-la-Vallée-Chessy,88.0
+Massy-TGV,Niort,90.0
+Massy-TGV,St-Maixent (Deux-Sèvres),90.0
+Laval,Massy-TGV,78.0
+Massy-TGV,Rennes,93.0
+Massy-TGV,St-Brieuc,94.0
+Massy-TGV,Guingamp,98.0
+Irun,Paris-Montparnasse,123.0
+Massy-TGV,Orthez,123.0
+Laval,Lyon-Perrache-Voyageurs,99.0
+Le Mans,Lyon-Perrache-Voyageurs,99.0
+Vendôme-Villiers-sur-Loir,Châtellerault,27.5
+Angoulême,Châtellerault,29.5
+Laval,Redon,30.0
+Laval,Lamballe,33.0
+Laval,Vannes,38.0
+Angoulême,St-Pierre-des-Corps,45.0
+Le Mans,Dol,44.0
+Laval,Plouaret,42.0
+Le Mans,Lamballe,47.0
+Laval,Lorient,44.0
+Libourne,St-Pierre-des-Corps,53.0
+Le Mans,Lorient,58.0
+Agen,Châtellerault,60.0
+Facture-Biganos,St-Pierre-des-Corps,69.0
+Châtellerault,Toulouse-Matabiau,73.0
+Facture-Biganos,Futuroscope,51.0
+La Teste,Futuroscope,51.0
+Strasbourg-Ville,Poitiers,146.0
+Strasbourg-Ville,Futuroscope,146.0
+Plouaret,Paris-Montparnasse,99.0
+Lannion,Paris-Montparnasse,99.0
+Dol,Paris-Montparnasse,95.0
+Roissy-Aéroport-Charles-de-Gaulle 2-TGV (TGV),Auray,100.0
+Marne-la-Vallée-Chessy,Morlaix,99.0
+Marne-la-Vallée-Chessy,Quimper,103.0
+Quimperlé,Marne-la-Vallée-Chessy,103.0
+Massy-TGV,Quimper,103.0
+Lille-Flandres,Vannes,121.0
+Lille-Flandres,Auray,122.0
+Lille-Flandres,Rosporden,131.0

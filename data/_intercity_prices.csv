@@ -1,0 +1,112 @@
+Origin,Destination,Price
+Angers-St-Laud,Amboise,34.0
+La Baule-Escoublac,Amboise,68.0
+St-Nazaire,Amboise,65.0
+Paris-Austerlitz,Blois,44.0
+St-Nazaire,Blois,73.0
+La Souterraine,Brive-la-Gaillarde,49.8
+Limoges-Bénédictins,Châteauroux,41.0
+Paris-Austerlitz,Gourdon,105.0
+Les Aubrais-Orléans,La Souterraine,55.0
+Paris-Austerlitz,La Souterraine,86.0
+Châteauroux,Les Aubrais-Orléans,41.0
+Strasbourg-Ville,Nancy-Ville,38.0
+Les Aubrais-Orléans,Nantes,68.3
+Saumur-Rive-Droite,Nantes,34.4
+Châteauroux,Paris-Austerlitz,55.0
+La Baule-Escoublac,Paris-Austerlitz,86.0
+Limoges-Bénédictins,Paris-Austerlitz,83.0
+Paris-Est,Sarrebourg,87.0
+Les Aubrais-Orléans,Souillac,85.0
+Paris-Austerlitz,St-Nazaire,86.0
+Angoulême,St-Pierre-des-Corps,50.3
+La Souterraine,Toulouse-Matabiau,57.0
+Les Aubrais-Orléans,Toulouse-Matabiau,111.0
+Paris-Austerlitz,Toulouse-Matabiau,115.0
+Brive-la-Gaillarde,Cahors,31.0
+Châteauroux,Cahors,79.0
+La Souterraine,Cahors,50.3
+Paris-Austerlitz,Cahors,111.0
+Toulouse-Matabiau,Cahors,34.0
+Bordeaux-St-Jean,Futuroscope,56.8
+Châteauroux,Montauban-Ville-Bourbon,88.0
+Paris-Austerlitz,Montauban-Ville-Bourbon,115.0
+Souillac,Montauban-Ville-Bourbon,115.0
+Angers-St-Laud,Paris-Austerlitz,73.0
+Brive-la-Gaillarde,Paris-Austerlitz,98.0
+Nantes,Paris-Austerlitz,86.6
+Lunéville,Paris-Est,80.0
+Angoulême,Poitiers,30.3
+La Souterraine,Souillac,54.0
+La Baule-Escoublac,St-Pierre-des-Corps,65.0
+Nantes,St-Pierre-des-Corps,47.4
+Paris-Austerlitz,St-Pierre-des-Corps,53.8
+Châteauroux,Toulouse-Matabiau,97.0
+Paris-Austerlitz,Amboise,49.8
+Le Croisic,Blois,73.0
+Limoges-Bénédictins,Brive-la-Gaillarde,31.0
+Limoges-Bénédictins,Cahors,52.0
+Angoulême,Futuroscope,30.3
+Paris-Austerlitz,Futuroscope,71.8
+La Souterraine,Gourdon,51.2
+Les Aubrais-Orléans,Gourdon,65.0
+Angers-St-Laud,Les Aubrais-Orléans,51.8
+Nancy-Ville,Lunéville,11.1
+Paris-Austerlitz,Poitiers,71.8
+Paris-Est,Saverne,91.0
+Châteauroux,Souillac,38.0
+Limoges-Bénédictins,Souillac,73.0
+Bordeaux-St-Jean,St-Pierre-des-Corps,74.4
+Le Croisic,St-Pierre-des-Corps,65.0
+Poitiers,St-Pierre-des-Corps,26.7
+Brive-la-Gaillarde,Toulouse-Matabiau,53.0
+Le Croisic,Amboise,68.0
+Nantes,Amboise,51.2
+Angers-St-Laud,Blois,41.2
+Les Aubrais-Orléans,Cahors,97.0
+Brive-la-Gaillarde,Châteauroux,58.0
+Châteauroux,Gourdon,43.0
+Limoges-Bénédictins,Gourdon,79.0
+Angoulême,Les Aubrais-Orléans,70.9
+Brive-la-Gaillarde,Les Aubrais-Orléans,79.0
+La Baule-Escoublac,Les Aubrais-Orléans,86.0
+Saumur-Rive-Droite,Les Aubrais-Orléans,44.4
+La Souterraine,Montauban-Ville-Bourbon,56.8
+Les Aubrais-Orléans,Montauban-Ville-Bourbon,105.0
+Limoges-Bénédictins,Montauban-Ville-Bourbon,65.0
+Angoulême,Paris-Austerlitz,89.3
+Les Aubrais-Orléans,Paris-Austerlitz,37.0
+Saumur-Rive-Droite,Paris-Austerlitz,65.6
+Strasbourg-Ville,Paris-Est,96.0
+Bordeaux-St-Jean,Poitiers,56.8
+Les Aubrais-Orléans,Poitiers,50.3
+Lunéville,Sarrebourg,14.4
+Strasbourg-Ville,Sarrebourg,20.0
+Lunéville,Saverne,20.0
+Nancy-Ville,Saverne,28.0
+Strasbourg-Ville,Saverne,13.9
+Les Aubrais-Orléans,St-Nazaire,86.0
+Futuroscope,St-Pierre-des-Corps,26.7
+Les Aubrais-Orléans,St-Pierre-des-Corps,30.5
+St-Nazaire,St-Pierre-des-Corps,57.0
+Limoges-Bénédictins,Toulouse-Matabiau,76.0
+La Baule-Escoublac,Blois,73.0
+Nantes,Blois,57.0
+Saumur-Rive-Droite,Blois,31.4
+Angoulême,Bordeaux-St-Jean,35.2
+Les Aubrais-Orléans,Futuroscope,50.3
+Bordeaux-St-Jean,Les Aubrais-Orléans,91.9
+Le Croisic,Les Aubrais-Orléans,86.0
+Limoges-Bénédictins,Les Aubrais-Orléans,64.0
+Strasbourg-Ville,Lunéville,31.0
+Brive-la-Gaillarde,Montauban-Ville-Bourbon,44.0
+Gourdon,Montauban-Ville-Bourbon,44.0
+Bordeaux-St-Jean,Paris-Austerlitz,108.0
+Le Croisic,Paris-Austerlitz,86.0
+Nancy-Ville,Paris-Est,74.0
+Nancy-Ville,Sarrebourg,22.0
+Sarrebourg,Saverne,8.9
+Paris-Austerlitz,Souillac,96.0
+Angers-St-Laud,St-Pierre-des-Corps,28.5
+Gourdon,Toulouse-Matabiau,47.4
+Souillac,Toulouse-Matabiau,115.0
