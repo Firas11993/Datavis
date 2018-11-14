@@ -22,6 +22,7 @@ def get_stations():
     df_imp = df[(df.Name.isin(HISTORIC_CITIES.keys())) | (df.Name.isin(ART_HISTORY_CITIES.keys()))]
     if len(df) > 100 and len(df_imp) > 5:
         df = df_imp
+    df['Imp'] = df.index.isin(df_imp.index)
     return df.to_json(orient='index')
 
 @app.route('/get_station_info/<name>', methods=['GET'])

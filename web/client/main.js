@@ -65,12 +65,13 @@ function setupMap() {
             mapMarkers.clearLayers()
             for (let [id, station] of Object.entries(stations)) {
                 name = station.Name
+                important_city = station.Imp;
                 if (station.Name != station.Commune)
                     name += ' (' + station.Commune + ')';
                 L.circleMarker([station.Latitude, station.Longitude], {
-                    radius: 10,
-                    color: '#429cbd',
-                    fillColor: '#429cbd',
+                    radius: important_city && map.getZoom() * 1.5 || map.getZoom(),
+                    color: important_city && '#3498db' || '#95a5a6',
+                    fillColor: important_city && '#3498db' || '#95a5a6',
                     fillOpacity: 0.2
                 }).addTo(mapMarkers).bindPopup(partial(onStationClick, name));
             }
