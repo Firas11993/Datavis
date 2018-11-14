@@ -18,21 +18,30 @@ function debounce(func, wait, immediate) {
     };
 };
 
-function onStationClick(name, e) {
+function onStationClick(station, e) {
     var popup = e.getPopup();
-    var url = new URL('http://127.0.0.1:5000/get_station_info/' + name)
+    var url = new URL('http://127.0.0.1:5000/get_station_info/' + station.Name)
+    var template = () => `<h1>${station.Name}</h1>${content}`;
+    var content = ` <b>(Commune: ${station.Commune})<b>`;
     fetch(url).then(function(response) {
         return response.json();
     }).then(async function(resp) {
-        content = name + '<br>';
-        if ('historic_cities' in resp)
-            content += 'Historic cities: ' + resp.historic_cities + '<br>';
-        if ('art_history_cities' in resp)
-            content += 'Art/History cities: ' +  resp.art_history_cities;
-        popup.setContent(content);
+        if ('historic_cities' in resp) {
+            content += '<h2>Historic cities:</h2><ul>';
+            for (let city of resp.historic_cities)
+                content += '<li>' + city + '</li>';
+            content += '</ul>';
+        }
+        if ('art_history_cities' in resp) {
+            content += '<h2>Art/History cities:</h2><ul>';
+            for (let city of resp.art_history_cities)
+                content += '<li>' + city + '</li>';
+            content += '</ul>';
+        }
+        popup.setContent(template());
         popup.update();
     });
-    return name;
+    return template();
 }
 
 // Source: <https://stackoverflow.com/a/321527/1460652>
@@ -64,16 +73,13 @@ function setupMap() {
         }).then(function(stations) {
             mapMarkers.clearLayers()
             for (let [id, station] of Object.entries(stations)) {
-                name = station.Name
                 important_city = station.Imp;
-                if (station.Name != station.Commune)
-                    name += ' (' + station.Commune + ')';
                 L.circleMarker([station.Latitude, station.Longitude], {
                     radius: important_city && map.getZoom() * 1.5 || map.getZoom(),
                     color: important_city && '#3498db' || '#95a5a6',
                     fillColor: important_city && '#3498db' || '#95a5a6',
                     fillOpacity: 0.2
-                }).addTo(mapMarkers).bindPopup(partial(onStationClick, name));
+                }).addTo(mapMarkers).bindPopup(partial(onStationClick, station));
             }
         });
     }, 125);
