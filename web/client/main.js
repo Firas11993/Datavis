@@ -18,6 +18,32 @@ function debounce(func, wait, immediate) {
     };
 };
 
+function onStationClick(name, e) {
+    var popup = e.getPopup();
+    var url = new URL('http://127.0.0.1:5000/get_station_info/' + name)
+    fetch(url).then(function(response) {
+        return response.json();
+    }).then(async function(resp) {
+        content = name + '<br>';
+        if ('historic_cities' in resp)
+            content += 'Historic cities: ' + resp.historic_cities + '<br>';
+        if ('art_history_cities' in resp)
+            content += 'Art/History cities: ' +  resp.art_history_cities;
+        popup.setContent(content);
+        popup.update();
+    });
+    return name;
+}
+
+// Source: <https://stackoverflow.com/a/321527/1460652>
+function partial(func /*, 0..n args */) {
+  var args = Array.prototype.slice.call(arguments, 1);
+  return function() {
+    var allArguments = args.concat(Array.prototype.slice.call(arguments));
+    return func.apply(this, allArguments);
+  };
+}
+
 function setupMap() {
     var map = L.map('map').setView([46, 2], 6);
     L.tileLayer('https://api.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
@@ -46,7 +72,7 @@ function setupMap() {
                     color: '#429cbd',
                     fillColor: '#429cbd',
                     fillOpacity: 0.2
-                }).addTo(mapMarkers).bindPopup(name);
+                }).addTo(mapMarkers).bindPopup(partial(onStationClick, name));
             }
         });
     }, 125);

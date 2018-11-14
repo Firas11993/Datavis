@@ -24,6 +24,15 @@ def get_stations():
         df = df_imp
     return df.to_json(orient='index')
 
+@app.route('/get_station_info/<name>', methods=['GET'])
+def get_station_info(name):
+    info = {}
+    if name in HISTORIC_CITIES:
+        info['historic_cities'] = HISTORIC_CITIES[name]
+    if name in ART_HISTORY_CITIES:
+        info['art_history_cities'] = ART_HISTORY_CITIES[name]
+    return json.dumps(info)
+
 @app.after_request
 def after_request(response):
   response.headers.add('Access-Control-Allow-Origin', '*')
