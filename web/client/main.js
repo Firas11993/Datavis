@@ -18,6 +18,41 @@ function debounce(func, wait, immediate) {
     };
 };
 
+function onStationClick(station, e) {
+    var popup = e.getPopup();
+    var url = new URL('http://127.0.0.1:5000/get_station_info/' + station.Name)
+    var template = () => `<h1>${station.Name}</h1>${content}`;
+    var content = ` <b>(Commune: ${station.Commune})<b>`;
+    fetch(url).then(function(response) {
+        return response.json();
+    }).then(async function(resp) {
+        if ('historic_cities' in resp) {
+            content += '<h2>Historic cities:</h2><ul>';
+            for (let city of resp.historic_cities)
+                content += '<li>' + city + '</li>';
+            content += '</ul>';
+        }
+        if ('art_history_cities' in resp) {
+            content += '<h2>Art/History cities:</h2><ul>';
+            for (let city of resp.art_history_cities)
+                content += '<li>' + city + '</li>';
+            content += '</ul>';
+        }
+        popup.setContent(template());
+        popup.update();
+    });
+    return template();
+}
+
+// Source: <https://stackoverflow.com/a/321527/1460652>
+function partial(func /*, 0..n args */) {
+  var args = Array.prototype.slice.call(arguments, 1);
+  return function() {
+    var allArguments = args.concat(Array.prototype.slice.call(arguments));
+    return func.apply(this, allArguments);
+  };
+}
+
 function setupMap() {
     var map = L.map('map').setView([46, 2], 6);
     L.tileLayer('https://api.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
@@ -38,15 +73,13 @@ function setupMap() {
         }).then(function(stations) {
             mapMarkers.clearLayers()
             for (let [id, station] of Object.entries(stations)) {
-                name = station.Name
-                if (station.Name != station.Commune)
-                    name += ' (' + station.Commune + ')';
+                important_city = station.Imp;
                 L.circleMarker([station.Latitude, station.Longitude], {
-                    radius: 10,
-                    color: '#429cbd',
-                    fillColor: '#429cbd',
+                    radius: important_city && map.getZoom() * 1.5 || map.getZoom(),
+                    color: important_city && '#3498db' || '#95a5a6',
+                    fillColor: important_city && '#3498db' || '#95a5a6',
                     fillOpacity: 0.2
-                }).addTo(mapMarkers).bindPopup(name);
+                }).addTo(mapMarkers).bindPopup(partial(onStationClick, station));
             }
         });
     }, 125);

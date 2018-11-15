@@ -1,11 +1,15 @@
 from flask import Flask, url_for, send_from_directory, jsonify, request
 import pandas as pd
+import json
 
 DATA_DIR = '../../data/'
-# FIXME: this is temporary -- we'll be loading the final list from a file.
-T = {'Briançon', 'Bayonne', 'Grenoble', 'Blois', 'Arras', 'Angoulême', 'Béziers', 'Grasse', 'Niort', 'Tarascon', 'Nîmes', 'Saintes', 'Salins-les-Bains', 'Sélestat', 'Fréjus', 'Verdun', 'Perpignan', 'Thiers', 'Arles', 'Auray', 'Haguenau', 'Mende', 'Laval', 'Chartres', 'Poitiers', 'Vannes', 'Lisieux', 'Troyes', 'Tournus', 'Nantes', 'Tours', 'Amboise', 'Obernai', 'Gray', 'Pézenas', 'Albi', 'Dieppe', 'Vichy', 'Bourg-en-Bresse', 'Provins', 'Montbéliard', 'Honfleur', 'Alençon', 'Wissembourg', 'Beauvais', 'Brive-la-Gaillarde', 'Pont-à-Mousson', 'Chalon-sur-Saône', 'Rennes', 'Chinon', 'Colmar', 'Châtillon-sur-Seine', 'Orléans', 'Fontenay-le-Comte', 'Villeneuve-lès-Avignon', 'Cluny', 'Valenciennes', 'Autun', 'Dunkerque', 'Carpentras', 'Reims', 'Le Havre', 'Quimper', 'Roubaix', 'Aire-sur-la-Lys', 'Clermont-Ferrand', 'Amiens', 'Langres', 'Senlis', 'Bar-le-Duc', 'Dinan', 'Cahors', 'Loches', 'Sens', 'Épinal', 'Bourges', 'Soissons', 'Phalsbourg', 'Bayeux', 'Compiègne', 'Carcassonne', 'Fougères', 'Périgueux', 'Auch', 'Beaune', 'Alet-les-Bains', 'Châlons-en-Champagne', 'Vitré', 'Rouffach', 'Le Mans', 'Caen', 'Cambrai', 'Nevers', 'Ajaccio', 'Neufchâteau', 'Châteaudun', 'Vienne', 'Le Puy-en-Velay', 'Lannion', 'Rodez', 'Falaise', 'Morlaix', 'Aix-en-Provence', 'Agen', 'Charleville-Mézières', 'Douai', 'Villefranche-de-Rouergue', 'Beaucaire', 'Aurillac', 'Annecy', 'Toul', 'Lons-le-Saunier', 'Uzès', 'Hyères', 'Abbeville', 'Chaumont', 'Cognac', 'Figeac', 'Laon', 'Vendôme', 'Narbonne'}
 
 app = Flask(__name__)
+STATIONS = pd.read_csv(DATA_DIR + '_stations.csv').dropna()
+with open(DATA_DIR + '_historic_cities.json') as infile:
+    HISTORIC_CITIES = json.load(infile)
+with open(DATA_DIR + '_art_history_cities.json') as infile:
+    ART_HISTORY_CITIES = json.load(infile)
 
 @app.route('/get_stations', methods=['GET'])
 def get_stations():
@@ -13,13 +17,22 @@ def get_stations():
     west = float(request.args.get('west'))
     north = float(request.args.get('north'))
     south = float(request.args.get('south'))
-    df = pd.read_csv(DATA_DIR + '_stations.csv')
-    df = df.dropna()
+    df = STATIONS
     df = df[(df.Longitude > west) & (df.Longitude < east) & (df.Latitude > south) & (df.Latitude < north)]
-    df_imp = df[df.Name.isin(T)]
+    df_imp = df[(df.Name.isin(HISTORIC_CITIES.keys())) | (df.Name.isin(ART_HISTORY_CITIES.keys()))]
     if len(df) > 100 and len(df_imp) > 5:
         df = df_imp
+    df['Imp'] = df.index.isin(df_imp.index)
     return df.to_json(orient='index')
+
+@app.route('/get_station_info/<name>', methods=['GET'])
+def get_station_info(name):
+    info = {}
+    if name in HISTORIC_CITIES:
+        info['historic_cities'] = HISTORIC_CITIES[name]
+    if name in ART_HISTORY_CITIES:
+        info['art_history_cities'] = ART_HISTORY_CITIES[name]
+    return json.dumps(info)
 
 @app.after_request
 def after_request(response):
