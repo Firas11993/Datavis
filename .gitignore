@@ -1,2 +1,4 @@
 data/courbe-des-voies.geojson
 .ipynb_checkpoints/
+__pycache__/
+*.py[cod]
