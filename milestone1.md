@@ -32,6 +32,7 @@ Technical design:
 Perceptual / visual design decisions:
 
 - Stops are shown as dots on the map. However, this would overwhelm the user (there are around 7000 stations) so we decided to show a restricted set of cities when the view is zoomed out. We still need to fine tune this part, but the current implementation is to show all stops in the current view if there are less than 200 of them. Otherwise, we only show "important" cities (e.g.  historic cities).
+- Important stops are shown in blue, other stops in gray. Important stops' circles are also a bit bigger. This ensures that important stops are easily distinguishable when the user zooms in.
 - When the user clicks on a dot, a popup shows up with extra information if applicable. For example, for stops that are the nearest to "important" cities, we show a list of these cities and their type (historic "Hist", or Pays d'Art/d'Histoire "ArtHist") The design of this still needs a lot of work.
 - We also plan to show additional information in the future. For example, for historic cities, clicking on them should show the user more information about them as well as some historic monuments they can visit there.
 - Our goal is for our map to be a network flow map, on which we can easily visualize the price of each trip, station by station.
