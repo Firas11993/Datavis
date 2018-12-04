@@ -20,27 +20,57 @@ function debounce(func, wait, immediate) {
 
 function onStationClick(station, e) {
     var popup = e.getPopup();
-    var url = new URL('http://127.0.0.1:5000/get_station_info/' + station.Name)
+    var url = new URL('http://127.0.0.1:5000/get_station_info/' + station.Name);
+    
+    
     var template = () => `<h1>${station.Name}</h1>${content}`;
     var content = ` <b>(Commune: ${station.Commune})<b>`;
-    fetch(url).then(function(response) {
+    var wikiurl = "https://en.wikipedia.org/api/rest_v1/page/summary/" + station.Name;
+    
+
+  
+
+    fetch(url).then(async function(response) {
         return response.json();
-    }).then(async function(resp) {
+    }).then(function(resp) {
         if ('historic_cities' in resp) {
             content += '<h2>Historic cities:</h2><ul>';
-            for (let city of resp.historic_cities)
-                content += '<li>' + city + '</li>';
+            
+            for (let city of resp.historic_cities){
+                content += '<li>' + city + '</li>';  
+                wikiurl += city; 
+            }
             content += '</ul>';
+
         }
         if ('art_history_cities' in resp) {
             content += '<h2>Art/History cities:</h2><ul>';
-            for (let city of resp.art_history_cities)
+            for (let city of resp.art_history_cities){
                 content += '<li>' + city + '</li>';
+                wikiurl += city;
+            }
             content += '</ul>';
         }
         popup.setContent(template());
         popup.update();
     });
+    
+    fetch(new URL(wikiurl)).then(async function(response) {
+
+        return response.json();
+    }).then(function(resp) {
+        
+        if ('extract' in resp) {
+            content += '<h2>Summary:</h2><p>';
+            for (let descr of resp.extract)
+                content +=  descr ;
+                
+            content += '</p>';
+        }
+        popup.setContent(template());
+        popup.update();
+    });
+
     return template();
 }
 
