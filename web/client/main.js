@@ -18,7 +18,7 @@ function debounce(func, wait, immediate) {
     };
 };
 
-async function onStationClick(station, e) {
+function onStationClick(station, e) {
     var popup = e.getPopup();
     var url = new URL('http://127.0.0.1:5000/get_station_info/' + station.Name);
     
@@ -30,7 +30,7 @@ async function onStationClick(station, e) {
 
   
 
-    await fetch(url).then(async function(response) {
+    fetch(url).then(async function(response) {
         return response.json();
     }).then(function(resp) {
         if ('historic_cities' in resp) {
@@ -53,11 +53,11 @@ async function onStationClick(station, e) {
             }
             content += '</ul>';
         }
+        
         popup.setContent(template());
         popup.update();
-    });
-    
-    await fetch(new URL(wikiurl)).then(async function(response) {
+    }).then(function(){
+        fetch(new URL(wikiurl)).then(async function(response) {
 
         return response.json();
     }).then(function(resp) {
@@ -75,6 +75,9 @@ async function onStationClick(station, e) {
         popup.update();
 
     });
+    });
+    
+    
 
     return template();
 }
