@@ -18,19 +18,19 @@ function debounce(func, wait, immediate) {
     };
 };
 
-function onStationClick(station, e) {
+async function onStationClick(station, e) {
     var popup = e.getPopup();
     var url = new URL('http://127.0.0.1:5000/get_station_info/' + station.Name);
     
     
     var template = () => `<h1>${station.Name}</h1>${content}`;
     var content = ` <b>(Commune: ${station.Commune})<b>`;
-    var wikiurl = "https://en.wikipedia.org/api/rest_v1/page/summary/" + station.Name;
+    var wikiurl = "https://en.wikipedia.org/api/rest_v1/page/summary/";
     
 
   
 
-    fetch(url).then(async function(response) {
+    await fetch(url).then(async function(response) {
         return response.json();
     }).then(function(resp) {
         if ('historic_cities' in resp) {
@@ -47,7 +47,9 @@ function onStationClick(station, e) {
             content += '<h2>Art/History cities:</h2><ul>';
             for (let city of resp.art_history_cities){
                 content += '<li>' + city + '</li>';
-                wikiurl += city;
+                if(wikiurl == "https://en.wikipedia.org/api/rest_v1/page/summary/"){
+                    wikiurl += city;
+                }
             }
             content += '</ul>';
         }
@@ -55,7 +57,7 @@ function onStationClick(station, e) {
         popup.update();
     });
     
-    fetch(new URL(wikiurl)).then(async function(response) {
+    await fetch(new URL(wikiurl)).then(async function(response) {
 
         return response.json();
     }).then(function(resp) {
@@ -67,8 +69,11 @@ function onStationClick(station, e) {
                 
             content += '</p>';
         }
+
+        wikiurl = "https://en.wikipedia.org/api/rest_v1/page/summary/";
         popup.setContent(template());
         popup.update();
+
     });
 
     return template();
