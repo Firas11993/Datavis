@@ -53,8 +53,12 @@ function partial(func /*, 0..n args */) {
   };
 }
 
+var data = france;
+`<h1>Departement of departure</h1>`
 function setupMap() {
-    var map = L.map('map').setView([46, 2], 6);
+  //  var map = L.map('map').setView([46, 2], 6);
+  var map = new L.Map('map', {zoom: 6, center: new L.latLng([46, 2]) });
+
     L.tileLayer('https://api.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
         attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
         maxZoom: 18,
@@ -84,9 +88,68 @@ function setupMap() {
         });
     }, 125);
 
+
     map.on('moveend', () => { showBounds(); });
     showBounds()
+
+    // add a layer group, yet empty
+
+  //  var markersLayer = new L.LayerGroup();
+  //  map.addLayer(markersLayer);
+
+  var featuresLayer = new L.GeoJSON(data, {
+
+      onEachFeature: function(feature, marker) {
+        marker.bindPopup('<h4>'+ feature.properties.nom +'</h4>');
+      }
+    });
+
+  map.addLayer(featuresLayer);
+
+    // add the search bar to the map
+    var controlSearch = new L.Control.Search({
+    position:'topleft',    // where do you want the search bar?
+    layer: featuresLayer,
+    propertyName: 'nom',
+    initial: false,
+    marker: false,
+    textPlaceholder: 'Departure departement ', // placeholder while nothing is searched
+    collapsed : false,
+    moveToLocation: function(latlng, title, map) {
+			//map.fitBounds( latlng.layer.getBounds() );
+			var zoom = map.getBoundsZoom(latlng.layer.getBounds());
+  			map.setView(latlng, zoom); // access the zoom
+		}
+    //sourceData : '../../data/_stations.json'
+  });
+
+  controlSearch.on('search:locationfound', function(e) {
+
+		console.log('search:locationfound', );
+
+		//map.removeLayer(this._markerSearch)
+
+		e.layer.setStyle({fillColor: '#3f0', color: '#0f0'});
+		if(e.layer._popup)
+			e.layer.openPopup();
+
+	}).on('search:collapsed', function(e) {
+
+		featuresLayer.eachLayer(function(layer) {	//restore feature color
+			featuresLayer.resetStyle(layer);
+		});
+	});
+
+
+  map.addControl(controlSearch); // add it to the map
+
+
 }
+
+
+
+
+
 
 function whenDocumentLoaded(action) {
     if (document.readyState === "loading") {
