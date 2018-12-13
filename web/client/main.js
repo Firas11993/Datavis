@@ -25,21 +25,66 @@ function onStationClick(station, e) {
     var url = new URL(`${API_URL}/get_station_info/${station.Name}`)
     var template = () => `<h1>${station.Name}</h1>${content}`;
     var content = ` <b>(Commune: ${station.Commune})<b>`;
-    fetch(url).then(function(response) {
+    var wikiurl = "https://en.wikipedia.org/api/rest_v1/page/summary/";
+    
+
+  
+
+    fetch(url).then(async function(response) {
         return response.json();
-    }).then(async function(resp) {
-        if (resp.important) {
-            content += '<h2>Interesting locations:</h2>';
-            for (let [city, tags] of Object.entries(resp.cities)) {
-                content += `<li>${city} <span>`;
-                content += tags.map(item => `<span class="tag ${item}">${item}</span>`).join('');
-                content += '</span></li>';
+    }).then(function(resp) {
+        // if (resp.important) {
+        //     content += '<h2>Interesting locations:</h2>';
+        //     for (let [city, tags] of Object.entries(resp.cities)) {
+        //         content += `<li>${city} <span>`;
+        //         content += tags.map(item => `<span class="tag ${item}">${item}</span>`).join('');
+        //         content += '</span></li>';
+        if ('historic_cities' in resp) {
+            content += '<h2>Historic cities:</h2><ul>';
+            
+            for (let city of resp.historic_cities){
+                content += '<li>' + city + '</li>';  
+                wikiurl += city; 
+            }
+            content += '</ul>';
+
+        }
+        if ('art_history_cities' in resp) {
+            content += '<h2>Art/History cities:</h2><ul>';
+            for (let city of resp.art_history_cities){
+                content += '<li>' + city + '</li>';
+                if(wikiurl == "https://en.wikipedia.org/api/rest_v1/page/summary/"){
+                    wikiurl += city;
+                }
             }
             content += '</ul>';
         }
+        
         popup.setContent(template());
         popup.update();
+    }).then(function(){
+        fetch(new URL(wikiurl)).then(async function(response) {
+
+        return response.json();
+    }).then(function(resp) {
+        
+        if ('extract' in resp) {
+            content += '<h2>Summary:</h2><p>';
+            for (let descr of resp.extract)
+                content +=  descr ;
+                
+            content += '</p>';
+        }
+
+        wikiurl = "https://en.wikipedia.org/api/rest_v1/page/summary/";
+        popup.setContent(template());
+        popup.update();
+
     });
+    });
+    
+    
+
     return template();
 }
 
@@ -52,8 +97,12 @@ function partial(func /*, 0..n args */) {
   };
 }
 
+var data = france;
+`<h1>Departement of departure</h1>`
 function setupMap() {
-    var map = L.map('map').setView([46, 2], 6);
+  //  var map = L.map('map').setView([46, 2], 6);
+  var map = new L.Map('map', {zoom: 6, center: new L.latLng([46, 2]) });
+
     L.tileLayer('https://api.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
         attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
         maxZoom: 18,
@@ -83,9 +132,68 @@ function setupMap() {
         });
     }, 125);
 
+
     map.on('moveend', () => { showBounds(); });
     showBounds()
+
+    // add a layer group, yet empty
+
+  //  var markersLayer = new L.LayerGroup();
+  //  map.addLayer(markersLayer);
+
+  var featuresLayer = new L.GeoJSON(data, {
+
+      onEachFeature: function(feature, marker) {
+        marker.bindPopup('<h4>'+ feature.properties.nom +'</h4>');
+      }
+    });
+
+  map.addLayer(featuresLayer);
+
+    // add the search bar to the map
+    var controlSearch = new L.Control.Search({
+    position:'topleft',    // where do you want the search bar?
+    layer: featuresLayer,
+    propertyName: 'nom',
+    initial: false,
+    marker: false,
+    textPlaceholder: 'Departure departement ', // placeholder while nothing is searched
+    collapsed : false,
+    moveToLocation: function(latlng, title, map) {
+			//map.fitBounds( latlng.layer.getBounds() );
+			var zoom = map.getBoundsZoom(latlng.layer.getBounds());
+  			map.setView(latlng, zoom); // access the zoom
+		}
+    //sourceData : '../../data/_stations.json'
+  });
+
+  controlSearch.on('search:locationfound', function(e) {
+
+		console.log('search:locationfound', );
+
+		//map.removeLayer(this._markerSearch)
+
+		e.layer.setStyle({fillColor: '#3f0', color: '#0f0'});
+		if(e.layer._popup)
+			e.layer.openPopup();
+
+	}).on('search:collapsed', function(e) {
+
+		featuresLayer.eachLayer(function(layer) {	//restore feature color
+			featuresLayer.resetStyle(layer);
+		});
+	});
+
+
+  map.addControl(controlSearch); // add it to the map
+
+
 }
+
+
+
+
+
 
 function whenDocumentLoaded(action) {
     if (document.readyState === "loading") {
