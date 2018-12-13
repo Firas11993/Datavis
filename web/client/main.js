@@ -21,24 +21,24 @@ function debounce(func, wait, immediate) {
 function onStationClick(station, e) {
     var popup = e.getPopup();
     var url = new URL('http://127.0.0.1:5000/get_station_info/' + station.Name);
-    
-    
+
+
     var template = () => `<h1>${station.Name}</h1>${content}`;
     var content = ` <b>(Commune: ${station.Commune})<b>`;
     var wikiurl = "https://en.wikipedia.org/api/rest_v1/page/summary/";
-    
 
-  
+
+
 
     fetch(url).then(async function(response) {
         return response.json();
     }).then(function(resp) {
         if ('historic_cities' in resp) {
             content += '<h2>Historic cities:</h2><ul>';
-            
+
             for (let city of resp.historic_cities){
-                content += '<li>' + city + '</li>';  
-                wikiurl += city; 
+                content += '<li>' + city + '</li>';
+                wikiurl += city;
             }
             content += '</ul>';
 
@@ -53,7 +53,7 @@ function onStationClick(station, e) {
             }
             content += '</ul>';
         }
-        
+
         popup.setContent(template());
         popup.update();
     }).then(function(){
@@ -61,12 +61,12 @@ function onStationClick(station, e) {
 
         return response.json();
     }).then(function(resp) {
-        
+
         if ('extract' in resp) {
             content += '<h2>Summary:</h2><p>';
             for (let descr of resp.extract)
                 content +=  descr ;
-                
+
             content += '</p>';
         }
 
@@ -76,8 +76,8 @@ function onStationClick(station, e) {
 
     });
     });
-    
-    
+
+
 
     return template();
 }
@@ -181,7 +181,49 @@ function setupMap() {
 
   map.addControl(controlSearch); // add it to the map
 
+  // create the control
+  var command = L.control({position: 'topright'});
 
+  command.onAdd = function (map) {
+      var div = L.DomUtil.create('div', 'command');
+
+      div.innerHTML = '<form id="price"><input id="my-custom-control" type="number" value="0" min="0"/>Price</form>';
+      return div;
+  };
+
+  command.addTo(map);
+
+
+/*
+  var MyCustomControl = L.Control.extend({
+    options: {
+        // Default control position
+        position: 'bottomleft'
+    },
+    onAdd: function (map) {
+        // Create a container with classname and return it
+        return L.DomUtil.create('input', 'my-custom-control');
+    },
+    setContent: function (content) {
+        // Set the innerHTML of the container
+        this.getContainer().innerHTML = content;
+    }
+});
+*/
+// Assign to a variable so you can use it later and add it to your map
+var myCustomControl =  new MyCustomControl().addTo(map);
+
+// Set content on a marker click
+/*marker.on('click', function () {
+    myCustomControl.setContent('My awesome content');
+});
+
+// Remove content on map click
+map.on('click', function () {
+    myCustomControl.setContent('');
+});
+
+*/
 }
 
 
