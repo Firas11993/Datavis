@@ -3,13 +3,15 @@ import pandas as pd
 import json
 
 DATA_DIR = '../../data/'
-
-app = Flask(__name__)
+TAG_HIST = 'Hist'
+TAG_ARTHIST = 'ArtH'
 STATIONS = pd.read_csv(DATA_DIR + '_stations.csv').dropna()
 with open(DATA_DIR + '_historic_cities.json') as infile:
     HISTORIC_CITIES = json.load(infile)
 with open(DATA_DIR + '_art_history_cities.json') as infile:
     ART_HISTORY_CITIES = json.load(infile)
+
+app = Flask(__name__)
 
 @app.route('/get_stations', methods=['GET'])
 def get_stations():
@@ -27,11 +29,14 @@ def get_stations():
 
 @app.route('/get_station_info/<name>', methods=['GET'])
 def get_station_info(name):
-    info = {}
+    info = {'cities': {}}
     if name in HISTORIC_CITIES:
-        info['historic_cities'] = HISTORIC_CITIES[name]
+        for city in HISTORIC_CITIES[name]:
+            info['cities'][city] = [TAG_HIST]
     if name in ART_HISTORY_CITIES:
-        info['art_history_cities'] = ART_HISTORY_CITIES[name]
+        for city in ART_HISTORY_CITIES[name]:
+            info['cities'][city] = ([*info['cities'][city], TAG_ARTHIST] if city in info['cities'] else [TAG_ARTHIST])
+    info['important'] = len(info) > 0
     return json.dumps(info)
 
 @app.after_request

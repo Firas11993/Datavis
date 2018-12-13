@@ -1,3 +1,5 @@
+const API_URL = 'http://127.0.0.1:5000'
+
 // Source: <https://davidwalsh.name/javascript-debounce-function>
 // Returns a function, that, as long as it continues to be invoked, will not
 // be triggered. The function will be called after it stops being called for
@@ -20,22 +22,19 @@ function debounce(func, wait, immediate) {
 
 function onStationClick(station, e) {
     var popup = e.getPopup();
-    var url = new URL('http://127.0.0.1:5000/get_station_info/' + station.Name)
+    var url = new URL(`${API_URL}/get_station_info/${station.Name}`)
     var template = () => `<h1>${station.Name}</h1>${content}`;
     var content = ` <b>(Commune: ${station.Commune})<b>`;
     fetch(url).then(function(response) {
         return response.json();
     }).then(async function(resp) {
-        if ('historic_cities' in resp) {
-            content += '<h2>Historic cities:</h2><ul>';
-            for (let city of resp.historic_cities)
-                content += '<li>' + city + '</li>';
-            content += '</ul>';
-        }
-        if ('art_history_cities' in resp) {
-            content += '<h2>Art/History cities:</h2><ul>';
-            for (let city of resp.art_history_cities)
-                content += '<li>' + city + '</li>';
+        if (resp.important) {
+            content += '<h2>Interesting locations:</h2>';
+            for (let [city, tags] of Object.entries(resp.cities)) {
+                content += `<li>${city} <span>`;
+                content += tags.map(item => `<span class="tag ${item}">${item}</span>`).join('');
+                content += '</span></li>';
+            }
             content += '</ul>';
         }
         popup.setContent(template());
@@ -65,7 +64,7 @@ function setupMap() {
     var mapMarkers = L.layerGroup().addTo(map);
     var showBounds = debounce(function() {
         var bounds = map.getBounds()
-        var url = new URL('http://127.0.0.1:5000/get_stations')
+        var url = new URL(`${API_URL}/get_stations`)
         var params = {east: bounds.getEast(), west: bounds.getWest(), north: bounds.getNorth(), south: bounds.getSouth()}
         url.search = new URLSearchParams(params)
         fetch(url).then(function(response) {
