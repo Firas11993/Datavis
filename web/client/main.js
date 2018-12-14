@@ -3,6 +3,8 @@
 // be triggered. The function will be called after it stops being called for
 // N milliseconds. If `immediate` is passed, trigger the function on the
 // leading edge, instead of the trailing.
+
+
 function debounce(func, wait, immediate) {
     var timeout;
     return function() {
@@ -92,10 +94,59 @@ function partial(func /*, 0..n args */) {
 }
 
 var data = france;
-`<h1>Departement of departure</h1>`
 function setupMap() {
   //  var map = L.map('map').setView([46, 2], 6);
-  var map = new L.Map('map', {zoom: 6, center: new L.latLng([46, 2]) });
+  //var map = new L.Map('map', {zoom: 6, center: new L.latLng([46, 2]) });
+  // create a red polygon from an array of LatLng points
+  L.Mask = L.Polygon.extend({
+  	options: {
+  		stroke: false,
+  		color: '#000',
+  		fillOpacity: 1,
+  		clickable: true,
+
+  		outerBounds: new L.LatLngBounds([-90, -360], [90, 360])
+  	},
+
+  	initialize: function (latLngs, options) {
+
+           var outerBoundsLatLngs = [
+  			this.options.outerBounds.getSouthWest(),
+  			this.options.outerBounds.getNorthWest(),
+  			this.options.outerBounds.getNorthEast(),
+  			this.options.outerBounds.getSouthEast()
+  		];
+          L.Polygon.prototype.initialize.call(this, [outerBoundsLatLngs, latLngs], options);
+  	},
+
+  });
+  L.mask = function (latLngs, options) {
+  	return new L.Mask(latLngs, options);
+  };
+
+
+  var lat = 46.566414;
+  var lng =  2.4609375;
+  var zoom =  6;
+
+  var map = new L.Map('map');
+
+  var osmUrl='http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+  var osmAttrib='Map data &copy; OpenStreetMap contributors';
+  var osm = new L.TileLayer(osmUrl, {minZoom: 3, maxZoom: 8, attribution: osmAttrib});
+  map.addLayer(osm);
+
+  map.setView(new L.LatLng(lat, lng), zoom);
+
+  // transform geojson coordinates into an array of L.LatLng
+  var coordinates = data.features[0].geometry.coordinates[0];
+  var latLngs = [];
+  for (i=0; i<coordinates.length; i++) {
+      latLngs.push(new L.LatLng(coordinates[i][1], coordinates[i][0]));
+  }
+
+  L.mask(latLngs).addTo(map);
+
 
     L.tileLayer('https://api.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
         attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
@@ -193,37 +244,6 @@ function setupMap() {
 
   command.addTo(map);
 
-
-/*
-  var MyCustomControl = L.Control.extend({
-    options: {
-        // Default control position
-        position: 'bottomleft'
-    },
-    onAdd: function (map) {
-        // Create a container with classname and return it
-        return L.DomUtil.create('input', 'my-custom-control');
-    },
-    setContent: function (content) {
-        // Set the innerHTML of the container
-        this.getContainer().innerHTML = content;
-    }
-});
-*/
-// Assign to a variable so you can use it later and add it to your map
-var myCustomControl =  new MyCustomControl().addTo(map);
-
-// Set content on a marker click
-/*marker.on('click', function () {
-    myCustomControl.setContent('My awesome content');
-});
-
-// Remove content on map click
-map.on('click', function () {
-    myCustomControl.setContent('');
-});
-
-*/
 }
 
 
