@@ -24,9 +24,9 @@ html, body {
 }
 
 #top-left {
-  position: absolute;
-  top: 8px;
-  left: 16px;
+    position: absolute;
+    top: 8px;
+    left: 16px;
 }
 
 #my-custom-control {
@@ -39,8 +39,8 @@ html, body {
 }
 
 #price {
-  font-size : 18px;
-  color : white;
+    font-size : 18px;
+    color : white;
 }
 
 .tag {
