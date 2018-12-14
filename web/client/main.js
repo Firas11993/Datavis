@@ -26,38 +26,19 @@ function onStationClick(station, e) {
     var template = () => `<h1>${station.Name}</h1>${content}`;
     var content = ` <b>(Commune: ${station.Commune})<b>`;
     var wikiurl = "https://en.wikipedia.org/api/rest_v1/page/summary/";
-    
-
-  
 
     fetch(url).then(async function(response) {
         return response.json();
     }).then(function(resp) {
-        // if (resp.important) {
-        //     content += '<h2>Interesting locations:</h2>';
-        //     for (let [city, tags] of Object.entries(resp.cities)) {
-        //         content += `<li>${city} <span>`;
-        //         content += tags.map(item => `<span class="tag ${item}">${item}</span>`).join('');
-        //         content += '</span></li>';
-        if ('historic_cities' in resp) {
-            content += '<h2>Historic cities:</h2><ul>';
-            
-            for (let city of resp.historic_cities){
-                content += '<li>' + city + '</li>';  
-                wikiurl += city; 
-            }
-            content += '</ul>';
-
-        }
-        if ('art_history_cities' in resp) {
-            content += '<h2>Art/History cities:</h2><ul>';
-            for (let city of resp.art_history_cities){
-                content += '<li>' + city + '</li>';
-                if(wikiurl == "https://en.wikipedia.org/api/rest_v1/page/summary/"){
+        if (resp.important) {
+            content += '<h2>Interesting locations:</h2>';
+            for (let [city, tags] of Object.entries(resp.cities)) {
+                content += `<li>${city} <span>`;
+                content += tags.map(item => `<span class="tag ${item}">${item}</span>`).join('');
+                content += '</span></li>';
+                if (wikiurl.endsWith('/'))
                     wikiurl += city;
-                }
             }
-            content += '</ul>';
         }
         
         popup.setContent(template());
@@ -142,9 +123,9 @@ function setupMap() {
   //  map.addLayer(markersLayer);
 
   var featuresLayer = new L.GeoJSON(data, {
-
-      onEachFeature: function(feature, marker) {
-        marker.bindPopup('<h4>'+ feature.properties.nom +'</h4>');
+      style: {
+          opacity: 0,
+          fillOpacity: 0,
       }
     });
 
@@ -160,34 +141,34 @@ function setupMap() {
     textPlaceholder: 'Departure departement ', // placeholder while nothing is searched
     collapsed : false,
     moveToLocation: function(latlng, title, map) {
-			//map.fitBounds( latlng.layer.getBounds() );
-			var zoom = map.getBoundsZoom(latlng.layer.getBounds());
+    		//map.fitBounds( latlng.layer.getBounds() );
+    		var zoom = map.getBoundsZoom(latlng.layer.getBounds());
   			map.setView(latlng, zoom); // access the zoom
-		}
+    	}
     //sourceData : '../../data/_stations.json'
   });
 
   controlSearch.on('search:locationfound', function(e) {
 
-		console.log('search:locationfound', );
+    	console.log('search:locationfound', );
 
-		//map.removeLayer(this._markerSearch)
+    	//map.removeLayer(this._markerSearch)
 
-		e.layer.setStyle({fillColor: '#3f0', color: '#0f0'});
-		if(e.layer._popup)
-			e.layer.openPopup();
+    	e.layer.setStyle({opacity: 1});
+    	if(e.layer._popup)
+    		e.layer.openPopup();
 
-	}).on('search:collapsed', function(e) {
+    }).on('search:collapsed', function(e) {
 
-		featuresLayer.eachLayer(function(layer) {	//restore feature color
-			featuresLayer.resetStyle(layer);
-		});
-	});
+    	featuresLayer.eachLayer(function(layer) {	//restore feature color
+    		featuresLayer.resetStyle(layer);
+    	});
+    });
 
 
   map.addControl(controlSearch); // add it to the map
 
-
+    loadTest(map);
 }
 
 
@@ -202,6 +183,62 @@ function whenDocumentLoaded(action) {
         // `DOMContentLoaded` already fired
         action();
     }
+}
+
+function getColorForCost(cost, budget) {
+    var scale = chroma.scale(['lightgreen', 'green','yellow','orange','red','black']).colors(budget);
+    return scale[cost];
+}
+
+function loadTest(map) {
+    var url = new URL(`${API_URL}/get_routes_from_source/Abancourt`)
+    fetch(url).then(async function(response) {
+        return response.json();
+    }).then(function(resp) {
+        var start_point = new L.LatLng(resp.start_lat, resp.start_lon);
+        L.circleMarker([resp.start_lat, resp.start_lon], {
+            radius: map.getZoom(),
+            color: 'green',
+            fillColor: 'green',
+            fillOpacity: 1
+        }).addTo(map);
+        for (let dest of resp.paths) {
+            var pointList = [start_point];
+            var dest_name;
+            var tooltip_text = 'Abancourt, ';
+            for (let path_part of dest.segments) {
+                var start_name = path_part[0];
+                var end_name = path_part[1];
+                tooltip_text += end_name + ', ';
+                dest_name = end_name;
+                var cost = path_part[2];
+                var dep_time = path_part[3];
+                var arr_time = path_part[4];
+                var end_lat = path_part[5];
+                var end_lon = path_part[6];
+                var point = new L.LatLng(end_lat, end_lon);
+                pointList.push(point);
+            }
+            var budget = 200;
+            if (dest.cost <= budget) {
+                var polyline = new L.Polyline(pointList, {
+                    color: getColorForCost(dest.cost, budget),
+                    weight: 4,
+                });
+                polyline.addTo(map);
+                tooltip_text += '€' + dest.cost;
+                polyline.bindTooltip(tooltip_text);
+                polyline.on('mouseover', function(e) {
+                    this.setStyle({weight: 10});
+                    // this._popup.setContent(total_cost);
+                    // this._popup.openOn(this._map);
+                });
+                polyline.on('mouseout', function() {
+                    this.setStyle({weight: 4});
+                });
+            }
+        }
+    });
 }
 
 whenDocumentLoaded(() => {
