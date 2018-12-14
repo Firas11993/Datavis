@@ -89,7 +89,7 @@ function setupMap() {
         options: {
             stroke: false,
             color: '#000',
-            fillOpacity: 1,
+            fillOpacity: .3,
             clickable: true,
 
             outerBounds: new L.LatLngBounds([-90, -360], [90, 360])
@@ -175,7 +175,7 @@ function setupMap() {
 
     var featuresLayer = new L.GeoJSON(data, {
         style: {
-            opacity: 0,
+            opacity: .5,
             fillOpacity: 0,
         }
     });
