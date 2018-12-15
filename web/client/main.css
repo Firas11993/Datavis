@@ -40,7 +40,17 @@ html, body {
 
 #price {
     font-size : 18px;
-    color : white;
+    color : black;
+}
+#search {
+	cursor: pointer;
+	appearance: none;
+	border-radius: 4px;
+	font-size: 1.25rem;
+	padding: 0.75rem 1rem;
+	border: 1px solid navy;
+	background-color: dodgerblue;
+	color: white;
 }
 
 .tag {

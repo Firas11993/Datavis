@@ -81,13 +81,13 @@ function partial(func /*, 0..n args */) {
 }
 
 var data = france;
+var map;
 function setupMap() {
     var lat = 46.566414;
     var lng =  2.4609375;
     var zoom =  6;
 
-    var map = new L.Map('map');
-
+    map = new L.Map('map');
     var osmUrl='http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
     var osmAttrib='Map data &copy; OpenStreetMap contributors';
     var osm = new L.TileLayer(osmUrl, {minZoom: 3, maxZoom: 8, attribution: osmAttrib});
@@ -187,21 +187,31 @@ function setupMap() {
     map.addControl(controlSearch); // add it to the map
 
     // create the control
-    var command = L.control({position: 'topright'});
+    var command = L.control({position: 'topleft'});
 
     command.onAdd = function (map) {
         var div = L.DomUtil.create('div', 'command');
 
-        div.innerHTML = '<form id="price"><input id="my-custom-control" type="number" value="0" min="0"/>Price</form>';
+        div.innerHTML = '<form id="price">Price<input id="my-custom-control" type="number" value="0" min="0"/></form>';
+        return div;
+    };
+
+    command.addTo(map);
+
+    var command = L.control({position: 'topleft'});
+
+    command.onAdd = function (map) {
+        var div = L.DomUtil.create('div', 'command');
+
+        div.innerHTML = '<button id="search" onclick="loadTest(map)">Search</button>'
         return div;
     };
 
     command.addTo(map);
 
     // Testing: show paths test.
-    loadTest(map);
+  //  loadTest(map);
 }
-
 
 
 
@@ -221,7 +231,21 @@ function getColorForCost(cost, budget) {
     return scale[cost];
 }
 
+// clear polylines
+function clearPolylines(polylines) {
+  for (i=0;i<polylines.length;i++){
+      map.removeLayer(polylines[i]);
+    //  console.log("polyline dropped ...")
+  }
+}
+
+var polylines=[] ;
+
 function loadTest(map) {
+    if (polylines.length != 0){
+        console.log("processing polylines dropping")
+        clearPolylines(polylines);
+    }
     var url = new URL(`${API_URL}/get_routes_from_source/Abancourt`)
     fetch(url).then(async function(response) {
         return response.json();
@@ -250,7 +274,7 @@ function loadTest(map) {
                 var point = new L.LatLng(end_lat, end_lon);
                 pointList.push(point);
             }
-            var budget = 200;
+            var budget = document.getElementById("my-custom-control").value;
             if (dest.cost <= budget) {
                 var polyline = new L.Polyline(pointList, {
                     color: getColorForCost(dest.cost, budget),
@@ -267,6 +291,9 @@ function loadTest(map) {
                 polyline.on('mouseout', function() {
                     this.setStyle({weight: 4});
                 });
+                polylines.push(polyline);
+            //    console.log(polylines);
+
             }
         }
     });
