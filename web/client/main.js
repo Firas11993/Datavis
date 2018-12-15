@@ -82,36 +82,6 @@ function partial(func /*, 0..n args */) {
 
 var data = france;
 function setupMap() {
-    //  var map = L.map('map').setView([46, 2], 6);
-    //var map = new L.Map('map', {zoom: 6, center: new L.latLng([46, 2]) });
-    // create a red polygon from an array of LatLng points
-    L.Mask = L.Polygon.extend({
-        options: {
-            stroke: false,
-            color: '#000',
-            fillOpacity: .3,
-            clickable: true,
-
-            outerBounds: new L.LatLngBounds([-90, -360], [90, 360])
-        },
-
-        initialize: function (latLngs, options) {
-
-            var outerBoundsLatLngs = [
-                this.options.outerBounds.getSouthWest(),
-                this.options.outerBounds.getNorthWest(),
-                this.options.outerBounds.getNorthEast(),
-                this.options.outerBounds.getSouthEast()
-            ];
-            L.Polygon.prototype.initialize.call(this, [outerBoundsLatLngs, latLngs], options);
-        },
-
-    });
-    L.mask = function (latLngs, options) {
-        return new L.Mask(latLngs, options);
-    };
-
-
     var lat = 46.566414;
     var lng =  2.4609375;
     var zoom =  6;
@@ -125,14 +95,11 @@ function setupMap() {
 
     map.setView(new L.LatLng(lat, lng), zoom);
 
-    // transform geojson coordinates into an array of L.LatLng
-    var coordinates = data.features[0].geometry.coordinates[0];
-    var latLngs = [];
-    for (i=0; i<coordinates.length; i++) {
-        latLngs.push(new L.LatLng(coordinates[i][1], coordinates[i][0]));
-    }
-
-    L.mask(latLngs).addTo(map);
+    L.geoJson(france_shape, {
+        clickable: false,
+        invert: true,
+        style: { fillColor: '#000', fillOpacity: 0.2 },
+    }).addTo(map);
 
 
     L.tileLayer('https://api.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
