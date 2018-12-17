@@ -239,7 +239,12 @@ function showPathsFromStop(stop_name) {
     if (typeof stop_name === "undefined")
         stop_name = starting_stop
     starting_stop = stop_name;
-    var url = new URL(`${API_URL}/get_routes_from_source/${stop_name}`)
+
+    var budget = document.getElementById("my-custom-control").value;
+    var url = new URL(`${API_URL}/get_routes_from_source`)
+    var params = {source_name: stop_name, budget: budget}
+    url.search = new URLSearchParams(params)
+    console.log(url);
     fetch(url).then(async function(response) {
         return response.json();
     }).then(function(resp) {
@@ -267,25 +272,21 @@ function showPathsFromStop(stop_name) {
                 var point = new L.LatLng(end_lat, end_lon);
                 pointList.push(point);
             }
-            var budget = document.getElementById("my-custom-control").value;
-            if (dest.cost <= budget) {
-                var polyline = new L.Polyline(pointList, {
-                    color: getColorForCost(dest.cost, budget),
-                    weight: 4,
-                });
-                polyline.addTo(pathsLayer);
-                tooltip_text += '€' + dest.cost;
-                polyline.bindTooltip(tooltip_text);
-                polyline.on('mouseover', function(e) {
-                    this.setStyle({weight: 10});
-                    // this._popup.setContent(total_cost);
-                    // this._popup.openOn(this._map);
-                });
-                polyline.on('mouseout', function() {
-                    this.setStyle({weight: 4});
-                });
-
-            }
+            var polyline = new L.Polyline(pointList, {
+                color: getColorForCost(dest.cost, budget),
+                weight: 4,
+            });
+            polyline.addTo(pathsLayer);
+            tooltip_text += '€' + dest.cost;
+            polyline.bindTooltip(tooltip_text);
+            polyline.on('mouseover', function(e) {
+                this.setStyle({weight: 10});
+                // this._popup.setContent(total_cost);
+                // this._popup.openOn(this._map);
+            });
+            polyline.on('mouseout', function() {
+                this.setStyle({weight: 4});
+            });
         }
         pathsLayer.addTo(map);
     });
