@@ -34,10 +34,11 @@ def get_stations():
     west = float(request.args.get('west'))
     north = float(request.args.get('north'))
     south = float(request.args.get('south'))
+    zoom = int(request.args.get('zoom'))
     df = STATIONS
     df = df[(df.Longitude > west) & (df.Longitude < east) & (df.Latitude > south) & (df.Latitude < north)]
     df_imp = df[(df.Name.isin(HISTORIC_CITIES.keys())) | (df.Name.isin(ART_HISTORY_CITIES.keys()))]
-    if len(df) > 100 and len(df_imp) > 5:
+    if zoom < 10:
         df = df_imp
     df['Imp'] = df.index.isin(df_imp.index)
     return df.to_json(orient='index')
@@ -54,8 +55,10 @@ def get_station_info(name):
     info['important'] = len(info) > 0
     return json.dumps(info)
 
-@app.route('/get_routes_from_source/<source_name>', methods=['GET'])
-def get_routes_from_source(source_name):
+@app.route('/get_routes_from_source/', methods=['GET'])
+def get_routes_from_source():
+    source_name = request.args.get('source_name')
+    budget = int(request.args.get('budget'))
     source_id = STOPS_ID_BY_NAME [source_name]
     result = []
     source_station = STATIONS[STATIONS.Name == source_name].iloc[0]
@@ -81,9 +84,12 @@ def get_routes_from_source(source_name):
                     end_lon = info['lon_lat'][0]
                 cost += info['weight']
                 segments.append([start_name, end_name, info['weight'], info['departure_time'], info['arrival_time'], end_lat, end_lon])
+            if cost > budget: continue
             result.append({'segments': segments, 'cost': cost})
     result = sorted(result, key=lambda k: k['cost'], reverse=True)
-    return json.dumps({'start_lat': source_station.Latitude, 'start_lon': source_station.Longitude, 'paths': result})
+    return json.dumps({'start_lat': source_station.Latitude,
+                       'start_lon': source_station.Longitude,
+                       'paths': result})
 
 @app.after_request
 def after_request(response):

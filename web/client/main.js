@@ -117,7 +117,7 @@ function setupMap() {
     var showBounds = debounce(function() {
         var bounds = map.getBounds()
         var url = new URL(`${API_URL}/get_stations`)
-        var params = {east: bounds.getEast(), west: bounds.getWest(), north: bounds.getNorth(), south: bounds.getSouth()}
+        var params = {east: bounds.getEast(), west: bounds.getWest(), north: bounds.getNorth(), south: bounds.getSouth(), zoom: map.getZoom()}
         url.search = new URLSearchParams(params)
         fetch(url).then(function(response) {
             return response.json();
