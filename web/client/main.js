@@ -22,11 +22,14 @@ function debounce(func, wait, immediate) {
     };
 };
 
+var station_popup;
 function onStationClick(station, e) {
     var popup = e.getPopup();
+    station_popup = popup;
     var url = new URL(`${API_URL}/get_station_info/${station.Name}`)
     var template = () => `<h1>${station.Name}</h1>${content}`;
     var content = ` <b>(Commune: ${station.Commune})<b>`;
+    content += '<br><button onclick="showPathsFromStop(\'' + station.Name + '\')">Set starting location</button>';
     var wikiurl = "https://en.wikipedia.org/api/rest_v1/page/summary/";
 
     fetch(url).then(async function(response) {
@@ -82,6 +85,7 @@ function partial(func /*, 0..n args */) {
 
 var data = france;
 var map;
+
 function setupMap() {
     var lat = 46.566414;
     var lng =  2.4609375;
@@ -192,7 +196,7 @@ function setupMap() {
     command.onAdd = function (map) {
         var div = L.DomUtil.create('div', 'command');
 
-        div.innerHTML = '<form id="price">Price<input id="my-custom-control" type="number" value="0" min="0"/></form>';
+        div.innerHTML = '<form id="price">Price<input id="my-custom-control" type="number" value="200" min="50"/></form>';
         return div;
     };
 
@@ -203,19 +207,14 @@ function setupMap() {
     command.onAdd = function (map) {
         var div = L.DomUtil.create('div', 'command');
 
-        div.innerHTML = '<button id="search" onclick="loadTest(map)">Search</button>'
+        div.innerHTML = '<button id="search" onclick="showPathsFromStop()">Search</button>'
         return div;
     };
 
     command.addTo(map);
 
     // Testing: show paths test.
-  //  loadTest(map);
 }
-
-
-
-
 
 function whenDocumentLoaded(action) {
     if (document.readyState === "loading") {
@@ -231,32 +230,26 @@ function getColorForCost(cost, budget) {
     return scale[cost];
 }
 
-// clear polylines
-function clearPolylines(polylines) {
-  for (i=0;i<polylines.length;i++){
-      map.removeLayer(polylines[i]);
-    //  console.log("polyline dropped ...")
-  }
-}
+var starting_stop;
+var pathsLayer = L.layerGroup();
 
-var polylines=[] ;
-
-function loadTest(map) {
-    if (polylines.length != 0){
-        console.log("processing polylines dropping")
-        clearPolylines(polylines);
-    }
-    var url = new URL(`${API_URL}/get_routes_from_source/Abancourt`)
+function showPathsFromStop(stop_name) {
+    pathsLayer.clearLayers();
+    station_popup.remove();
+    if (typeof stop_name === "undefined")
+        stop_name = starting_stop
+    starting_stop = stop_name;
+    var url = new URL(`${API_URL}/get_routes_from_source/${stop_name}`)
     fetch(url).then(async function(response) {
         return response.json();
     }).then(function(resp) {
         var start_point = new L.LatLng(resp.start_lat, resp.start_lon);
-        L.circleMarker([resp.start_lat, resp.start_lon], {
+        L.marker([resp.start_lat, resp.start_lon], {
             radius: map.getZoom(),
             color: 'green',
             fillColor: 'green',
             fillOpacity: 1
-        }).addTo(map);
+        }).addTo(pathsLayer);
         for (let dest of resp.paths) {
             var pointList = [start_point];
             var dest_name;
@@ -280,7 +273,7 @@ function loadTest(map) {
                     color: getColorForCost(dest.cost, budget),
                     weight: 4,
                 });
-                polyline.addTo(map);
+                polyline.addTo(pathsLayer);
                 tooltip_text += '€' + dest.cost;
                 polyline.bindTooltip(tooltip_text);
                 polyline.on('mouseover', function(e) {
@@ -291,11 +284,10 @@ function loadTest(map) {
                 polyline.on('mouseout', function() {
                     this.setStyle({weight: 4});
                 });
-                polylines.push(polyline);
-            //    console.log(polylines);
 
             }
         }
+        pathsLayer.addTo(map);
     });
 }
 
