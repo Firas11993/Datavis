@@ -218,7 +218,7 @@ function whenDocumentLoaded(action) {
 }
 
 function getColorForCost(cost, budget) {
-    var scale = chroma.scale(['lightgreen', 'green','yellow','orange','red','black']).colors(budget);
+    var scale = chroma.scale(['green', 'red']).mode('lch').colors(budget);
     return scale[cost];
 }
 
