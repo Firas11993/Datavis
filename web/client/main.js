@@ -102,7 +102,7 @@ function setupMap() {
     L.geoJson(france_shape, {
         clickable: false,
         invert: true,
-        style: { fillColor: '#000', fillOpacity: 0.2 },
+        style: { fillColor: '#000', fillOpacity: 0.2, weight: 0 },
     }).addTo(map);
 
 
@@ -146,7 +146,7 @@ function setupMap() {
 
     var featuresLayer = new L.GeoJSON(data, {
         style: {
-            opacity: .5,
+            opacity: 0,
             fillOpacity: 0,
         }
     });
@@ -171,18 +171,10 @@ function setupMap() {
     });
 
     controlSearch.on('search:locationfound', function(e) {
-
-        console.log('search:locationfound', );
-
-        //map.removeLayer(this._markerSearch)
-
-        e.layer.setStyle({opacity: 1});
         if(e.layer._popup)
             e.layer.openPopup();
-
     }).on('search:collapsed', function(e) {
-
-        featuresLayer.eachLayer(function(layer) {	//restore feature color
+        featuresLayer.eachLayer(function(layer) {
             featuresLayer.resetStyle(layer);
         });
     });
