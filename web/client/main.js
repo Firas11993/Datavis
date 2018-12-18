@@ -6,7 +6,6 @@ const API_URL = 'http://127.0.0.1:5000'
 // N milliseconds. If `immediate` is passed, trigger the function on the
 // leading edge, instead of the trailing.
 
-
 function debounce(func, wait, immediate) {
     var timeout;
     return function() {
@@ -22,13 +21,12 @@ function debounce(func, wait, immediate) {
     };
 };
 
-function onStationClick(station, e) {
-    var popup = e.getPopup();
+function onStationClick(station) {
     var url = new URL(`${API_URL}/get_station_info/${station.Name}`)
     var template = () => `<h1>${station.Name}</h1>${content}`;
-    var content = ` <b>(Commune: ${station.Commune})<b>`;
+    var content = `  <b>(Commune: ${station.Commune})<b>`;
     var wikiurl = "https://en.wikipedia.org/api/rest_v1/page/summary/";
-
+    var sidebarContent = document.getElementById("sidebarContent");
     fetch(url).then(async function(response) {
         return response.json();
     }).then(function(resp) {
@@ -43,8 +41,7 @@ function onStationClick(station, e) {
             }
         }
 
-        popup.setContent(template());
-        popup.update();
+        sidebarContent.innerHTML = template()
     }).then(function(){
         fetch(new URL(wikiurl)).then(async function(response) {
 
@@ -60,8 +57,7 @@ function onStationClick(station, e) {
             }
 
             wikiurl = "https://en.wikipedia.org/api/rest_v1/page/summary/";
-            popup.setContent(template());
-            popup.update();
+            sidebarContent.innerHTML = template()
 
         });
     });
@@ -87,11 +83,21 @@ function setupMap() {
     var lng =  2.4609375;
     var zoom =  6;
 
+
     map = new L.Map('map');
+
+
     var osmUrl='http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
     var osmAttrib='Map data &copy; OpenStreetMap contributors';
     var osm = new L.TileLayer(osmUrl, {minZoom: 3, maxZoom: 8, attribution: osmAttrib});
     map.addLayer(osm);
+
+    var sidebar = L.control.sidebar('sidebar', {
+        position: 'left',
+        autopan: false,       // whether to maintain the centered map point when opening the sidebar
+        closeButton: true,    // whether t add a close button to the panes
+    }).addTo(map);
+
 
     map.setView(new L.LatLng(lat, lng), zoom);
 
@@ -101,7 +107,6 @@ function setupMap() {
         style: { fillColor: '#000', fillOpacity: 0.2 },
     }).addTo(map);
 
-
     L.tileLayer('https://api.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
         attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
         maxZoom: 18,
@@ -110,6 +115,7 @@ function setupMap() {
     }).addTo(map);
 
     var mapMarkers = L.layerGroup().addTo(map);
+
     var showBounds = debounce(function() {
         var bounds = map.getBounds()
         var url = new URL(`${API_URL}/get_stations`)
@@ -126,7 +132,7 @@ function setupMap() {
                     color: important_city && '#3498db' || '#95a5a6',
                     fillColor: important_city && '#3498db' || '#95a5a6',
                     fillOpacity: 0.2
-                }).addTo(mapMarkers).bindPopup(partial(onStationClick, station));
+                }).addTo(mapMarkers).on('click', partial(onStationClick, station));
             }
         });
     }, 125);

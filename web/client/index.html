@@ -1,42 +1,433 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="content-type" content="text/html; charset=utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>Data vis</title>
-        <meta name="author" content="Firas Ben Othman, Germain Zouein, Khalil Elleuch">
+    <title>Data vis</title>
+    <meta name="author" content="Firas Ben Othman, Germain Zouein, Khalil Elleuch">
 
-        <link rel="stylesheet" href="main.css">
-        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
-                               integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
-                               crossorigin=""/>
+    <link rel="stylesheet" href="main.css">
+    
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ=="
+        crossorigin="" />
 
-        <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
-                integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
-                crossorigin=""></script>
-
-
-        <script type="text/javascript" src="leaflet-search.min.js"></script>
-        <link rel="stylesheet" href="leaflet-search.min.css">
-        <script src="leaflet-search.js"></script>
-        <script src="leaflet.snogylop.js"></script>
-        <script src="../../data/departements.geojson.js"></script>
-        <script src="../../data/france_shape.geojson.js"></script>
-        <script src='http://okfnlabs.org/wikipediajs/wikipedia.js'></script>
-        <script src='https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.0.2/chroma.min.js'></script>
-        <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+        crossorigin=""></script>
 
 
+    <script type="text/javascript" src="leaflet-search.min.js"></script>
+    <link rel="stylesheet" href="leaflet-search.min.css">
+    <link rel="stylesheet" href="leaflet-sidebar.css" />
 
-    </head>
+    <script src="leaflet-search.js"></script>
+    <script src="leaflet.snogylop.js"></script>
+    <script src="../../data/departements.geojson.js"></script>
+    <script src="../../data/france_shape.geojson.js"></script>
+    <script src='http://okfnlabs.org/wikipediajs/wikipedia.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.0.2/chroma.min.js'></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
 
-    <body  onload="setupMap()">
-        <div id="map"></div>
-        <script src="main.js"></script>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+        html, body, #map {
+            height: 100%;
+            font: 10pt "Helvetica Neue", Arial, Helvetica, sans-serif;
+        }
+        .lorem {
+            font-style: italic;
+            text-align: justify;
+            color: #AAA;
+        }
+    </style>
 
-    </body>
+</head>
+
+<body onload="setupMap()">
+    <!-- SIDEBAR + CONTENT -->
+    <div id="sidebar" class="leaflet-sidebar collapsed">
+        <!-- Nav tabs -->
+        <div class="leaflet-sidebar-tabs">
+            <ul role="tablist"> <!-- top aligned tabs -->
+                <li><a href="#home" role="tab"><i class="fa fa-bars"></i></a></li>
+                
+            </ul>
+
+        </div>
+
+        <!-- Tab panes -->
+        <div class="leaflet-sidebar-content">
+            <div class="leaflet-sidebar-pane" id="home">
+                <h1 class="leaflet-sidebar-header">
+                    Summary
+                    <div id="sidebarContent" style="color:black" />
+                    <div class="leaflet-sidebar-close"><i class="fa fa-caret-left"></i></div>
+                </h1>
+            </div>
+
+            <div class="leaflet-sidebar-pane" id="messages">
+                <h1 class="leaflet-sidebar-header">Messages<div class="leaflet-sidebar-close"><i class="fa fa-caret-left"></i></div></h1>
+            </div>
+
+            <div class="leaflet-sidebar-pane" id="profile">
+                <h1 class="leaflet-sidebar-header">Profile<div class="leaflet-sidebar-close"><i class="fa fa-caret-left"></i></div></h1>
+            </div>
+        </div>
+    </div>
+    <!-- END SIDEBAR -->
+    <!-- Add class sidebar-map -->
+    <div id="map" class="sidebar-map"></div>
+    <!-- End class ... -->
+    <!-- Check main.js setupMap function last lines - 211-->
+    <script src="main.js"></script>
+    <!-- end main.js -->
+    <!-- Leaflet sidebar lib -->
+    <script src="leaflet-sidebar.js"></script>
+    <!-- end leaflet lib -->
+    <!-- side bar styles, put them in css file better -->
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        html,
+        body,
+        #map {
+            height: 100%;
+            font: 10pt "Helvetica Neue", Arial, Helvetica, sans-serif;
+        }
+
+        .lorem {
+            font-style: italic;
+            color: #AAA;
+        }
+
+        .sidebar {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+            overflow: hidden;
+            z-index: 2000;
+        }
+
+        .sidebar.collapsed {
+            width: 40px;
+        }
+
+        @media (min-width: 768px) {
+            .sidebar {
+                top: 10px;
+                bottom: 10px;
+                transition: width 500ms;
+            }
+        }
+
+        @media (min-width: 768px) and (max-width: 991px) {
+            .sidebar {
+                width: 305px;
+            }
+        }
+
+        @media (min-width: 992px) and (max-width: 1199px) {
+            .sidebar {
+                width: 390px;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .sidebar {
+                width: 460px;
+            }
+        }
+
+        .sidebar-left {
+            left: 0;
+        }
+
+        @media (min-width: 768px) {
+            .sidebar-left {
+                left: 10px;
+            }
+        }
+
+        .sidebar-right {
+            right: 0;
+        }
+
+        @media (min-width: 768px) {
+            .sidebar-right {
+                right: 10px;
+            }
+        }
+
+        .sidebar-tabs {
+            top: 0;
+            bottom: 0;
+            height: 100%;
+            background-color: #fff;
+        }
+
+        .sidebar-left .sidebar-tabs {
+            left: 0;
+        }
+
+        .sidebar-right .sidebar-tabs {
+            right: 0;
+        }
+
+        .sidebar-tabs,
+        .sidebar-tabs>ul {
+            position: absolute;
+            width: 40px;
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+
+        .sidebar-tabs>li,
+        .sidebar-tabs>ul>li {
+            width: 100%;
+            height: 40px;
+            color: #333;
+            font-size: 12pt;
+            overflow: hidden;
+            transition: all 80ms;
+        }
+
+        .sidebar-tabs>li:hover,
+        .sidebar-tabs>ul>li:hover {
+            color: #000;
+            background-color: #eee;
+        }
+
+        .sidebar-tabs>li.active,
+        .sidebar-tabs>ul>li.active {
+            color: #fff;
+            background-color: #0074d9;
+        }
+
+        .sidebar-tabs>li.disabled,
+        .sidebar-tabs>ul>li.disabled {
+            color: rgba(51, 51, 51, 0.4);
+        }
+
+        .sidebar-tabs>li.disabled:hover,
+        .sidebar-tabs>ul>li.disabled:hover {
+            background: transparent;
+        }
+
+        .sidebar-tabs>li.disabled>a,
+        .sidebar-tabs>ul>li.disabled>a {
+            cursor: default;
+        }
+
+        .sidebar-tabs>li>a,
+        .sidebar-tabs>ul>li>a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            line-height: 40px;
+            color: inherit;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .sidebar-tabs>ul+ul {
+            bottom: 0;
+        }
+
+        .sidebar-content {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            background-color: rgba(255, 255, 255, 0.95);
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+
+        .sidebar-left .sidebar-content {
+            left: 40px;
+            right: 0;
+        }
+
+        .sidebar-right .sidebar-content {
+            left: 0;
+            right: 40px;
+        }
+
+        .sidebar.collapsed>.sidebar-content {
+            overflow-y: hidden;
+        }
+
+        .sidebar-pane {
+            display: none;
+            left: 0;
+            right: 0;
+            box-sizing: border-box;
+            padding: 10px 20px;
+        }
+
+        .sidebar-pane.active {
+            display: block;
+        }
+
+        @media (min-width: 768px) and (max-width: 991px) {
+            .sidebar-pane {
+                min-width: 265px;
+            }
+        }
+
+        @media (min-width: 992px) and (max-width: 1199px) {
+            .sidebar-pane {
+                min-width: 350px;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .sidebar-pane {
+                min-width: 420px;
+            }
+        }
+
+        .sidebar-header {
+            margin: -10px -20px 0;
+            height: 40px;
+            padding: 0 20px;
+            line-height: 40px;
+            font-size: 14.4pt;
+            color: #fff;
+            background-color: #0074d9;
+        }
+
+        .sidebar-right .sidebar-header {
+            padding-left: 40px;
+        }
+
+        .sidebar-close {
+            position: absolute;
+            top: 0;
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .sidebar-left .sidebar-close {
+            right: 0;
+        }
+
+        .sidebar-right .sidebar-close {
+            left: 0;
+        }
+
+        .sidebar-left~.sidebar-map {
+            margin-left: 40px;
+        }
+
+        @media (min-width: 768px) {
+            .sidebar-left~.sidebar-map {
+                margin-left: 0;
+            }
+        }
+
+        .sidebar-right~.sidebar-map {
+            margin-right: 40px;
+        }
+
+        @media (min-width: 768px) {
+            .sidebar-right~.sidebar-map {
+                margin-right: 0;
+            }
+        }
+
+        .sidebar {
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.65);
+        }
+
+        .sidebar.leaflet-touch {
+            box-shadow: none;
+            border-right: 2px solid rgba(0, 0, 0, 0.2);
+        }
+
+        @media (min-width: 768px) {
+            .sidebar {
+                border-radius: 4px;
+            }
+
+            .sidebar.leaflet-touch {
+                border: 2px solid rgba(0, 0, 0, 0.2);
+            }
+        }
+
+        @media (min-width: 768px) {
+            .sidebar-left~.sidebar-map .leaflet-left {
+                transition: left 500ms;
+            }
+        }
+
+        @media (min-width: 768px) and (max-width: 991px) {
+            .sidebar-left~.sidebar-map .leaflet-left {
+                left: 315px;
+            }
+        }
+
+        @media (min-width: 992px) and (max-width: 1199px) {
+            .sidebar-left~.sidebar-map .leaflet-left {
+                left: 400px;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .sidebar-left~.sidebar-map .leaflet-left {
+                left: 470px;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .sidebar-left.collapsed~.sidebar-map .leaflet-left {
+                left: 50px;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .sidebar-right~.sidebar-map .leaflet-right {
+                transition: right 500ms;
+            }
+        }
+
+        @media (min-width: 768px) and (max-width: 991px) {
+            .sidebar-right~.sidebar-map .leaflet-right {
+                right: 315px;
+            }
+        }
+
+        @media (min-width: 992px) and (max-width: 1199px) {
+            .sidebar-right~.sidebar-map .leaflet-right {
+                right: 400px;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .sidebar-right~.sidebar-map .leaflet-right {
+                right: 470px;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .sidebar-right.collapsed~.sidebar-map .leaflet-right {
+                right: 50px;
+            }
+        }
+    </style>
+    <!-- end styles -->
+</body>
 
 </html>
