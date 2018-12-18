@@ -1,6 +1,30 @@
+.sidediv {
+  background: white;
+  padding: 1em;
+  border-radius: 5px;
+  position: absolute;
+  top: 1em;
+  left: 10px;
+  height: 5em;
+  bottom: 0;
+  z-index: 2000;
+  text-align: center;
+}
+
+#budgetContainer {
+    display: flex;
+    align-items: center;
+    padding-top: 8px;
+    height: 28px;
+}
+#refresh {
+    width: 16px;
+    height: 16px;
+}
+
 .leaflet-sidebar {
   position: absolute;
-  top: 0;
+  top: 9em;
   bottom: 0;
   width: 100%;
   overflow: hidden;
@@ -9,7 +33,6 @@
     width: 40px; }
   @media (min-width: 768px) {
     .leaflet-sidebar {
-      top: 10px;
       bottom: 10px;
       transition: width 500ms; } }
   @media (min-width: 768px) and (max-width: 991px) {

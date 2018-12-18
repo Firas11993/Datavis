@@ -85,7 +85,8 @@ function setupMap() {
     var lng =  2.4609375;
     var zoom =  6;
 
-    map = new L.Map('map', {minZoom: 6, maxZoom: 11});
+    map = new L.Map('map', {minZoom: 6, maxZoom: 11, zoomControl: false});
+    new L.Control.Zoom({position: 'bottomright'}).addTo(map);
     var osmUrl='http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
     var osmAttrib='Map data &copy; OpenStreetMap contributors';
     var osm = new L.TileLayer(osmUrl, {minZoom: 6, maxZoom: 8, attribution: osmAttrib});
@@ -156,13 +157,13 @@ function setupMap() {
 
     // add the search bar to the map
     var controlSearch = new L.Control.Search({
-        position:'topleft',    // where do you want the search bar?
+        position: 'topright',    // where do you want the search bar?
         layer: featuresLayer,
         propertyName: 'nom',
         initial: false,
         marker: false,
-        textPlaceholder: 'Departure departement ', // placeholder while nothing is searched
-        collapsed : false,
+        textPlaceholder: 'Search by departement', // placeholder while nothing is searched
+        collapsed: false,
         moveToLocation: function(latlng, title, map) {
             //map.fitBounds( latlng.layer.getBounds() );
             var zoom = map.getBoundsZoom(latlng.layer.getBounds());
@@ -182,29 +183,6 @@ function setupMap() {
 
 
     map.addControl(controlSearch); // add it to the map
-
-    // create the control
-    var command = L.control({position: 'topleft'});
-
-    command.onAdd = function (map) {
-        var div = L.DomUtil.create('div', 'command');
-
-        div.innerHTML = '<form id="price">Price<input id="my-custom-control" type="number" value="200" min="50"/></form>';
-        return div;
-    };
-
-    command.addTo(map);
-
-    var command = L.control({position: 'topleft'});
-
-    command.onAdd = function (map) {
-        var div = L.DomUtil.create('div', 'command');
-
-        div.innerHTML = '<button id="search" onclick="showPathsFromStop()">Search</button>'
-        return div;
-    };
-
-    command.addTo(map);
 
     // Testing: show paths test.
 }
@@ -232,7 +210,7 @@ function showPathsFromStop(stop_name) {
         stop_name = starting_stop
     starting_stop = stop_name;
 
-    var budget = document.getElementById("my-custom-control").value;
+    var budget = document.getElementById("budget").value;
     var url = new URL(`${API_URL}/get_routes_from_source`)
     var params = {source_name: stop_name, budget: budget}
     url.search = new URLSearchParams(params)
