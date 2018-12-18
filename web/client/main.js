@@ -25,6 +25,7 @@ function onStationClick(station) {
     var url = new URL(`${API_URL}/get_station_info/${station.Name}`)
     var template = () => `<h1>${station.Name}</h1>${content}`;
     var content = `  <b>(Commune: ${station.Commune})<b>`;
+    content += '<br><button onclick="showPathsFromStop(\'' + station.Name + '\')">Set starting location</button>';
     var wikiurl = "https://en.wikipedia.org/api/rest_v1/page/summary/";
     var sidebarContent = document.getElementById("sidebarContent");
     fetch(url).then(async function(response) {
@@ -78,18 +79,16 @@ function partial(func /*, 0..n args */) {
 
 var data = france;
 var map;
+
 function setupMap() {
     var lat = 46.566414;
     var lng =  2.4609375;
     var zoom =  6;
 
-
-    map = new L.Map('map');
-
-
+    map = new L.Map('map', {minZoom: 6, maxZoom: 11});
     var osmUrl='http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
     var osmAttrib='Map data &copy; OpenStreetMap contributors';
-    var osm = new L.TileLayer(osmUrl, {minZoom: 3, maxZoom: 8, attribution: osmAttrib});
+    var osm = new L.TileLayer(osmUrl, {minZoom: 6, maxZoom: 8, attribution: osmAttrib});
     map.addLayer(osm);
 
     var sidebar = L.control.sidebar('sidebar', {
@@ -104,7 +103,7 @@ function setupMap() {
     L.geoJson(france_shape, {
         clickable: false,
         invert: true,
-        style: { fillColor: '#000', fillOpacity: 0.2 },
+        style: { fillColor: '#000', fillOpacity: 0.2, weight: 0 },
     }).addTo(map);
 
     L.tileLayer('https://api.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
@@ -119,7 +118,7 @@ function setupMap() {
     var showBounds = debounce(function() {
         var bounds = map.getBounds()
         var url = new URL(`${API_URL}/get_stations`)
-        var params = {east: bounds.getEast(), west: bounds.getWest(), north: bounds.getNorth(), south: bounds.getSouth()}
+        var params = {east: bounds.getEast(), west: bounds.getWest(), north: bounds.getNorth(), south: bounds.getSouth(), zoom: map.getZoom()}
         url.search = new URLSearchParams(params)
         fetch(url).then(function(response) {
             return response.json();
@@ -148,7 +147,7 @@ function setupMap() {
 
     var featuresLayer = new L.GeoJSON(data, {
         style: {
-            opacity: .5,
+            opacity: 0,
             fillOpacity: 0,
         }
     });
@@ -173,18 +172,10 @@ function setupMap() {
     });
 
     controlSearch.on('search:locationfound', function(e) {
-
-        console.log('search:locationfound', );
-
-        //map.removeLayer(this._markerSearch)
-
-        e.layer.setStyle({opacity: 1});
         if(e.layer._popup)
             e.layer.openPopup();
-
     }).on('search:collapsed', function(e) {
-
-        featuresLayer.eachLayer(function(layer) {	//restore feature color
+        featuresLayer.eachLayer(function(layer) {
             featuresLayer.resetStyle(layer);
         });
     });
@@ -198,7 +189,7 @@ function setupMap() {
     command.onAdd = function (map) {
         var div = L.DomUtil.create('div', 'command');
 
-        div.innerHTML = '<form id="price">Price<input id="my-custom-control" type="number" value="0" min="0"/></form>';
+        div.innerHTML = '<form id="price">Price<input id="my-custom-control" type="number" value="200" min="50"/></form>';
         return div;
     };
 
@@ -209,19 +200,14 @@ function setupMap() {
     command.onAdd = function (map) {
         var div = L.DomUtil.create('div', 'command');
 
-        div.innerHTML = '<button id="search" onclick="loadTest(map)">Search</button>'
+        div.innerHTML = '<button id="search" onclick="showPathsFromStop()">Search</button>'
         return div;
     };
 
     command.addTo(map);
 
     // Testing: show paths test.
-  //  loadTest(map);
 }
-
-
-
-
 
 function whenDocumentLoaded(action) {
     if (document.readyState === "loading") {
@@ -233,36 +219,34 @@ function whenDocumentLoaded(action) {
 }
 
 function getColorForCost(cost, budget) {
-    var scale = chroma.scale(['lightgreen', 'green','yellow','orange','red','black']).colors(budget);
+    var scale = chroma.scale(['green', 'red']).mode('lch').colors(budget);
     return scale[cost];
 }
 
-// clear polylines
-function clearPolylines(polylines) {
-  for (i=0;i<polylines.length;i++){
-      map.removeLayer(polylines[i]);
-    //  console.log("polyline dropped ...")
-  }
-}
+var starting_stop;
+var pathsLayer = L.layerGroup();
 
-var polylines=[] ;
+function showPathsFromStop(stop_name) {
+    pathsLayer.clearLayers();
+    if (typeof stop_name === "undefined")
+        stop_name = starting_stop
+    starting_stop = stop_name;
 
-function loadTest(map) {
-    if (polylines.length != 0){
-        console.log("processing polylines dropping")
-        clearPolylines(polylines);
-    }
-    var url = new URL(`${API_URL}/get_routes_from_source/Abancourt`)
+    var budget = document.getElementById("my-custom-control").value;
+    var url = new URL(`${API_URL}/get_routes_from_source`)
+    var params = {source_name: stop_name, budget: budget}
+    url.search = new URLSearchParams(params)
+    console.log(url);
     fetch(url).then(async function(response) {
         return response.json();
     }).then(function(resp) {
         var start_point = new L.LatLng(resp.start_lat, resp.start_lon);
-        L.circleMarker([resp.start_lat, resp.start_lon], {
+        L.marker([resp.start_lat, resp.start_lon], {
             radius: map.getZoom(),
             color: 'green',
             fillColor: 'green',
             fillOpacity: 1
-        }).addTo(map);
+        }).addTo(pathsLayer);
         for (let dest of resp.paths) {
             var pointList = [start_point];
             var dest_name;
@@ -280,28 +264,23 @@ function loadTest(map) {
                 var point = new L.LatLng(end_lat, end_lon);
                 pointList.push(point);
             }
-            var budget = document.getElementById("my-custom-control").value;
-            if (dest.cost <= budget) {
-                var polyline = new L.Polyline(pointList, {
-                    color: getColorForCost(dest.cost, budget),
-                    weight: 4,
-                });
-                polyline.addTo(map);
-                tooltip_text += '€' + dest.cost;
-                polyline.bindTooltip(tooltip_text);
-                polyline.on('mouseover', function(e) {
-                    this.setStyle({weight: 10});
-                    // this._popup.setContent(total_cost);
-                    // this._popup.openOn(this._map);
-                });
-                polyline.on('mouseout', function() {
-                    this.setStyle({weight: 4});
-                });
-                polylines.push(polyline);
-            //    console.log(polylines);
-
-            }
+            var polyline = new L.Polyline(pointList, {
+                color: getColorForCost(dest.cost, budget),
+                weight: 4,
+            });
+            polyline.addTo(pathsLayer);
+            tooltip_text += '€' + dest.cost;
+            polyline.bindTooltip(tooltip_text);
+            polyline.on('mouseover', function(e) {
+                this.setStyle({weight: 10});
+                // this._popup.setContent(total_cost);
+                // this._popup.openOn(this._map);
+            });
+            polyline.on('mouseout', function() {
+                this.setStyle({weight: 4});
+            });
         }
+        pathsLayer.addTo(map);
     });
 }
 
