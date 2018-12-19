@@ -198,7 +198,7 @@ function whenDocumentLoaded(action) {
 
 function getColorForCost(cost, budget) {
     var scale = chroma.scale(['green', 'red']).mode('lch').colors(budget);
-    return scale[cost];
+    return scale[Math.round(cost)];
 }
 
 var starting_stop;
@@ -227,16 +227,15 @@ function showPathsFromStop(stop_name) {
         }).addTo(pathsLayer);
         for (let dest of resp.paths) {
             var pointList = [start_point];
-            var dest_name;
-            var tooltip_text = 'Abancourt, ';
+            // var dest_name;
+            var tooltip_text = starting_stop + ', ';
             for (let path_part of dest.segments) {
-                var start_name = path_part[0];
+                // var start_name = path_part[0];
                 var end_name = path_part[1];
                 tooltip_text += end_name + ', ';
-                dest_name = end_name;
-                var cost = path_part[2];
-                var dep_time = path_part[3];
-                var arr_time = path_part[4];
+                // dest_name = end_name;
+                // var dep_time = path_part[3];
+                // var arr_time = path_part[4];
                 var end_lat = path_part[5];
                 var end_lon = path_part[6];
                 var point = new L.LatLng(end_lat, end_lon);
@@ -247,7 +246,7 @@ function showPathsFromStop(stop_name) {
                 weight: 4,
             });
             polyline.addTo(pathsLayer);
-            tooltip_text += '€' + dest.cost;
+            tooltip_text += '€' + dest.cost.toFixed(1);
             polyline.bindTooltip(tooltip_text);
             polyline.on('mouseover', function(e) {
                 this.setStyle({weight: 10});

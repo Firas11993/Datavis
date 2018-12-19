@@ -1,112 +1,1690 @@
 Origin,Destination,Price
-Angers-St-Laud,Amboise,22.7
-La Baule-Escoublac,Amboise,45.0
-St-Nazaire,Amboise,43.0
-Paris-Austerlitz,Blois,29.4
-St-Nazaire,Blois,48.0
-La Souterraine,Brive-la-Gaillarde,33.2
-Limoges-Bénédictins,Châteauroux,25.5
-Paris-Austerlitz,Gourdon,68.0
-Les Aubrais-Orléans,La Souterraine,37.5
-Paris-Austerlitz,La Souterraine,57.0
-Châteauroux,Les Aubrais-Orléans,26.0
-Strasbourg-Ville,Nancy-Ville,25.0
-Les Aubrais-Orléans,Nantes,45.5
-Saumur-Rive-Droite,Nantes,22.9
-Châteauroux,Paris-Austerlitz,37.5
-La Baule-Escoublac,Paris-Austerlitz,57.0
-Limoges-Bénédictins,Paris-Austerlitz,54.0
-Paris-Est,Sarrebourg,58.0
-Les Aubrais-Orléans,Souillac,56.0
-Paris-Austerlitz,St-Nazaire,57.0
-Angoulême,St-Pierre-des-Corps,33.5
-La Souterraine,Toulouse-Matabiau,38.0
-Les Aubrais-Orléans,Toulouse-Matabiau,73.0
-Paris-Austerlitz,Toulouse-Matabiau,80.0
-Brive-la-Gaillarde,Cahors,20.5
-Châteauroux,Cahors,50.0
-La Souterraine,Cahors,33.5
-Paris-Austerlitz,Cahors,73.0
-Toulouse-Matabiau,Cahors,22.0
-Bordeaux-St-Jean,Futuroscope,37.9
-Châteauroux,Montauban-Ville-Bourbon,57.0
-Paris-Austerlitz,Montauban-Ville-Bourbon,76.0
-Souillac,Montauban-Ville-Bourbon,76.0
-Angers-St-Laud,Paris-Austerlitz,48.7
-Brive-la-Gaillarde,Paris-Austerlitz,65.0
-Nantes,Paris-Austerlitz,57.8
-Lunéville,Paris-Est,53.0
-Angoulême,Poitiers,20.2
-La Souterraine,Souillac,36.5
-La Baule-Escoublac,St-Pierre-des-Corps,43.0
-Nantes,St-Pierre-des-Corps,31.6
-Paris-Austerlitz,St-Pierre-des-Corps,35.8
-Châteauroux,Toulouse-Matabiau,63.0
-Paris-Austerlitz,Amboise,33.2
-Le Croisic,Blois,48.0
-Limoges-Bénédictins,Brive-la-Gaillarde,20.5
-Limoges-Bénédictins,Cahors,34.0
-Angoulême,Futuroscope,20.2
-Paris-Austerlitz,Futuroscope,47.9
-La Souterraine,Gourdon,34.2
-Les Aubrais-Orléans,Gourdon,43.0
-Angers-St-Laud,Les Aubrais-Orléans,34.5
-Nancy-Ville,Lunéville,7.4
-Paris-Austerlitz,Poitiers,47.9
-Paris-Est,Saverne,61.0
-Châteauroux,Souillac,25.0
-Limoges-Bénédictins,Souillac,48.0
-Bordeaux-St-Jean,St-Pierre-des-Corps,49.6
-Le Croisic,St-Pierre-des-Corps,43.0
-Poitiers,St-Pierre-des-Corps,17.8
-Brive-la-Gaillarde,Toulouse-Matabiau,36.0
-Le Croisic,Amboise,45.0
-Nantes,Amboise,34.2
-Angers-St-Laud,Blois,27.5
-Les Aubrais-Orléans,Cahors,63.0
-Brive-la-Gaillarde,Châteauroux,38.0
-Châteauroux,Gourdon,27.5
-Limoges-Bénédictins,Gourdon,53.0
-Angoulême,Les Aubrais-Orléans,47.3
-Brive-la-Gaillarde,Les Aubrais-Orléans,50.0
-La Baule-Escoublac,Les Aubrais-Orléans,57.0
-Saumur-Rive-Droite,Les Aubrais-Orléans,29.6
-La Souterraine,Montauban-Ville-Bourbon,37.9
-Les Aubrais-Orléans,Montauban-Ville-Bourbon,68.0
-Limoges-Bénédictins,Montauban-Ville-Bourbon,42.0
-Angoulême,Paris-Austerlitz,59.5
-Les Aubrais-Orléans,Paris-Austerlitz,23.5
-Saumur-Rive-Droite,Paris-Austerlitz,43.7
-Strasbourg-Ville,Paris-Est,64.0
-Bordeaux-St-Jean,Poitiers,37.9
-Les Aubrais-Orléans,Poitiers,33.5
-Lunéville,Sarrebourg,9.6
-Strasbourg-Ville,Sarrebourg,13.5
-Lunéville,Saverne,13.8
-Nancy-Ville,Saverne,18.0
-Strasbourg-Ville,Saverne,9.3
-Les Aubrais-Orléans,St-Nazaire,57.0
-Futuroscope,St-Pierre-des-Corps,17.8
-Les Aubrais-Orléans,St-Pierre-des-Corps,20.4
-St-Nazaire,St-Pierre-des-Corps,38.0
-Limoges-Bénédictins,Toulouse-Matabiau,49.0
-La Baule-Escoublac,Blois,48.0
-Nantes,Blois,38.0
-Saumur-Rive-Droite,Blois,20.9
-Angoulême,Bordeaux-St-Jean,23.5
-Les Aubrais-Orléans,Futuroscope,33.5
-Bordeaux-St-Jean,Les Aubrais-Orléans,61.3
-Le Croisic,Les Aubrais-Orléans,57.0
-Limoges-Bénédictins,Les Aubrais-Orléans,41.0
-Strasbourg-Ville,Lunéville,20.0
-Brive-la-Gaillarde,Montauban-Ville-Bourbon,28.5
-Gourdon,Montauban-Ville-Bourbon,29.4
-Bordeaux-St-Jean,Paris-Austerlitz,72.0
-Le Croisic,Paris-Austerlitz,57.0
-Nancy-Ville,Paris-Est,49.0
-Nancy-Ville,Sarrebourg,14.8
+Lyon-Part-Dieu,Lyon-Perrache-Voyageurs,1.0
+Les Aubrais-Orléans,Orléans,1.2
+St-Pierre-des-Corps,Tours,1.4
+Clermont-Ferrand,Clermont-La Pardieu,1.4
+Collioure,Port-Vendres-Ville,1.5
+Longueau,Amiens,1.8
+Beaumont-le-Roger,Serquigny,2.0
+Brassac-les-Mines-Ste-Florine,Arvant,2.0
+Condat-le-Lardin,Terrasson-Lavilledieu,2.0
+Fourchambault,Nevers,2.0
+Pougues-les-Eaux,Fourchambault,2.2
+Chauny,Tergnier,2.2
+Banyuls-sur-Mer,Port-Vendres-Ville,2.2
+Argelès-sur-Mer,Collioure,2.2
+St-Georges-d'Aurac,Langeac,2.4
+Surdon,Sées,2.6
+Tracy-Sancerre,Pouilly-sur-Loire,2.6
+Bréval,Bueil,2.6
+Biarritz,Bayonne,2.8
+La Rochelle-Ville,Châtelaillon,2.8
+Noyelles,Rue,2.8
+Busigny,Caudry,2.8
+Cosne,Tracy-Sancerre,2.8
+Banyuls-sur-Mer,Cerbère,2.8
+Arvant,Brioude,2.8
+Gien,Briare,2.8
+Rang-du-Fliers-Verton,Étaples-Le Touquet,3.0
+Langres,Culmont-Chalindrey,3.0
+Creil,Pont-Ste-Maxence,3.0
+Périgueux,Niversac,3.0
+Nevers,Saincaize,3.0
+Aulnoye-Aymeries,Maubeuge,3.2
+Pont-l'Évêque,Trouville-Deauville,3.2
+Vernon-Giverny,Gaillon-Aubevoye,3.3
+Pougues-les-Eaux,Nevers,3.3
+Grand'Combe-La Pise,Alès,3.3
+Argelès-sur-Mer,Port-Vendres-Ville,3.3
+Hendaye,St-Jean-de-Luz-Ciboure,3.3
+Abbeville,Noyelles,3.3
+St-Jean-de-Luz-Ciboure,Biarritz,3.3
+Villefort,Génolhac,3.3
+Argelès-sur-Mer,Elne,3.3
+La Charité,Pougues-les-Eaux,3.3
+Pouilly-sur-Loire,La Charité,3.3
+Meymac,Ussel,3.3
+Banyuls-sur-Mer,Collioure,3.3
+Clermont-Ferrand,Riom-Châtel-Guyon,3.5
+Oissel,Rouen-Rive-Droite,3.5
+Villedieu-les-Poêles,Folligny,3.7
+Clermont-de-l'Oise,St-Just-en-Chaussée,3.7
+Argentan,Surdon,3.7
+Val-de-Reuil,Oissel,3.7
+Folligny,Granville,3.7
+Creil,Clermont-de-l'Oise,3.7
+St-Germain-des-Fossés,Vichy,3.8
+Cannes,Antibes,3.8
+Caudry,Cambrai,3.9
+Noyon,Chauny,3.9
+Libourne,Coutras,3.9
+Montpon-Ménestérol,Mussidan,3.9
+Brassac-les-Mines-Ste-Florine,Brioude,3.9
+St-Florent-sur-Cher,Châteauneuf-sur-Cher,4.0
+Montargis,Nogent-sur-Vernisson,4.0
+Briouze,Flers,4.0
+Tulle,Corrèze,4.0
+St-Astier,Périgueux,4.0
+Montendre,St-Mariens-St-Yzan,4.0
+Pau,Coarraze-Nay,4.0
+Rue,Rang-du-Fliers-Verton,4.0
+Conches,Beaumont-le-Roger,4.2
+St-Mariens-St-Yzan,St-André-de-Cubzac,4.2
+Égletons,Meymac,4.2
+Lison,Carentan,4.2
+Lisieux,Pont-l'Évêque,4.2
+Évreux-Embranchement,Conches,4.2
+Corrèze,Égletons,4.2
+Argelès-sur-Mer,Banyuls-sur-Mer,4.3
+Elne,Perpignan,4.3
+Cerbère,Port-Vendres-Ville,4.3
+Châtelaillon,Rochefort,4.4
+Cosne,Pouilly-sur-Loire,4.4
+Issoire,Brassac-les-Mines-Ste-Florine,4.4
+Langogne,La Bastide-St-Laurent-les-Bains,4.4
+Nogent-sur-Vernisson,Gien,4.4
+Gaillon-Aubevoye,Val-de-Reuil,4.4
+Mussidan,St-Astier,4.4
+Terrasson-Lavilledieu,Brive-la-Gaillarde,4.6
+Génolhac,Grand'Combe-La Pise,4.6
+La Charité,Fourchambault,4.6
+Bourges,St-Florent-sur-Cher,4.6
+Sées,Alençon,4.6
+La Bastide-St-Laurent-les-Bains,Villefort,4.6
+Pons,Jonzac,4.6
+Nogent-sur-Seine,Romilly-sur-Seine,4.6
+Vendeuvre-Jort,Bar-sur-Aube,4.8
+Clermont-Ferrand,Riom-Châtel-Guyon,4.8
+Cerbère,Collioure,4.8
+Elne,Collioure,4.8
+Le Mans,Écommoy,4.8
+Lourdes,Tarbes,4.8
+Tracy-Sancerre,La Charité,5.1
+Coarraze-Nay,Lourdes,5.1
+Mantes-la-Jolie,Vernon-Giverny,5.1
+Châteauneuf-sur-Cher,St-Amand-Montrond-Orval,5.1
+Amboise,St-Pierre-des-Corps,5.1
+Jonzac,Montendre,5.1
+Longueville,Nogent-sur-Seine,5.1
+Pont-Ste-Maxence,Compiègne,5.1
+Salbris,Vierzon-Ville,5.1
+Saintes,Pons,5.3
+St-André-de-Cubzac,Bordeaux-St-Jean,5.3
+Vallon,Montluçon-Ville,5.3
+St-Jean-de-Luz-Ciboure,Bayonne,5.3
+Caen,Mézidon,5.3
+Allassac,Brive-la-Gaillarde,5.3
+Noyon,Tergnier,5.3
+Elne,Port-Vendres-Ville,5.3
+Abbeville,Rue,5.3
+Tergnier,St-Quentin,5.3
+Brioude,St-Georges-d'Aurac,5.5
+Mantes-la-Jolie,Bueil,5.5
+Conches,Serquigny,5.5
+Compiègne,Noyon,5.5
+Arvant,Massiac,5.5
+Verneuil-sur-Avre,L'Aigle,5.5
+Coutras,Montpon-Ménestérol,5.5
+Argentan,Sées,5.5
+Bréauté-Beuzeville,Le Havre,5.7
+Amboise,Tours,5.7
+Issoire,Arvant,5.7
+Yvetot,Bréauté-Beuzeville,5.7
 Sarrebourg,Saverne,5.9
-Paris-Austerlitz,Souillac,64.0
+La Charité,Nevers,5.9
+Brive-la-Gaillarde,Tulle,5.9
+Pouilly-sur-Loire,Pougues-les-Eaux,5.9
+Hendaye,Biarritz,5.9
+Vire,Villedieu-les-Poêles,5.9
+Busigny,Cambrai,5.9
+Condat-le-Lardin,Brive-la-Gaillarde,5.9
+St-Sébastien,La Souterraine,6.0
+Nice-Ville,Antibes,6.0
+Argelès-sur-Mer,Cerbère,6.0
+Noyelles,Rang-du-Fliers-Verton,6.1
+Bayeux,Lison,6.1
+Bueil,Évreux-Embranchement,6.1
+Étaples-Le Touquet,Boulogne-Tintelleries,6.1
+Le Cateau,Aulnoye-Aymeries,6.1
+St-Quentin,Busigny,6.1
+St-Amand-Montrond-Orval,Vallon,6.1
+Rue,Étaples-Le Touquet,6.4
+Écommoy,Château-du-Loir,6.4
+St-Astier,Niversac,6.4
+Argentan,Briouze,6.4
+Valognes,Cherbourg,6.4
+Nogent-sur-Vernisson,Briare,6.6
+Val-de-Reuil,Rouen-Rive-Droite,6.6
+Surdon,Alençon,6.6
+Carentan,Valognes,6.6
+Flers,Vire,6.6
+La Rochelle-Ville,Rochefort,6.6
+Villedieu-les-Poêles,Granville,6.8
+Vesoul,Lure,6.8
+Caen,Bayeux,6.8
+Lisieux,Trouville-Deauville,6.8
+Creil,St-Just-en-Chaussée,6.8
+Chauny,St-Quentin,6.8
+Égletons,Ussel,7.0
+Uzerche,Allassac,7.0
+Briare,Cosne,7.0
+Elne,Banyuls-sur-Mer,7.0
+Caussade,Montauban-Ville-Bourbon,7.0
+Gourdon,Souillac,7.0
+Salbris,Vierzon-Ville,7.0
+Argelès-sur-Mer,Perpignan,7.0
+Bernay,Lisieux,7.0
+Vernon-Giverny,Val-de-Reuil,7.2
+Lure,Belfort,7.2
+Nemours-St-Pierre,Montargis,7.2
+Blois,Amboise,7.2
+Brioude,Langeac,7.2
+Cosne,La Charité,7.2
+Vierzon-Ville,Bourges,7.2
+Peyrehorade,Orthez,7.2
+La Bastide-St-Laurent-les-Bains,Génolhac,7.4
+Génolhac,Alès,7.4
+Clermont-La Pardieu,Issoire,7.4
+Villefort,Grand'Combe-La Pise,7.4
+Nancy-Ville,Lunéville,7.4
+Creil,Compiègne,7.4
+Pouilly-sur-Loire,Fourchambault,7.4
+Peyrehorade,Bayonne,7.4
+Gaillon-Aubevoye,Oissel,7.5
+Troyes,Vendeuvre-Jort,7.5
+Chaumont,Langres,7.5
+Arvant,St-Georges-d'Aurac,7.5
+Montendre,St-André-de-Cubzac,7.7
+Issoire,Brioude,7.7
+Tracy-Sancerre,Pougues-les-Eaux,7.7
+Tulle,Égletons,7.7
+Montpon-Ménestérol,St-Astier,7.7
+Mantes-la-Jolie,Gaillon-Aubevoye,7.7
+Dreux,Verneuil-sur-Avre,7.9
+Mussidan,Périgueux,7.9
+Bréval,Évreux-Embranchement,7.9
+La Roche-sur-Yon,Luçon,7.9
+Montargis,Gien,7.9
+Romilly-sur-Seine,Troyes,7.9
+Hendaye,Bayonne,7.9
+St-Quentin,Le Cateau,7.9
+Corrèze,Meymac,7.9
+Clermont-Ferrand,Issoire,7.9
+Busigny,Aulnoye-Aymeries,7.9
+Périgueux,Thiviers,8.0
+Bordeaux-St-Jean,Libourne,8.0
+Tarbes,Lannemezan,8.0
+Bourges,Châteauneuf-sur-Cher,8.0
+Niversac,Condat-le-Lardin,8.0
+St-Quentin,Caudry,8.0
+Les Arcs-Draguignan,St-Raphaël-Valescure,8.1
+Perpignan,Collioure,8.1
+La Souterraine,St-Sulpice-Laurière,8.1
+Béziers,Narbonne,8.1
+Montpellier-St-Roch,Sète,8.1
+Châteauroux,Issoudun,8.1
+Noyelles,Étaples-Le Touquet,8.2
+Rang-du-Fliers-Verton,Boulogne-Tintelleries,8.2
+Rouen-Rive-Droite,Yvetot,8.2
+Jonzac,St-Mariens-St-Yzan,8.3
+Langogne,Villefort,8.3
+Pouilly-sur-Loire,Nevers,8.3
+Le Cateau,Maubeuge,8.3
+Pau,Lourdes,8.3
+St-Florent-sur-Cher,St-Amand-Montrond-Orval,8.3
+Orthez,Pau,8.5
+Libourne,Montpon-Ménestérol,8.5
+Coutras,Mussidan,8.5
+Abbeville,Rang-du-Fliers-Verton,8.5
+Brassac-les-Mines-Ste-Florine,St-Georges-d'Aurac,8.5
+Compiègne,Chauny,8.5
+Elne,Cerbère,8.6
+Riom-Châtel-Guyon,Vichy,8.7
+Briare,Tracy-Sancerre,8.7
+Vire,Folligny,8.7
+St-Mariens-St-Yzan,Bordeaux-St-Jean,8.7
+Moulins-sur-Allier,St-Germain-des-Fossés,8.7
+Gien,Cosne,8.7
+L'Aigle,Surdon,8.7
+Bar-sur-Aube,Chaumont,8.7
+Longueville,Romilly-sur-Seine,8.8
+Pons,Montendre,8.8
+Tracy-Sancerre,Fourchambault,8.8
+Arvant,Langeac,8.8
+Saintes,Jonzac,9.0
+Roanne,Tarare,9.0
+Brive-la-Gaillarde,Corrèze,9.0
+Niversac,Terrasson-Lavilledieu,9.0
+Coarraze-Nay,Tarbes,9.0
+Surdon,Briouze,9.0
+Mézidon,Argentan,9.1
+Perpignan,Port-Vendres-Ville,9.1
+Angers-St-Laud,Saumur-Rive-Droite,9.1
+Rochefort,Saintes,9.1
+Argentan,Alençon,9.1
+Strasbourg-Ville,Saverne,9.3
+Amiens,Abbeville,9.3
+Chaumont,Culmont-Chalindrey,9.3
+Bueil,Conches,9.3
+Cosne,Pougues-les-Eaux,9.3
+Argentan,Flers,9.3
+Bayeux,Carentan,9.3
+St-Just-en-Chaussée,Longueau,9.3
+Montargis,Briare,9.5
+Briouze,Vire,9.5
+Terrasson-Lavilledieu,Tulle,9.5
+Villefort,Alès,9.5
+Noyon,St-Quentin,9.5
+Pont-Ste-Maxence,Noyon,9.5
+Mussidan,Niversac,9.6
+Lison,Valognes,9.6
+Vernon-Giverny,Oissel,9.6
+Compiègne,Tergnier,9.6
+Lunéville,Sarrebourg,9.6
+Limoges-Bénédictins,St-Sulpice-Laurière,9.7
+Perpignan,Banyuls-sur-Mer,9.7
+Cannes,St-Raphaël-Valescure,9.7
+Cannes,Nice-Ville,9.7
+Châteauroux,Argenton-sur-Creuse,9.7
+Busigny,Maubeuge,9.8
+Périgueux,Condat-le-Lardin,9.8
+Brassac-les-Mines-Ste-Florine,Langeac,9.8
+Gaillon-Aubevoye,Rouen-Rive-Droite,9.8
+Tracy-Sancerre,Nevers,9.8
+Lisieux,Caen,9.8
+Châteauneuf-sur-Cher,Vallon,9.9
+Bernay,Pont-l'Évêque,9.9
+Nemours-St-Pierre,Nogent-sur-Vernisson,9.9
+Corrèze,Ussel,9.9
+Alès,Nîmes,9.9
+Le Mans,Château-du-Loir,9.9
+Saincaize,Moulins-sur-Allier,9.9
+Château-du-Loir,Tours,10.1
+Arvant,Neussargues,10.1
+Longueau,Abbeville,10.1
+Tergnier,Busigny,10.1
+Château-du-Loir,St-Pierre-des-Corps,10.1
+St-Just-en-Chaussée,Amiens,10.1
+Briare,Pouilly-sur-Loire,10.1
+St-Amand-Montrond-Orval,Montluçon-Ville,10.1
+Yvetot,Le Havre,10.1
+Paris-Nord,Creil,10.3
+Abbeville,Étaples-Le Touquet,10.3
+Mantes-la-Jolie,Évreux-Embranchement,10.3
+Carcassonne,Castelnaudary,10.3
+Issoudun,Vierzon-Ville,10.3
+Gien,Tracy-Sancerre,10.3
+Langogne,Génolhac,10.4
+Cosne,Fourchambault,10.4
+Montpon-Ménestérol,Périgueux,10.4
+Clermont-La Pardieu,Brassac-les-Mines-Ste-Florine,10.4
+Évreux-Embranchement,Bernay,10.4
+Condat-le-Lardin,Tulle,10.4
+Oissel,Yvetot,10.4
+Tulle,Meymac,10.6
+Bordeaux-St-Jean,Coutras,10.6
+St-Quentin,Cambrai,10.6
+La Bastide-St-Laurent-les-Bains,Grand'Combe-La Pise,10.6
+Mantes-la-Jolie,Val-de-Reuil,10.7
+Blois,St-Pierre-des-Corps,10.7
+Bréval,Conches,10.7
+Tarare,Lyon-Perrache-Voyageurs,10.7
+Tarare,Lyon-Part-Dieu,10.7
+Tarbes,Montréjeau-Gourdan-Polignan,10.7
+Périgueux,Terrasson-Lavilledieu,10.7
+Salbris,Bourges,10.7
+Caussade,Cahors,10.8
+Brive-la-Gaillarde,Souillac,10.8
+Riom-Châtel-Guyon,Vichy,10.8
+St-Germain-des-Fossés,Moulins-sur-Allier,10.8
+Rue,Boulogne-Tintelleries,10.9
+Alençon,Le Mans,10.9
+Flers,Villedieu-les-Poêles,10.9
+Clermont-Ferrand,Brassac-les-Mines-Ste-Florine,10.9
+Clermont-Ferrand,Vichy,10.9
+Troyes,Bar-sur-Aube,10.9
+L'Aigle,Argentan,11.1
+Vire,Granville,11.1
+Libourne,Mussidan,11.1
+Nogent-sur-Seine,Troyes,11.1
+Chauny,Busigny,11.2
+Creil,Noyon,11.2
+Jonzac,St-André-de-Cubzac,11.2
+Blois,Tours,11.2
+Marmande,Agen,11.2
+Carentan,Cherbourg,11.2
+Caen,Lison,11.2
+Béziers,Sète,11.3
+Gourdon,Cahors,11.3
+Uzerche,Brive-la-Gaillarde,11.3
+Antibes,St-Raphaël-Valescure,11.3
+Nîmes,Arles,11.3
+Perpignan,Cerbère,11.3
+Avignon-Terminal TER,Nîmes,11.3
+Montendre,Bordeaux-St-Jean,11.4
+Lourdes,Lannemezan,11.4
+Amiens,Noyelles,11.4
+Clermont-La Pardieu,Arvant,11.4
+Cosne,Nevers,11.4
+Bourges,Saincaize,11.4
+Orléans,Blois,11.5
+Pons,St-Mariens-St-Yzan,11.5
+Mézidon,Surdon,11.5
+Issoire,St-Georges-d'Aurac,11.5
+Les Aubrais-Orléans,Blois,11.5
+Bourges,St-Amand-Montrond-Orval,11.5
+Coutras,St-Astier,11.5
+Les Aubrais-Orléans,Salbris,11.5
+Pau,Tarbes,11.7
+Dreux,L'Aigle,11.7
+Nogent-sur-Vernisson,Cosne,11.7
+Surdon,Flers,11.7
+Tergnier,Caudry,11.7
+Nevers,Moulins-sur-Allier,11.7
+Gien,Pouilly-sur-Loire,11.7
+Clermont-de-l'Oise,Longueau,11.7
+Clermont-Ferrand,Arvant,11.9
+Vernon-Giverny,Rouen-Rive-Droite,11.9
+Brive-la-Gaillarde,Égletons,11.9
+Bernay,Trouville-Deauville,11.9
+Grand'Combe-La Pise,Nîmes,12.0
+Vendeuvre-Jort,Chaumont,12.0
+Thiviers,Limoges-Bénédictins,12.0
+Vesoul,Belfort,12.0
+Pont-Ste-Maxence,Chauny,12.0
+Paris-Nord,Pont-Ste-Maxence,12.0
+Rouen-Rive-Droite,Bréauté-Beuzeville,12.2
+Châtelaillon,Saintes,12.2
+Briare,La Charité,12.2
+Longueau,Noyelles,12.2
+St-Quentin,Aulnoye-Aymeries,12.2
+Montpon-Ménestérol,Niversac,12.2
+Niversac,Brive-la-Gaillarde,12.2
+Terrasson-Lavilledieu,Corrèze,12.2
+Bueil,Beaumont-le-Roger,12.2
+Saumur-Rive-Droite,St-Pierre-des-Corps,12.3
+Saumur-Rive-Droite,Tours,12.3
+Vichy,Moulins-sur-Allier,12.4
+Riom-Châtel-Guyon,St-Germain-des-Fossés,12.4
+Argenton-sur-Creuse,La Souterraine,12.4
+Nîmes,Montpellier-St-Roch,12.4
+Clermont-de-l'Oise,Amiens,12.6
+Bayonne,Orthez,12.6
+St-Astier,Condat-le-Lardin,12.6
+Versailles-Chantiers,Dreux,12.6
+Saintes,Montendre,12.6
+Noyelles,Boulogne-Ville,12.6
+Verneuil-sur-Avre,Surdon,12.6
+Paris-Nord,Clermont-de-l'Oise,12.8
+Tulle,Ussel,12.8
+La Bastide-St-Laurent-les-Bains,Alès,12.8
+St-Florent-sur-Cher,Vallon,12.8
+Issoire,Langeac,12.9
+Tarbes,St-Gaudens,12.9
+Luçon,La Rochelle-Ville,12.9
+Chauny,Caudry,12.9
+Val-de-Reuil,Yvetot,12.9
+Montauban-Ville-Bourbon,Toulouse-Matabiau,12.9
+Caen,Argentan,12.9
+Langeac,Langogne,12.9
+Rochefort,Pons,12.9
+St-Germain-des-Fossés,Roanne,12.9
+Mézidon,Sées,13.1
+Nemours-St-Pierre,Gien,13.1
+Arvant,St-Flour-Chaudes-Aigues,13.1
+Amiens,Rue,13.1
+Clermont-La Pardieu,Brioude,13.1
+Mantes-la-Jolie,Oissel,13.2
+Vierzon-Ville,Châteauneuf-sur-Cher,13.2
+Condat-le-Lardin,Corrèze,13.2
+Bueil,Serquigny,13.2
+Bourges,Nevers,13.2
+Pont-Ste-Maxence,Tergnier,13.2
+Romilly-sur-Seine,Vendeuvre-Jort,13.4
+Nogent-sur-Vernisson,Tracy-Sancerre,13.4
+Flers,Folligny,13.4
+Compiègne,St-Quentin,13.4
+Castelnaudary,Toulouse-Matabiau,13.5
+Clermont-Ferrand,Brioude,13.5
+Agen,Marmande,13.5
+Strasbourg-Ville,Sarrebourg,13.5
+St-Astier,Terrasson-Lavilledieu,13.5
+Peyrehorade,Pau,13.6
+Langogne,Grand'Combe-La Pise,13.6
+Bréval,Beaumont-le-Roger,13.6
+Briouze,Villedieu-les-Poêles,13.6
+Châteauneuf-sur-Cher,Montluçon-Ville,13.6
+Culmont-Chalindrey,Vesoul,13.8
+Mussidan,Thiviers,13.8
+La Rochelle-Ville,Saintes,13.8
+Creil,Chauny,13.8
+Gien,La Charité,13.8
+Longueau,Rue,13.8
+Lunéville,Saverne,13.8
+Noyon,Busigny,13.8
+Périgueux,Brive-la-Gaillarde,13.9
+Bayeux,Valognes,13.9
+Argentan,Vire,13.9
+Biarritz,Orthez,14.1
+Lourdes,Montréjeau-Gourdan-Polignan,14.1
+Lison,Cherbourg,14.1
+Libourne,St-Astier,14.1
+Creil,Longueau,14.1
+Limoges-Bénédictins,La Souterraine,14.1
+Brive-la-Gaillarde,Gourdon,14.1
+Cannes,Les Arcs-Draguignan,14.1
+Uzerche,Limoges-Bénédictins,14.1
+Issoudun,Argenton-sur-Creuse,14.1
+Sées,Le Mans,14.1
+St-Quentin,Maubeuge,14.1
+Caen,Carentan,14.1
+Bar-sur-Aube,Langres,14.1
+Châteauroux,St-Sébastien,14.1
+Carcassonne,Narbonne,14.1
+Alençon,Écommoy,14.2
+Briare,Pougues-les-Eaux,14.2
+Coutras,Périgueux,14.2
+Tergnier,Cambrai,14.2
+Vichy,Roanne,14.4
+Oissel,Bréauté-Beuzeville,14.4
+Pons,St-André-de-Cubzac,14.4
+Bordeaux-St-Jean,Montpon-Ménestérol,14.4
+Montargis,Cosne,14.4
+Nantes,La Roche-sur-Yon,14.4
+Nemours-St-Pierre,Briare,14.5
+Longueville,Troyes,14.5
+Abbeville,Boulogne-Ville,14.5
+Bréval,Serquigny,14.5
+Écommoy,Tours,14.5
+Écommoy,St-Pierre-des-Corps,14.5
+Lisieux,Bayeux,14.5
+Montauban-Ville-Bourbon,Cahors,14.6
+Perpignan,Narbonne,14.6
+Nice-Ville,St-Raphaël-Valescure,14.6
+Souillac,Cahors,14.6
+Châteauroux,Vierzon-Ville,14.6
+Orthez,Lourdes,14.7
+Bernay,Caen,14.7
+Paris-St-Lazare,Vernon-Giverny,14.7
+Nogent-sur-Vernisson,Pouilly-sur-Loire,14.7
+Brive-la-Gaillarde,Meymac,14.7
+Creil,Amiens,14.8
+Jonzac,Bordeaux-St-Jean,14.8
+Creil,Tergnier,14.8
+Coarraze-Nay,Lannemezan,14.8
+Nancy-Ville,Sarrebourg,14.8
+Verneuil-sur-Avre,Argentan,14.8
+Marseille-St-Charles,Toulon,15.0
+Paris-St-Lazare,Bueil,15.0
+Paris-Nord,St-Just-en-Chaussée,15.0
+Terrasson-Lavilledieu,Égletons,15.0
+Les Aubrais-Orléans,Vierzon-Ville,15.0
+Paris-Montparnasse,Dreux,15.1
+Caen,Surdon,15.1
+Génolhac,Nîmes,15.1
+Chauny,Cambrai,15.3
+Briare,Fourchambault,15.3
+Mantes-la-Jolie,Rouen-Rive-Droite,15.3
+Évreux-Embranchement,Lisieux,15.3
+Saintes,St-Mariens-St-Yzan,15.3
+Noyon,Caudry,15.3
+Mussidan,Condat-le-Lardin,15.4
+L'Aigle,Briouze,15.4
+Paris-Nord,Compiègne,15.4
+Surdon,Le Mans,15.4
+Langres,Vesoul,15.4
+Toulon,Les Arcs-Draguignan,15.5
+Clermont-Ferrand,St-Germain-des-Fossés,15.5
+Béziers,Montpellier-St-Roch,15.5
+Antibes,Les Arcs-Draguignan,15.5
+Narbonne,Sète,15.5
+Agen,Montauban-Ville-Bourbon,15.5
+Amiens,Rang-du-Fliers-Verton,15.6
+Flers,Granville,15.6
+Langogne,Alès,15.6
+Châtelaillon,Pons,15.7
+Bar-sur-Aube,Culmont-Chalindrey,15.7
+Gien,Pougues-les-Eaux,15.7
+Langeac,La Bastide-St-Laurent-les-Bains,15.7
+Bourges,Vallon,15.7
+Gaillon-Aubevoye,Yvetot,15.7
+Condat-le-Lardin,Égletons,15.9
+Montargis,Tracy-Sancerre,15.9
+Coutras,Niversac,15.9
+Briouze,Folligny,15.9
+Mantes-la-Jolie,Bréval,15.9
+Rochefort,Jonzac,15.9
+Nantes,Angers-St-Laud,16.0
+Rouen-Rive-Droite,Le Havre,16.0
+Mézidon,Alençon,16.0
+St-Jean-de-Luz-Ciboure,Orthez,16.0
+Lourdes,St-Gaudens,16.0
+Briare,Nevers,16.2
+Surdon,Vire,16.2
+St-Florent-sur-Cher,Montluçon-Ville,16.2
+Niversac,Tulle,16.2
+Vierzon-Ville,Saincaize,16.3
+Mussidan,Terrasson-Lavilledieu,16.3
+Longueau,Rang-du-Fliers-Verton,16.3
+Nogent-sur-Seine,Vendeuvre-Jort,16.3
+Saincaize,St-Germain-des-Fossés,16.3
+Les Aubrais-Orléans,Amboise,16.5
+Romilly-sur-Seine,Bar-sur-Aube,16.5
+Vierzon-Ville,St-Amand-Montrond-Orval,16.5
+St-Gaudens,Toulouse-Matabiau,16.5
+Caussade,Toulouse-Matabiau,16.5
+St-Astier,Brive-la-Gaillarde,16.5
+Orléans,Amboise,16.5
+Salbris,Châteauneuf-sur-Cher,16.5
+Caen,Sées,16.5
+Clermont-La Pardieu,St-Georges-d'Aurac,16.6
+Pont-Ste-Maxence,St-Quentin,16.6
+Nogent-sur-Vernisson,La Charité,16.6
+Libourne,Périgueux,16.6
+Paris-St-Lazare,Gaillon-Aubevoye,16.6
+Brive-la-Gaillarde,Ussel,16.6
+Val-de-Reuil,Bréauté-Beuzeville,16.6
+Gien,Fourchambault,16.8
+Bordeaux-St-Jean,Mussidan,16.8
+St-Georges-d'Aurac,La Bastide-St-Laurent-les-Bains,16.9
+Elne,Narbonne,17.0
+Uzerche,Souillac,17.0
+Limoges-Bénédictins,St-Sébastien,17.0
+Nîmes,Sète,17.0
+Bordeaux-St-Jean,Marmande,17.0
+Châteauroux,La Souterraine,17.0
+St-Just-en-Chaussée,Abbeville,17.1
+Clermont-Ferrand,St-Georges-d'Aurac,17.1
+Villefort,Nîmes,17.1
+Montargis,Pouilly-sur-Loire,17.2
+Luçon,Rochefort,17.2
+La Rochelle-Ville,Pons,17.2
+Amiens,Étaples-Le Touquet,17.2
+Sées,Écommoy,17.2
+Vendeuvre-Jort,Langres,17.2
+Troyes,Chaumont,17.2
+Compiègne,Busigny,17.4
+Lyon-Vaise,Roanne,17.4
+Coarraze-Nay,Montréjeau-Gourdan-Polignan,17.4
+Roanne,Lyon-Part-Dieu,17.4
+Pau,Lannemezan,17.4
+Roanne,Lyon-Perrache-Voyageurs,17.4
+Les Aubrais-Orléans,Vierzon-Ville,17.5
+Tergnier,Maubeuge,17.5
+Gourdon,Caussade,17.5
+Le Mans,Tours,17.7
+Le Mans,St-Pierre-des-Corps,17.7
+Noyon,Cambrai,17.7
+Argentan,Le Mans,17.7
+Périgueux,Limoges-Bénédictins,17.7
+Gien,Nevers,17.7
+Terrasson-Lavilledieu,Meymac,17.7
+Brioude,Langogne,17.7
+Vernon-Giverny,Yvetot,17.7
+Orthez,Tarbes,17.8
+Argentan,Villedieu-les-Poêles,17.8
+Pons,Bordeaux-St-Jean,17.8
+Saintes,St-André-de-Cubzac,17.8
+Périgueux,Tulle,17.8
+Futuroscope,St-Pierre-des-Corps,17.8
+Poitiers,St-Pierre-des-Corps,17.8
+Montpon-Ménestérol,Condat-le-Lardin,17.8
+Avignon-Terminal TER,Marseille-St-Charles,18.0
+Versailles-Chantiers,Verneuil-sur-Avre,18.0
+Béziers,Carcassonne,18.0
+Longueau,Étaples-Le Touquet,18.0
+Hendaye,Orthez,18.0
+Nevers,St-Germain-des-Fossés,18.0
+Dreux,Surdon,18.0
+Vierzon-Ville,Nevers,18.0
+Argelès-sur-Mer,Narbonne,18.0
+Évreux-Embranchement,Pont-l'Évêque,18.0
+Arles,Marseille-St-Charles,18.0
+Nancy-Ville,Saverne,18.0
+L'Aigle,Flers,18.0
+Briouze,Granville,18.1
+Bayeux,Cherbourg,18.1
+Oissel,Le Havre,18.1
+Libourne,Niversac,18.3
+Clermont-Ferrand,Langeac,18.3
+Creil,St-Quentin,18.3
+La Roche-sur-Yon,La Rochelle-Ville,18.3
+Culmont-Chalindrey,Lure,18.3
+Montréjeau-Gourdan-Polignan,Toulouse-Matabiau,18.4
+Alençon,Château-du-Loir,18.4
+Caen,Valognes,18.4
+Collioure,Narbonne,18.5
+Nice-Ville,Les Arcs-Draguignan,18.5
+Carcassonne,Toulouse-Matabiau,18.5
+Nogent-sur-Vernisson,Pougues-les-Eaux,18.6
+Condat-le-Lardin,Meymac,18.6
+Bayonne,Pau,18.6
+Surdon,Écommoy,18.6
+Lisieux,Lison,18.6
+Chauny,Maubeuge,18.6
+Langeac,Villefort,18.7
+Montpon-Ménestérol,Terrasson-Lavilledieu,18.7
+Niversac,Corrèze,18.7
+Compiègne,Le Cateau,18.7
+Châtelaillon,Jonzac,18.7
+Arvant,St-Chély-d'Apcher,18.9
+Vendeuvre-Jort,Culmont-Chalindrey,18.9
+Bourges,Moulins-sur-Allier,18.9
+Compiègne,Caudry,18.9
+Arles,Montpellier-St-Roch,19.0
+Angers-St-Laud,Tours,19.0
+St-Just-en-Chaussée,Noyelles,19.0
+Verneuil-sur-Avre,Briouze,19.0
 Angers-St-Laud,St-Pierre-des-Corps,19.0
-Gourdon,Toulouse-Matabiau,31.6
-Souillac,Toulouse-Matabiau,80.0
+Moulins-sur-Allier,Roanne,19.0
+Paris-Nord,Noyon,19.0
+Toulon,St-Raphaël-Valescure,19.0
+Castelnaudary,Narbonne,19.0
+Avignon-Terminal TER,Montpellier-St-Roch,19.0
+Argenton-sur-Creuse,Vierzon-Ville,19.0
+Évreux-Embranchement,Paris-St-Lazare,19.0
+Narbonne,Port-Vendres-Ville,19.0
+Bourges,Montluçon-Ville,19.2
+Arvant,Langogne,19.2
+Rochefort,Montendre,19.2
+Bernay,Bayeux,19.2
+Nemours-St-Pierre,Cosne,19.2
+Montargis,La Charité,19.2
+Riom-Châtel-Guyon,Moulins-sur-Allier,19.5
+Montpellier-St-Roch,Narbonne,19.5
+Banyuls-sur-Mer,Narbonne,19.5
+St-Pierre-des-Corps,Vierzon-Ville,19.8
+Mussidan,Brive-la-Gaillarde,19.8
+Coarraze-Nay,St-Gaudens,19.8
+Paris-Nord,Paris-Est,19.8
+Clermont-de-l'Oise,Abbeville,19.8
+Nogent-sur-Seine,Bar-sur-Aube,19.9
+Caen,Alençon,19.9
+Peyrehorade,Lourdes,19.9
+Gaillon-Aubevoye,Bréauté-Beuzeville,19.9
+Paris-St-Lazare,Val-de-Reuil,19.9
+Strasbourg-Ville,Lunéville,20.0
+Uzerche,Gourdon,20.0
+Nogent-sur-Vernisson,Fourchambault,20.1
+Bordeaux-St-Jean,St-Astier,20.1
+Terrasson-Lavilledieu,Ussel,20.1
+Orléans,St-Pierre-des-Corps,20.2
+Les Aubrais-Orléans,St-Pierre-des-Corps,20.2
+Tours,Vierzon-Ville,20.2
+Angoulême,Poitiers,20.2
+Évreux-Embranchement,Trouville-Deauville,20.2
+Angoulême,Futuroscope,20.2
+Les Aubrais-Orléans,Bourges,20.2
+Salbris,St-Amand-Montrond-Orval,20.2
+Nantes,Luçon,20.2
+Coutras,Thiviers,20.2
+Pau,Montréjeau-Gourdan-Polignan,20.4
+Langres,Lure,20.4
+St-Georges-d'Aurac,Villefort,20.4
+Les Aubrais-Orléans,St-Pierre-des-Corps,20.4
+Gourdon,Montauban-Ville-Bourbon,20.5
+Brive-la-Gaillarde,Cahors,20.5
+La Bastide-St-Laurent-les-Bains,Nîmes,20.5
+Caussade,Souillac,20.5
+Argentan,Folligny,20.5
+Cerbère,Narbonne,20.5
+Brassac-les-Mines-Ste-Florine,Langogne,20.5
+Limoges-Bénédictins,Brive-la-Gaillarde,20.5
+Pau,Biarritz,20.5
+Surdon,Villedieu-les-Poêles,20.5
+La Rochelle-Ville,Jonzac,20.7
+Orléans,Tours,20.7
+Dreux,Argentan,20.7
+Les Aubrais-Orléans,Tours,20.7
+St-Astier,Tulle,20.8
+Val-de-Reuil,Le Havre,20.8
+Périgueux,Corrèze,20.8
+Paris-Montparnasse,Verneuil-sur-Avre,20.9
+Condat-le-Lardin,Ussel,20.9
+Brioude,La Bastide-St-Laurent-les-Bains,20.9
+St-Just-en-Chaussée,Rue,20.9
+Arvant,Aumont-Aubrac,20.9
+Saumur-Rive-Droite,Blois,20.9
+Chaumont,Vesoul,20.9
+Vierzon-Ville,Vallon,20.9
+Nogent-sur-Vernisson,Nevers,20.9
+Riom-Châtel-Guyon,Roanne,20.9
+Castelnaudary,Montauban-Ville-Bourbon,21.0
+Nevers,St-Germain-des-Fossés,21.0
+Issoudun,La Souterraine,21.0
+Nemours-St-Pierre,Tracy-Sancerre,21.1
+Pont-Ste-Maxence,Busigny,21.1
+Paris-Bercy,Montargis,21.1
+Langeac,Génolhac,21.1
+Les Aubrais-Orléans,Paris-Austerlitz,21.1
+Vichy,Tarare,21.2
+Argentan,Écommoy,21.2
+Orléans,Paris-Austerlitz,21.4
+Noyon,Maubeuge,21.4
+Mantes-la-Jolie,Yvetot,21.4
+Lannemezan,Toulouse-Matabiau,21.4
+Bayonne,Coarraze-Nay,21.5
+Montargis,Pougues-les-Eaux,21.5
+Limoges-Bénédictins,Argenton-sur-Creuse,21.5
+Clermont-Ferrand,Moulins-sur-Allier,21.5
+Bordeaux-St-Jean,Saintes,21.7
+Compiègne,Cambrai,21.7
+Boulogne-Ville,Amiens,21.7
+Lisieux,Carentan,21.7
+Vernon-Giverny,Le Havre,21.8
+Coutras,Condat-le-Lardin,21.8
+Sées,Château-du-Loir,21.8
+Vernon-Giverny,Bréauté-Beuzeville,21.8
+Paris-Nord,Chauny,21.8
+Niversac,Égletons,21.8
+Verneuil-sur-Avre,Flers,21.9
+Creil,Abbeville,21.9
+Versailles-Chantiers,L'Aigle,21.9
+Toulouse-Matabiau,Cahors,22.0
+Paris-St-Lazare,Conches,22.1
+Paris-St-Lazare,Oissel,22.1
+Rochefort,St-Mariens-St-Yzan,22.1
+Montpon-Ménestérol,Brive-la-Gaillarde,22.1
+Longueau,Paris-Nord,22.1
+St-Georges-d'Aurac,Génolhac,22.2
+Pau,St-Gaudens,22.2
+Noyon,Aulnoye-Aymeries,22.4
+Châtelaillon,Montendre,22.4
+Nemours-St-Pierre,Pouilly-sur-Loire,22.4
+Longueau,Boulogne-Ville,22.4
+Arvant,La Bastide-St-Laurent-les-Bains,22.4
+Pau,St-Jean-de-Luz-Ciboure,22.4
+Arles,Sète,22.5
+Avignon-Terminal TER,Sète,22.5
+Uzerche,La Souterraine,22.5
+Pont-Ste-Maxence,Caudry,22.5
+Bordeaux-St-Jean,Périgueux,22.5
+Libourne,Thiviers,22.5
+Montargis,Fourchambault,22.5
+Nevers,Vichy,22.5
+Issoudun,Les Aubrais-Orléans,22.5
+Creil,Busigny,22.7
+Argentan,Granville,22.7
+Troyes,Langres,22.7
+Coutras,Terrasson-Lavilledieu,22.7
+Paris-Nord,Romilly-sur-Seine,22.7
+L'Aigle,Vire,22.7
+Surdon,Folligny,22.7
+Angers-St-Laud,Amboise,22.7
+Paris-Nord,Tergnier,22.8
+Évreux-Embranchement,Caen,22.8
+Paris-Nord,Amiens,22.8
+Caen,Cherbourg,22.9
+Biarritz,Coarraze-Nay,22.9
+Nantes,Saumur-Rive-Droite,22.9
+Saumur-Rive-Droite,Nantes,22.9
+Clermont-Ferrand,Roanne,22.9
+Peyrehorade,Tarbes,22.9
+La Roche-sur-Yon,Rochefort,22.9
+Paris-Est,Longueville,22.9
+Romilly-sur-Seine,Chaumont,22.9
+Béziers,Castelnaudary,23.0
+Béziers,Nîmes,23.0
+Carcassonne,Perpignan,23.0
+Agen,Toulouse-Matabiau,23.0
+Compiègne,Aulnoye-Aymeries,23.1
+Surdon,Château-du-Loir,23.1
+Langogne,Nîmes,23.2
+Brassac-les-Mines-Ste-Florine,La Bastide-St-Laurent-les-Bains,23.2
+Mantes-la-Jolie,Lisieux,23.2
+Issoire,Langogne,23.2
+St-Astier,Corrèze,23.2
+St-Just-en-Chaussée,Rang-du-Fliers-Verton,23.4
+Culmont-Chalindrey,Belfort,23.4
+Périgueux,Égletons,23.4
+Mussidan,Limoges-Bénédictins,23.4
+Montargis,Nevers,23.4
+Les Aubrais-Orléans,Paris-Austerlitz,23.5
+Les Aubrais-Orléans,Paris-Bercy,23.5
+Bernay,Lison,23.5
+Paris-Bercy,Nogent-sur-Vernisson,23.5
+Mussidan,Tulle,23.5
+Gaillon-Aubevoye,Le Havre,23.5
+Les Aubrais-Orléans,Paris-Gare-de-Lyon,23.5
+Angoulême,Bordeaux-St-Jean,23.5
+Villefort,Arles,23.6
+Orthez,Lannemezan,23.6
+La Rochelle-Ville,Montendre,23.8
+Brioude,Villefort,23.8
+Creil,Noyelles,23.8
+Langeac,Grand'Combe-La Pise,23.9
+Mantes-la-Jolie,Bernay,23.9
+Vierzon-Ville,Moulins-sur-Allier,23.9
+Nîmes,Marseille-St-Charles,24.0
+Souillac,Montauban-Ville-Bourbon,24.0
+Carcassonne,Sète,24.0
+Cannes,Toulon,24.0
+Castelnaudary,Caussade,24.0
+Marmande,Montauban-Ville-Bourbon,24.0
+Salbris,Vallon,24.1
+Creil,Caudry,24.1
+Bordeaux-St-Jean,Niversac,24.1
+Paris-St-Lazare,Rouen-Rive-Droite,24.1
+Luçon,Saintes,24.1
+Libourne,Condat-le-Lardin,24.1
+Pau,Hendaye,24.2
+Vierzon-Ville,Montluçon-Ville,24.2
+Troyes,Culmont-Chalindrey,24.2
+Nemours-St-Pierre,La Charité,24.2
+Niversac,Meymac,24.4
+St-Pierre-des-Corps,Bourges,24.4
+Paris-Montparnasse,L'Aigle,24.4
+Mézidon,Le Mans,24.5
+Dreux,Briouze,24.6
+Paris-St-Lazare,Beaumont-le-Roger,24.6
+Lourdes,Bayonne,24.6
+Paris-St-Lazare,Bréval,24.6
+Rochefort,St-André-de-Cubzac,24.6
+Châtelaillon,St-Mariens-St-Yzan,24.8
+Surdon,Granville,24.8
+Compiègne,Maubeuge,24.8
+Pont-Ste-Maxence,Cambrai,24.8
+St-Jean-de-Luz-Ciboure,Coarraze-Nay,24.8
+Tours,Bourges,24.8
+Mantes-la-Jolie,Bréauté-Beuzeville,24.9
+Libourne,Terrasson-Lavilledieu,24.9
+St-Just-en-Chaussée,Étaples-Le Touquet,24.9
+Strasbourg-Ville,Nancy-Ville,25.0
+Châteauroux,Souillac,25.0
+Agen,Bordeaux-St-Jean,25.0
+Carcassonne,Elne,25.0
+Marseille-St-Charles,Les Arcs-Draguignan,25.0
+St-Georges-d'Aurac,Grand'Combe-La Pise,25.1
+Creil,Rue,25.2
+Argentan,Château-du-Loir,25.2
+Chaumont,Lure,25.2
+La Souterraine,Vierzon-Ville,25.5
+Uzerche,Cahors,25.5
+Limoges-Bénédictins,Châteauroux,25.5
+Toulon,Antibes,25.5
+Limoges-Bénédictins,Souillac,25.5
+Brive-la-Gaillarde,Caussade,25.5
+Carcassonne,Montauban-Ville-Bourbon,25.5
+Paris-St-Lazare,Serquigny,26.0
+Châteauroux,Les Aubrais-Orléans,26.0
+Les Aubrais-Orléans,Châteauneuf-sur-Cher,26.0
+Argelès-sur-Mer,Carcassonne,26.0
+Coutras,Brive-la-Gaillarde,26.0
+Clermont-de-l'Oise,Rang-du-Fliers-Verton,26.0
+Brioude,Génolhac,26.1
+Langeac,Alès,26.3
+Nogent-sur-Seine,Chaumont,26.3
+St-Astier,Égletons,26.3
+Montpon-Ménestérol,Tulle,26.3
+Mantes-la-Jolie,Pont-l'Évêque,26.3
+Lisieux,Valognes,26.3
+Périgueux,Meymac,26.4
+Mussidan,Corrèze,26.4
+Issoire,La Bastide-St-Laurent-les-Bains,26.4
+Nîmes,Narbonne,26.5
+Paris-Nord,St-Quentin,26.5
+Brassac-les-Mines-Ste-Florine,Villefort,26.5
+Verneuil-sur-Avre,Vire,26.5
+Nemours-St-Pierre,Pougues-les-Eaux,26.5
+Orthez,Montréjeau-Gourdan-Polignan,26.5
+Alençon,Tours,26.5
+Alençon,St-Pierre-des-Corps,26.5
+Biarritz,Lourdes,26.5
+Carcassonne,Collioure,26.5
+Bernay,Carentan,26.5
+Paris-Bercy,Gien,26.6
+Pont-Ste-Maxence,Aulnoye-Aymeries,26.6
+Niversac,Ussel,26.6
+La Rochelle-Ville,St-Mariens-St-Yzan,26.6
+L'Aigle,Villedieu-les-Poêles,26.7
+Creil,Cambrai,26.7
+Saincaize,Roanne,26.9
+Hendaye,Coarraze-Nay,27.0
+Carcassonne,Port-Vendres-Ville,27.0
+Narbonne,Toulouse-Matabiau,27.0
+Toulouse-Matabiau,Tarbes,27.0
+Bar-sur-Aube,Vesoul,27.1
+Paris-St-Lazare,Bernay,27.2
+Clermont-de-l'Oise,Étaples-Le Touquet,27.3
+Nemours-St-Pierre,Fourchambault,27.3
+Évreux-Embranchement,Bayeux,27.3
+Les Aubrais-Orléans,St-Florent-sur-Cher,27.3
+Dreux,Flers,27.3
+Riom-Châtel-Guyon,Tarare,27.3
+Carcassonne,Montpellier-St-Roch,27.5
+Angers-St-Laud,Blois,27.5
+Carcassonne,Banyuls-sur-Mer,27.5
+Châteauroux,Gourdon,27.5
+Nice-Ville,Toulon,27.5
+Nevers,Riom-Châtel-Guyon,27.5
+Castelnaudary,Perpignan,27.5
+Allassac,Caussade,27.5
+Langres,Belfort,27.5
+Brive-la-Gaillarde,La Souterraine,27.5
+Gourdon,Toulouse-Matabiau,27.5
+Châtelaillon,St-André-de-Cubzac,27.6
+Salbris,Montluçon-Ville,27.6
+Mézidon,Écommoy,27.7
+St-Germain-des-Fossés,Lyon-Part-Dieu,27.7
+Lyon-Vaise,St-Germain-des-Fossés,27.7
+Lyon-Perrache-Voyageurs,St-Germain-des-Fossés,27.7
+Bayonne,Tarbes,27.8
+Creil,Rang-du-Fliers-Verton,27.8
+Paris-Bercy,Briare,27.8
+Bordeaux-St-Jean,Thiviers,27.9
+Paris-Est,Troyes,27.9
+Le Mans,Caen,27.9
+Libourne,Brive-la-Gaillarde,27.9
+Versailles-Chantiers,Surdon,27.9
+Mantes-la-Jolie,Trouville-Deauville,27.9
+Romilly-sur-Seine,Langres,27.9
+Clermont-La Pardieu,Langogne,28.1
+St-Jean-de-Luz-Ciboure,Lourdes,28.1
+Brassac-les-Mines-Ste-Florine,Génolhac,28.1
+Pont-Ste-Maxence,Maubeuge,28.1
+Nemours-St-Pierre,Nevers,28.1
+Bordeaux-St-Jean,Rochefort,28.1
+Orthez,St-Gaudens,28.1
+Nevers,Roanne,28.2
+Peyrehorade,Lannemezan,28.3
+Montpon-Ménestérol,Corrèze,28.3
+St-Astier,Meymac,28.4
+Bourges,St-Germain-des-Fossés,28.4
+Clermont-Ferrand,Langogne,28.4
+Mantes-la-Jolie,Le Havre,28.5
+Brive-la-Gaillarde,Montauban-Ville-Bourbon,28.5
+Carcassonne,Caussade,28.5
+Mussidan,Égletons,28.5
+Carcassonne,Cerbère,28.5
+Béziers,Arles,28.5
+La Souterraine,Salbris,28.5
+Marseille-St-Charles,St-Raphaël-Valescure,28.5
+Brioude,Grand'Combe-La Pise,28.5
+Avignon-Terminal TER,Béziers,28.5
+L'Aigle,Folligny,28.5
+Les Aubrais-Orléans,St-Amand-Montrond-Orval,28.6
+La Rochelle-Ville,St-André-de-Cubzac,28.8
+St-Just-en-Chaussée,Boulogne-Tintelleries,28.8
+Issoire,Villefort,28.8
+Vichy,Lyon-Part-Dieu,28.9
+Sées,St-Pierre-des-Corps,28.9
+Saumur-Rive-Droite,Vierzon-Ville,28.9
+Sées,Tours,28.9
+Vichy,Lyon-Perrache-Voyageurs,28.9
+Uzerche,Argenton-sur-Creuse,29.0
+Biarritz,Tarbes,29.0
+Limoges-Bénédictins,Gourdon,29.0
+Clermont-Ferrand,Tarare,29.0
+Coutras,Limoges-Bénédictins,29.0
+Castelnaudary,Cahors,29.0
+St-Sulpice-Laurière,Vierzon-Ville,29.0
+Coutras,Tulle,29.1
+La Roche-sur-Yon,Saintes,29.1
+Paris-Nord,Abbeville,29.1
+Creil,Étaples-Le Touquet,29.1
+Bordeaux-St-Jean,Condat-le-Lardin,29.2
+Romilly-sur-Seine,Culmont-Chalindrey,29.2
+Paris-Austerlitz,Blois,29.4
+Paris-St-Lazare,Yvetot,29.4
+Paris-Austerlitz,Salbris,29.4
+Toulouse-Matabiau,Lourdes,29.5
+Saumur-Rive-Droite,Les Aubrais-Orléans,29.6
+Verneuil-sur-Avre,Villedieu-les-Poêles,29.6
+Nantes,La Rochelle-Ville,29.6
+Chaumont,Belfort,29.6
+Hendaye,Lourdes,29.6
+Lisieux,Cherbourg,29.6
+Vierzon-Ville,St-Germain-des-Fossés,29.6
+Vendeuvre-Jort,Vesoul,29.6
+Paris-Nord,Busigny,29.7
+Versailles-Chantiers,Argentan,29.7
+Mantes-la-Jolie,Caen,29.8
+Bernay,Valognes,30.0
+Clermont-Ferrand,Nevers,30.0
+Bordeaux-St-Jean,Terrasson-Lavilledieu,30.0
+Limoges-Bénédictins,Issoudun,30.0
+Surdon,St-Pierre-des-Corps,30.0
+St-Astier,Ussel,30.0
+Paris-Montparnasse,Surdon,30.0
+Luçon,Jonzac,30.0
+Castelnaudary,Elne,30.0
+Surdon,Tours,30.0
+Brioude,Alès,30.1
+Issoire,Génolhac,30.3
+L'Aigle,Granville,30.3
+Nogent-sur-Seine,Langres,30.3
+Châtelaillon,Bordeaux-St-Jean,30.3
+Montpon-Ménestérol,Égletons,30.4
+Brassac-les-Mines-Ste-Florine,Grand'Combe-La Pise,30.4
+Caen,Écommoy,30.4
+Brive-la-Gaillarde,St-Sébastien,30.5
+Argenton-sur-Creuse,Les Aubrais-Orléans,30.5
+Clermont-de-l'Oise,Boulogne-Tintelleries,30.6
+Évreux-Embranchement,Lison,30.6
+St-Jean-de-Luz-Ciboure,Tarbes,30.6
+Paris-Nord,Noyelles,30.7
+Mussidan,Meymac,30.7
+Bar-sur-Aube,Lure,30.7
+Clermont-Ferrand,La Bastide-St-Laurent-les-Bains,30.7
+Dreux,Vire,30.8
+Paris-Nord,Le Cateau,30.8
+Libourne,Limoges-Bénédictins,30.9
+Paris-St-Lazare,Lisieux,30.9
+Paris-Nord,Caudry,30.9
+Uzerche,Caussade,31.0
+Souillac,Toulouse-Matabiau,31.0
+Argelès-sur-Mer,Castelnaudary,31.0
+Marmande,Toulouse-Matabiau,31.0
+Béziers,Toulouse-Matabiau,31.0
+Mézidon,Château-du-Loir,31.0
+Paris-Montparnasse,Amiens,31.0
+Paris-Bercy,Salbris,31.0
+Allassac,Montauban-Ville-Bourbon,31.0
+Libourne,Tulle,31.0
+Coutras,Corrèze,31.2
+Onzain,Paris-Austerlitz,31.2
+Verneuil-sur-Avre,Folligny,31.4
+Castelnaudary,Port-Vendres-Ville,31.5
+Montpellier-St-Roch,Marseille-St-Charles,31.5
+Nantes,St-Pierre-des-Corps,31.5
+Paris-Bercy,Cosne,31.5
+Bordeaux-St-Jean,La Rochelle-Ville,31.5
+Nantes,Tours,31.5
+Castelnaudary,Collioure,31.5
+Nogent-sur-Seine,Culmont-Chalindrey,31.6
+Argentan,Tours,31.7
+Périgueux,Ussel,31.7
+Paris-Montparnasse,Argentan,31.7
+Argentan,St-Pierre-des-Corps,31.7
+Les Aubrais-Orléans,Vallon,31.9
+Paris-Nord,Rue,31.9
+Brassac-les-Mines-Ste-Florine,Alès,32.0
+St-Pierre-des-Corps,Saincaize,32.0
+Paris-Nord,Paris-Est,32.0
+Paris-Nord,Vierzon-Ville,32.0
+Castelnaudary,Banyuls-sur-Mer,32.0
+Coarraze-Nay,Toulouse-Matabiau,32.1
+Langeac,Nîmes,32.1
+Hendaye,Tarbes,32.1
+Bayonne,Lannemezan,32.2
+Mussidan,Ussel,32.2
+Paris-St-Lazare,Bréauté-Beuzeville,32.3
+Tours,Saincaize,32.3
+Bordeaux-St-Jean,Brive-la-Gaillarde,32.3
+Creil,Boulogne-Tintelleries,32.3
+Uzerche,Châteauroux,32.5
+La Souterraine,Souillac,32.5
+Avignon-Terminal TER,Narbonne,32.5
+Arles,Narbonne,32.5
+Moulins-sur-Allier,Lyon-Part-Dieu,32.6
+Lyon-Perrache-Voyageurs,Moulins-sur-Allier,32.6
+Lyon-Vaise,Moulins-sur-Allier,32.6
+Issoire,Grand'Combe-La Pise,32.7
+Paris-Bercy,Tracy-Sancerre,32.7
+Saumur-Rive-Droite,Bourges,32.7
+Évreux-Embranchement,Carentan,32.7
+Paris-Nord,Cambrai,32.8
+Cannes,Marseille-St-Charles,33.0
+St-Georges-d'Aurac,Nîmes,33.1
+Libourne,Corrèze,33.1
+Nantes,Rochefort,33.1
+Paris-St-Lazare,Pont-l'Évêque,33.1
+Clermont-Ferrand,Villefort,33.1
+Versailles-Chantiers,Briouze,33.1
+Vendeuvre-Jort,Lure,33.2
+Verneuil-sur-Avre,Granville,33.2
+La Souterraine,Brive-la-Gaillarde,33.2
+Paris-Austerlitz,Amboise,33.2
+St-Pierre-des-Corps,Nevers,33.3
+Coutras,Égletons,33.3
+Bernay,Cherbourg,33.3
+Biarritz,Lannemezan,33.4
+Les Aubrais-Orléans,Poitiers,33.5
+La Souterraine,Cahors,33.5
+Angoulême,St-Pierre-des-Corps,33.5
+Paris-Austerlitz,Vierzon-Ville,33.5
+Montauban-Ville-Bourbon,Narbonne,33.5
+Les Aubrais-Orléans,Futuroscope,33.5
+Paris-Bercy,Vierzon-Ville,33.5
+Castelnaudary,Cerbère,33.5
+Paris-Gare-de-Lyon,Vierzon-Ville,33.5
+Tours,Nevers,33.7
+Troyes,Vesoul,33.7
+Riom-Châtel-Guyon,Lyon-Part-Dieu,33.8
+Riom-Châtel-Guyon,Lyon-Perrache-Voyageurs,33.8
+Bourges,Roanne,33.8
+Caen,Château-du-Loir,33.8
+Paris-Bercy,Pouilly-sur-Loire,33.8
+Paris-Nord,Rang-du-Fliers-Verton,33.9
+Dreux,Villedieu-les-Poêles,33.9
+Limoges-Bénédictins,Cahors,34.0
+Carcassonne,Cahors,34.0
+Paris-Nord,Aulnoye-Aymeries,34.0
+Uzerche,Montauban-Ville-Bourbon,34.0
+Nantes,Amboise,34.2
+Angers-St-Laud,Vierzon-Ville,34.2
+Montpon-Ménestérol,Ussel,34.2
+La Souterraine,Gourdon,34.2
+Pau,Toulouse-Matabiau,34.2
+Bayonne,Montréjeau-Gourdan-Polignan,34.3
+La Roche-sur-Yon,Jonzac,34.3
+Issoire,Alès,34.3
+Clermont-La Pardieu,Génolhac,34.3
+Salbris,St-Florent-sur-Cher,34.4
+Bar-sur-Aube,Paris-Est,34.5
+Bar-sur-Aube,Belfort,34.5
+Angers-St-Laud,Les Aubrais-Orléans,34.5
+Paris-St-Lazare,Trouville-Deauville,34.5
+Brive-la-Gaillarde,Argenton-sur-Creuse,34.5
+Marseille-St-Charles,Sète,34.5
+Castelnaudary,Gourdon,34.5
+Carcassonne,Nîmes,34.5
+Bordeaux-St-Jean,Montauban-Ville-Bourbon,34.5
+Marseille-St-Charles,Antibes,34.5
+Limoges-Bénédictins,Vierzon-Ville,34.5
+Clermont-Ferrand,Génolhac,34.6
+Les Aubrais-Orléans,Montluçon-Ville,34.6
+Villefort,Marseille-St-Charles,34.8
+Perpignan,Toulouse-Matabiau,35.0
+Agen,Carcassonne,35.0
+St-Jean-de-Luz-Ciboure,Lannemezan,35.0
+Versailles-Chantiers,Flers,35.1
+Paris-Montparnasse,Briouze,35.1
+Étaples-Le Touquet,Paris-Nord,35.2
+Libourne,Égletons,35.2
+Le Havre,Paris-St-Lazare,35.4
+La Charité,Paris-Bercy,35.4
+Bordeaux-St-Jean,Limoges-Bénédictins,35.4
+Paris-Nord,Maubeuge,35.5
+Coutras,Meymac,35.5
+Biarritz,Montréjeau-Gourdan-Polignan,35.5
+Bordeaux-St-Jean,Tulle,35.5
+Clermont-Ferrand,Lyon-Part-Dieu,35.5
+Clermont-Ferrand,Lyon-Perrache-Voyageurs,35.5
+Dreux,Folligny,35.7
+Bourges,Paris-Austerlitz,35.8
+Bayonne,St-Gaudens,35.8
+Paris-Austerlitz,St-Pierre-des-Corps,35.8
+Brioude,Nîmes,36.0
+Brive-la-Gaillarde,Toulouse-Matabiau,36.0
+Tours,Paris-Austerlitz,36.2
+Évreux-Embranchement,Valognes,36.2
+Les Aubrais-Orléans,La Souterraine,36.5
+Gourdon,La Souterraine,36.5
+Uzerche,Issoudun,36.5
+Sète,Toulouse-Matabiau,36.5
+Hendaye,Lannemezan,36.6
+Caen,Paris-St-Lazare,36.7
+Clermont-La Pardieu,Grand'Combe-La Pise,36.7
+Paris-Bercy,Pougues-les-Eaux,36.9
+Marseille-St-Charles,Nice-Ville,37.0
+Béziers,Montauban-Ville-Bourbon,37.0
+Elne,Toulouse-Matabiau,37.0
+Caussade,Narbonne,37.0
+Mézidon,St-Pierre-des-Corps,37.1
+Mézidon,Tours,37.1
+St-Jean-de-Luz-Ciboure,Montréjeau-Gourdan-Polignan,37.1
+Vendeuvre-Jort,Belfort,37.1
+Biarritz,St-Gaudens,37.1
+Vierzon-Ville,St-Florent-sur-Cher,37.1
+Clermont-Ferrand,Grand'Combe-La Pise,37.1
+Coutras,Ussel,37.1
+Paris-Montparnasse,Flers,37.2
+Troyes,Lure,37.3
+Libourne,Meymac,37.4
+Bordeaux-St-Jean,Corrèze,37.5
+Dreux,Granville,37.5
+Les Aubrais-Orléans,La Souterraine,37.5
+Châteauroux,Paris-Austerlitz,37.5
+Vierzon-Ville,Roanne,37.7
+Paris-Bercy,Fourchambault,37.8
+Bordeaux-St-Jean,Futuroscope,37.9
+La Souterraine,Montauban-Ville-Bourbon,37.9
+St-Pierre-des-Corps,Moulins-sur-Allier,37.9
+Montpon-Ménestérol,Meymac,37.9
+Brassac-les-Mines-Ste-Florine,Nîmes,37.9
+Bordeaux-St-Jean,Poitiers,37.9
+Castelnaudary,Souillac,38.0
+La Souterraine,Toulouse-Matabiau,38.0
+St-Nazaire,St-Pierre-des-Corps,38.0
+Nantes,Blois,38.0
+Angers-St-Laud,Bourges,38.0
+Brive-la-Gaillarde,Châteauroux,38.0
+Romilly-sur-Seine,Vesoul,38.0
+Argelès-sur-Mer,Toulouse-Matabiau,38.0
+Clermont-La Pardieu,Alès,38.3
+Tours,Moulins-sur-Allier,38.3
+Paris-Austerlitz,St-Florent-sur-Cher,38.3
+Nantes,Saintes,38.4
+Issoudun,Paris-Gare-de-Lyon,38.5
+Collioure,Toulouse-Matabiau,38.5
+Lyon-Perrache-Voyageurs,Saincaize,38.5
+Saincaize,Lyon-Part-Dieu,38.5
+Paris-Bercy,Nevers,38.5
+Boulogne-Ville,Paris-Nord,38.5
+Lyon-Vaise,Saincaize,38.5
+Issoudun,Paris-Austerlitz,38.5
+Issoudun,Paris-Bercy,38.5
+St-Jean-de-Luz-Ciboure,St-Gaudens,38.6
+Clermont-Ferrand,Alès,38.6
+Lyon-Perrache-Voyageurs,Montluçon-Ville,38.6
+Versailles-Chantiers,Vire,38.6
+Lyon-Part-Dieu,Montluçon-Ville,38.6
+Hendaye,Montréjeau-Gourdan-Polignan,38.6
+Lyon-Vaise,Montluçon-Ville,38.6
+Carcassonne,Gourdon,39.0
+Libourne,Ussel,39.0
+Argenton-sur-Creuse,Souillac,39.0
+Port-Vendres-Ville,Toulouse-Matabiau,39.0
+Orthez,Toulouse-Matabiau,39.0
+Montpellier-St-Roch,Toulon,39.5
+Carcassonne,Arles,39.5
+Limoges-Bénédictins,Caussade,39.5
+Paris-Est,Chaumont,39.5
+Avignon-Terminal TER,Carcassonne,39.5
+Béziers,Marseille-St-Charles,39.5
+Banyuls-sur-Mer,Toulouse-Matabiau,39.5
+Luçon,Bordeaux-St-Jean,39.6
+Évreux-Embranchement,Cherbourg,39.6
+Bordeaux-St-Jean,Égletons,39.7
+Lyon-Perrache-Voyageurs,Nevers,39.8
+Nevers,Lyon-Part-Dieu,39.8
+Caen,St-Pierre-des-Corps,39.8
+Tours,Caen,39.8
+Lyon-Vaise,Nevers,39.8
+Uzerche,Toulouse-Matabiau,40.0
+Auray,Luçon,40.1
+Hendaye,St-Gaudens,40.2
+Issoire,Nîmes,40.2
+Paris-St-Lazare,Bayeux,40.3
+Paris-Austerlitz,Châteauneuf-sur-Cher,40.3
+Nogent-sur-Seine,Vesoul,40.4
+Bordeaux-St-Jean,Toulouse-Matabiau,40.5
+Montpellier-St-Roch,Toulouse-Matabiau,40.5
+Paris-Montparnasse,Vire,40.7
+Nevers,Paris-Gare-de-Lyon,41.0
+Saumur-Rive-Droite,Nevers,41.0
+Limoges-Bénédictins,Les Aubrais-Orléans,41.0
+Nevers,Paris-Bercy,41.0
+Cerbère,Toulouse-Matabiau,41.0
+Nevers,Paris-Austerlitz,41.0
+Troyes,Belfort,41.2
+Romilly-sur-Seine,Lure,41.6
+Versailles-Chantiers,Villedieu-les-Poêles,41.8
+Bordeaux-St-Jean,Meymac,41.9
+Perpignan,Montauban-Ville-Bourbon,42.0
+Brive-la-Gaillarde,Issoudun,42.0
+Limoges-Bénédictins,Montauban-Ville-Bourbon,42.0
+Montauban-Ville-Bourbon,Sète,42.0
+Châteauroux,Paris-Bercy,42.0
+Uzerche,Vierzon-Ville,42.0
+Argenton-sur-Creuse,Gourdon,42.0
+Carcassonne,Souillac,42.0
+Agen,Narbonne,42.0
+Marseille-St-Charles,Narbonne,42.0
+Brive-la-Gaillarde,Castelnaudary,42.0
+Narbonne,Cahors,42.0
+Châteauroux,Paris-Gare-de-Lyon,42.0
+Carcassonne,Marmande,42.0
+Saumur-Rive-Droite,Saincaize,42.7
+Peyrehorade,Toulouse-Matabiau,42.9
+St-Pierre-des-Corps,St-Germain-des-Fossés,42.9
+St-Nazaire,Amboise,43.0
+La Baule-Escoublac,St-Pierre-des-Corps,43.0
+Uzerche,Salbris,43.0
+Les Aubrais-Orléans,Gourdon,43.0
+Allassac,Vierzon-Ville,43.0
+Elne,Montauban-Ville-Bourbon,43.0
+Paris-Austerlitz,St-Amand-Montrond-Orval,43.0
+Le Croisic,St-Pierre-des-Corps,43.0
+Tours,St-Germain-des-Fossés,43.2
+Bordeaux-St-Jean,Ussel,43.5
+Langres,Paris-Est,43.6
+Nantes,Jonzac,43.6
+Versailles-Chantiers,Folligny,43.6
+Paris-St-Lazare,Lison,43.6
+Saumur-Rive-Droite,Paris-Austerlitz,43.7
+Paris-Montparnasse,Villedieu-les-Poêles,43.8
+Bordeaux-St-Jean,La Roche-sur-Yon,43.9
+Argelès-sur-Mer,Montauban-Ville-Bourbon,44.0
+Caussade,Perpignan,44.0
+Nogent-sur-Seine,Lure,44.1
+Collioure,Montauban-Ville-Bourbon,45.0
+Clermont-Ferrand,Nîmes,45.0
+Agen,Béziers,45.0
+Nîmes,Toulouse-Matabiau,45.0
+Montpellier-St-Roch,Montauban-Ville-Bourbon,45.0
+Argenton-sur-Creuse,Paris-Bercy,45.0
+Argenton-sur-Creuse,Paris-Austerlitz,45.0
+Montauban-Ville-Bourbon,Port-Vendres-Ville,45.0
+Le Croisic,Amboise,45.0
+La Baule-Escoublac,Amboise,45.0
+Argenton-sur-Creuse,Paris-Gare-de-Lyon,45.0
+Paris-Bercy,Nemours-St-Pierre,45.1
+Nantes,Vierzon-Ville,45.2
+Culmont-Chalindrey,Paris-Est,45.3
+Angers-St-Laud,Saincaize,45.4
+Les Aubrais-Orléans,Nantes,45.5
+Versailles-Chantiers,Granville,45.7
+Bourges,Lyon-Perrache-Voyageurs,45.8
+Bourges,Lyon-Part-Dieu,45.8
+Bourges,Lyon-Vaise,45.8
+Romilly-sur-Seine,Belfort,45.8
+Paris-Montparnasse,Folligny,45.9
+Saumur-Rive-Droite,Moulins-sur-Allier,45.9
+Paris-St-Lazare,Carentan,46.0
+Brive-la-Gaillarde,Vierzon-Ville,46.0
+Banyuls-sur-Mer,Montauban-Ville-Bourbon,46.0
+Issoudun,Souillac,46.0
+Caussade,La Souterraine,46.0
+Caussade,Elne,46.0
+Paris-Austerlitz,Vallon,46.4
+Angers-St-Laud,Nevers,46.5
+Bayonne,Toulouse-Matabiau,47.0
+Argelès-sur-Mer,Caussade,47.0
+Gourdon,Narbonne,47.0
+Argenton-sur-Creuse,Cahors,47.0
+Uzerche,Castelnaudary,47.0
+Brive-la-Gaillarde,Carcassonne,47.0
+Cerbère,Montauban-Ville-Bourbon,47.0
+Angoulême,Les Aubrais-Orléans,47.3
+Granville,Paris-Montparnasse,47.5
+Paris-Austerlitz,Futuroscope,47.9
+Nogent-sur-Seine,Belfort,47.9
+Paris-Austerlitz,Poitiers,47.9
+St-Sébastien,Paris-Gare-de-Lyon,48.0
+St-Sébastien,Paris-Austerlitz,48.0
+Caussade,Port-Vendres-Ville,48.0
+St-Nazaire,Blois,48.0
+St-Sébastien,Paris-Bercy,48.0
+La Baule-Escoublac,Blois,48.0
+Montpellier-St-Roch,Les Arcs-Draguignan,48.0
+Caussade,Banyuls-sur-Mer,48.0
+Le Croisic,Blois,48.0
+Lyon-Perrache-Voyageurs,Guéret,48.0
+Lyon-Part-Dieu,Guéret,48.0
+Caussade,Collioure,48.0
+Nantes,Bourges,48.5
+Angers-St-Laud,Paris-Austerlitz,48.7
+Montluçon-Ville,Paris-Austerlitz,48.8
+Paris-Bercy,Moulins-sur-Allier,49.0
+Biarritz,Toulouse-Matabiau,49.0
+Limoges-Bénédictins,Toulouse-Matabiau,49.0
+Perpignan,Cahors,49.0
+Caussade,Cerbère,49.0
+Nancy-Ville,Paris-Est,49.0
+Paris-St-Lazare,Valognes,49.0
+Paris-Gare-de-Lyon,Moulins-sur-Allier,49.0
+Souillac,Narbonne,49.0
+Issoudun,Gourdon,49.0
+Paris-Austerlitz,Moulins-sur-Allier,49.0
+Marmande,Narbonne,49.0
+Paris-Nord,Vierzon-Ville,49.1
+Vierzon-Ville,Lyon-Part-Dieu,49.1
+Lyon-Vaise,Vierzon-Ville,49.1
+St-Jean-de-Luz-Ciboure,Toulouse-Matabiau,49.3
+Bordeaux-St-Jean,St-Pierre-des-Corps,49.6
+Châteauroux,Cahors,50.0
+Souillac,Vierzon-Ville,50.0
+Agen,Sète,50.0
+Carcassonne,Marseille-St-Charles,50.0
+Elne,Cahors,50.0
+Brive-la-Gaillarde,Les Aubrais-Orléans,50.0
+Arles,Toulouse-Matabiau,50.0
+Montpellier-St-Roch,St-Raphaël-Valescure,50.0
+Avignon-Terminal TER,Toulouse-Matabiau,50.0
+Saumur-Rive-Droite,St-Germain-des-Fossés,50.2
+Angers-St-Laud,Moulins-sur-Allier,50.5
+St-Pierre-des-Corps,Roanne,50.5
+Hendaye,Toulouse-Matabiau,50.7
+Tours,Roanne,50.8
+Bordeaux-St-Jean,Carcassonne,51.0
+Uzerche,Les Aubrais-Orléans,51.0
+La Souterraine,Paris-Bercy,51.0
+Argenton-sur-Creuse,Caussade,51.0
+Nîmes,Montauban-Ville-Bourbon,51.0
+La Souterraine,Paris-Austerlitz,51.0
+La Souterraine,Paris-Gare-de-Lyon,51.0
+Argelès-sur-Mer,Cahors,51.0
+Uzerche,Carcassonne,51.0
+Cherbourg,Paris-St-Lazare,51.9
+Port-Vendres-Ville,Cahors,52.0
+Collioure,Cahors,52.0
+Banyuls-sur-Mer,Cahors,52.0
+Gourdon,Vierzon-Ville,52.0
+Béziers,Marmande,52.0
+Bordeaux-St-Jean,Nantes,52.4
+Lorient,Châtelaillon,52.6
+Paris-Est,Vesoul,52.8
+Argenton-sur-Creuse,Montauban-Ville-Bourbon,53.0
+Gourdon,Perpignan,53.0
+Lunéville,Paris-Est,53.0
+Agen,Montpellier-St-Roch,53.0
+Limoges-Bénédictins,Castelnaudary,53.0
+Cerbère,Cahors,53.0
+Brive-la-Gaillarde,Narbonne,53.0
+Issoudun,Cahors,53.0
+Paris-Gare-de-Lyon,Vichy,54.0
+Châteauroux,Caussade,54.0
+Paris-Bercy,Vichy,54.0
+Limoges-Bénédictins,Paris-Austerlitz,54.0
+Paris-Austerlitz,Vichy,54.0
+Cannes,Montpellier-St-Roch,54.0
+Paris-Austerlitz,St-Germain-des-Fossés,54.0
+Gourdon,Elne,54.0
+Paris-Bercy,St-Germain-des-Fossés,54.0
+Paris-Gare-de-Lyon,St-Germain-des-Fossés,54.0
+Nantes,Saincaize,54.5
+Arles,Montauban-Ville-Bourbon,55.0
+Montpellier-St-Roch,Antibes,55.0
+Argelès-sur-Mer,Gourdon,55.0
+Avignon-Terminal TER,Montauban-Ville-Bourbon,55.0
+Perpignan,Souillac,55.0
+Nantes,Nevers,55.6
+Limoges-Bénédictins,Lyon-Part-Dieu,55.9
+Lure,Paris-Est,55.9
+Les Aubrais-Orléans,Souillac,56.0
+Limoges-Bénédictins,Lyon-Perrache-Voyageurs,56.0
+Gourdon,Collioure,57.0
+Gourdon,Port-Vendres-Ville,57.0
+Paris-Austerlitz,St-Nazaire,57.0
+Le Croisic,Paris-Austerlitz,57.0
+Paris-Austerlitz,La Souterraine,57.0
+La Baule-Escoublac,Paris-Austerlitz,57.0
+Les Aubrais-Orléans,St-Nazaire,57.0
+La Baule-Escoublac,Les Aubrais-Orléans,57.0
+Vierzon-Ville,Cahors,57.0
+Châteauroux,Montauban-Ville-Bourbon,57.0
+Marmande,Sète,57.0
+Gourdon,Banyuls-sur-Mer,57.0
+Le Croisic,Les Aubrais-Orléans,57.0
+Saumur-Rive-Droite,Roanne,57.1
+Angers-St-Laud,St-Germain-des-Fossés,57.3
+Nantes,Paris-Austerlitz,57.8
+Elne,Souillac,58.0
+Montpellier-St-Roch,Nice-Ville,58.0
+Paris-Est,Sarrebourg,58.0
+Argelès-sur-Mer,Souillac,58.0
+Gourdon,Cerbère,58.0
+Bordeaux-St-Jean,Narbonne,58.0
+Issoudun,Caussade,58.0
+Uzerche,Narbonne,58.0
+Limoges-Bénédictins,Carcassonne,58.0
+Agen,Nîmes,59.0
+Belfort,Paris-Est,59.2
+Nantes,Moulins-sur-Allier,59.5
+Angoulême,Paris-Austerlitz,59.5
+Souillac,Collioure,60.0
+Argenton-sur-Creuse,Toulouse-Matabiau,60.0
+Les Aubrais-Orléans,Souillac,60.0
+Souillac,Port-Vendres-Ville,60.0
+Issoudun,Montauban-Ville-Bourbon,61.0
+Paris-Bercy,Riom-Châtel-Guyon,61.0
+Paris-Austerlitz,Riom-Châtel-Guyon,61.0
+Souillac,Banyuls-sur-Mer,61.0
+Limoges-Bénédictins,Paris-Bercy,61.0
+Montpellier-St-Roch,Marmande,61.0
+Paris-Est,Saverne,61.0
+Clermont-Ferrand,Paris-Bercy,61.0
+Clermont-Ferrand,Paris-Austerlitz,61.0
+Paris-Gare-de-Lyon,Riom-Châtel-Guyon,61.0
+Clermont-Ferrand,Paris-Gare-de-Lyon,61.0
+Brive-la-Gaillarde,Perpignan,61.0
+Limoges-Bénédictins,Paris-Gare-de-Lyon,61.0
+Bordeaux-St-Jean,Les Aubrais-Orléans,61.3
+Angers-St-Laud,Roanne,61.6
+Brive-la-Gaillarde,Elne,62.0
+Caussade,Vierzon-Ville,62.0
+Souillac,Cerbère,62.0
+Marseille-St-Charles,Toulouse-Matabiau,62.0
+Gourdon,Les Aubrais-Orléans,62.0
+Bordeaux-St-Jean,Béziers,62.0
+Lyon-Perrache-Voyageurs,St-Pierre-des-Corps,62.7
+Lyon-Part-Dieu,St-Pierre-des-Corps,62.7
+Lyon-Vaise,St-Pierre-des-Corps,62.7
+Châteauroux,Toulouse-Matabiau,63.0
+Tours,Lyon-Vaise,63.0
+Les Aubrais-Orléans,Cahors,63.0
+Lyon-Part-Dieu,Tours,63.0
+Argelès-sur-Mer,Brive-la-Gaillarde,63.0
+Lyon-Perrache-Voyageurs,Tours,63.0
+Nantes,St-Germain-des-Fossés,63.7
+Paris-Austerlitz,Souillac,64.0
+Uzerche,Paris-Bercy,64.0
+Agen,Arles,64.0
+Brive-la-Gaillarde,Collioure,64.0
+Uzerche,Paris-Austerlitz,64.0
+Uzerche,Paris-Gare-de-Lyon,64.0
+Strasbourg-Ville,Paris-Est,64.0
+Avignon-Terminal TER,Agen,64.0
+Brive-la-Gaillarde,Port-Vendres-Ville,64.0
+Villefort,Tarascon,64.3
+Montauban-Ville-Bourbon,Vierzon-Ville,65.0
+Brive-la-Gaillarde,Banyuls-sur-Mer,65.0
+Brive-la-Gaillarde,Paris-Austerlitz,65.0
+Limoges-Bénédictins,Narbonne,65.0
+Brive-la-Gaillarde,Cerbère,65.0
+Uzerche,Perpignan,65.0
+Marseille-St-Charles,Montauban-Ville-Bourbon,66.0
+Uzerche,Elne,66.0
+Nîmes,Marmande,66.0
+Issoudun,Toulouse-Matabiau,66.0
+Bordeaux-St-Jean,Sète,66.0
+Saumur-Rive-Droite,Lyon-Vaise,66.2
+Saumur-Rive-Droite,Lyon-Part-Dieu,66.2
+Saumur-Rive-Droite,Lyon-Vaise,66.2
+Uzerche,Paris-Nord,67.0
+Paris-Austerlitz,Gourdon,68.0
+Uzerche,Port-Vendres-Ville,68.0
+Uzerche,Banyuls-sur-Mer,68.0
+Uzerche,Collioure,68.0
+Toulon,Toulouse-Matabiau,68.0
+Les Aubrais-Orléans,Montauban-Ville-Bourbon,68.0
+Bordeaux-St-Jean,Montpellier-St-Roch,69.0
+Arles,Marmande,69.0
+Uzerche,Cerbère,69.0
+Avignon-Terminal TER,Marmande,69.0
+Caussade,Les Aubrais-Orléans,69.0
+Vierzon-Ville,Toulouse-Matabiau,69.0
+Nantes,Roanne,69.4
+Limoges-Bénédictins,Perpignan,70.0
+Brive-la-Gaillarde,Paris-Gare-de-Lyon,71.0
+Brive-la-Gaillarde,Paris-Bercy,71.0
+Bordeaux-St-Jean,Paris-Austerlitz,72.0
+Limoges-Bénédictins,Elne,72.0
+Paris-Gare-de-Lyon,Souillac,72.0
+Paris-Bercy,Souillac,72.0
+Paris-Nord,Lyon-Perrache-Voyageurs,72.5
+Paris-Nord,Lyon-Vaise,72.5
+Paris-Nord,Lyon-Part-Dieu,72.5
+Limoges-Bénédictins,Collioure,73.0
+Gourdon,Paris-Gare-de-Lyon,73.0
+Bordeaux-St-Jean,Nîmes,73.0
+Limoges-Bénédictins,Port-Vendres-Ville,73.0
+Gourdon,Paris-Austerlitz,73.0
+Limoges-Bénédictins,Argelès-sur-Mer,73.0
+Gourdon,Paris-Bercy,73.0
+Les Aubrais-Orléans,Toulouse-Matabiau,73.0
+Paris-Austerlitz,Cahors,73.0
+Agen,Marseille-St-Charles,73.0
+Les Arcs-Draguignan,Toulouse-Matabiau,74.0
+Limoges-Bénédictins,Banyuls-sur-Mer,74.0
+Castelnaudary,Vierzon-Ville,75.0
+Limoges-Bénédictins,Cerbère,75.0
+Paris-Austerlitz,Montauban-Ville-Bourbon,76.0
+St-Raphaël-Valescure,Toulouse-Matabiau,76.0
+Bordeaux-St-Jean,Arles,77.0
+Avignon-Terminal TER,Bordeaux-St-Jean,77.0
+Paris-Gare-de-Lyon,Cahors,77.0
+Paris-Bercy,Cahors,77.0
+Carcassonne,Vierzon-Ville,78.0
+Marseille-St-Charles,Marmande,78.0
+Cannes,Toulouse-Matabiau,79.0
+Antibes,Toulouse-Matabiau,80.0
+Caussade,Paris-Austerlitz,80.0
+Paris-Austerlitz,Toulouse-Matabiau,80.0
+Caussade,Paris-Gare-de-Lyon,80.0
+Caussade,Paris-Bercy,80.0
+Lyon-Perrache-Voyageurs,Nantes,80.7
+Lyon-Part-Dieu,Nantes,80.7
+Lyon-Vaise,Nantes,80.7
+Castelnaudary,Les Aubrais-Orléans,82.0
+Paris-Gare-de-Lyon,Montauban-Ville-Bourbon,82.0
+Nice-Ville,Toulouse-Matabiau,82.0
+Paris-Bercy,Montauban-Ville-Bourbon,82.0
+Narbonne,Vierzon-Ville,83.0
+Carcassonne,Les Aubrais-Orléans,85.0
+Paris-Bercy,Toulouse-Matabiau,86.0
+Bordeaux-St-Jean,Marseille-St-Charles,86.0
+Paris-Gare-de-Lyon,Toulouse-Matabiau,86.0
+Perpignan,Vierzon-Ville,89.0
+Les Aubrais-Orléans,Narbonne,90.0
+Elne,Vierzon-Ville,90.0
+Argelès-sur-Mer,Vierzon-Ville,91.0
+Bordeaux-St-Jean,Toulon,91.0
+Port-Vendres-Ville,Vierzon-Ville,91.0
+Collioure,Vierzon-Ville,91.0
+Cerbère,Vierzon-Ville,92.0
+Castelnaudary,Paris-Austerlitz,92.0
+Castelnaudary,Paris-Gare-de-Lyon,92.0
+Castelnaudary,Paris-Bercy,92.0
+Banyuls-sur-Mer,Vierzon-Ville,92.0
+Carcassonne,Paris-Austerlitz,97.0
+Carcassonne,Paris-Gare-de-Lyon,97.0
+Les Aubrais-Orléans,Perpignan,97.0
+Carcassonne,Paris-Bercy,97.0
+Bordeaux-St-Jean,Les Arcs-Draguignan,98.0
+Elne,Les Aubrais-Orléans,98.0
+Argelès-sur-Mer,Les Aubrais-Orléans,100.0
+Les Aubrais-Orléans,Collioure,100.0
+Les Aubrais-Orléans,Port-Vendres-Ville,100.0
+Les Aubrais-Orléans,Banyuls-sur-Mer,101.0
+Les Aubrais-Orléans,Cerbère,101.0
+Bordeaux-St-Jean,St-Raphaël-Valescure,101.0
+Paris-Austerlitz,Narbonne,102.0
+Paris-Bercy,Narbonne,102.0
+Paris-Gare-de-Lyon,Narbonne,102.0
+Bordeaux-St-Jean,Cannes,103.0
+Bordeaux-St-Jean,Antibes,104.0
+Bordeaux-St-Jean,Nice-Ville,105.0
+Paris-Austerlitz,Perpignan,107.0
+Perpignan,Paris-Gare-de-Lyon,107.0
+Paris-Bercy,Perpignan,107.0
+Elne,Paris-Bercy,108.0
+Elne,Paris-Gare-de-Lyon,108.0
+Argelès-sur-Mer,Paris-Bercy,108.0
+Argelès-sur-Mer,Paris-Gare-de-Lyon,108.0
+Elne,Paris-Austerlitz,108.0
+Argelès-sur-Mer,Paris-Austerlitz,108.0
+Paris-Gare-de-Lyon,Port-Vendres-Ville,109.0
+Paris-Bercy,Port-Vendres-Ville,109.0
+Paris-Gare-de-Lyon,Collioure,109.0
+Paris-Austerlitz,Banyuls-sur-Mer,109.0
+Paris-Austerlitz,Port-Vendres-Ville,109.0
+Paris-Bercy,Banyuls-sur-Mer,109.0
+Paris-Bercy,Collioure,109.0
+Paris-Gare-de-Lyon,Banyuls-sur-Mer,109.0
+Paris-Austerlitz,Collioure,109.0
+Paris-Gare-de-Lyon,Cerbère,110.0
+Paris-Bercy,Cerbère,110.0
+Paris-Austerlitz,Cerbère,110.0
