@@ -24,6 +24,7 @@ function debounce(func, wait, immediate) {
 };
 
 function onStationClick(station) {
+    sidebar.open('home');
     var url = new URL(`${API_URL}/get_station_info/${station.Name}`)
     var template = () => `<h1>${station.Name}</h1>${content}`;
     var content = `  <b>(Commune: ${station.Commune})<b>`;
@@ -81,6 +82,7 @@ function partial(func /*, 0..n args */) {
 
 var data = france;
 var map;
+var sidebar;
 
 function setupMap() {
     var lat = 46.566414;
@@ -94,7 +96,7 @@ function setupMap() {
     var osm = new L.TileLayer(osmUrl, {minZoom: 6, maxZoom: 8, attribution: osmAttrib});
     map.addLayer(osm);
 
-    var sidebar = L.control.sidebar('sidebar', {
+    sidebar = L.control.sidebar('sidebar', {
         position: 'left',
         autopan: false,       // whether to maintain the centered map point when opening the sidebar
         closeButton: true,    // whether t add a close button to the panes
