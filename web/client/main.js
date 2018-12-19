@@ -1,4 +1,6 @@
 const API_URL = 'http://127.0.0.1:5000'
+const COLOR_BEST = 'green';
+const COLOR_WORST = 'red';
 
 // Source: <https://davidwalsh.name/javascript-debounce-function>
 // Returns a function, that, as long as it continues to be invoked, will not
@@ -197,20 +199,32 @@ function whenDocumentLoaded(action) {
 }
 
 function getColorForCost(cost, budget) {
-    var scale = chroma.scale(['green', 'red']).mode('lch').colors(budget);
+    var scale = chroma.scale([COLOR_WORST, COLOR_BEST]).mode('lch').colors(budget);
     return scale[Math.round(cost)];
 }
 
 var starting_stop;
 var pathsLayer = L.layerGroup();
 
+function showLegend(budget) {
+    var scale = chroma.scale([COLOR_WORST, COLOR_BEST]).mode('lch').colors(budget);
+    var s = '';
+    for (var i = 0; i <= 100; i++) {
+        s += '<span class="grad-step" style="background-color:' + scale[Math.round(budget * i / 100)] + '"></span>';
+    }
+    s += '<span class="domain-min">€' + 0 + '</span>';
+    s += '<span class="domain-max">€' + budget + '</span>';
+    document.getElementById("legend").innerHTML = s;
+}
+    showLegend(500);
+
 function showPathsFromStop(stop_name) {
     pathsLayer.clearLayers();
     if (typeof stop_name === "undefined")
         stop_name = starting_stop
     starting_stop = stop_name;
-
     var budget = document.getElementById("budget").value;
+    showLegend(budget);
     var url = new URL(`${API_URL}/get_routes_from_source`)
     var params = {source_name: stop_name, budget: budget}
     url.search = new URLSearchParams(params)

@@ -72,3 +72,30 @@ html, body {
     color: #ecf0f1;
 }
 
+.gradient {
+    position: absolute;
+    z-index: 500;
+    height: 60px;
+    width: 30px;
+    white-space: nowrap;
+    display: inline-block;
+    right: 50px;
+    bottom: 28px;
+}
+.grad-step {
+    display: block;
+    height: 1%;
+    width: 30px;
+}
+.gradient .domain-min {
+    position: absolute;
+    bottom: 0;
+    font-size: 11px;
+    right: 35px;
+}
+.gradient .domain-max {
+    position: absolute;
+    top: 0;
+    font-size: 11px;
+    right: 35px;
+}
