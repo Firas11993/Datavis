@@ -218,7 +218,6 @@ function showLegend(budget) {
     s += '<span class="domain-max">€' + budget + '</span>';
     document.getElementById("legend").innerHTML = s;
 }
-    showLegend(500);
 
 function showPathsFromStop(stop_name) {
     pathsLayer.clearLayers();
