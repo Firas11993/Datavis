@@ -201,7 +201,7 @@ function whenDocumentLoaded(action) {
 }
 
 function getColorForCost(cost, budget) {
-    var scale = chroma.scale([COLOR_WORST, COLOR_BEST]).mode('lch').colors(budget);
+    var scale = chroma.scale([COLOR_BEST, COLOR_WORST]).mode('lch').colors(budget);
     return scale[Math.round(cost)];
 }
 
