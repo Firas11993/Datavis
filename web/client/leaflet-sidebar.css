@@ -8,18 +8,67 @@
   height: 5em;
   bottom: 0;
   z-index: 2000;
-  text-align: center;
+  width: 350px;
+}
+
+.inputLabel {
+    display: inline-block;
+    width: 35%;
+}
+
+#startingLoc {
+    width: 60%;
 }
 
 #budgetContainer {
     display: flex;
     align-items: center;
-    padding-top: 8px;
+    padding-top: 16px;
     height: 28px;
 }
+
 #refresh {
-    width: 16px;
-    height: 16px;
+    background-color: #008CBA;
+    color: white;
+    width: 18%;
+    padding: 4px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 11px;
+    border-radius: 5px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    border: 1px solid transparent;
+}
+
+#refresh:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+#budgetValue {
+    padding-left: 8px;
+    padding-right: 8px;
+    width: 10%;
+    color: #008CBA;
+    font-weight: bold;
+}
+
+#budget {
+    width: 32%;
+    padding: 0;
+}
+#budget::-moz-range-track {
+  padding: 0 0px;
+  background: repeating-linear-gradient(to right, 
+    #ccc, 
+    #ccc 10%, 
+    #000 10%, 
+    #000 11%, 
+    #ccc 11%, 
+    #ccc 20%);
 }
 
 .leaflet-sidebar {

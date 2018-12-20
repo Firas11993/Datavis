@@ -276,6 +276,14 @@ function showPathsFromStop(stop_name) {
     });
 }
 
+function setupPage() {
+    $('#budget').on('input change', () => {
+        var budget = document.getElementById('budget').value;
+        document.getElementById('budgetValue').innerHTML = '€' + budget;
+    });
+}
+
 whenDocumentLoaded(() => {
     setupMap();
+    setupPage();
 });
