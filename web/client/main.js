@@ -306,7 +306,7 @@ function setStopFromInput() {
         starting_stop = stop_name;
         showPathsFromStop();
     } else {
-        alert('Unknown stop selected: ' + stop_name);
+        alert('Unknown stop selected: "' + stop_name + '".\nPlease select a valid stop.');
     }
 }
 
