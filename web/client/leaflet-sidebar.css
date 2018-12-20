@@ -52,6 +52,9 @@
     left: 0; }
   .leaflet-sidebar-right .leaflet-sidebar-tabs {
     right: 0; }
+  .leaflet-sidebar-tabs > ul:first-child {
+      z-index: 1000;
+  }
   .leaflet-sidebar-tabs, .leaflet-sidebar-tabs > ul {
     position: absolute;
     width: 40px;
@@ -97,11 +100,11 @@
   overflow-x: hidden;
   overflow-y: auto; }
   .leaflet-sidebar-left .leaflet-sidebar-content {
-    left: 40px;
+    left: 0px;
     right: 0; }
   .leaflet-sidebar-right .leaflet-sidebar-content {
     left: 0;
-    right: 40px; }
+    right: 0px; }
   .leaflet-sidebar.collapsed > .leaflet-sidebar-content {
     overflow-y: hidden; }
 
@@ -127,7 +130,7 @@
       min-width: 420px; } }
 
 .leaflet-sidebar-header {
-  margin: -10px -20px 0;
+  margin: -10px -20px 0 10px;
   height: 40px;
   padding: 0 20px;
   line-height: 40px;
@@ -135,6 +138,7 @@
   color: #fff;
   background-color: #0074d9; }
   .leaflet-sidebar-right .leaflet-sidebar-header {
+    margin: -10px -20px 0;
     padding-left: 40px; }
 
 .leaflet-sidebar-close {
