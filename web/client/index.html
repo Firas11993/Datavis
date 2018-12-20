@@ -51,7 +51,7 @@
 
 <body onload="setupMap()">
     <div id="legend" class="gradient"></div>
-    <div class="sidediv">
+    <!--<div class="sidediv">
         <form>
             <span class="inputLabel">Starting location:</span><input id="startingLoc" list="stationsNames" placeholder="Loading..." type="text"/>
             <datalist id="stationsNames"></datalist>
@@ -65,7 +65,44 @@
             <button id="budgetRefresh" class="sidedivButton" type="button" onclick="showPathsFromStop()">Refresh</button>
             </div>
         </form>
+    </div>-->
+
+    <div id="sidediv" class="flexChild columnParent">
+        <div id="columnChild67987" class="flexChild rowParent selected">
+            <div id="rowChild73936" class="flexChild">Starting location:</div>
+
+            <div id="rowChild97145" class="flexChild rowParent">
+                <div id="rowChild7521" class="flexChild">
+                    <input id="startingLoc" list="stationsNames" placeholder="Loading..." type="text"/>
+                    <datalist id="stationsNames"></datalist>
+                </div>
+
+                <div id="rowChild18187" class="flexChild">
+                    <button id="startingLocSet" class="sidedivButton" type="button" onclick="setStopFromInput()">Set</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="columnChild11288" class="flexChild rowParent">
+            <div id="rowChild29817" class="flexChild">Budget:</div>
+
+            <div id="rowChild31006" class="flexChild rowParent">
+                <div id="rowChild78682" class="flexChild">
+                    <input id="budget" type="range" value="200" min="20" max="250" step="10" list="steplist"/><div id="budgetValue">€200</div>
+                    <datalist id="steplist">
+                        <option>20</option>
+                        <option>140</option>
+                        <option>250</option>
+                    </datalist>
+                </div>
+
+                <div id="rowChild13367" class="flexChild">
+                    <button id="budgetRefresh" class="sidedivButton" type="button" onclick="showPathsFromStop()">Refresh</button>
+                </div>
+            </div>
+        </div>
     </div>
+
     <!-- SIDEBAR + CONTENT -->
     <div id="sidebar" class="leaflet-sidebar collapsed">
         <!-- Nav tabs -->
