@@ -53,14 +53,16 @@
     <div id="legend" class="gradient"></div>
     <div class="sidediv">
         <form>
-            <span class="inputLabel">Starting location:</span><input id="startingLoc" type="text"/>
+            <span class="inputLabel">Starting location:</span><input id="startingLoc" list="stationsNames" placeholder="Loading..." type="text"/>
+            <datalist id="stationsNames"></datalist>
+            <button id="startingLocSet" class="sidedivButton" type="button" onclick="setStopFromInput()">Set</button>
             <div id="budgetContainer"><span class="inputLabel">Budget:</span><input id="budget" type="range" value="200" min="20" max="250" step="10" list="steplist"/><span id="budgetValue">€200</span>
                 <datalist id="steplist">
                     <option>20</option>
                     <option>140</option>
                     <option>250</option>
                 </datalist>
-            <button id="refresh" type="button" onclick="showPathsFromStop()">Refresh</button>
+            <button id="budgetRefresh" class="sidedivButton" type="button" onclick="showPathsFromStop()">Refresh</button>
             </div>
         </form>
     </div>

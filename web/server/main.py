@@ -28,6 +28,10 @@ print('Ready!')
 
 app = Flask(__name__)
 
+@app.route('/get_stations_names', methods=['GET'])
+def get_stations_names():
+    return json.dumps(STATIONS.Name.tolist())
+
 @app.route('/get_stations', methods=['GET'])
 def get_stations():
     east = float(request.args.get('east'))

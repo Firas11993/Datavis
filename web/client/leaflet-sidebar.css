@@ -17,7 +17,7 @@
 }
 
 #startingLoc {
-    width: 60%;
+    width: 40%;
 }
 
 #budgetContainer {
@@ -27,7 +27,7 @@
     height: 28px;
 }
 
-#refresh {
+.sidedivButton {
     background-color: #008CBA;
     color: white;
     width: 18%;
@@ -42,7 +42,7 @@
     border: 1px solid transparent;
 }
 
-#refresh:hover {
+.sidedivButton:hover {
     background-color: white;
     color: black;
     border: 1px solid black;

@@ -229,7 +229,6 @@ function showPathsFromStop(stop_name) {
     var url = new URL(`${API_URL}/get_routes_from_source`)
     var params = {source_name: stop_name, budget: budget}
     url.search = new URLSearchParams(params)
-    console.log(url);
     fetch(url).then(async function(response) {
         return response.json();
     }).then(function(resp) {
@@ -283,7 +282,36 @@ function setupPage() {
     });
 }
 
+var stationsNamesList;
+function loadAutocomplete() {
+    var url = new URL(`${API_URL}/get_stations_names`)
+    var startingLoc = document.getElementById('startingLoc');
+    var stationsNames = document.getElementById('stationsNames');
+    fetch(url).then(async function(response) {
+        return response.json();
+    }).then(function(resp) {
+        stationsNamesList = resp;
+        for (let item of resp) {
+            var option = document.createElement('option');
+            option.value = item;
+            stationsNames.appendChild(option);
+        }
+        startingLoc.placeholder = "e.g. Paris-Nord";
+    });
+}
+
+function setStopFromInput() {
+    var stop_name = document.getElementById("startingLoc").value;
+    if (stationsNamesList.indexOf(stop_name) > -1) {
+        starting_stop = stop_name;
+        showPathsFromStop();
+    } else {
+        alert('Unknown stop selected: ' + stop_name);
+    }
+}
+
 whenDocumentLoaded(() => {
     setupMap();
+    loadAutocomplete()
     setupPage();
 });
