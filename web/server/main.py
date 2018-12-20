@@ -73,8 +73,10 @@ def get_routes_from_source():
             pass
         else:
             path = PATHS[source_id][dest_id]
+            first_stop = GRAPH.edges[(path[0], path[1])]
             segments = []
             cost = 0
+            duration = 0
             for start, end in zip(path[:-1], path[1:]):
                 start_name = STOPS_NAME_BY_ID[str(start)]
                 end_name = STOPS_NAME_BY_ID[str(end)]
@@ -87,9 +89,11 @@ def get_routes_from_source():
                     end_lat = info['lon_lat'][1]
                     end_lon = info['lon_lat'][0]
                 cost += info['weight']
-                segments.append([start_name, end_name, info['weight'], info['departure_time'], info['arrival_time'], end_lat, end_lon])
+                duration += info['duration']
+                segments.append([start_name, end_name, info['weight'], info['duration'], end_lat, end_lon])
             if cost > budget: continue
-            result.append({'segments': segments, 'cost': cost})
+            result.append({'segments': segments, 'cost': cost, 'duration': duration,
+                           'first_cost': first_stop['weight'], 'first_duration': first_stop['duration']})
     result = sorted(result, key=lambda k: k['cost'], reverse=True)
     return json.dumps({'start_lat': source_station.Latitude,
                        'start_lon': source_station.Longitude,

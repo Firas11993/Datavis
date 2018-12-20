@@ -2,6 +2,9 @@ const API_URL = 'http://127.0.0.1:5000'
 const COLOR_BEST = 'green';
 const COLOR_WORST = 'red';
 
+var polylines = new Map();
+var destDivs = new Map();
+
 // Source: <https://davidwalsh.name/javascript-debounce-function>
 // Returns a function, that, as long as it continues to be invoked, will not
 // be triggered. The function will be called after it stops being called for
@@ -84,29 +87,33 @@ function partial(func /*, 0..n args */) {
     };
 }
 
-var data = france;
 var map;
 var sidebar;
+var rightSidebar;
 
 function setupMap() {
     var lat = 46.566414;
     var lng =  2.4609375;
     var zoom =  6;
 
-    map = new L.Map('map', {minZoom: 6, maxZoom: 11, zoomControl: false});
+    map = new L.Map('map', {minZoom: 6, maxZoom: 11, zoomControl: false, attributionControl: false});
     new L.Control.Zoom({position: 'bottomright'}).addTo(map);
     var osmUrl='http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
-    var osmAttrib='Map data &copy; OpenStreetMap contributors';
-    var osm = new L.TileLayer(osmUrl, {minZoom: 6, maxZoom: 8, attribution: osmAttrib});
+    var osm = new L.TileLayer(osmUrl, {minZoom: 6, maxZoom: 8});
     map.addLayer(osm);
 
-    sidebar = L.control.sidebar('sidebar', {
+    sidebar = L.control.sidebar({
+        container: 'sidebar',
         position: 'left',
         autopan: false,       // whether to maintain the centered map point when opening the sidebar
         closeButton: true,    // whether t add a close button to the panes
     }).addTo(map);
     sidebar.open('home');
 
+    rightSidebar = L.control.sidebar({
+        container: 'rightSidebar',
+        position: 'right',
+    }).addTo(map);
 
     map.setView(new L.LatLng(lat, lng), zoom);
 
@@ -117,7 +124,6 @@ function setupMap() {
     }).addTo(map);
 
     L.tileLayer('https://api.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
-        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
         maxZoom: 18,
         id: 'mapbox.outdoors',
         accessToken: 'pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw'
@@ -149,51 +155,6 @@ function setupMap() {
 
     map.on('moveend', () => { showBounds(); });
     showBounds()
-
-    // add a layer group, yet empty
-
-    //  var markersLayer = new L.LayerGroup();
-    //  map.addLayer(markersLayer);
-
-    var featuresLayer = new L.GeoJSON(data, {
-        style: {
-            opacity: 0,
-            fillOpacity: 0,
-        }
-    });
-
-    map.addLayer(featuresLayer);
-
-    // add the search bar to the map
-    var controlSearch = new L.Control.Search({
-        position: 'topright',    // where do you want the search bar?
-        layer: featuresLayer,
-        propertyName: 'nom',
-        initial: false,
-        marker: false,
-        textPlaceholder: 'Search by departement', // placeholder while nothing is searched
-        collapsed: false,
-        moveToLocation: function(latlng, title, map) {
-            //map.fitBounds( latlng.layer.getBounds() );
-            var zoom = map.getBoundsZoom(latlng.layer.getBounds());
-            map.setView(latlng, zoom); // access the zoom
-        }
-        //sourceData : '../../data/_stations.json'
-    });
-
-    controlSearch.on('search:locationfound', function(e) {
-        if(e.layer._popup)
-            e.layer.openPopup();
-    }).on('search:collapsed', function(e) {
-        featuresLayer.eachLayer(function(layer) {
-            featuresLayer.resetStyle(layer);
-        });
-    });
-
-
-    map.addControl(controlSearch); // add it to the map
-
-    // Testing: show paths test.
 }
 
 function whenDocumentLoaded(action) {
@@ -225,6 +186,7 @@ function showLegend(budget) {
 }
 
 function showPathsFromStop(stop_name) {
+    document.getElementById('destsList').innerHTML = '';
     pathsLayer.clearLayers();
     if (typeof stop_name === "undefined")
         stop_name = starting_stop
@@ -246,26 +208,33 @@ function showPathsFromStop(stop_name) {
         }).addTo(pathsLayer);
         for (let dest of resp.paths) {
             var pointList = [start_point];
-            // var dest_name;
-            var tooltip_text = starting_stop + ', ';
+            var dest_name;
+            var stopsList = [];
             for (let path_part of dest.segments) {
                 // var start_name = path_part[0];
                 var end_name = path_part[1];
-                tooltip_text += end_name + ', ';
-                // dest_name = end_name;
-                // var dep_time = path_part[3];
-                // var arr_time = path_part[4];
-                var end_lat = path_part[5];
-                var end_lon = path_part[6];
+                dest_name = end_name;
+                var part_cost = path_part[2];
+                var part_duration = path_part[3];
+                var end_lat = path_part[4];
+                var end_lon = path_part[5];
+                stopsList.push({
+                    cost: part_cost,
+                    duration: part_duration,
+                    name: end_name
+                });
                 var point = new L.LatLng(end_lat, end_lon);
                 pointList.push(point);
             }
+            var start = {name: starting_stop, cost: dest.first_cost, duration: dest.first_duration};
+            addToDestsList(start, stopsList, dest_name, dest.cost, dest.duration, budget);
             var polyline = new L.Polyline(pointList, {
                 color: getColorForCost(dest.cost, budget),
                 weight: 4,
             });
             polyline.addTo(pathsLayer);
-            tooltip_text += '€' + dest.cost.toFixed(1);
+            var tooltip_text = `${starting_stop} to ${dest_name} (€${dest.cost.toFixed(1)})`;
+            var polylineID = `${starting_stop}${dest_name}`;
             polyline.bindTooltip(tooltip_text);
             polyline.on('mouseover', function(e) {
                 this.setStyle({weight: 10});
@@ -275,12 +244,83 @@ function showPathsFromStop(stop_name) {
             polyline.on('mouseout', function() {
                 this.setStyle({weight: 4});
             });
+            polyline.on('click', ((id) => {
+                return () => {
+                    rightSidebar.open('rightHome');
+                    var div = destDivs.get(id)
+                    M.Collapsible.getInstance(div).open()
+                    setTimeout(() => {
+                        div.scrollIntoView(true);
+                    }, 200);
+                }
+            })(polylineID));
+            polylines.set(polylineID, polyline);
         }
         pathsLayer.addTo(map);
+        reverseDestsList();
+        refreshCollapsible();
     });
 }
 
+function getHumanReadableTime(mins) {
+    var hours = Math.floor(mins / 60);
+    var minutes = mins - (hours * 60);
+    var duration;
+    if (hours > 0) {
+        duration = `${hours}h ${minutes}m`;
+    } else {
+        duration = `${minutes} min`;
+    }
+    return duration;
+}
+
+async function refreshCollapsible() {
+    $('.collapsible').collapsible();
+}
+
+function reverseDestsList() {
+    var element = document.getElementById('destsList');
+    var children = element.childNodes;
+    for(var i = children.length - 1; i >= 0; i--) {
+        var child = element.removeChild(children[i]);
+        element.appendChild(child);
+    }
+}
+
+function addToDestsList(start, stopsList, dest_name, dest_cost, dest_duration, budget) {
+    var stopsNames = '';
+    var item = document.createElement('li');
+    item.innerHTML = start.name;
+    var stop_duration = getHumanReadableTime(start.duration);
+    item.setAttribute('customData', `${stop_duration}\r\n€${start.cost}`);
+    stopsNames += item.outerHTML;
+    for (let stop of stopsList) {
+        item = document.createElement('li');
+        item.innerHTML = stop.name;
+        stop_duration = getHumanReadableTime(stop.duration);
+        item.setAttribute('customData', `${stop_duration}\r\n€${stop.cost}`);
+        stopsNames += item.outerHTML;
+    }
+    var duration = getHumanReadableTime(dest_duration);
+    var wrapper = document.createElement('div');
+    var price = dest_cost.toFixed(1);
+    var bgColor = getColorForCost(dest_cost, budget);
+    var polylineID = `${start.name}${dest_name}`;
+    wrapper.innerHTML = `<ul id="destsList" class="collapsible popout"><li><div style="background-color:${bgColor}" class="collapsible-header"><div class="destContainer"><i class="material-icons">place</i>${dest_name}<div class="destChild"><div class="destEnd">€${price}</div><div class="destEnd">${duration}</div></div></div></div><div class="collapsible-body destList"><ul>${stopsNames}</ul></div></li></ul>`;
+    var div = wrapper.firstChild;
+    div.addEventListener('mouseover', () => {
+        polylines.get(polylineID).setStyle({weight: 10});
+    });
+    div.addEventListener('mouseout', () => {
+        polylines.get(polylineID).setStyle({weight: 4});
+    });
+    destDivs.set(polylineID, div);
+    document.getElementById('destsList').appendChild(div);
+}
+
 function setupPage() {
+    loadAutocomplete();
+    $('.collapsible').collapsible();
     $('#budget').on('input change', () => {
         var budget = document.getElementById('budget').value;
         document.getElementById('budgetValue').innerHTML = '€' + budget;
@@ -322,6 +362,5 @@ function selectCurrentlyFocusedCity() {
 
 whenDocumentLoaded(() => {
     setupMap();
-    loadAutocomplete()
     setupPage();
 });

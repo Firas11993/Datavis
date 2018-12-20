@@ -1,6 +1,13 @@
+#sidebar {
+  top: 13em;
+}
+
+#rightSidebar {
+}
+
 .leaflet-sidebar {
   position: absolute;
-  top: 13em;
+  top: 15px;
   bottom: 0;
   width: 100%;
   overflow: hidden;
@@ -136,6 +143,7 @@
   width: 40px;
   height: 40px;
   text-align: center;
+  padding-top: 10px;
   cursor: pointer; }
   .leaflet-sidebar-left .leaflet-sidebar-close {
     right: 0; }
