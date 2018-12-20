@@ -23,30 +23,37 @@ function debounce(func, wait, immediate) {
     };
 };
 
+var focused_stop;
 function onStationClick(station) {
+    focused_stop = station.Name;
+    document.getElementById('sidebarWelcomeText').classList.add('hidden');
+    document.getElementById('sidebarContent').classList.remove('hidden');
+    document.getElementById('sidebarHeader').innerHTML = station.Name;
     sidebar.open('home');
     var url = new URL(`${API_URL}/get_station_info/${station.Name}`)
-    var template = () => `<h1>${station.Name}</h1>${content}`;
-    var content = `  <b>(Commune: ${station.Commune})<b>`;
-    content += '<br><button onclick="showPathsFromStop(\'' + station.Name + '\')">Set starting location</button>';
     var wikiurl = "https://en.wikipedia.org/api/rest_v1/page/summary/";
-    var sidebarContent = document.getElementById("sidebarContent");
     fetch(url).then(async function(response) {
         return response.json();
     }).then(function(resp) {
         if (resp.important) {
-            content += '<h2>Interesting locations:</h2>';
+            document.getElementById('normalStopInfo').classList.add('hidden');
+            document.getElementById('interestingStopInfo').classList.remove('hidden');
+            var content = '';
             for (let [city, tags] of Object.entries(resp.cities)) {
-                content += `<li>${city} <span>`;
-                content += tags.map(item => `<span class="tag ${item}">${item}</span>`).join('');
+                content += `<li class="intloc">${city} <span>`;
+                content += tags.map(item => `<span class="tag ${item}">${item == 'ArtH' ? 'City of arts & history' : 'Historic monuments' }</span>`).join('');
                 content += '</span></li>';
                 if (wikiurl.endsWith('/'))
                     wikiurl += city;
             }
+            document.getElementById('intlocslist').innerHTML = content;
+        } else {
+            document.getElementById('normalStopInfo').classList.remove('hidden');
+            document.getElementById('interestingStopInfo').classList.add('hidden');
         }
-
-        sidebarContent.innerHTML = template()
-    }).then(function(){
+    });
+    /*
+        .then(function(){
         fetch(new URL(wikiurl)).then(async function(response) {
 
             return response.json();
@@ -65,10 +72,7 @@ function onStationClick(station) {
 
         });
     });
-
-
-
-    return template();
+    */
 }
 
 // Source: <https://stackoverflow.com/a/321527/1460652>
@@ -101,6 +105,7 @@ function setupMap() {
         autopan: false,       // whether to maintain the centered map point when opening the sidebar
         closeButton: true,    // whether t add a close button to the panes
     }).addTo(map);
+    sidebar.open('home');
 
 
     map.setView(new L.LatLng(lat, lng), zoom);
@@ -308,6 +313,11 @@ function setStopFromInput() {
     } else {
         alert('Unknown stop selected: "' + stop_name + '".\nPlease select a valid stop.');
     }
+}
+
+function selectCurrentlyFocusedCity() {
+    starting_stop = focused_stop;
+    showPathsFromStop();
 }
 
 whenDocumentLoaded(() => {

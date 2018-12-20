@@ -79,8 +79,26 @@
             <!-- Tab panes -->
             <div class="leaflet-sidebar-content">
                 <div class="leaflet-sidebar-pane" id="home">
-                    <h1 class="leaflet-sidebar-header">Summary</h1>
-                    <span id="sidebarContent" style="color:black"><br>Select a starting location to get started.<br><br>To do so, you can use the <strong>search bar above</strong>, or just <strong>click on any station on the map</strong>.</span>
+                    <h1 id="sidebarHeader" class="leaflet-sidebar-header">Welcome!</h1>
+                    <span id="sidebarWelcomeText" style="color:black"><br>Select a starting location to get started.<br><br>To do so, you can use the <strong>search bar above</strong>, or just <strong>click on any station on the map</strong>.</span>
+                    <span id="sidebarContent" class="hidden">
+                        <div id="interestingStopInfo">
+                            <button class="customButton" onclick="selectCurrentlyFocusedCity()">Set as starting location</button>
+                            <h2 id="intlocsHeader">Interesting cities nearby:</h2>
+                            <ul id="intlocslist">
+                                <!-- <li class="intloc">City name <span class="tag ArtH">City of arts and history</span></li>
+                                <li class="intloc">City name <span class="tag ArtH">City of arts and history</span><span class="tag Hist">Historic city</span></li>
+                                <li class="intloc">City name <span class="tag Hist">Historic city</span></li>
+                                <li class="intloc">City name <span class="tag ArtH">City of arts and history</span></li> -->
+                            </ul>
+                            Click on a city's name to learn more about it.
+                        </div>
+                        <div id="normalStopInfo">
+                            There are no interesting locations near this stop, but there might be something nearby!
+                            <br><br>
+                            <button class="sidedivButton" onclick="selectCurrentlyFocusedCity()">Set as starting location</button>
+                        </div>
+                    </span>
                     <div class="leaflet-sidebar-close"><i class="fa fa-caret-left"></i></div>
                 </div>
 

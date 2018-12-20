@@ -38,6 +38,14 @@ html, body {
     color : black;
 }
 
+.intloc {
+    margin-top: 4px;
+}
+
+.intloc:first-child {
+    margin-top: 0;
+}
+
 .tag {
     margin-left: .5em;
     align-items: center;
@@ -55,13 +63,13 @@ html, body {
 }
 
 .Hist {
-    background-color: #3498db;
-    color: #ecf0f1;
+    border: 1px solid #3498db;
+    color: #3498db;
 }
 
 .ArtH {
-    background-color: #9b59b6;
-    color: #ecf0f1;
+    border: 1px solid #9b59b6;
+    color: #9b59b6;
 }
 
 .gradient {
@@ -269,3 +277,34 @@ html, body {
     #ccc 20%);
 }
 
+#intlocsHeader {
+    padding-right: 150px;
+}
+
+.customButton {
+    position: absolute;
+    width: 150px;
+    top: 55px;
+    right: 10px;
+    background-color: #008CBA;
+    color: white;
+    padding: 4px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 11px;
+    border-radius: 5px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    border: 1px solid transparent;
+}
+
+.customButton:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+.hidden {
+    display: none;
+}

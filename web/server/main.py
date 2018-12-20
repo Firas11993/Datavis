@@ -56,14 +56,14 @@ def get_station_info(name):
     if name in ART_HISTORY_CITIES:
         for city in ART_HISTORY_CITIES[name]:
             info['cities'][city] = ([*info['cities'][city], TAG_ARTHIST] if city in info['cities'] else [TAG_ARTHIST])
-    info['important'] = len(info) > 0
+    info['important'] = len(info['cities']) > 0
     return json.dumps(info)
 
 @app.route('/get_routes_from_source/', methods=['GET'])
 def get_routes_from_source():
     source_name = request.args.get('source_name')
     budget = int(request.args.get('budget'))
-    source_id = STOPS_ID_BY_NAME [source_name]
+    source_id = STOPS_ID_BY_NAME[source_name]
     result = []
     source_station = STATIONS[STATIONS.Name == source_name].iloc[0]
     for dest_id, dest_val in SPECIAL_STOPS_DF.iterrows():
