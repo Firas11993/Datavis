@@ -136,7 +136,10 @@
                     <h1 id="rightSidebarHeader" class="leaflet-sidebar-header">Destinations</h1>
                     <div>
                         <p id="destsWelcome">Destinations that are within your budget will appear here.<br><br>To get started, select a starting location.</p>
-                        <p id="destsInfo" class="hidden" style="text-align:left">Hover to preview; click for more info<span id="destsNum" style="float:right"></span></p>
+                        <div id="destsLoaded" class="hidden">
+                            <p><span id="destsSource" style="text-align:left"></span><span id="destsNum" style="float:right"></span></p>
+                            <p id="destsInfo">Hover on a card to preview path; click for more info</p>
+                        </div>
                         <ul id="destsList" class="collapsible popout">
                         </ul>
                     </div>

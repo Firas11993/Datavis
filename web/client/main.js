@@ -322,7 +322,8 @@ function showPathsFromStop(stop_name) {
         pathsLayer.addTo(map);
         reverseDestsList();
         document.getElementById('destsNum').innerHTML = `${destDivs.size} destinations`;
-        document.getElementById('destsInfo').classList.remove('hidden');
+        document.getElementById('destsSource').innerHTML = `Starting location: ${starting_stop}`;
+        document.getElementById('destsLoaded').classList.remove('hidden');
         document.getElementById('destsWelcome').classList.add('hidden');
         refreshCollapsible();
     });
