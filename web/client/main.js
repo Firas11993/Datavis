@@ -34,9 +34,44 @@ function debounce(func, wait, immediate) {
 var focused_stop;
 function showModal(city) {
     modal.classList.remove('hidden');
-    document.getElementById('modal-header').innerHTML = city;
-    document.getElementById('modal-body').innerHTML = `<p>${city}</p>`;
+    document.getElementById('modal-title').innerHTML = city;
+    document.getElementById('modal-header').scrollIntoView();
+    document.getElementById('monumentsList').innerHTML = '';
+    document.getElementById('overview').innerHTML = '';
+    document.getElementById('overview-image').innerHTML = '';
+
+    var url = new URL(`${API_URL}/get_monuments/${city}`)
+    fetch(url).then(async function(response) {
+        return response.json();
+    }).then(function(resp) {
+        if (resp.length == 0) {
+            document.getElementById('monumentsListContainer').classList.add('hidden');
+        } else {
+            document.getElementById('monumentsListContainer').classList.remove('hidden');
+            var content = '';
+            for (let monument of resp) {
+                var img = `https://${monument[4]}`;
+                content += `<li class="monumentItem collection-item card"><div class="card-image"><img src="${img}"><span class="card-title">${monument[0].split(',')[0]}</span></div><div class="card action"><a href="${monument[3]}" target="_blank" class="secondary-content"><i class="fa fa-wikipedia-w">&nbsp;</i></a></div></li>`
+            }
+            document.getElementById('monumentsList').innerHTML = content;
+        }
+    });
+    var wikiurl = `https://en.wikipedia.org/api/rest_v1/page/summary/${city}`;
+    fetch(wikiurl).then(async function(response) {
+        return response.json();
+    }).then(function(resp) {
+        if ('originalimage' in resp) {
+            document.getElementById('overview-image').src = resp.originalimage.source;
+        }
+        if ('extract' in resp) {
+            content = '';
+            for (let descr of resp.extract)
+                content +=  descr;
+        }
+        document.getElementById('overview').innerHTML = content;
+    });
 }
+
 function onStationClick(station) {
     focused_stop = station.Name;
     document.getElementById('sidebarWelcomeText').classList.add('hidden');
@@ -44,7 +79,6 @@ function onStationClick(station) {
     document.getElementById('sidebarHeader').innerHTML = station.Name;
     sidebar.open('home');
     var url = new URL(`${API_URL}/get_station_info/${station.Name}`)
-    var wikiurl = "https://en.wikipedia.org/api/rest_v1/page/summary/";
     fetch(url).then(async function(response) {
         return response.json();
     }).then(function(resp) {
@@ -61,8 +95,6 @@ function onStationClick(station) {
                 var li = wrapper.firstChild;
                 li.addEventListener('click', () => { showModal(city); });
                 content.appendChild(li);
-                if (wikiurl.endsWith('/'))
-                    wikiurl += city;
             }
             document.getElementById('intlocslist').innerHTML = '';
             document.getElementById('intlocslist').appendChild(content);
@@ -71,27 +103,6 @@ function onStationClick(station) {
             document.getElementById('interestingStopInfo').classList.add('hidden');
         }
     });
-    /*
-        .then(function(){
-        fetch(new URL(wikiurl)).then(async function(response) {
-
-            return response.json();
-        }).then(function(resp) {
-
-            if ('extract' in resp) {
-                content += '<h2>Summary:</h2><p>';
-                for (let descr of resp.extract)
-                    content +=  descr ;
-
-                content += '</p>';
-            }
-
-            wikiurl = "https://en.wikipedia.org/api/rest_v1/page/summary/";
-            sidebarContent.innerHTML = template()
-
-        });
-    });
-    */
 }
 
 // Source: <https://stackoverflow.com/a/321527/1460652>

@@ -8,6 +8,7 @@ TAG_HIST = 'Hist'
 TAG_ARTHIST = 'ArtH'
 print('Loading data...')
 STATIONS = pd.read_csv(DATA_DIR + '_stations.csv').dropna()
+MONUMENTS = pd.read_csv(DATA_DIR + '_monuments.csv')
 with open(DATA_DIR + '_historic_cities.json') as infile:
     HISTORIC_CITIES = json.load(infile)
 with open(DATA_DIR + '_art_history_cities.json') as infile:
@@ -96,6 +97,11 @@ def get_routes_from_source():
     return json.dumps({'start_lat': source_station.Latitude,
                        'start_lon': source_station.Longitude,
                        'paths': result})
+
+@app.route('/get_monuments/<name>', methods=['GET'])
+def get_monuments(name):
+    mons = MONUMENTS[MONUMENTS.City == name][['Name', 'Status', 'Date', 'Link', 'Image']]
+    return json.dumps(mons.values.tolist())
 
 @app.after_request
 def after_request(response):

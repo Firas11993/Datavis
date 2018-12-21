@@ -423,6 +423,8 @@ h2 {
     background-color: #fefefe;
     border: 1px solid #888;
     width: 80%;
+    height: 80%;
+    overflow-y: auto;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
@@ -453,4 +455,40 @@ h2 {
 
 .modal-body {
     padding: 2px 16px;
+}
+
+#monumentsList {
+    min-height: 400px;
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.monumentItem {
+    width: 250px;
+    flex: 0 0 auto;
+    margin: 5px;
+    border: 1px solid #e0e0e0 !important;
+    margin: 5px !important;
+}
+
+.card-title {
+    padding: 4px !important;
+    margin: 4px !important;
+    font-size: 1em !important;
+    font-weight: bold !important;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+#overview-image {
+    max-height: 55%;
+    max-width: 55%;
+    width: auto;
+    height: auto;
+    margin: auto;
+    display: block;
 }

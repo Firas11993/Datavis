@@ -11,7 +11,7 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ==" crossorigin="" />
         <link rel="stylesheet" href="leaflet-sidebar.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
@@ -29,11 +29,19 @@
     <body>
         <div id="modal-dialog" class="modal-dialog hidden">
             <div class="modal-content">
-                <div class="modal-header">
+                <div id="modal-header" class="modal-header">
                     <span id="modal-close" class="modal-close">&times;</span>
-                    <h2 id="modal-header">Title</h2>
+                    <h2 id="modal-title">Title</h2>
                 </div>
                 <div id="modal-body" class="modal-body">
+                    <h2>Overview</h2>
+                    <p id="overview"></p>
+                    <img id="overview-image">
+                    <div id="monumentsListContainer">
+                        <h2>List of monuments</h2>
+                        <ul id="monumentsList" class="collection">
+                    </div>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -103,8 +111,7 @@
                             Click on a city's name to learn more about it.
                         </div>
                         <div id="normalStopInfo">
-                            There are no interesting locations near this stop, but there might be something nearby!
-                            <br><br>
+                            <p>There are no interesting locations near this stop, but there might be something nearby!</p>
                             <button class="sidedivButton" onclick="selectCurrentlyFocusedCity()">Set as starting location</button>
                         </div>
                     </span>
