@@ -1,4 +1,4 @@
-#Exploratory data analysis
+Exploratory data analysis
 
 
 Initial data viz / making sure our idea is feasible:
@@ -21,7 +21,7 @@ Links:
 Link 1: <https://fr.wikipedia.org/wiki/Villes_et_Pays_d'art_et_d'histoire>
 Link 2: <https://fr.wikipedia.org/w/?title=Liste_des_monuments_historiques_par_commune_fran%C3%A7aise>
 
-#Design
+Design
 
 To visualize our data, we chose to display a map as this is the type of visualization that makes the most sense for our aim.
 
