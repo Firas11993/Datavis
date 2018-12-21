@@ -313,10 +313,6 @@ h2 {
     border: 1px solid black;
 }
 
-.hidden {
-    display: none;
-}
-
 #attrib {
     position: absolute;
     z-index: 500;
@@ -513,4 +509,8 @@ h2 {
 
 .sidebar.collapsed > .sidebar-content {
     overflow: hidden; 
+}
+
+.hidden {
+    display: none;
 }

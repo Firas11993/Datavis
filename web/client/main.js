@@ -518,6 +518,12 @@ function setupMap() {
         container: 'rightSidebar',
         position: 'right',
     }).addTo(map);
+
+    // Hide sidebar contents when they're closed to avoid clipping issue.
+    sidebar.on('closing', () => { setTimeout(() => { document.getElementById('sidebar-inner').classList.add('hidden'); }, 400) });
+    sidebar.on('opening', () => { document.getElementById('sidebar-inner').classList.remove('hidden'); });
+    rightSidebar.on('closing', () => { setTimeout(() => { document.getElementById('right-sidebar-inner').classList.add('hidden'); }, 400) });
+    rightSidebar.on('opening', () => { document.getElementById('right-sidebar-inner').classList.remove('hidden'); });
 }
 
 // Loads the autocompletion for the stations' names ("Starting location" input
