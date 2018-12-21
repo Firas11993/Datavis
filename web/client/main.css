@@ -350,7 +350,7 @@ h2 {
     margin: 0 auto;
     list-style-type: none;
     margin: 0;
-    margin-left: 20px;
+    margin-left: 60px;
     font-family: sans-serif;
 }
 
@@ -365,39 +365,39 @@ h2 {
     top: 0;
     left: 0;
     content: "";
-    border: 2px solid #008CBA;
+    border: 2px solid currentColor;
     border-radius: 50%;
     display: inline-block;
     height: 13px;
     width: 13px;
     text-align: center;
     line-height: 13px;
-    background: #008CBA;
+    background: currentColor;
 }
 
 .destList ul li:before {
     position: absolute;
-    left: -40px;
-    top: 0;
+    left: -78.5px;
+    top: -46px;
     text-align: center;
-    padding-top: 15px;
+    padding-top: 8px;
     content: attr(customData);
     height: 100%;
-    width: 46px;
-    border-right: 2px solid #008CBA;
+    width: 86px;
+    border-right: 2px solid currentColor;
     white-space: pre;
 }
 
-.destList ul li:last-of-type:before {
+.destList ul li:first-of-type:before {
     border: none;
     content: "";
-}
-
-.destList ul li:last-of-type{
-    padding-bottom: 0;
 }
 
 .collapsible-header {
     color: white;
     font-weight: bold;
+}
+
+.collapsible-body {
+    padding-bottom: 0;
 }

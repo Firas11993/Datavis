@@ -226,8 +226,7 @@ function showPathsFromStop(stop_name) {
                 var point = new L.LatLng(end_lat, end_lon);
                 pointList.push(point);
             }
-            var start = {name: starting_stop, cost: dest.first_cost, duration: dest.first_duration};
-            addToDestsList(start, stopsList, dest_name, dest.cost, dest.duration, budget);
+            addToDestsList(starting_stop, stopsList, dest_name, dest.cost, dest.duration, budget);
             var polyline = new L.Polyline(pointList, {
                 color: getColorForCost(dest.cost, budget),
                 weight: 4,
@@ -287,25 +286,30 @@ function reverseDestsList() {
     }
 }
 
-function addToDestsList(start, stopsList, dest_name, dest_cost, dest_duration, budget) {
-    var stopsNames = '';
+function getStopsDetailsHTML(name, duration, cost, cumCost, budget) {
     var item = document.createElement('li');
-    item.innerHTML = start.name;
-    var stop_duration = getHumanReadableTime(start.duration);
-    item.setAttribute('customData', `${stop_duration}\r\n€${start.cost}`);
-    stopsNames += item.outerHTML;
+    item.innerHTML = name;
+    var stop_duration = getHumanReadableTime(duration);
+    item.setAttribute('customData', `${stop_duration}\r\n€${cost}`);
+    var color = getColorForCost(cumCost, budget);
+    item.style.color = color;
+    return item.outerHTML;
+}
+
+function addToDestsList(start_name, stopsList, dest_name, dest_cost, dest_duration, budget) {
+    var stopsNames = '';
+    var cumCost = 0;
+    console.log(stopsList);
+    stopsNames += getStopsDetailsHTML(start_name, 0, 0, cumCost, budget);
     for (let stop of stopsList) {
-        item = document.createElement('li');
-        item.innerHTML = stop.name;
-        stop_duration = getHumanReadableTime(stop.duration);
-        item.setAttribute('customData', `${stop_duration}\r\n€${stop.cost}`);
-        stopsNames += item.outerHTML;
+        cumCost += stop.cost;
+        stopsNames += getStopsDetailsHTML(stop.name, stop.duration, stop.cost, cumCost, budget);
     }
     var duration = getHumanReadableTime(dest_duration);
     var wrapper = document.createElement('div');
     var price = dest_cost.toFixed(1);
+    var polylineID = `${start_name}${dest_name}`;
     var bgColor = getColorForCost(dest_cost, budget);
-    var polylineID = `${start.name}${dest_name}`;
     wrapper.innerHTML = `<ul id="destsList" class="collapsible popout"><li><div style="background-color:${bgColor}" class="collapsible-header"><div class="destContainer"><i class="material-icons">place</i>${dest_name}<div class="destChild"><div class="destEnd">€${price}</div><div class="destEnd">${duration}</div></div></div></div><div class="collapsible-body destList"><ul>${stopsNames}</ul></div></li></ul>`;
     var div = wrapper.firstChild;
     div.addEventListener('mouseover', () => {
