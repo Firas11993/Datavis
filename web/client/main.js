@@ -26,6 +26,10 @@ let oldFocusedName;
 let oldFocusedLatLng;
 let stationsNamesList;
 
+// The first time the user uses the tool, we want the right sidebar to expand
+// to let the user know it exists.
+let firstStart = true;
+
 
 // Source: <https://davidwalsh.name/javascript-debounce-function>
 // Returns a function, that, as long as it continues to be invoked, will not
@@ -404,6 +408,10 @@ function showPathsFromStop(stopName) {
         document.getElementById('destsSource').innerHTML = `Starting location: ${startingStop}`;
         document.getElementById('destsLoaded').classList.remove('hidden');
         document.getElementById('destsWelcome').classList.add('hidden');
+        if (firstStart) {
+            firstStart = false;
+            rightSidebar.open('rightHome');
+        }
         refreshCollapsible();
     });
 }
