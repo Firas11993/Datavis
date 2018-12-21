@@ -208,7 +208,7 @@ function highlightFocusedMarker() {
         stopMarker.on('click', partial(onStationClick, stopMarker));
         stopMarker.addTo(mapMarkers);
         stopMarker.setStyle({
-            radius: stopMarker._radius * 1.5,
+            radius: map.getZoom() * 1.5,
             color: COLOR_BEST,
             fillColor: COLOR_BEST,
             fillOpacity: 1
@@ -216,7 +216,7 @@ function highlightFocusedMarker() {
     } else {
         // The marker's already shown, we just need to style it appropriately.
         marker.setStyle({
-            radius: marker._radius * 1.5,
+            radius: map.getZoom() * 1.5,
             color: COLOR_BEST,
             fillColor: COLOR_BEST,
             fillOpacity: 1
