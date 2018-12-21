@@ -9,6 +9,7 @@ var modal;
 var focused_marker;
 var old_focused_style;
 var old_focused_name;
+var old_focused_latlng;
 
 // Source: <https://davidwalsh.name/javascript-debounce-function>
 // Returns a function, that, as long as it continues to be invoked, will not
@@ -195,6 +196,8 @@ function setupMap() {
 
     map.on('moveend', () => { showBounds(); });
     showBounds()
+
+    pathsLayer.addTo(map);
 }
 
 function whenDocumentLoaded(action) {
@@ -256,7 +259,6 @@ function highlightFocusedMarker() {
     }
 }
 
-var old_focused_latlng;
 function setFocusedMarker(name) {
     var marker = stopMarkers.get(old_focused_name);
     if (typeof marker !== "undefined") {
@@ -319,8 +321,9 @@ function showPathsFromStop(stop_name) {
             var polyline = new L.Polyline(pointList, {
                 color: getColorForCost(dest.cost, budget),
                 weight: 4,
+                snakingSpeed: 100
             });
-            polyline.addTo(pathsLayer);
+            polyline.addTo(pathsLayer).snakeIn();
             var tooltip_text = `${starting_stop} to ${dest_name} (€${dest.cost.toFixed(1)})`;
             var polylineID = `${starting_stop}${dest_name}`;
             polyline.bindTooltip(tooltip_text);
@@ -344,7 +347,6 @@ function showPathsFromStop(stop_name) {
             })(polylineID));
             polylines.set(polylineID, polyline);
         }
-        pathsLayer.addTo(map);
         reverseDestsList();
         document.getElementById('destsNum').innerHTML = `${destDivs.size} destinations`;
         document.getElementById('destsSource').innerHTML = `Starting location: ${starting_stop}`;
