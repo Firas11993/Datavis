@@ -1,65 +1,95 @@
-# Project Description
+Interactive Trip Planner
+========================
 
-- Let's say you are a student with a limited budget, but you still want to have
-  fun on your vacation and feed your passion for travelling and discovering new
-  places and people.  
-  In that case, this application should be very useful for you if you want to
-  travel around France. 
-- On the map, you can see all the stops of historical cities with blue markers.
-  If you zoom in, you can also see other stops of "non-historic" cities.  
-  You can select your budget for the train ticket by using the scroller on the
-  top left corner and the starting station by filling the text box right above
-  it.
-- Clicking on a stop will show some additional information on a sidebar to the
-  left, such as, the interesting cities near the selected stop.
-- You can click on a city name that appears in the left sidebar for a Wikipedia
-  summary of the city as well as a list of monuments... You can also click on
-  the button "set starting location" to select it as a starting station as an
-  alternative to entering the station name in the text box.
-- By selecting the starting station, you should see all the possible routes you
-  could take with the chosen budget. The colors used for the edges reflect the
-  price of the trip to a linked station. The closer the color to red the closer
-  it is to your limit budget. Similarity, the closer it is to green the closer
-  the trip price is to 0. This is also explained in the legend that appears
-  right next to the scroller.
-- You can also see all the important reachable cities by looking at the content
-  of the sidebar to the right as well as seeing them by placing the mouse on an
-  edge.
-- By clicking on a specific destination on the right sidebar you can see more
-  detailed intermediate important stops with information about ticket price and
-  duration from one stop to the next. Another option is to click on an edge to
-  directly obtain the view on the intermediate stops.
+Introduction
+------------
 
-# Files
+Is traveling and discovering new places and people your passion?  
+Do you want to feed that passion without burning through your pocket?
 
-- `preprocessing/data/` directory: contains input datasets and cleaned datasets we generated
-  (denoted by a starting `_`).
-- `web/` directory: contains the web demo (client + server).
-- `preprocessing_1_stations.ipynb`: pre-processing of the stations datasets.
-  Output: a cleaned stations dataset with the columns we care about and
-  easy-to-use names.
-- `preprocessing/preprocessing_2_tgv.ipynb`: pre-processing of TGV prices for the given
-  origins/departures. Output: a cleaned TGV prices dataset with well-separated
-  and cleaned origin/destination names and prices.
-- `preprocessing/preprocessing/preprocessing_3_intercity.ipynb`: pre-processing of intercity prices for the
-  given origins and destinations. Output: a cleaned intercity prices dataset
-  with cleaned origin/destination names and prices.
-- `preprocessing/preprocessing_4_build_graph.ipynb`: builds a basic graph from the above
-  cleaned datasets and shows a starting example.
-- `preprocessing/preprocessing_lane_lines_from_geojson.ipynb`: get lane/track lines (with
-  curves) from the GeoJSON file containing all lane/track points (separately)
-  in a way that can be used to draw the path from a departure station to a
-  destination.
-- `preprocessing/get_wikipedia_data.ipynb`: determine "important" cities from Wikipedia, and
-  their list of historic monuments where applicable.
-- `preprocessing/compute_durations_intercity_and_ter.ipynb`: get train departure/arrival
-  times and durations per station for intercity and TER.
+As a group of students, this is the situation we found ourselves in: eager to
+go on trips, but with the need to balance our trips and spending.
 
-Note that files whose name begins with `type_<NUM>` must be run in sequence, as
-they may depend on the output of previous files. For example,
-`preprocessing_2_tgv.ipynb` must be run after `preprocessing_1_stations.ipynb`.
+With that in mind, we built this application that lets you visualize and easily
+decide which city to visit in France, based on the budget you want.
 
-# Running the webpage / server
+Usage
+-----
+
+![](web/client/img/screenshot1.jpg)
+
+On the map, you can see all the stops near important cities as blue markers. If
+you zoom in, you can also see other, less important stops. Important cities are
+simply historic cities (cities with historical monuments) or cities that are
+classified by France as [Villes d'Art et
+d'Histoire](https://fr.wikipedia.org/wiki/Villes_et_Pays_d'art_et_d'histoire)
+
+You can select your budget for the trip by using the scroller on the top left
+corner and the starting station by filling the text box right above it. You can
+also select a starting station from the map, by clicking on a city's marker
+then pressing the "Set as starting location" button.
+
+![](web/client/img/screenshot2.jpg)
+
+By selecting the starting station, you should see all the possible routes you
+can take with the chosen budget. The colors used for the edges reflect the
+price of the trip to a linked station. The closer the color to red, the closer
+it is to your limit budget. Similarily, the closer it is to green the cheaper
+the trip price is. Note that you can always check the legend next to the
+scroller.
+
+![](web/client/img/animation.gif)
+
+Clicking on a stop will show some additional information on a sidebar to the
+left, such as interesting cities that can be accessed once you're at selected
+stop.
+
+There, you can click on a nearby city's name in that list to show a short
+summary about the city, as well as a list of monuments you can visit there.
+
+![](web/client/img/screenshot3.jpg)
+
+An alternate view is also offered to view detailed routes info: the right
+sidebar will show you a sorted list, and you can expand a specific route you're
+interested in to view the exact stops and durations/price breakdown.
+Additionally, hovering your mouse on one of the items will preview that path on
+the map (and in reverse, clicking on a path on the map will open that item's
+details view in the right sidebar).
+
+![](web/client/img/screenshot4.jpg)
+
+
+Data viz notes
+--------------
+
+We unfortunately couldn't resolve some issues with the datasets we're using
+(obtained from [SNCF](https://data.sncf.com/explore/)).  
+This is mostly due to (1) incomplete or outdated data offered by SNCF; (2)
+severe inconsistencies between the data sources.  
+We also had to use the full prices for the tickets, as that was the only
+consistent data point we could access. You might notice that your favorite
+metro stop is missing, or that some routing paths are not present when they
+should be.  
+We did our best to fix as many of these issues as possible, and hope you'll
+enjoy interacting with our tool. (In case we find more consistent data sources,
+we'd also love to adapt our tool to use these instead.)
+
+-------------------------------------------------------------------------------
+
+Files
+------
+
+For details, please refer to the process book (`process_book.pdf`)).
+
+- `preprocessing/` directory: contains the notebooks we used for
+  pre-processing.
+- `preprocessing/data` directory: the pre-processed data used by our server.
+- `web/client` directory: contains the web client (blog-style short article +
+  data viz).
+- `web/server` directory: the server component of our data viz.
+
+Running the webpage / server
+----------------------------
 
 Our data viz has two components, a client and a server. Running the server is
 done by using Flask from the `web/server` directory:
@@ -71,7 +101,8 @@ $ FLASK_APP=main.py flask run
 Once the server is running, you can simply open `index.html` from the
 `web/client` directory.
 
-# Dependencies
+Dependencies
+------------
 
 Server dependencies:
 
