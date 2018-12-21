@@ -493,3 +493,7 @@ h2 {
     margin: auto;
     display: block;
 }
+
+.thumb {
+    display: none;
+}
