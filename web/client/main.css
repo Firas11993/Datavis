@@ -292,7 +292,7 @@ h2 {
 .custom-button {
     position: absolute;
     width: 150px;
-    top: 55px;
+    top: 15px;
     right: 10px;
     background-color: #008CBA;
     color: white;
@@ -496,4 +496,21 @@ h2 {
 
 .thumb {
     display: none;
+}
+
+.sidebar-inner {
+    min-width: 460px;
+    position: absolute;
+    display: inline-block;
+    top: 40px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 8px;
+    background-color: rgba(255, 255, 255, 0.95);
+    overflow: auto;
+}
+
+.sidebar.collapsed > .sidebar-content {
+    overflow: hidden; 
 }

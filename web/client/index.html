@@ -85,20 +85,22 @@
             <div class="leaflet-sidebar-content">
                 <div class="leaflet-sidebar-pane" id="home">
                     <h1 id="sidebar-header" class="leaflet-sidebar-header">Welcome!</h1>
-                    <span id="sidebar-welcome-text" style="color:black"><br>Select a starting location to get started.<br><br>To do so, you can use the <strong>search bar above</strong>, or just <strong>click on any station on the map</strong>.</span>
-                    <span id="sidebar-content" class="hidden">
-                        <div id="interesting-stop-info">
-                            <button class="custom-button" onclick="selectCurrentlyFocusedStop()">Set as starting location</button>
-                            <h2 id="intlocs-header">Interesting cities nearby:</h2>
-                            <ul id="intlocslist" class="browser-default">
-                            </ul>
-                            Click on a city's name to learn more about it.
-                        </div>
-                        <div id="normal-stop-info">
-                            <p>There are no interesting locations near this stop, but there might be something nearby!</p>
-                            <button class="sidediv-button" onclick="selectCurrentlyFocusedStop()">Set as starting location</button>
-                        </div>
-                    </span>
+                    <div class="sidebar-inner">
+                        <span id="sidebar-welcome-text" style="color:black"><br>Select a starting location to get started.<br><br>To do so, you can use the <strong>search bar above</strong>, or just <strong>click on any station on the map</strong>.</span>
+                        <span id="sidebar-content" class="hidden">
+                            <div id="interesting-stop-info">
+                                <button class="custom-button" onclick="selectCurrentlyFocusedStop()">Set as starting location</button>
+                                <h2 id="intlocs-header">Interesting cities nearby:</h2>
+                                <ul id="intlocslist" class="browser-default">
+                                </ul>
+                                Click on a city's name to learn more about it.
+                            </div>
+                            <div id="normal-stop-info">
+                                <p>There are no interesting locations near this stop, but there might be something nearby!</p>
+                                <button class="sidediv-button" onclick="selectCurrentlyFocusedStop()">Set as starting location</button>
+                            </div>
+                        </span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -115,7 +117,7 @@
             <div class="leaflet-sidebar-content">
                 <div class="leaflet-sidebar-pane" id="rightHome">
                     <h1 id="rightSidebarHeader" class="leaflet-sidebar-header">Destinations</h1>
-                    <div>
+                    <div class="sidebar-inner">
                         <p id="destsWelcome">Destinations that are within your budget will appear here.<br><br>To get started, select a starting location.</p>
                         <div id="destsLoaded" class="hidden">
                             <p><span id="destsSource" style="text-align:left"></span><span id="destsNum" style="float:right"></span></p>
