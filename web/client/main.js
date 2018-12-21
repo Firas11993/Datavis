@@ -2,68 +2,92 @@ const API_URL = 'http://127.0.0.1:5000'
 const COLOR_BEST = 'green';
 const COLOR_WORST = 'red';
 
-var polylines = new Map();
-var destDivs = new Map();
-var stopMarkers = new Map();
-var modal;
-var focused_marker;
-var old_focused_style;
-var old_focused_name;
-var old_focused_latlng;
+
+// Page elements.
+let map;
+let sidebar;
+let rightSidebar;
+let modal;
+
+// Map elements.
+let pathsLayer; // Stores paths (segments from one stop to another).
+let mapMarkers; // Stores markers (stops' circles on the map).
+let polylines = new Map(); // Used to highlight polylines from a route's details.
+let destDivs = new Map(); // Used to open a route's details from a polyline.
+let stopMarkers = new Map(); // Used to keep the currently focused stop styled.
+
+// Used to track the currently selected stop, and for styling it
+// appropriately/clearing the styling when switching stops.
+let startingStop;
+let focusedStopName;
+let focusedMarker;
+let oldFocusedStyle;
+let oldFocusedName;
+let oldFocusedLatLng;
+let stationsNamesList;
+
 
 // Source: <https://davidwalsh.name/javascript-debounce-function>
 // Returns a function, that, as long as it continues to be invoked, will not
 // be triggered. The function will be called after it stops being called for
 // N milliseconds. If `immediate` is passed, trigger the function on the
 // leading edge, instead of the trailing.
-
 function debounce(func, wait, immediate) {
-    var timeout;
+    let timeout;
     return function() {
-        var context = this, args = arguments;
-        var later = function() {
+        let context = this, args = arguments;
+        let later = function() {
             timeout = null;
             if (!immediate) func.apply(context, args);
         };
-        var callNow = immediate && !timeout;
+        let callNow = immediate && !timeout;
         clearTimeout(timeout);
         timeout = setTimeout(later, wait);
         if (callNow) func.apply(context, args);
     };
 };
 
-var focused_stop;
+// Shows the modal dialog for a given city. The following information is shown:
+// 1. A summary about the city fetched from Wikipedia, as well as a selected
+// photo.
+// 2. The list of monuments that can be found in this city.
 function showModal(city) {
+    // Reset state.
     modal.classList.remove('hidden');
     document.getElementById('modal-title').innerHTML = city;
     document.getElementById('modal-header').scrollIntoView();
-    document.getElementById('monumentsList').innerHTML = '';
+    document.getElementById('monuments-list').innerHTML = '';
     document.getElementById('overview').innerHTML = '';
     document.getElementById('overview-image').innerHTML = '';
 
-    var url = new URL(`${API_URL}/get_monuments/${city}`)
+    // Load monuments list.
+    let url = new URL(`${API_URL}/get_monuments/${city}`)
     fetch(url).then(async function(response) {
         return response.json();
     }).then(function(resp) {
         if (resp.length == 0) {
-            document.getElementById('monumentsListContainer').classList.add('hidden');
+            document.getElementById('monuments-list-container').classList.add('hidden');
         } else {
-            document.getElementById('monumentsListContainer').classList.remove('hidden');
-            var content = '';
+            // Show the monuments, including their image.
+            document.getElementById('monuments-list-container').classList.remove('hidden');
+            let content = '';
             for (let monument of resp) {
-                var img = `https://${monument[4]}`;
-                content += `<li class="monumentItem collection-item card"><div class="card-image"><img src="${img}"><span class="card-title">${monument[0].split(',')[0]}</span></div><div class="card action"><a href="${monument[3]}" target="_blank" class="secondary-content"><i class="fa fa-wikipedia-w">&nbsp;</i></a></div></li>`
+                let img = `https://${monument[4]}`;
+                content += `<li class="monument-item collection-item card"><div class="card-image"><img src="${img}"><span class="card-title">${monument[0].split(',')[0]}</span></div><div class="card action"><a href="${monument[3]}" target="_blank" class="secondary-content"><i class="fa fa-wikipedia-w">&nbsp;</i></a></div></li>`
             }
-            document.getElementById('monumentsList').innerHTML = content;
+            document.getElementById('monuments-list').innerHTML = content;
         }
     });
-    var wikiurl = `https://en.wikipedia.org/api/rest_v1/page/summary/${city}`;
+
+    // Load Wikipedia summary.
+    let wikiurl = `https://en.wikipedia.org/api/rest_v1/page/summary/${city}`;
     fetch(wikiurl).then(async function(response) {
         return response.json();
     }).then(function(resp) {
-        if ('originalimage' in resp) {
+        // Display image.
+        if ('originalimage' in resp)
             document.getElementById('overview-image').src = resp.originalimage.source;
-        }
+        // Display summary.
         if ('extract' in resp) {
             content = '';
             for (let descr of resp.extract)
@@ -73,134 +97,66 @@ function showModal(city) {
     });
 }
 
+// When a station is clicked on the map, opens the sidebar with the following
+// elements:
+// 1. A button to set this stop as the starting location.
+// 2. If this is an important stop (i.e. a stop connected to important cities),
+// then list nearby important cities.
+// 3. If not, then show a general informative message instead.
 function onStationClick(station) {
-    focused_stop = station.Name;
-    document.getElementById('sidebarWelcomeText').classList.add('hidden');
-    document.getElementById('sidebarContent').classList.remove('hidden');
-    document.getElementById('sidebarHeader').innerHTML = station.Name;
+    focusedStopName = station.Name;
+    // Reset state.
+    document.getElementById('sidebar-welcome-text').classList.add('hidden');
+    document.getElementById('sidebar-content').classList.remove('hidden');
+    document.getElementById('sidebar-header').innerHTML = station.Name;
     sidebar.open('home');
-    var url = new URL(`${API_URL}/get_station_info/${station.Name}`)
+    // Fetch station info.
+    let url = new URL(`${API_URL}/get_station_info/${station.Name}`)
     fetch(url).then(async function(response) {
         return response.json();
     }).then(function(resp) {
+        // It's an important stop. We want to show the list of nearby important
+        // cities.
         if (resp.important) {
-            document.getElementById('normalStopInfo').classList.add('hidden');
-            document.getElementById('interestingStopInfo').classList.remove('hidden');
-            var content = document.createElement('div');
+            document.getElementById('normal-stop-info').classList.add('hidden');
+            document.getElementById('interesting-stop-info').classList.remove('hidden');
+            let content = document.createElement('div');
+            // For each important city, we show its named as well as its tags
+            // ("City of arts & history" or "Historic monuments").
             for (let [city, tags] of Object.entries(resp.cities)) {
-                var wrapper = document.createElement('div');
-                var li_content = `<li class="intloc">${city} <span>`;
-                li_content += tags.map(item => `<span class="tag ${item}">${item == 'ArtH' ? 'City of arts & history' : 'Historic monuments' }</span>`).join('');
-                li_content += '</span></li>';
-                wrapper.innerHTML = li_content;
-                var li = wrapper.firstChild;
+                let wrapper = document.createElement('div');
+                let liContent = `<li class="intloc">${city} <span>`;
+                liContent += tags.map(item => `<span class="tag ${item}">${item == 'ArtH' ? 'City of arts & history' : 'Historic monuments' }</span>`).join('');
+                liContent += '</span></li>';
+                wrapper.innerHTML = liContent;
+                let li = wrapper.firstChild;
+                // Clicking a city's name should show more info about it.
                 li.addEventListener('click', () => { showModal(city); });
                 content.appendChild(li);
             }
             document.getElementById('intlocslist').innerHTML = '';
             document.getElementById('intlocslist').appendChild(content);
         } else {
-            document.getElementById('normalStopInfo').classList.remove('hidden');
-            document.getElementById('interestingStopInfo').classList.add('hidden');
+            // It's not an important stop. Just show the general message.
+            document.getElementById('normal-stop-info').classList.remove('hidden');
+            document.getElementById('interesting-stop-info').classList.add('hidden');
         }
     });
 }
 
 // Source: <https://stackoverflow.com/a/321527/1460652>
+// Useful for anonymous functions when we want the variables to be resolved
+// directly.
 function partial(func /*, 0..n args */) {
-    var args = Array.prototype.slice.call(arguments, 1);
+    let args = Array.prototype.slice.call(arguments, 1);
     return function() {
-        var allArguments = args.concat(Array.prototype.slice.call(arguments));
+        let allArguments = args.concat(Array.prototype.slice.call(arguments));
         return func.apply(this, allArguments);
     };
 }
 
-var map;
-var sidebar;
-var rightSidebar;
-var mapMarkers;
-
-function setupMap() {
-    var lat = 46.8;
-    var lng =  0.7;
-    var zoom =  6;
-
-    map = new L.Map('map', {minZoom: 6, maxZoom: 11, zoomControl: false, attributionControl: false});
-    new L.Control.Zoom({position: 'bottomright'}).addTo(map);
-    var osmUrl='http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
-    var osm = new L.TileLayer(osmUrl, {minZoom: 6, maxZoom: 8});
-    map.addLayer(osm);
-
-    sidebar = L.control.sidebar({
-        container: 'sidebar',
-        position: 'left',
-        autopan: false,       // whether to maintain the centered map point when opening the sidebar
-        closeButton: true,    // whether t add a close button to the panes
-    }).addTo(map);
-    sidebar.open('home');
-
-    rightSidebar = L.control.sidebar({
-        container: 'rightSidebar',
-        position: 'right',
-    }).addTo(map);
-
-    map.setView(new L.LatLng(lat, lng), zoom);
-
-    L.geoJson(france_shape, {
-        clickable: false,
-        invert: true,
-        style: { fillColor: '#000', fillOpacity: 0.2, weight: 0 },
-    }).addTo(map);
-
-    L.tileLayer('https://api.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
-        maxZoom: 18,
-        id: 'mapbox.outdoors',
-        accessToken: 'pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw'
-    }).addTo(map);
-
-    mapMarkers = L.layerGroup().addTo(map);
-
-    var showBounds = debounce(function() {
-        var bounds = map.getBounds()
-        var url = new URL(`${API_URL}/get_stations`)
-        var params = {east: bounds.getEast(), west: bounds.getWest(), north: bounds.getNorth(), south: bounds.getSouth(), zoom: map.getZoom()}
-        url.search = new URLSearchParams(params)
-        fetch(url).then(function(response) {
-            return response.json();
-        }).then(function(stations) {
-            mapMarkers.clearLayers()
-            stopMarkers.clear();
-            for (let [id, station] of Object.entries(stations)) {
-                important_city = station.Imp;
-                var stop_marker = L.circleMarker([station.Latitude, station.Longitude], {
-                    radius: important_city && map.getZoom() * 1 || map.getZoom() * 0.5,
-                    color: important_city && '#3498db' || '#95a5a6',
-                    fillColor: important_city && '#3498db' || '#95a5a6',
-                    fillOpacity: 0.2
-                });
-                stopMarkers.set(station.Name, stop_marker);
-                stop_marker.bindTooltip(station.Name);
-                stop_marker.on('mouseover', function(e) {
-                    this.setStyle({radius: this._radius * 1.5});
-                });
-                stop_marker.on('mouseout', function() {
-                    this.setStyle({radius: this._radius / 1.5});
-                });
-                stop_marker.on('click', partial(onStationClick, station));
-                stop_marker.addTo(mapMarkers);
-            }
-            highlightFocusedMarker();
-        });
-    }, 125);
-
-
-    map.on('moveend', () => { showBounds(); });
-    showBounds()
-
-    pathsLayer.addTo(map);
-}
-
-function whenDocumentLoaded(action) {
+// Queues up actions until the document's loaded.
+function onDocumentLoad(action) {
     if (document.readyState === "loading") {
         document.addEventListener("DOMContentLoaded", action);
     } else {
@@ -209,18 +165,17 @@ function whenDocumentLoaded(action) {
     }
 }
 
+// Given a cost and a budget, returns an appropriate color representing it.
 function getColorForCost(cost, budget) {
-    var scale = chroma.scale([COLOR_BEST, COLOR_WORST]).mode('lch').colors(budget);
+    let scale = chroma.scale([COLOR_BEST, COLOR_WORST]).mode('lch').colors(budget);
     return scale[Math.floor(cost)];
 }
 
-var starting_stop;
-var pathsLayer = L.layerGroup();
-
+// Shows a legend based on the budget.
 function showLegend(budget) {
-    var scale = chroma.scale([COLOR_WORST, COLOR_BEST]).mode('lch').colors(budget);
-    var s = '';
-    for (var i = 0; i <= 100; i++) {
+    let scale = chroma.scale([COLOR_WORST, COLOR_BEST]).mode('lch').colors(budget);
+    let s = '';
+    for (let i = 0; i <= 100; i++) {
         s += '<span class="grad-step" style="background-color:' + scale[Math.round(budget * i / 100)] + '"></span>';
     }
     s += '<span class="domain-min">€' + 0 + '</span>';
@@ -228,28 +183,34 @@ function showLegend(budget) {
     document.getElementById("legend").innerHTML = s;
 }
 
+// Highlights the currently focused stop (CircleMarker). This is called
+// whenever there is a change in the map and the stops are reloaded.
 function highlightFocusedMarker() {
-    if (typeof focused_marker === "undefined") return;
-    var marker = stopMarkers.get(focused_marker);
+    if (typeof focusedMarker === "undefined") return;
+    let marker = stopMarkers.get(focusedMarker);
+    // If the selected stop is a small one, it won't be sent by the server when
+    // the user zooms back out. In those cases, we want to draw the marker
+    // anyway because the user has selected it.
     if (typeof marker === "undefined") {
-        var stop_marker = L.circleMarker(old_focused_latlng, old_focused_style);
-        stopMarkers.set(focused_marker, stop_marker);
-        stop_marker.bindTooltip(focused_marker);
-        stop_marker.on('mouseover', function(e) {
+        let stopMarker = L.circleMarker(oldFocusedLatLng, oldFocusedStyle);
+        stopMarkers.set(focusedMarker, stopMarker);
+        stopMarker.bindTooltip(focusedMarker);
+        stopMarker.on('mouseover', function(e) {
             this.setStyle({radius: this._radius * 1.5});
         });
-        stop_marker.on('mouseout', function() {
+        stopMarker.on('mouseout', function() {
             this.setStyle({radius: this._radius / 1.5});
         });
-        stop_marker.on('click', partial(onStationClick, {Name: stop_marker}));
-        stop_marker.addTo(mapMarkers);
-        stop_marker.setStyle({
-            radius: stop_marker._radius * 1.5,
+        stopMarker.on('click', partial(onStationClick, {Name: stopMarker}));
+        stopMarker.addTo(mapMarkers);
+        stopMarker.setStyle({
+            radius: stopMarker._radius * 1.5,
             color: COLOR_BEST,
             fillColor: COLOR_BEST,
             fillOpacity: 1
         });
     } else {
+        // The marker's already shown, we just need to style it appropriately.
         marker.setStyle({
             radius: marker._radius * 1.5,
             color: COLOR_BEST,
@@ -259,107 +220,53 @@ function highlightFocusedMarker() {
     }
 }
 
+// Saves the currently focused stop and clears the old one.
 function setFocusedMarker(name) {
-    var marker = stopMarkers.get(old_focused_name);
+    // Restore the previously focused stop's style.
+    let marker = stopMarkers.get(oldFocusedName);
     if (typeof marker !== "undefined") {
-        marker.setStyle(old_focused_style);
+        marker.setStyle(oldFocusedStyle);
     }
-    focused_marker = name;
+    // Save the soon-to-be-focused stop's style. It'll come in handy when we
+    // want to reset it eventually.
+    focusedMarker = name;
     marker = stopMarkers.get(name);
     if (typeof marker !== "undefined") {
-        old_focused_style = {
+        oldFocusedStyle = {
             color: marker.options.color,
             fillColor: marker.options.fillColor,
             fillOpacity: marker.options.fillOpacity,
             radius: marker.options.radius
         };
-    old_focused_latlng = marker._latlng;
+        oldFocusedLatLng = marker._latlng;
     }
-    old_focused_name = name;
+    oldFocusedName = name;
+    // Set the newly focused style.
     highlightFocusedMarker();
 }
 
-function showPathsFromStop(stop_name) {
-    document.getElementById('destsList').innerHTML = '';
-    pathsLayer.clearLayers();
-    if (typeof stop_name === "undefined")
-        stop_name = starting_stop
-    starting_stop = stop_name;
-    var budget = document.getElementById("budget").value;
-    showLegend(budget);
-    var url = new URL(`${API_URL}/get_routes_from_source`)
-    var params = {source_name: stop_name, budget: budget}
-    url.search = new URLSearchParams(params)
-    fetch(url).then(async function(response) {
-        return response.json();
-    }).then(function(resp) {
-        var start_point = new L.LatLng(resp.start_lat, resp.start_lon);
-        setFocusedMarker(starting_stop);
-        polylines.clear();
-        destDivs.clear();
-        for (let dest of resp.paths) {
-            var pointList = [start_point];
-            var dest_name;
-            var stopsList = [];
-            for (let path_part of dest.segments) {
-                // var start_name = path_part[0];
-                var end_name = path_part[1];
-                dest_name = end_name;
-                var part_cost = path_part[2];
-                var part_duration = path_part[3];
-                var end_lat = path_part[4];
-                var end_lon = path_part[5];
-                stopsList.push({
-                    cost: part_cost,
-                    duration: part_duration,
-                    name: end_name
-                });
-                var point = new L.LatLng(end_lat, end_lon);
-                pointList.push(point);
-            }
-            addToDestsList(starting_stop, stopsList, dest_name, dest.cost, dest.duration, budget);
-            var polyline = new L.Polyline(pointList, {
-                color: getColorForCost(dest.cost, budget),
-                weight: 4,
-                snakingSpeed: 100
-            });
-            polyline.addTo(pathsLayer).snakeIn();
-            var tooltip_text = `${starting_stop} to ${dest_name} (€${dest.cost.toFixed(1)})`;
-            var polylineID = `${starting_stop}${dest_name}`;
-            polyline.bindTooltip(tooltip_text);
-            polyline.on('mouseover', function(e) {
-                this.setStyle({weight: 10});
-                // this._popup.setContent(total_cost);
-                // this._popup.openOn(this._map);
-            });
-            polyline.on('mouseout', function() {
-                this.setStyle({weight: 4});
-            });
-            polyline.on('click', ((id) => {
-                return () => {
-                    rightSidebar.open('rightHome');
-                    var div = destDivs.get(id)
-                    M.Collapsible.getInstance(div).open()
-                    setTimeout(() => {
-                        div.scrollIntoView(true);
-                    }, 200);
-                }
-            })(polylineID));
-            polylines.set(polylineID, polyline);
-        }
-        reverseDestsList();
-        document.getElementById('destsNum').innerHTML = `${destDivs.size} destinations`;
-        document.getElementById('destsSource').innerHTML = `Starting location: ${starting_stop}`;
-        document.getElementById('destsLoaded').classList.remove('hidden');
-        document.getElementById('destsWelcome').classList.add('hidden');
-        refreshCollapsible();
-    });
+// Refreshes collapsible items in the right sidebar (list of destinations).
+async function refreshCollapsible() {
+    $('.collapsible').collapsible();
 }
 
+// Reverses the order of the list of destinations, so that they're shown from
+// cheapest to most expensive.
+async function reverseDestsList() {
+    let element = document.getElementById('destsList');
+    let children = element.childNodes;
+    for(let i = children.length - 1; i >= 0; i--) {
+        let child = element.removeChild(children[i]);
+        element.appendChild(child);
+    }
+}
+
+// Returns a human readable time, given the number of minutes.
+// e.g. "132" returns "2h 12m"
 function getHumanReadableTime(mins) {
-    var hours = Math.floor(mins / 60);
-    var minutes = mins - (hours * 60);
-    var duration;
+    let hours = Math.floor(mins / 60);
+    let minutes = mins - (hours * 60);
+    let duration;
     if (hours > 0) {
         duration = `${hours}h ${minutes}m`;
     } else {
@@ -368,44 +275,33 @@ function getHumanReadableTime(mins) {
     return duration;
 }
 
-async function refreshCollapsible() {
-    $('.collapsible').collapsible();
-}
-
-function reverseDestsList() {
-    var element = document.getElementById('destsList');
-    var children = element.childNodes;
-    for(var i = children.length - 1; i >= 0; i--) {
-        var child = element.removeChild(children[i]);
-        element.appendChild(child);
-    }
-}
-
-function getStopsDetailsHTML(name, duration, cost, cumCost, budget) {
-    var item = document.createElement('li');
+// For a given stop, generates and returns the stop details collapsible item.
+function getStopsDetailsHTML(name, duration, cost, cumulCost, budget) {
+    let item = document.createElement('li');
     item.innerHTML = name;
-    var stop_duration = getHumanReadableTime(duration);
-    item.setAttribute('customData', `${stop_duration}\r\n€${cost}`);
-    var color = getColorForCost(cumCost, budget);
+    let stopDuration = getHumanReadableTime(duration);
+    item.setAttribute('customData', `${stopDuration}\r\n€${cost}`);
+    let color = getColorForCost(cumulCost, budget);
     item.style.color = color;
     return item.outerHTML;
 }
 
-function addToDestsList(start_name, stopsList, dest_name, dest_cost, dest_duration, budget) {
-    var stopsNames = '';
-    var cumCost = 0;
-    stopsNames += getStopsDetailsHTML(start_name, 0, 0, cumCost, budget);
+// Creates and adds a destination's detailed info to the right sidebar.
+function addToDestsList(startName, stopsList, destName, destCost, destDuration, budget) {
+    let stopsNames = '';
+    let cumulCost = 0;
+    stopsNames += getStopsDetailsHTML(startName, 0, 0, cumulCost, budget);
     for (let stop of stopsList) {
-        cumCost += stop.cost;
-        stopsNames += getStopsDetailsHTML(stop.name, stop.duration, stop.cost, cumCost, budget);
+        cumulCost += stop.cost;
+        stopsNames += getStopsDetailsHTML(stop.name, stop.duration, stop.cost, cumulCost, budget);
     }
-    var duration = getHumanReadableTime(dest_duration);
-    var wrapper = document.createElement('div');
-    var price = dest_cost.toFixed(1);
-    var polylineID = `${start_name}${dest_name}`;
-    var bgColor = getColorForCost(dest_cost, budget);
-    wrapper.innerHTML = `<ul id="destsList" class="collapsible popout"><li><div style="background-color:${bgColor}" class="collapsible-header"><div class="destContainer"><i class="material-icons">place</i>${dest_name}<div class="destChild"><div class="destEnd">€${price}</div><div class="destEnd">${duration}</div></div></div></div><div class="collapsible-body destList"><ul>${stopsNames}</ul></div></li></ul>`;
-    var div = wrapper.firstChild;
+    let duration = getHumanReadableTime(destDuration);
+    let wrapper = document.createElement('div');
+    let price = destCost.toFixed(1);
+    let polylineID = `${startName}${destName}`;
+    let bgColor = getColorForCost(destCost, budget);
+    wrapper.innerHTML = `<ul id="destsList" class="collapsible popout"><li><div style="background-color:${bgColor}" class="collapsible-header"><div class="dest-container"><i class="material-icons">place</i>${destName}<div class="dest-child"><div class="dest-end">€${price}</div><div class="dest-end">${duration}</div></div></div></div><div class="collapsible-body dest-list"><ul>${stopsNames}</ul></div></li></ul>`;
+    let div = wrapper.firstChild;
     div.addEventListener('mouseover', () => {
         polylines.get(polylineID).setStyle({weight: 10});
     });
@@ -416,31 +312,215 @@ function addToDestsList(start_name, stopsList, dest_name, dest_cost, dest_durati
     document.getElementById('destsList').appendChild(div);
 }
 
-function setupPage() {
-    loadAutocomplete();
-    $('.collapsible').collapsible();
-    $('#budget').on('input change', () => {
-        var budget = document.getElementById('budget').value;
-        document.getElementById('budgetValue').innerHTML = '€' + budget;
+// Shows a single path on the map (given a start point, a budget and a
+// destination object, which contains all the intermediate segments).
+async function showSinglePath(startPoint, dest, budget) {
+    let pointList = [startPoint];
+    let destName;
+    let stopsList = [];
+    // Add all the coordinates (one point per stop) to a list.
+    for (let pathPart of dest.segments) {
+        let endName = pathPart[1];
+        destName = endName;
+        let partCost = pathPart[2];
+        let partDuration = pathPart[3];
+        let endLat = pathPart[4];
+        let endLon = pathPart[5];
+        stopsList.push({
+            cost: partCost,
+            duration: partDuration,
+            name: endName
+        });
+        let point = new L.LatLng(endLat, endLon);
+        pointList.push(point);
+    }
+    // Add the destination's detailed info to the right sidebar.
+    addToDestsList(startingStop, stopsList, destName, dest.cost, dest.duration, budget);
+    // Build a polyline from the list of points and add it to the map.
+    let polyline = new L.Polyline(pointList, {
+        color: getColorForCost(dest.cost, budget),
+        weight: 4,
+        snakingSpeed: 100
     });
-
-    modal = document.getElementById('modal-dialog');
-    var modal_close = document.getElementById('modal-close');
-    modal_close.addEventListener('click', () => { modal.classList.add('hidden'); });
-    window.addEventListener('click', (event) => { if (event.target == modal) modal.classList.add('hidden'); });
+    polyline.addTo(pathsLayer).snakeIn();
+    // Tooltip & mouseover/click handling:
+    // 1. On mouseover, we want the polyline to become thicker.
+    // 2. On click, we want to open the destination's details view in the right
+    // sidebar.
+    let tooltipText = `${startingStop} to ${destName} (€${dest.cost.toFixed(1)})`;
+    let polylineID = `${startingStop}${destName}`;
+    polyline.bindTooltip(tooltipText);
+    polyline.on('mouseover', function(e) {
+        this.setStyle({weight: 10});
+    });
+    polyline.on('mouseout', function() {
+        this.setStyle({weight: 4});
+    });
+    polyline.on('click', ((id) => {
+        return () => {
+            rightSidebar.open('rightHome');
+            let div = destDivs.get(id)
+            M.Collapsible.getInstance(div).open()
+            // Slight delay so that the scrolling happens correctly (it would
+            // scroll before the animation completes otherwise, resulting in a
+            // weird scroll position).
+            setTimeout(() => {
+                div.scrollIntoView(true);
+            }, 200);
+        }
+    })(polylineID));
+    polylines.set(polylineID, polyline);
 }
 
-var stationsNamesList;
-function loadAutocomplete() {
-    var url = new URL(`${API_URL}/get_stations_names`)
-    var startingLoc = document.getElementById('startingLoc');
-    var stationsNames = document.getElementById('stationsNames');
+// Shows all the paths that go out from a stop.
+function showPathsFromStop(stopName) {
+    document.getElementById('destsList').innerHTML = '';
+    pathsLayer.clearLayers();
+    // If no stop is explicitely given, then use the one set last by the user
+    // (usually via the "Starting location" input field).
+    if (typeof stopName === "undefined")
+        stopName = startingStop
+    startingStop = stopName;
+    let budget = document.getElementById("budget").value;
+    let url = new URL(`${API_URL}/get_routes_from_source`)
+    let params = {source_name: stopName, budget: budget}
+    url.search = new URLSearchParams(params)
+    fetch(url).then(async function(response) {
+        return response.json();
+    }).then(function(resp) {
+        showLegend(budget);
+        let startPoint = new L.LatLng(resp.start_lat, resp.start_lon);
+        setFocusedMarker(startingStop);
+        polylines.clear();
+        destDivs.clear();
+        // Show all the paths, one by one.
+        for (let dest of resp.paths)
+            showSinglePath(startPoint, dest, budget);
+        reverseDestsList();
+        document.getElementById('destsNum').innerHTML = `${destDivs.size} destinations`;
+        document.getElementById('destsSource').innerHTML = `Starting location: ${startingStop}`;
+        document.getElementById('destsLoaded').classList.remove('hidden');
+        document.getElementById('destsWelcome').classList.add('hidden');
+        refreshCollapsible();
+    });
+}
+
+// Sets the current stop based on the user's input ("Starting location" input
+// field).
+function setStopFromInput() {
+    let stopName = document.getElementById('starting-loc').value;
+    if (stationsNamesList.indexOf(stopName) > -1) {
+        startingStop = stopName;
+        showPathsFromStop();
+    } else {
+        alert('Unknown stop selected: "' + stopName + '".\nPlease select a valid stop.');
+    }
+}
+
+// Sets the stop whose info is currently present in the left sidebar to be the
+// focused stop.
+function selectCurrentlyFocusedStop() {
+    startingStop = focusedStopName;
+    showPathsFromStop();
+}
+
+// Fetches and shows all the stops that are visible inside of the current
+// bounds.
+// There's a slightly debounce delay to avoid spam calls when zooming in with
+// the scroll wheel, for example.
+const showBounds = debounce(function() {
+    let bounds = map.getBounds()
+    let url = new URL(`${API_URL}/get_stations`)
+    let params = {east: bounds.getEast(), west: bounds.getWest(), north: bounds.getNorth(), south: bounds.getSouth(), zoom: map.getZoom()}
+    url.search = new URLSearchParams(params)
+    fetch(url).then(function(response) {
+        return response.json();
+    }).then(function(stations) {
+        mapMarkers.clearLayers()
+        stopMarkers.clear();
+        for (let [id, station] of Object.entries(stations)) {
+            importantStop = station.Imp;
+            // We want importannt stops to be shown more prominently than the
+            // rest.
+            let stopMarker = L.circleMarker([station.Latitude, station.Longitude], {
+                radius: importantStop && map.getZoom() * 1 || map.getZoom() * 0.5,
+                color: importantStop && '#3498db' || '#95a5a6',
+                fillColor: importantStop && '#3498db' || '#95a5a6',
+                fillOpacity: 0.2
+            });
+            stopMarkers.set(station.Name, stopMarker);
+            // Make it more usable: on hover, show the name and make the circle
+            // slightly bigger.
+            stopMarker.bindTooltip(station.Name);
+            stopMarker.on('mouseover', function(e) {
+                this.setStyle({radius: this._radius * 1.5});
+            });
+            stopMarker.on('mouseout', function() {
+                this.setStyle({radius: this._radius / 1.5});
+            });
+            stopMarker.on('click', partial(onStationClick, station));
+            stopMarker.addTo(mapMarkers);
+        }
+        highlightFocusedMarker();
+    });
+}, 125);
+
+// Sets up the map and sidebars.
+function setupMap() {
+    // We're showing the attribution via HTML, to avoid issues with it jumping around due to the sidebars.
+    map = new L.Map('map', {minZoom: 6, maxZoom: 11, zoomControl: false, attributionControl: false});
+    new L.Control.Zoom({position: 'bottomright'}).addTo(map);
+    // Add the map tiles.
+    L.tileLayer('https://api.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+        maxZoom: 18,
+        id: 'mapbox.outdoors',
+        accessToken: 'pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw'
+    }).addTo(map);
+    // Map initial view.
+    let lat = 46.8;
+    let lng =  0.7;
+    let zoom =  6;
+    map.setView(new L.LatLng(lat, lng), zoom);
+
+    // Darken everything outside of France, so that France is in focus.
+    L.geoJson(franceShape, {
+        clickable: false,
+        invert: true,
+        style: { fillColor: '#000', fillOpacity: 0.2, weight: 0 },
+    }).addTo(map);
+
+    mapMarkers = L.layerGroup().addTo(map);
+    pathsLayer = L.layerGroup().addTo(map);
+    // Update stations when moving the map.
+    map.on('moveend', () => { showBounds(); });
+    showBounds()
+
+    // Add sidebars.
+    sidebar = L.control.sidebar({
+        container: 'sidebar',
+        position: 'left',
+        autopan: false
+    }).addTo(map);
+    sidebar.open('home');
+
+    rightSidebar = L.control.sidebar({
+        container: 'rightSidebar',
+        position: 'right',
+    }).addTo(map);
+}
+
+// Loads the autocompletion for the stations' names ("Starting location" input
+// field).
+function loadAutoCompletion() {
+    let url = new URL(`${API_URL}/get_stations_names`)
+    let startingLoc = document.getElementById('starting-loc');
+    let stationsNames = document.getElementById('stations-names');
     fetch(url).then(async function(response) {
         return response.json();
     }).then(function(resp) {
         stationsNamesList = resp;
         for (let item of resp) {
-            var option = document.createElement('option');
+            let option = document.createElement('option');
             option.value = item;
             stationsNames.appendChild(option);
         }
@@ -448,22 +528,23 @@ function loadAutocomplete() {
     });
 }
 
-function setStopFromInput() {
-    var stop_name = document.getElementById("startingLoc").value;
-    if (stationsNamesList.indexOf(stop_name) > -1) {
-        starting_stop = stop_name;
-        showPathsFromStop();
-    } else {
-        alert('Unknown stop selected: "' + stop_name + '".\nPlease select a valid stop.');
-    }
+// Sets page up: autocompletion, budget update and modal dialog glue.
+function setupPage() {
+    loadAutoCompletion();
+    $('#budget').on('input change', () => {
+        let budget = document.getElementById('budget').value;
+        document.getElementById('budget-value').innerHTML = '€' + budget;
+    });
+
+    modal = document.getElementById('modal-dialog');
+    let modalClose = document.getElementById('modal-close');
+    modalClose.addEventListener('click', () => { modal.classList.add('hidden'); });
+    window.addEventListener('click', (event) => { if (event.target == modal) modal.classList.add('hidden'); });
 }
 
-function selectCurrentlyFocusedCity() {
-    starting_stop = focused_stop;
-    showPathsFromStop();
-}
 
-whenDocumentLoaded(() => {
+// Are we ready yet? Let's go!
+onDocumentLoad(() => {
     setupMap();
     setupPage();
 });

@@ -228,7 +228,7 @@ h2 {
     width: 350px;
 }
 
-.sidedivButton {
+.sidediv-button {
     background-color: #008CBA;
     color: white;
     width: 100%;
@@ -243,13 +243,13 @@ h2 {
     border: 1px solid transparent;
 }
 
-.sidedivButton:hover {
+.sidediv-button:hover {
     background-color: white;
     color: black;
     border: 1px solid black;
 }
 
-#budgetValue {
+#budget-value {
     width: 100%;
     text-align: center;
     color: #008CBA;
@@ -261,13 +261,14 @@ h2 {
     width: 90%;
 }
 
-#startingLoc {
+#starting-loc {
     background-color: white;
-    background-image: url(../images/search-icon.png);
+    background-image: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/><path d="M0 0h24v24H0z" fill="none"/></svg>');
     background-repeat: no-repeat;
     border: none;
     height: auto;
     margin: 8px 0;
+    margin-left: 8px;
     border-bottom: 2px solid #008CBA;
     color: black;
     padding: 4px 4px 4px 25px;
@@ -284,11 +285,11 @@ h2 {
     #ccc 20%);
 }
 
-#intlocsHeader {
+#intlocs-header {
     padding-right: 150px;
 }
 
-.customButton {
+.custom-button {
     position: absolute;
     width: 150px;
     top: 55px;
@@ -306,7 +307,7 @@ h2 {
     border: 1px solid transparent;
 }
 
-.customButton:hover {
+.custom-button:hover {
     background-color: white;
     color: black;
     border: 1px solid black;
@@ -329,23 +330,23 @@ h2 {
     font-size: 7pt;
 }
 
-.destContainer {
+.dest-container {
     width: 100%;
     display: flex;
     align-items: center
 }
 
-.destChild {
+.dest-child {
     width: 100%;
     display: flex;
     flex-direction: column;
 }
 
-.destEnd {
+.dest-end {
     align-self: flex-end;
 }
 
-.destList ul {
+.dest-list ul {
     max-width: 400px;
     margin: 0 auto;
     list-style-type: none;
@@ -354,13 +355,13 @@ h2 {
     font-family: sans-serif;
 }
 
-.destList ul li {
+.dest-list ul li {
     padding: 0 0 40px 30px;
     position: relative;
     margin: 0;
 }
 
-.destList ul li:after {
+.dest-list ul li:after {
     position: absolute;
     top: 0;
     left: 0;
@@ -375,7 +376,7 @@ h2 {
     background: currentColor;
 }
 
-.destList ul li:before {
+.dest-list ul li:before {
     position: absolute;
     left: -78.5px;
     top: -46px;
@@ -388,7 +389,7 @@ h2 {
     white-space: pre;
 }
 
-.destList ul li:first-of-type:before {
+.dest-list ul li:first-of-type:before {
     border: none;
     content: "";
 }
@@ -457,7 +458,7 @@ h2 {
     padding: 2px 16px;
 }
 
-#monumentsList {
+#monuments-list {
     min-height: 400px;
     display: flex;
     display: -webkit-flex;
@@ -468,7 +469,7 @@ h2 {
     align-content: center;
 }
 
-.monumentItem {
+.monument-item {
     width: 250px;
     flex: 0 0 auto;
     margin: 5px;
