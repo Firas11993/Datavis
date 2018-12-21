@@ -117,6 +117,7 @@ function partial(func /*, 0..n args */) {
 var map;
 var sidebar;
 var rightSidebar;
+var mapMarkers;
 
 function setupMap() {
     var lat = 46.8;
@@ -156,7 +157,7 @@ function setupMap() {
         accessToken: 'pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw'
     }).addTo(map);
 
-    var mapMarkers = L.layerGroup().addTo(map);
+    mapMarkers = L.layerGroup().addTo(map);
 
     var showBounds = debounce(function() {
         var bounds = map.getBounds()
@@ -227,15 +228,35 @@ function showLegend(budget) {
 function highlightFocusedMarker() {
     if (typeof focused_marker === "undefined") return;
     var marker = stopMarkers.get(focused_marker);
-    if (typeof marker === "undefined") return;
-    marker.setStyle({
-        radius: marker._radius * 1.5,
-        color: COLOR_BEST,
-        fillColor: COLOR_BEST,
-        fillOpacity: 1
-    });
+    if (typeof marker === "undefined") {
+        var stop_marker = L.circleMarker(old_focused_latlng, old_focused_style);
+        stopMarkers.set(focused_marker, stop_marker);
+        stop_marker.bindTooltip(focused_marker);
+        stop_marker.on('mouseover', function(e) {
+            this.setStyle({radius: this._radius * 1.5});
+        });
+        stop_marker.on('mouseout', function() {
+            this.setStyle({radius: this._radius / 1.5});
+        });
+        stop_marker.on('click', partial(onStationClick, {Name: stop_marker}));
+        stop_marker.addTo(mapMarkers);
+        stop_marker.setStyle({
+            radius: stop_marker._radius * 1.5,
+            color: COLOR_BEST,
+            fillColor: COLOR_BEST,
+            fillOpacity: 1
+        });
+    } else {
+        marker.setStyle({
+            radius: marker._radius * 1.5,
+            color: COLOR_BEST,
+            fillColor: COLOR_BEST,
+            fillOpacity: 1
+        });
+    }
 }
 
+var old_focused_latlng;
 function setFocusedMarker(name) {
     var marker = stopMarkers.get(old_focused_name);
     if (typeof marker !== "undefined") {
@@ -250,6 +271,7 @@ function setFocusedMarker(name) {
             fillOpacity: marker.options.fillOpacity,
             radius: marker.options.radius
         };
+    old_focused_latlng = marker._latlng;
     }
     old_focused_name = name;
     highlightFocusedMarker();
