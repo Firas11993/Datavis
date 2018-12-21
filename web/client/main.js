@@ -180,7 +180,7 @@ function whenDocumentLoaded(action) {
 
 function getColorForCost(cost, budget) {
     var scale = chroma.scale([COLOR_BEST, COLOR_WORST]).mode('lch').colors(budget);
-    return scale[Math.round(cost)];
+    return scale[Math.floor(cost)];
 }
 
 var starting_stop;
@@ -218,6 +218,8 @@ function showPathsFromStop(stop_name) {
             fillColor: 'green',
             fillOpacity: 1
         }).addTo(pathsLayer);
+        polylines.clear();
+        destDivs.clear();
         for (let dest of resp.paths) {
             var pointList = [start_point];
             var dest_name;
@@ -269,6 +271,9 @@ function showPathsFromStop(stop_name) {
         }
         pathsLayer.addTo(map);
         reverseDestsList();
+        document.getElementById('destsNum').innerHTML = `${destDivs.size} destinations`;
+        document.getElementById('destsInfo').classList.remove('hidden');
+        document.getElementById('destsWelcome').classList.add('hidden');
         refreshCollapsible();
     });
 }
@@ -311,7 +316,6 @@ function getStopsDetailsHTML(name, duration, cost, cumCost, budget) {
 function addToDestsList(start_name, stopsList, dest_name, dest_cost, dest_duration, budget) {
     var stopsNames = '';
     var cumCost = 0;
-    console.log(stopsList);
     stopsNames += getStopsDetailsHTML(start_name, 0, 0, cumCost, budget);
     for (let stop of stopsList) {
         cumCost += stop.cost;
