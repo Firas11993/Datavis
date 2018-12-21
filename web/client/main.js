@@ -405,15 +405,21 @@ function showPathsFromStop(stopName) {
         // Show all the paths, one by one.
         for (let dest of resp.paths)
             showSinglePath(startPoint, dest, budget);
-        reverseDestsList();
+        if (resp.paths.length == 0) {
+            alert(`Sorry, we couldn't find any destinations within your budget. You need at least €${resp.min_cost} to reach interesting destinations.`);
+        } else {
+            reverseDestsList();
+            // First time? Open the right sidebar to let the user know it
+            // exists.
+            if (firstStart) {
+                firstStart = false;
+                rightSidebar.open('rightHome');
+            }
+        }
         document.getElementById('destsNum').innerHTML = `${destDivs.size} destinations`;
         document.getElementById('destsSource').innerHTML = `Starting location: ${startingStop}`;
         document.getElementById('destsLoaded').classList.remove('hidden');
         document.getElementById('destsWelcome').classList.add('hidden');
-        if (firstStart) {
-            firstStart = false;
-            rightSidebar.open('rightHome');
-        }
         refreshCollapsible();
     });
 }

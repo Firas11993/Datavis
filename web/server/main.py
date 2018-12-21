@@ -100,6 +100,7 @@ def get_routes_from_source():
     source_id = STOPS_ID_BY_NAME[source_name]
     result = []
     source_station = STATIONS[STATIONS.Name == source_name].iloc[0]
+    min_cost = 999999
     # Go over all potential destinations.
     for dest_id, _ in SPECIAL_STOPS_DF.iterrows():
         dest_id = int(dest_id)
@@ -130,6 +131,7 @@ def get_routes_from_source():
                 duration += info['duration']
                 segments.append([start_name, end_name, info['weight'],
                                  info['duration'], end_lat, end_lon])
+            if cost < min_cost: min_cost = cost
             if cost > budget: continue  # Skip if we're over budget.
             result.append({'segments': segments, 'cost': cost,
                            'duration': duration})
@@ -139,7 +141,7 @@ def get_routes_from_source():
     result = sorted(result, key=lambda k: k['cost'], reverse=True)
     return json.dumps({'start_lat': source_station.Latitude,
                        'start_lon': source_station.Longitude,
-                       'paths': result})
+                       'paths': result, 'min_cost': min_cost})
 
 @app.route('/get_monuments/<name>', methods=['GET'])
 def get_monuments(name):
