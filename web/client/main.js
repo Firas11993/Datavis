@@ -103,15 +103,15 @@ function showModal(city) {
 // 2. If this is an important stop (i.e. a stop connected to important cities),
 // then list nearby important cities.
 // 3. If not, then show a general informative message instead.
-function onStationClick(station) {
-    focusedStopName = station.Name;
+function onStationClick(stationName) {
+    focusedStopName = stationName;
     // Reset state.
     document.getElementById('sidebar-welcome-text').classList.add('hidden');
     document.getElementById('sidebar-content').classList.remove('hidden');
-    document.getElementById('sidebar-header').innerHTML = station.Name;
+    document.getElementById('sidebar-header').innerHTML = stationName;
     sidebar.open('home');
     // Fetch station info.
-    let url = new URL(`${API_URL}/get_station_info/${station.Name}`)
+    let url = new URL(`${API_URL}/get_station_info/${stationName}`)
     fetch(url).then(async function(response) {
         return response.json();
     }).then(function(resp) {
@@ -201,7 +201,7 @@ function highlightFocusedMarker() {
         stopMarker.on('mouseout', function() {
             this.setStyle({radius: this._radius / 1.5});
         });
-        stopMarker.on('click', partial(onStationClick, {Name: stopMarker}));
+        stopMarker.on('click', partial(onStationClick, stopMarker));
         stopMarker.addTo(mapMarkers);
         stopMarker.setStyle({
             radius: stopMarker._radius * 1.5,
@@ -307,6 +307,9 @@ function addToDestsList(startName, stopsList, destName, destCost, destDuration, 
     });
     div.addEventListener('mouseout', () => {
         polylines.get(polylineID).setStyle({weight: 4});
+    });
+    div.addEventListener('click', () => {
+        onStationClick(destName);
     });
     destDivs.set(polylineID, div);
     document.getElementById('destsList').appendChild(div);
@@ -458,7 +461,7 @@ const showBounds = debounce(function() {
             stopMarker.on('mouseout', function() {
                 this.setStyle({radius: this._radius / 1.5});
             });
-            stopMarker.on('click', partial(onStationClick, station));
+            stopMarker.on('click', partial(onStationClick, station.Name));
             stopMarker.addTo(mapMarkers);
         }
         highlightFocusedMarker();
