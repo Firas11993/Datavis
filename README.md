@@ -1,19 +1,34 @@
 # Project Description
 
-- Let's say you are a student with a limited budget, but you still want to have fun on your vacation and feed your passion for travelling and discovering new places and people.
-In that case, this application should be very useful for you if you want to travel around France. 
-- On the map, you can see all the stops of historical cities with blue markers. If you zoom in, you can also see other stops of "non-historic" cities. 
-You can select your budget for the train ticket by using the scroller on the top left corner and the starting station by filling the text box right above it.
-- Clicking on a stop will show some additional information on a sidebar to the left, such as, the interesting cities near the selected stop.
-
-- You can click on a city name that appears in the left sidebar for a wikipedia summary of the city as well as a list of monuments... You can also click on the button "set starting location" to select it as a starting station as an alternative to entering the station name in the text box.
-
-- By selecting the starting station, you should see all the possible routes you could take with the chosen budget. The colors used for the edges reflect the price of the trip to a linked station. The closer the color to red the closer it is to your limit budget. Similarily, the closer it is to green the closer the trip price is to 0. This is also explained in the legend that appears right next to the scroller.
-
-- You can also see all the important reachable cities by looking at the content of the sidebar to the right as well as seeing them by placing the mouse on an edge.
-
-- By clicking on a specific destination on the right sidebar you can see more detailed intermediate important stops with information about ticket price and duration from one stop to the next. Another option is to click on an edge to directly obtain the view on the intermediate stops.
-
+- Let's say you are a student with a limited budget, but you still want to have
+  fun on your vacation and feed your passion for travelling and discovering new
+  places and people.  
+  In that case, this application should be very useful for you if you want to
+  travel around France. 
+- On the map, you can see all the stops of historical cities with blue markers.
+  If you zoom in, you can also see other stops of "non-historic" cities.  
+  You can select your budget for the train ticket by using the scroller on the
+  top left corner and the starting station by filling the text box right above
+  it.
+- Clicking on a stop will show some additional information on a sidebar to the
+  left, such as, the interesting cities near the selected stop.
+- You can click on a city name that appears in the left sidebar for a Wikipedia
+  summary of the city as well as a list of monuments... You can also click on
+  the button "set starting location" to select it as a starting station as an
+  alternative to entering the station name in the text box.
+- By selecting the starting station, you should see all the possible routes you
+  could take with the chosen budget. The colors used for the edges reflect the
+  price of the trip to a linked station. The closer the color to red the closer
+  it is to your limit budget. Similarity, the closer it is to green the closer
+  the trip price is to 0. This is also explained in the legend that appears
+  right next to the scroller.
+- You can also see all the important reachable cities by looking at the content
+  of the sidebar to the right as well as seeing them by placing the mouse on an
+  edge.
+- By clicking on a specific destination on the right sidebar you can see more
+  detailed intermediate important stops with information about ticket price and
+  duration from one stop to the next. Another option is to click on an edge to
+  directly obtain the view on the intermediate stops.
 
 # Files
 
@@ -43,3 +58,44 @@ You can select your budget for the train ticket by using the scroller on the top
 Note that files whose name begins with `type_<NUM>` must be run in sequence, as
 they may depend on the output of previous files. For example,
 `preprocessing_2_tgv.ipynb` must be run after `preprocessing_1_stations.ipynb`.
+
+# Running the webpage / server
+
+Our data viz has two components, a client and a server. Running the server is
+done by using Flask from the `web/server` directory:
+```bash
+$ cd web/server/
+$ FLASK_APP=main.py flask run
+```
+
+Once the server is running, you can simply open `index.html` from the
+`web/client` directory.
+
+# Dependencies
+
+Server dependencies:
+
+- [networkx](https://pypi.org/project/networkx/)
+- [pandas](https://pypi.org/project/pandas/)
+- [flask](https://pypi.org/project/Flask/)
+
+Libraries/templates used for the client:
+
+- [Bootstrap](https://getbootstrap.com/) with [Clean Blog template](https://github.com/BlackrockDigital/startbootstrap-clean-blog)
+- [Leaflet](https://leafletjs.com/)
+- [sidebar-v2](https://github.com/Turbo87/sidebar-v2)
+- [Leaflet-snogylop](https://github.com/ebrelsford/Leaflet.snogylop)
+- [materializecss](https://materializecss.com/)
+- [Leaflet.EasyButton](https://github.com/CliffCloud/Leaflet.EasyButton/)
+- [Leaflet.Polyline.SnakeAnim](https://github.com/IvanSanchez/Leaflet.Polyline.SnakeAnim/)
+- [Wikipedia.JS](http://okfnlabs.org/wikipediajs/)
+- [Chroma.js](https://github.com/gka/chroma.js)
+- [jQuery](https://jquery.com/)
+
+Pre-processing dependencies (depends on the specific notebook):
+
+- [pandas](https://pypi.org/project/pandas/)
+- [numpy](https://pypi.org/project/numpy/)
+- [networkx](https://pypi.org/project/networkx/)
+- [swifter](https://pypi.org/project/swifter/)
+- [folium](https://pypi.org/project/folium/)

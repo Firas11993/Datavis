@@ -544,6 +544,32 @@ function setupMap() {
     sidebar.on('opening', () => { document.getElementById('sidebar-inner').classList.remove('hidden'); });
     rightSidebar.on('closing', () => { setTimeout(() => { document.getElementById('right-sidebar-inner').classList.add('hidden'); }, 400) });
     rightSidebar.on('opening', () => { document.getElementById('right-sidebar-inner').classList.remove('hidden'); });
+
+    // Add fullscreen button.
+    L.easyButton({
+        position: 'bottomright',
+        states: [{
+            stateName: 'fullscreen',
+            icon: 'fa-expand',
+            title: 'Enter fullscreen',
+            onClick: (btn) => {
+                parent.document.getElementById('iframe').className = 'full-screen';
+                parent.document.body.className = 'stop-scrolling';
+                parent.window.scroll(0, 0);
+                btn.state('exit-fullscreen');
+            }
+        }, {
+            stateName: 'exit-fullscreen',
+            icon: 'fa-compress',
+            title: 'Exit fullscreen',
+            onClick: (btn) => {
+                parent.document.getElementById('iframe').className = 'windowed';
+                parent.document.getElementById('iframe').scrollIntoView();
+                parent.document.body.className = '';
+                btn.state('fullscreen');
+            }
+        }]
+    }).addTo(map);
 }
 
 // Loads the autocompletion for the stations' names ("Starting location" input
