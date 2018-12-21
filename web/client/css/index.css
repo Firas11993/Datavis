@@ -1,0 +1,23 @@
+.windowed {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    border: none;
+    width: 98%;
+    height: 80%
+}
+
+.full-screen {
+    z-index: 10000;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.stop-scrolling {
+    height: 100%;
+    overflow: hidden;
+}
