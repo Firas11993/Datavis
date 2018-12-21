@@ -60,6 +60,7 @@ function onStationClick(station) {
                 if (wikiurl.endsWith('/'))
                     wikiurl += city;
             }
+            document.getElementById('intlocslist').innerHTML = '';
             document.getElementById('intlocslist').appendChild(content.firstChild);
         } else {
             document.getElementById('normalStopInfo').classList.remove('hidden');
