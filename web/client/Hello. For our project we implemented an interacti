@@ -1,0 +1,18 @@
+Hello. For our project we implemented an interactive trip planner on a budget. As you can see we have a map centered on France with blue markers on it which represent the stations of the important cities of France. You can see the stop name by hovering over the stations. And by cliking on it you can see the interesting cities nearby.
+
+You can also click on a city name for a quick wikipedia overview, photo of the city and you can scroll down for a list of monuments. 
+
+By clicking on set as starting location button, you can start an animation of all possible trips by train with a default maximum tickets price of a 100 Euros. 
+Of course you can edit the maximum budget by moving this scroller and clicking on refresh and as expected, this gives us a wider range of possible destinations. 
+
+The edges are colored from green to red depending on close you are the maximum budget. You can hover over the edges and see the prices and the destination.
+
+But you can see the destinations more easily by opening the sidebar to the right. 
+This shows the list of all possible destinations sorted by price. It also shows information about the trip price and duration. 
+Placing the mouse on these destinations highlights the route  on the map.
+
+You can click on a destination for more information. Here, we see for Dijon-ville all the intermediate important cities you pass as well as the intermediate trip price and duration.
+
+ In addition, you can alternatively select the starting location by using the text box to the top left corner and clicking on set for the routing animation. 
+
+ As you can see by Selecting Lyon-part-Dieu the routing on the map is updated as well as the list of destinations.
