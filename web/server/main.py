@@ -61,10 +61,10 @@ def get_stations():
     zoom = int(request.args.get('zoom'))
     # Load and filter visible stations.
     df = STATIONS
+    df_imp = df[(df.Name.isin(HISTORIC_CITIES.keys()))
+                | (df.Name.isin(ART_HISTORY_CITIES.keys()))]
     # If we're zoomed out, only return important stations.
     if zoom < 10:
-        df_imp = df[(df.Name.isin(HISTORIC_CITIES.keys()))
-                    | (df.Name.isin(ART_HISTORY_CITIES.keys()))]
         df = df_imp
     else:
         df = df[(df.Longitude > west) & (df.Longitude < east)
