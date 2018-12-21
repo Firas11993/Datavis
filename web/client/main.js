@@ -4,6 +4,7 @@ const COLOR_WORST = 'red';
 
 var polylines = new Map();
 var destDivs = new Map();
+var modal;
 
 // Source: <https://davidwalsh.name/javascript-debounce-function>
 // Returns a function, that, as long as it continues to be invoked, will not
@@ -27,6 +28,11 @@ function debounce(func, wait, immediate) {
 };
 
 var focused_stop;
+function showModal(city) {
+    modal.classList.remove('hidden');
+    document.getElementById('modal-header').innerHTML = city;
+    document.getElementById('modal-body').innerHTML = `<p>${city}</p>`;
+}
 function onStationClick(station) {
     focused_stop = station.Name;
     document.getElementById('sidebarWelcomeText').classList.add('hidden');
@@ -41,15 +47,20 @@ function onStationClick(station) {
         if (resp.important) {
             document.getElementById('normalStopInfo').classList.add('hidden');
             document.getElementById('interestingStopInfo').classList.remove('hidden');
-            var content = '';
+            var content = document.createElement('div');
             for (let [city, tags] of Object.entries(resp.cities)) {
-                content += `<li class="intloc">${city} <span>`;
-                content += tags.map(item => `<span class="tag ${item}">${item == 'ArtH' ? 'City of arts & history' : 'Historic monuments' }</span>`).join('');
-                content += '</span></li>';
+                var wrapper = document.createElement('div');
+                var li_content = `<li class="intloc">${city} <span>`;
+                li_content += tags.map(item => `<span class="tag ${item}">${item == 'ArtH' ? 'City of arts & history' : 'Historic monuments' }</span>`).join('');
+                li_content += '</span></li>';
+                wrapper.innerHTML = li_content;
+                var li = wrapper.firstChild;
+                li.addEventListener('click', () => { showModal(city); });
+                content.appendChild(li);
                 if (wikiurl.endsWith('/'))
                     wikiurl += city;
             }
-            document.getElementById('intlocslist').innerHTML = content;
+            document.getElementById('intlocslist').appendChild(content.firstChild);
         } else {
             document.getElementById('normalStopInfo').classList.remove('hidden');
             document.getElementById('interestingStopInfo').classList.add('hidden');
@@ -329,6 +340,11 @@ function setupPage() {
         var budget = document.getElementById('budget').value;
         document.getElementById('budgetValue').innerHTML = '€' + budget;
     });
+
+    modal = document.getElementById('modal-dialog');
+    var modal_close = document.getElementById('modal-close');
+    modal_close.addEventListener('click', () => { modal.classList.add('hidden'); });
+    window.addEventListener('click', (event) => { if (event.target == modal) modal.classList.add('hidden'); });
 }
 
 var stationsNamesList;

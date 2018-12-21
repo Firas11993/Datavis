@@ -27,6 +27,16 @@
     </head>
 
     <body onload="setupMap()">
+        <div id="modal-dialog" class="modal-dialog hidden">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span id="modal-close" class="modal-close">&times;</span>
+                    <h2 id="modal-header">Title</h2>
+                </div>
+                <div id="modal-body" class="modal-body">
+                </div>
+            </div>
+        </div>
         <div id="attrib"><a href="http://leafletjs.com/">Leaflet</a> | Map data © OpenStreetMap contributors, Map data © <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a></div>
         <div id="legend" class="gradient"></div>
         <div id="sidediv" class="flexChild columnParent">
