@@ -392,6 +392,7 @@ function showPathsFromStop(stopName) {
     let url = new URL(`${API_URL}/get_routes_from_source`)
     let params = {source_name: stopName, budget: budget}
     url.search = new URLSearchParams(params)
+    document.getElementById('loader-container').classList.add('visible');
     fetch(url).then(async function(response) {
         return response.json();
     }).then(function(resp) {
@@ -400,6 +401,7 @@ function showPathsFromStop(stopName) {
         setFocusedMarker(startingStop);
         polylines.clear();
         destDivs.clear();
+        document.getElementById('loader-container').classList.remove('visible');
         // Show all the paths, one by one.
         for (let dest of resp.paths)
             showSinglePath(startPoint, dest, budget);
