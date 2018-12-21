@@ -154,12 +154,21 @@ function setupMap() {
             mapMarkers.clearLayers()
             for (let [id, station] of Object.entries(stations)) {
                 important_city = station.Imp;
-                L.circleMarker([station.Latitude, station.Longitude], {
-                    radius: important_city && map.getZoom() * 1.5 || map.getZoom(),
+                var stop_marker = L.circleMarker([station.Latitude, station.Longitude], {
+                    radius: important_city && map.getZoom() * 1 || map.getZoom() * 0.5,
                     color: important_city && '#3498db' || '#95a5a6',
                     fillColor: important_city && '#3498db' || '#95a5a6',
                     fillOpacity: 0.2
-                }).addTo(mapMarkers).on('click', partial(onStationClick, station));
+                });
+                stop_marker.bindTooltip(station.Name);
+                stop_marker.on('mouseover', function(e) {
+                    this.setStyle({radius: this._radius * 1.5});
+                });
+                stop_marker.on('mouseout', function() {
+                    this.setStyle({radius: this._radius / 1.5});
+                });
+                stop_marker.on('click', partial(onStationClick, station));
+                stop_marker.addTo(mapMarkers);
             }
         });
     }, 125);
