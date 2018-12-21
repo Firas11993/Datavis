@@ -61,7 +61,7 @@ function onStationClick(station) {
                     wikiurl += city;
             }
             document.getElementById('intlocslist').innerHTML = '';
-            document.getElementById('intlocslist').appendChild(content.firstChild);
+            document.getElementById('intlocslist').appendChild(content);
         } else {
             document.getElementById('normalStopInfo').classList.remove('hidden');
             document.getElementById('interestingStopInfo').classList.add('hidden');
