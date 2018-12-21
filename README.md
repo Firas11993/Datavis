@@ -32,27 +32,27 @@
 
 # Files
 
-- `data/` directory: contains input datasets and cleaned datasets we generated
+- `preprocessing/data/` directory: contains input datasets and cleaned datasets we generated
   (denoted by a starting `_`).
 - `web/` directory: contains the web demo (client + server).
 - `preprocessing_1_stations.ipynb`: pre-processing of the stations datasets.
   Output: a cleaned stations dataset with the columns we care about and
   easy-to-use names.
-- `preprocessing_2_tgv.ipynb`: pre-processing of TGV prices for the given
+- `preprocessing/preprocessing_2_tgv.ipynb`: pre-processing of TGV prices for the given
   origins/departures. Output: a cleaned TGV prices dataset with well-separated
   and cleaned origin/destination names and prices.
-- `preprocessing_3_intercity.ipynb`: pre-processing of intercity prices for the
+- `preprocessing/preprocessing/preprocessing_3_intercity.ipynb`: pre-processing of intercity prices for the
   given origins and destinations. Output: a cleaned intercity prices dataset
   with cleaned origin/destination names and prices.
-- `preprocessing_4_build_graph.ipynb`: builds a basic graph from the above
+- `preprocessing/preprocessing_4_build_graph.ipynb`: builds a basic graph from the above
   cleaned datasets and shows a starting example.
-- `preprocessing_lane_lines_from_geojson.ipynb`: get lane/track lines (with
+- `preprocessing/preprocessing_lane_lines_from_geojson.ipynb`: get lane/track lines (with
   curves) from the GeoJSON file containing all lane/track points (separately)
   in a way that can be used to draw the path from a departure station to a
   destination.
-- `get_wikipedia_data.ipynb`: determine "important" cities from Wikipedia, and
+- `preprocessing/get_wikipedia_data.ipynb`: determine "important" cities from Wikipedia, and
   their list of historic monuments where applicable.
-- `compute_durations_intercity_and_ter.ipynb`: get train departure/arrival
+- `preprocessing/compute_durations_intercity_and_ter.ipynb`: get train departure/arrival
   times and durations per station for intercity and TER.
 
 Note that files whose name begins with `type_<NUM>` must be run in sequence, as
