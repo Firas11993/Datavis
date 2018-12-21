@@ -119,8 +119,8 @@ var sidebar;
 var rightSidebar;
 
 function setupMap() {
-    var lat = 46.566414;
-    var lng =  2.4609375;
+    var lat = 46.8;
+    var lng =  0.7;
     var zoom =  6;
 
     map = new L.Map('map', {minZoom: 6, maxZoom: 11, zoomControl: false, attributionControl: false});
