@@ -7,7 +7,7 @@ from flask import Flask, request
 
 
 # Load all required data.
-DATA_DIR = '../../data/'
+DATA_DIR = '../../preprocessing/data/'
 TAG_HIST = 'Hist'
 TAG_ARTHIST = 'ArtH'
 print('Loading data...')
