@@ -227,6 +227,7 @@ function showLegend(budget) {
 function highlightFocusedMarker() {
     if (typeof focused_marker === "undefined") return;
     var marker = stopMarkers.get(focused_marker);
+    if (typeof marker === "undefined") return;
     marker.setStyle({
         radius: marker._radius * 1.5,
         color: COLOR_BEST,
@@ -242,12 +243,14 @@ function setFocusedMarker(name) {
     }
     focused_marker = name;
     marker = stopMarkers.get(name);
-    old_focused_style = {
-        color: marker.options.color,
-        fillColor: marker.options.fillColor,
-        fillOpacity: marker.options.fillOpacity,
-        radius: marker.options.radius
-    };
+    if (typeof marker !== "undefined") {
+        old_focused_style = {
+            color: marker.options.color,
+            fillColor: marker.options.fillColor,
+            fillOpacity: marker.options.fillOpacity,
+            radius: marker.options.radius
+        };
+    }
     old_focused_name = name;
     highlightFocusedMarker();
 }
