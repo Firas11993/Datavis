@@ -461,8 +461,20 @@ const showBounds = debounce(function() {
             importantStop = station.Imp;
             // We want importannt stops to be shown more prominently than the
             // rest.
+            let unimpRadius = map.getZoom();
+            let impRadius = map.getZoom();
+            if (map.getZoom() < 9) {
+                unimpRadius *= .2;
+                impRadius *= .8;
+            } else if (map.getZoom() < 10) {
+                unimpRadius *= .4;
+                impRadius *= 1.2;
+            } else {
+                unimpRadius *= .7;
+                impRadius *= 1.4;
+            }
             let stopMarker = L.circleMarker([station.Latitude, station.Longitude], {
-                radius: importantStop && map.getZoom() * 1 || map.getZoom() * 0.5,
+                radius: importantStop && impRadius || unimpRadius,
                 color: importantStop && '#3498db' || '#95a5a6',
                 fillColor: importantStop && '#3498db' || '#95a5a6',
                 fillOpacity: 0.2
