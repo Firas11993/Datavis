@@ -31,7 +31,8 @@ app = Flask(__name__)
 
 @app.route('/get_stations_names', methods=['GET'])
 def get_stations_names():
-    return json.dumps(STATIONS.Name.tolist())
+    names = STATIONS.Name.tolist()
+    return json.dumps(sorted(names))
 
 @app.route('/get_stations', methods=['GET'])
 def get_stations():
