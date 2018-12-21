@@ -1,36 +1,19 @@
 # Project Description
 
-This project should enable a user to visually plan his/her train/bus trip on a
-budget and be able to see the trip duration and the price. The plan is, the
-final project should show a map of Europe with different cities as potential
-destinations, and the path to take to each one of them from a user-specified
-starting location. Each "important" city along the route will be shown as a dot
-on the map. The cities should be linked using edges which are coloured in a way
-that indicates the price of the trip (e.g. the first segment starts coloured in
-green, then fades to orange and red, eventually becoming black as the
-cumulative price increases). The interactive visualisation should also show the
-duration of the trip. 
+- Let's say you are a student with a limited budget, but you still want to have fun on your vacation and feed your passion for travelling and discovering new places and people.
+In that case, this application should be very useful for you if you want to travel around France. 
+- On the map, you can see all the stops of historical cities with blue markers. If you zoom in, you can also see other stops of "non-historic" cities. 
+You can select your budget for the train ticket by using the scroller on the top left corner and the starting station by filling the text box right above it.
+- Clicking on a stop will show some additional information on a sidebar to the left, such as, the interesting cities near the selected stop.
 
+- You can click on a city name that appears in the left sidebar for a wikipedia summary of the city as well as a list of monuments... You can also click on the button "set starting location" to select it as a starting station as an alternative to entering the station name in the text box.
 
-In addition to being able to pick the starting point, the user should be able
-to filter by budget and by countries/regions (which could be useful if a visa
-is required).
+- By selecting the starting station, you should see all the possible routes you could take with the chosen budget. The colors used for the edges reflect the price of the trip to a linked station. The closer the color to red the closer it is to your limit budget. Similarily, the closer it is to green the closer the trip price is to 0. This is also explained in the legend that appears right next to the scroller.
 
+- You can also see all the important reachable cities by looking at the content of the sidebar to the right as well as seeing them by placing the mouse on an edge.
 
-The user should also be able to click on a city on the map to get a quick
-overview of the city, as well as the type of activities he/she could do. We
-could also include some photos of major city attractions and sights. Also, we
-could include links to major trip guides websites such as TripAdvisor, hotel
-booking websites (e.g booking.ch, airbnb etc).
+- By clicking on a specific destination on the right sidebar you can see more detailed intermediate important stops with information about ticket price and duration from one stop to the next. Another option is to click on an edge to directly obtain the view on the intermediate stops.
 
-
-At first, we plan to do this for major cities in Switzerland. Then, if we have
-enough resources we could branch out to other countries in Europe.  
-
-Our algorithm should take into account the connections between all cities as
-well as the  importance of the cities to determine which cities to show on the
-map, as showing all of the cities would be extremely messy to look at (e.g.
-there are over 700 train stops in Switzerland in our dataset).
 
 # Files
 
