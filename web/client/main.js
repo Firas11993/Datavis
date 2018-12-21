@@ -4,7 +4,11 @@ const COLOR_WORST = 'red';
 
 var polylines = new Map();
 var destDivs = new Map();
+var stopMarkers = new Map();
 var modal;
+var focused_marker;
+var old_focused_style;
+var old_focused_name;
 
 // Source: <https://davidwalsh.name/javascript-debounce-function>
 // Returns a function, that, as long as it continues to be invoked, will not
@@ -152,6 +156,7 @@ function setupMap() {
             return response.json();
         }).then(function(stations) {
             mapMarkers.clearLayers()
+            stopMarkers.clear();
             for (let [id, station] of Object.entries(stations)) {
                 important_city = station.Imp;
                 var stop_marker = L.circleMarker([station.Latitude, station.Longitude], {
@@ -160,6 +165,7 @@ function setupMap() {
                     fillColor: important_city && '#3498db' || '#95a5a6',
                     fillOpacity: 0.2
                 });
+                stopMarkers.set(station.Name, stop_marker);
                 stop_marker.bindTooltip(station.Name);
                 stop_marker.on('mouseover', function(e) {
                     this.setStyle({radius: this._radius * 1.5});
@@ -170,6 +176,7 @@ function setupMap() {
                 stop_marker.on('click', partial(onStationClick, station));
                 stop_marker.addTo(mapMarkers);
             }
+            highlightFocusedMarker();
         });
     }, 125);
 
@@ -206,6 +213,34 @@ function showLegend(budget) {
     document.getElementById("legend").innerHTML = s;
 }
 
+function highlightFocusedMarker() {
+    if (typeof focused_marker === "undefined") return;
+    var marker = stopMarkers.get(focused_marker);
+    marker.setStyle({
+        radius: marker._radius * 1.5,
+        color: COLOR_BEST,
+        fillColor: COLOR_BEST,
+        fillOpacity: 1
+    });
+}
+
+function setFocusedMarker(name) {
+    var marker = stopMarkers.get(old_focused_name);
+    if (typeof marker !== "undefined") {
+        marker.setStyle(old_focused_style);
+    }
+    focused_marker = name;
+    marker = stopMarkers.get(name);
+    old_focused_style = {
+        color: marker.options.color,
+        fillColor: marker.options.fillColor,
+        fillOpacity: marker.options.fillOpacity,
+        radius: marker.options.radius
+    };
+    old_focused_name = name;
+    highlightFocusedMarker();
+}
+
 function showPathsFromStop(stop_name) {
     document.getElementById('destsList').innerHTML = '';
     pathsLayer.clearLayers();
@@ -221,12 +256,7 @@ function showPathsFromStop(stop_name) {
         return response.json();
     }).then(function(resp) {
         var start_point = new L.LatLng(resp.start_lat, resp.start_lon);
-        L.marker([resp.start_lat, resp.start_lon], {
-            radius: map.getZoom(),
-            color: 'green',
-            fillColor: 'green',
-            fillOpacity: 1
-        }).addTo(pathsLayer);
+        setFocusedMarker(starting_stop);
         polylines.clear();
         destDivs.clear();
         for (let dest of resp.paths) {
